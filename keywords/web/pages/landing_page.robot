@@ -1,3 +1,6 @@
+*** Settings ***
+Resource    ${CURDIR}/../../../resources/import.robot
+
 *** Keywords ***
 Open gother web
     [Arguments]        ${headless_mode}=${False}

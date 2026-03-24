@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.2 on win32)" generated="2026-03-24T14:49:08.685807" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc Web" source="C:\Users\kritidaj.j\Documents\GitHub\assign-automation-mar-2026\testcases\web\poc_web.robot">
+<test id="s1-t1" name="TC_WEB_POC_001" line="7">
+<kw name="Open gother web" owner="landing_page">
+<kw name="Open web browser by url" owner="common_web">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-24T14:49:09.068905" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\kritidaj.j\\Documents\\GitHub\\assign-automation-mar-2026\\testcases\\web\\log_result\\browser\\traces\\temp\\d9836c76-8502-4986-bde6-428842281bb0"}</msg>
+<msg time="2026-03-24T14:49:09.099828" level="INFO">Starting Browser process C:\Users\kritidaj.j\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53845</msg>
+<msg time="2026-03-24T14:49:10.383375" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\kritidaj.j\\Documents\\GitHub\\assign-automation-mar-2026\\testcases\\web\\log_result\\browser\\traces\\temp\\d9836c76-8502-4986-bde6-428842281bb0"}</msg>
+<arg>browser=${supported_browser}</arg>
+<arg>headless=${headless_mode}</arg>
+<arg>args=["--start-maximized"]</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-24T14:49:09.067802" elapsed="1.315814"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-03-24T14:49:10.386427" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": null
+}</msg>
+<msg time="2026-03-24T14:49:10.408311" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-24T14:49:10.408431" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<arg>viewport=${NONE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-03-24T14:49:10.384085" elapsed="0.024462"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-24T14:49:11.481323" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/th-th</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-24T14:49:10.408856" elapsed="1.072778"/>
+</kw>
+<arg>url=${gother_web.url.${LANG.lower()}}</arg>
+<arg>headless_mode=${headless_mode}</arg>
+<doc>ใช้สำหรับเปิด Web browser
+Arguments:
+    - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
+    - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
+    - False (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
+<status status="PASS" start="2026-03-24T14:49:09.066183" elapsed="2.415685"/>
+</kw>
+<status status="PASS" start="2026-03-24T14:49:09.065067" elapsed="2.416972"/>
+</kw>
+<msg time="2026-03-24T14:49:11.605618" level="INFO">Switching context to context=4c9ebef4-018e-42f4-a00e-6b3c3d638fae in CURRENT</msg>
+<msg time="2026-03-24T14:49:11.622371" level="INFO">Successfully changed active context: context=4c9ebef4-018e-42f4-a00e-6b3c3d638fae</msg>
+<msg time="2026-03-24T14:49:11.651718" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-03-24T14:49:09.064254" elapsed="2.418244"/>
+</test>
+<status status="PASS" start="2026-03-24T14:49:08.687366" elapsed="2.966494"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Poc Web" id="s1" pass="1" fail="0" skip="0">Poc Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-24T14:49:09.037044" level="ERROR">Error in file 'C:\Users\kritidaj.j\Documents\GitHub\assign-automation-mar-2026\resources\import.robot' on line 10: Processing variable file 'C:\Users\kritidaj.j\Documents\GitHub\assign-automation-mar-2026\resources\translation\web\th.yaml' failed: YAML variable file must be a mapping, got string.</msg>
+</errors>
+</robot>
