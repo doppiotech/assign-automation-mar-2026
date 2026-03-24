@@ -1,0 +1,57 @@
+{"level":30,"time":"2026-03-24T07:21:02.517Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Listening on 127.0.0.1:50697"}
+{"level":30,"time":"2026-03-24T07:21:03.554Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-24T07:21:04.121Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-24T07:21:04.121Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-24T07:21:04.121Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-24T07:21:04.125Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-03-24T07:21:04.125Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":null}"}
+{"level":30,"time":"2026-03-24T07:21:04.125Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b2e9d61e66a5f7012a85bb5106894c5a\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=af9c9f53-d4ee-4bbe-8d65-b32c042a2b6e\"}"}
+{"level":30,"time":"2026-03-24T07:21:04.125Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Trace file: "}
+{"level":30,"time":"2026-03-24T07:21:04.130Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Setting default timeout for context context=80d2d249-5898-4b76-84cb-98ff8fd2d5b1 to 10000"}
+{"level":30,"time":"2026-03-24T07:21:04.130Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Changed active context: context=80d2d249-5898-4b76-84cb-98ff8fd2d5b1"}
+{"level":30,"time":"2026-03-24T07:21:04.130Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method newContext"}
+{"level":30,"time":"2026-03-24T07:21:04.132Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-24T07:21:04.133Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b2e9d61e66a5f7012a85bb5106894c5a\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=80d2d249-5898-4b76-84cb-98ff8fd2d5b1\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@8cdc9a3b44d099fbeda5c1124a0cb0a1\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":null},\"traceFile\":\"\"}],\"id\":\"browser=af9c9f53-d4ee-4bbe-8d65-b32c042a2b6e\"}"}
+{"level":30,"time":"2026-03-24T07:21:04.356Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-24T07:21:04.356Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-03-24T07:21:04.365Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+[2m  - navigating to "{'url': {'en': 'https://www.gother.online/en-us', 'th': 'https://www.gother.online/th-th'}}", waiting until "load"[22m
+
+    at newPage (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js:13102:18)
+    at async PlaywrightServer.newPage (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js:13690:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2026-03-24T07:21:04.369Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js:10997:11)
+    at takeScreenshot (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js:11158:3)
+    at PlaywrightServer.takeScreenshot (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js:13690:34)
+    at Object.onReceiveHalfClose (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:22)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-24T07:21:04.369Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-03-24T07:21:04.378Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.379Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.380Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.380Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.380Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.380Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.381Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.381Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.382Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Changed active context: context=80d2d249-5898-4b76-84cb-98ff8fd2d5b1"}
+{"level":30,"time":"2026-03-24T07:21:04.383Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-24T07:21:04.591Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-24T07:21:04.596Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.596Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-24T07:21:04.616Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-24T07:21:04.652Z","pid":55225,"hostname":"Rajitkaews-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}

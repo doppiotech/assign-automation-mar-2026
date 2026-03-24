@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.13.0 on darwin)" generated="2026-03-24T14:21:01.928617" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc Web" source="/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/testcases/poc_web.robot">
+<test id="s1-t1" name="TC_WEB_POC_001" line="6">
+<kw name="Open web browser by url" owner="common_web">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-24T14:21:02.081095" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/testcases/browser/traces/temp/d2f412d1-8ae0-4e43-af41-6d2588c570f7"}</msg>
+<msg time="2026-03-24T14:21:02.106086" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:50697</msg>
+<msg time="2026-03-24T14:21:04.122810" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/testcases/browser/traces/temp/d2f412d1-8ae0-4e43-af41-6d2588c570f7"}</msg>
+<arg>headless=${FALSE}</arg>
+<arg>args=["--start-maximized"]</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-24T14:21:02.080757" elapsed="2.042282"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2026-03-24T14:21:04.124756" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": null
+}</msg>
+<msg time="2026-03-24T14:21:04.131363" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-24T14:21:04.131401" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<arg>viewport=${NONE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2026-03-24T14:21:04.123330" elapsed="0.008129"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-24T14:21:04.369612" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-03-24T14:21:04.369679" level="INFO">See also file:///Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/testcases/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-24T14:21:04.369915" level="FAIL">Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "{'url': {'en': 'https://www.gother.online/en-us', 'th': 'https://www.gother.online/th-th'}}", waiting until "load"
+</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2026-03-24T14:21:04.131600" elapsed="0.244542">Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "{'url': {'en': 'https://www.gother.online/en-us', 'th': 'https://www.gother.online/th-th'}}", waiting until "load"
+</status>
+</kw>
+<doc>ใช้สำหรับเปิด Web browser
+Arguments:
+    - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
+    - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
+    - ${headless_mode} (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
+<status status="FAIL" start="2026-03-24T14:21:02.080485" elapsed="2.295871">Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "{'url': {'en': 'https://www.gother.online/en-us', 'th': 'https://www.gother.online/th-th'}}", waiting until "load"
+</status>
+</kw>
+<tag>TC_WEB_POC_001</tag>
+<status status="FAIL" start="2026-03-24T14:21:02.079761" elapsed="2.296902">Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "{'url': {'en': 'https://www.gother.online/en-us', 'th': 'https://www.gother.online/th-th'}}", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2026-03-24T14:21:01.929431" elapsed="2.664907"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TC_WEB_POC_001</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Poc Web">Poc Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-24T14:21:02.077610" level="ERROR">Error in file '/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/resources/import.robot' on line 11: Processing variable file '/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/resources/translation/web/en.yaml' failed: YAML variable file must be a mapping, got string.</msg>
+<msg time="2026-03-24T14:21:02.077936" level="WARN">Imported resource file '/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
+</errors>
+</robot>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.13.0 on darwin)" generated="2026-03-24T14:14:39.882659" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc Web" source="/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/testcases/web/poc_web.robot">
+<test id="s1-t1" name="TC_WEB_POC_001" line="7">
+<kw name="Open gother web" owner="landing_page" type="SETUP">
+<kw name="Open web browser by url" owner="common_web">
+<msg time="2026-03-24T14:14:40.080571" level="FAIL">Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</msg>
+<arg>url=${gother_web.url.${LANG.lower()}}</arg>
+<arg>headless_mode=${headless_mode}</arg>
+<doc>ใช้สำหรับเปิด Web browser
+Arguments:
+    - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
+    - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
+    - False (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
+<status status="FAIL" start="2026-03-24T14:14:40.080076" elapsed="0.001202">Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</status>
+</kw>
+<status status="FAIL" start="2026-03-24T14:14:40.079116" elapsed="0.002480">Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</status>
+</kw>
+<tag>TC_WEB_POC_001</tag>
+<status status="FAIL" start="2026-03-24T14:14:40.078700" elapsed="0.003309">Setup failed:
+Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</status>
+</test>
+<status status="FAIL" start="2026-03-24T14:14:39.884366" elapsed="1.862646"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TC_WEB_POC_001</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Poc Web">Poc Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-24T14:14:40.076119" level="ERROR">Error in file '/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/resources/import.robot' on line 11: Replacing variables from setting 'Variables' failed: Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</msg>
+<msg time="2026-03-24T14:14:40.076848" level="WARN">Imported resource file '/Users/rajitkaew.j/Documents/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
+</errors>
+</robot>
