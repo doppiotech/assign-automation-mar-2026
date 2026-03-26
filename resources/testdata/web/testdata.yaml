@@ -1,1 +1,3 @@
-mock
+login_user: 
+  email: "khumphol.m@doppiotech.com"
+  password: "P@ssw0rd"

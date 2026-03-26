@@ -7,14 +7,10 @@ Verify system can redirect to landing page
     [Arguments]    ${timeout}=${default_timeout}
     Browser.Wait for elements state    ${landing.BTN_SEARCH_FLIGTH}    visible    timeout=${timeout}
 
-Click on Login/Register button
-    [Arguments]    ${timeout}=${default_timeout}
-    Browser.Wait for elements state    ${landing.BTN_LOGIN_AND_REGIS}    visible    timeout=${timeout}
-    Browser.Click    ${landing.BTN_LOGIN_AND_REGIS}
-
-Click on Phone/Email button
-    [Arguments]    ${timeout}=${default_timeout}
-    Browser.Wait for elements state    ${landing.BTN_PHONE_OR_EMAIL}    visible    timeout=${timeout}
-    Browser.Click    ${landing.BTN_PHONE_OR_EMAIL}
-
-    
+Login to system with email and password
+    common_web.Click on Login/Register button
+    common_web.Click on Phone/Email button
+    common_web.Fill Email
+    common_web.Click on Login button
+    common_web.Fill Password
+    common_web.Click on Login button
