@@ -1,1 +1,11 @@
-mock
+login_popup:
+  email_or_mobile_login:      Email or Mobile No.
+
+guests_and_rooms_modal:
+  rooms:                      Rooms
+  adults:                     Adults
+  children:                   Children
+  confirm:                    Confirm
+
+contact_information_section:
+  country_id:             Passport Issuing Country

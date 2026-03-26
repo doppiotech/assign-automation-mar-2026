@@ -1,1 +1,12 @@
-mock
+default_account:
+  email:            doppio.theem@gmail.com
+  password:         Doppio_123*
+  first_name:       Test
+  last_name:        Automate
+  mobile_phone:     812345678
+
+default_credit_card_information:
+  card_num:         4111111111111111
+  card_holder_name: Test Automation
+  card_exp:         11/30
+  card_cvv:         123
