@@ -10,4 +10,11 @@ Open web browser by url
     Browser.New browser     browser=${supported_browser}    headless=${HEADLESS}
     Browser.New page        url=${url}
 
+Check if element display
+    [Arguments]    ${locator}
+    Browser.Wait for elements state    ${locator}
+    Browser.Scroll to element            ${locator}
+
+
+
 

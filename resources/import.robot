@@ -11,7 +11,9 @@ Variables       ${CURDIR}/settings/setting_web.yaml
 Variables       ${CURDIR}/settings/setting_web.yaml
 
 #====== Translation ====== 
-Variables   ${CURDIR}/translation/web/${LANG.lower()}.yaml 
+#Variables   ${CURDIR}/translation/web/${LANG.lower()}.yaml 
+Variables   ${CURDIR}/translation/web/th.yaml 
+Variables   ${CURDIR}/translation/web/en.yaml 
 
 #====== Keywords ====== 
 # Common #

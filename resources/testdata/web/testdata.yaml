@@ -1,1 +1,11 @@
-mock
+account_user:
+    email_address:          manasporn.s@doppiotech.com
+    mobile_number:          0921376637
+    password:               Doppio123*
+    username:               Test Gother     
+
+credit_card_tnformation:
+  Card Number:              4111 1111 1111 1111 
+  Card Holder Name: 
+  Expiry Date:              11/30
+  CVV:                      123

@@ -1,4 +1,5 @@
 default_browser: chromium
+global_timeout: 30
 gother_web:
   url:
     en: https://www.gother.online/en-us
