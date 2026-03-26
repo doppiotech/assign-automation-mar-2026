@@ -1,0 +1,45 @@
+{"level":30,"time":"2026-03-26T08:54:07.221Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Listening on 127.0.0.1:49343"}
+{"level":30,"time":"2026-03-26T08:54:08.250Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-26T08:54:08.885Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 141.0.7390.37"}
+{"level":30,"time":"2026-03-26T08:54:08.885Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-26T08:54:08.885Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-26T08:54:08.891Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-26T08:54:08.891Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@ca1825c8a404c6ba941bdd84a2cb7363\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=412ef4ff-4972-4797-8a24-dbb36722d6a8\"}"}
+{"level":30,"time":"2026-03-26T08:54:08.898Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Setting default timeout for context context=ed671019-db29-40b6-bbe7-6812961f25e3 to 10000"}
+{"level":30,"time":"2026-03-26T08:54:08.898Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Changed active context: context=ed671019-db29-40b6-bbe7-6812961f25e3"}
+{"level":30,"time":"2026-03-26T08:54:09.347Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-26T08:54:09.347Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-03-26T08:54:11.257Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-26T08:54:11.263Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-26T08:54:11.263Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button#flight-search-button>>nth=0 in page."}
+{"level":30,"time":"2026-03-26T08:54:12.163Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-26T08:54:12.166Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-26T08:54:12.166Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button#signin-and-register-big-button in page."}
+{"level":30,"time":"2026-03-26T08:54:12.168Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-26T08:54:12.170Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-26T08:54:12.170Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button#signin-and-register-big-button in page."}
+{"level":30,"time":"2026-03-26T08:54:12.225Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-26T08:54:12.229Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-26T08:54:12.229Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button >> text=Email or Mobile No. in page."}
+{"level":30,"time":"2026-03-26T08:54:12.623Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-26T08:54:12.625Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-26T08:54:12.625Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button >> text=Email or Mobile No. in page."}
+{"level":30,"time":"2026-03-26T08:54:13.727Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-26T09:02:39.429Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.433Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.436Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.437Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.438Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.439Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.441Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.442Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.443Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Changed active context: context=ed671019-db29-40b6-bbe7-6812961f25e3"}
+{"level":30,"time":"2026-03-26T09:02:39.444Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Changing current active page: page=5e615327-4f2f-41c2-ad53-fe022bb676c5"}
+{"level":30,"time":"2026-03-26T09:02:39.444Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-03-26T09:02:39.453Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-26T09:02:39.507Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Removed page=33ff0d2f-578e-41cb-a0b4-bf6eb1d7a21c from context=ed671019-db29-40b6-bbe7-6812961f25e3 page stack"}
+{"level":30,"time":"2026-03-26T09:02:39.519Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-26T09:02:39.522Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.522Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-26T09:02:39.545Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-26T09:02:39.703Z","pid":9527,"hostname":"doppios-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}

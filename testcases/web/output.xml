@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.9.6 on darwin)" generated="2026-03-26T15:54:06.683386" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc Web" source="/Users/doppio/Documents/GitHub/assign-automation-mar-2026/testcases/web/poc_web.robot">
+<test id="s1-t1" name="TC_WEB_POC_001" line="7">
+<kw name="Open gother web" owner="landing_page" type="SETUP">
+<kw name="Open web browser by url" owner="common_web">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-26T15:54:06.885911" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/doppio/Documents/GitHub/assign-automation-mar-2026/testcases/web/browser/traces/temp/e553c8d3-cf3a-416a-9b03-6a1e58e07379"}</msg>
+<msg time="2026-03-26T15:54:06.908052" level="INFO">Starting Browser process /Users/doppio/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49343</msg>
+<msg time="2026-03-26T15:54:08.886920" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/doppio/Documents/GitHub/assign-automation-mar-2026/testcases/web/browser/traces/temp/e553c8d3-cf3a-416a-9b03-6a1e58e07379"}</msg>
+<arg>browser=${supported_browser}</arg>
+<arg>headless=${headless_mode}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-26T15:54:06.885374" elapsed="2.001970"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-26T15:54:11.258321" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
+<msg time="2026-03-26T15:54:11.258401" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-26T15:54:08.888163" elapsed="2.370371"/>
+</kw>
+<arg>url=${gother_web.url.${LANG.lower()}}</arg>
+<arg>headless_mode=${headless_mode}</arg>
+<doc>ใช้สำหรับเปิด Web browser
+Arguments:
+    - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
+    - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
+    - False (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
+<status status="PASS" start="2026-03-26T15:54:06.884405" elapsed="4.374245"/>
+</kw>
+<status status="PASS" start="2026-03-26T15:54:06.883335" elapsed="4.375378"/>
+</kw>
+<kw name="Verify system can redirect to landing page" owner="landing_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T15:54:12.163946" level="INFO">Waited for Element with selector css=button#flight-search-button&gt;&gt;nth=0 at state visible</msg>
+<arg>${landing.BTN_SEARCH_FLIGTH}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T15:54:11.259457" elapsed="0.904631"/>
+</kw>
+<status status="PASS" start="2026-03-26T15:54:11.259029" elapsed="0.905180"/>
+</kw>
+<kw name="Click on Login/Register button" owner="landing_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T15:54:12.168772" level="INFO">Waited for Element with selector css=button#signin-and-register-big-button at state visible</msg>
+<arg>${landing.BTN_LOGIN_AND_REGIS}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T15:54:12.164866" elapsed="0.004024"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-26T15:54:12.169486" level="INFO">Clicks the element 'css=button#signin-and-register-big-button'.</msg>
+<arg>${landing.BTN_LOGIN_AND_REGIS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T15:54:12.169081" elapsed="0.058311"/>
+</kw>
+<status status="PASS" start="2026-03-26T15:54:12.164450" elapsed="0.063095"/>
+</kw>
+<kw name="Click on Phone/Email button" owner="landing_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T15:54:12.624210" level="INFO">Waited for Element with selector css=button &gt;&gt; text=Email or Mobile No. at state visible</msg>
+<arg>${landing.BTN_PHONE_OR_EMAIL}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T15:54:12.228153" elapsed="0.396187"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-26T15:54:12.624943" level="INFO">Clicks the element 'css=button &gt;&gt; text=Email or Mobile No.'.</msg>
+<arg>${landing.BTN_PHONE_OR_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T15:54:12.624525" elapsed="1.104128"/>
+</kw>
+<status status="PASS" start="2026-03-26T15:54:12.227788" elapsed="1.501002"/>
+</kw>
+<kw name="Debug" owner="DebugLibrary">
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" start="2026-03-26T15:54:13.729294" elapsed="505.682375"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>hello</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-26T16:02:39.414055" elapsed="0.002999"/>
+</kw>
+<msg time="2026-03-26T16:02:39.440733" level="INFO">Switching context to context=ed671019-db29-40b6-bbe7-6812961f25e3 in CURRENT</msg>
+<msg time="2026-03-26T16:02:39.452748" level="INFO">Successfully changed active context: context=ed671019-db29-40b6-bbe7-6812961f25e3</msg>
+<msg time="2026-03-26T16:02:39.519539" level="INFO">Successfully closed Context</msg>
+<tag>TC_WEB_POC_001</tag>
+<status status="PASS" start="2026-03-26T15:54:06.882816" elapsed="512.535955"/>
+</test>
+<status status="PASS" start="2026-03-26T15:54:06.684228" elapsed="512.835922"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">TC_WEB_POC_001</stat>
+</tag>
+<suite>
+<stat name="Poc Web" id="s1" pass="1" fail="0" skip="0">Poc Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-26T15:54:06.877613" level="ERROR">Error in file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/resources/import.robot' on line 11: Processing variable file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/resources/translation/mobile/en.yaml' failed: YAML variable file must be a mapping, got string.</msg>
+<msg time="2026-03-26T15:54:06.878644" level="WARN">Imported resource file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
+<msg time="2026-03-26T15:54:06.879870" level="WARN">Imported resource file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/keywords/common/common_mobile.robot' is empty.</msg>
+</errors>
+</robot>
