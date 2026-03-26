@@ -11,18 +11,46 @@ Open web gother
     Browser.New Context    
     Browser.New Page       https://www.gother.online/en-us 
 
-Click log in/sign up button
+Click log in/sign up button in popup signinsignup
     Browser.Wait For Elements State      id=signin-and-register-big-button     visible    timeout=10s
     Browser.Click                        id=signin-and-register-big-button
 
+Click Email or Mobile No. button in popup signinsignup
+    Browser.Wait For Elements State      css=button:has-text("Email or Mobile No.")     visible    timeout=10s
+    Browser.Click                        css=button:has-text("Email or Mobile No.")
+
+Fill info in field Email in popup log in sign up
+    [Arguments]     ${email}=sutida.n@doppiotech.com
+    Browser.Fill text   css=[data-testid="input-email"]               ${email}
+
+Click log in button in popup log in sign up
+    Browser.Wait For Elements State      css=[data-testid="btn-check-step-login-with-email"]     visible    timeout=10s
+    Browser.Click                        css=[data-testid="btn-check-step-login-with-email"]
+
+Fill info in field pass in popup login
+    [Arguments]     ${password}=Nook_8899
+    Browser.Fill text   css=[data-testid="input-password"]           ${password}
+
+Click log in button in popup login
+    Browser.Wait For Elements State      css=[data-testid="btn-login-email-width-pass"]     visible    timeout=10s
+    Browser.Click                        css=[data-testid="btn-login-email-width-pass"]
+
+verify user logged in success
+    [Arguments]    ${expected_user}
+    Browser.Wait For Elements State    id=user-profile-icon    visible    timeout=15s
 
 
 
 
 *** Test Cases ***
-TC-BASIC Keywords 02
+TC_HOTELS_001
     Open web gother
-    Click log in/sign up button
+    Click log in/sign up button in popup signinsignup
+    Click Email or Mobile No. button in popup signinsignup
+    Fill info in field Email in popup log in sign up 
+    Click log in button in popup log in sign up
+    Fill info in field pass in popup login
+    Click log in button in popup login
 
 
 
