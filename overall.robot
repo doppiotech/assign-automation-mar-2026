@@ -1,0 +1,74 @@
+*** Settings ***
+Library     Browser     strict=${FALSE}
+Library     DebugLibrary
+Library     String
+
+*** Keywords ***
+Open web gother
+Open web doppee shopee 
+    [Arguments]    ${default_browser}    ${headless}    ${timeout}=${globle_timeout}
+    Browser.New browser    browser=${default_browser}    headless=${headless}    timeout=${timeout}
+    Browser.New context
+    Browser.New page       https://training-platform2.doppio-tech.com/ 
+
+Click profile icon
+    Browser.Wait For Elements State     css=[data-nav*=button0-svg0-path0]  visible    timeout=5s
+    Browser.Click    css=[data-nav*=button0-svg0-path0]  #*= เพื่อบอกว่า "ขอแค่มีคำนี้อยู่ในชื่อ"
+    
+Click singin menu
+    Browser.Wait For Elements State    css=[data-testid="nav-account-signin"]    visible    timeout=10s
+    Browser.Click    css=[data-testid="nav-account-signin"]
+    
+Click create account button in singin page
+    Browser.Wait For Elements State    css=[data-signin="signin-form0-div7-a1"]    visible    timeout=10s
+    Browser.Click    css=[data-signin="signin-form0-div7-a1"]
+   
+Fill info in section create account 
+    [Arguments]     ${full_name}=sutida   ${mobile}=0888888888  ${email}=doppio@gmail.com   ${password}=Test12345   ${cf_password}=Test12345    
+    Browser.Fill text   css=[data-testid="signup-fullname"]     ${full_name}  
+    Browser.Fill text   css=[data-testid="signup-phone"]        ${mobile}
+    Browser.Fill text   css=input[type="email"]                 ${email}
+    Browser.Fill text   css=input[type="password"]              ${password}
+    Browser.Fill text   css=[data-testid="signup-confirm"]      ${cf_password}
+
+Generate Random Email
+    ${random_str}=    Generate Random String    9    [NUMBERS]
+    ${new_email}=     Set Variable    nook_${random_str}@test.com
+    RETURN    ${new_email}
+
+Click create account button in create account page
+    Browser.Click       css=[data-testid="signup-submit"]
+
+verify user logged in 
+    [Arguments]    ${expected_email}=doppio@gmail.com
+    Browser.Wait For Elements State    text="${expected_email}"    visible    timeout=15s
+    Browser.Get Text    css=#btn-account    contains    ${expected_email}
+
+*** Test Cases ***
+TC-BASIC Keywords 02
+    Open web Doppee Shope 
+    Click profile icon
+    Click singin menu
+    Click create account button in singin page
+    ${random_mail}=     Generate Random Email
+    Fill info in section create account   email=${random_mail} 
+    Click create account button in create account page
+    verify user logged in       ${random_mail}
+    log to console  ${random_mail}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
