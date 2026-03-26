@@ -1,22 +1,24 @@
 *** Settings ***
-Library     Browser    strict=${FALSE}
-Library     DebugLibrary
-Library     String
+Library         Browser    
+Library         DebugLibrary
+Library         String
+Library         BuiltIn
 
-### Setting ###
-Variables   ${CURDIR}/settings/setting_web.yaml
-# Variables   ${CURDIR}/settings/setting_mobile.yaml
+#====== Settings ====== 
+Variables       ${CURDIR}/settings/setting_web.yaml
 
-### Translation ###
-Variables   ${CURDIR}/translation/mobile/${LANG.lower()}.yaml
-Variables   ${CURDIR}/translation/web/${LANG.lower()}.yaml
+#====== Variables ======  
+Variables       ${CURDIR}/settings/setting_web.yaml
 
-### Common ###
-Resource    ${CURDIR}/../keywords/common/common.robot
+#====== Translation ====== 
+Variables   ${CURDIR}/translation/web/${LANG.lower()}.yaml 
+
+#====== Keywords ====== 
+# Common #
 Resource    ${CURDIR}/../keywords/common/common_web.robot
-Resource    ${CURDIR}/../keywords/common/common_mobile.robot
-
-### Web Page ###
+# Web #
 Resource    ${CURDIR}/../keywords/web/pages/landing_page.robot
+# Web Features
+# Web Pages 
 
-### Web Feature ###
+#====== Locators ======
