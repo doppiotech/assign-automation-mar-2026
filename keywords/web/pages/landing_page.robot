@@ -8,9 +8,12 @@ Verify system can redirect to landing page
     Browser.Wait for elements state    ${landing.BTN_SEARCH_FLIGTH}    visible    timeout=${timeout}
 
 Login to system with email and password
-    common_web.Click on Login/Register button
-    common_web.Click on Phone/Email button
-    common_web.Fill Email
-    common_web.Click on Login button
-    common_web.Fill Password
-    common_web.Click on Login button
+    login_feature.Click on Login/Register button
+    login_feature.Click on Phone/Email button
+    login_feature.Fill Email
+    login_feature.Click on Login button
+    login_feature.Fill Password
+    login_feature.Click on Login button
+    login_feature.Click on profile icon
+    login_feature.Click on My account button
+    login_feature.Verify Email    ${login_user.email}

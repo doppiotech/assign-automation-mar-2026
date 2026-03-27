@@ -1,3 +1,5 @@
 landing_page:
   BTN_Phone_Email: "อีเมลหรือเบอร์มือถือ"
   BTN_LOGIN: "เข้าสู่ระบบ"
+  BTN_MY_ACC: "บัญชีของฉัน"
+  TXT_DISPALY_EMAIL: "อีเมล"

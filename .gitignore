@@ -3,12 +3,3 @@
 playwright-log.txt
 browser/
 .DS.Store
-.DS_Store
-keywords/.DS_Store
-keywords/mobile/.DS_Store
-keywords/web/.DS_Store
-resources/.DS_Store
-resources/locators/.DS_Store
-resources/testdata/.DS_Store
-resources/translation/.DS_Store
-.DS_Store

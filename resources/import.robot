@@ -20,6 +20,7 @@ Resource    ${CURDIR}/../keywords/common/common_mobile.robot
 Resource    ${CURDIR}/../keywords/web/pages/landing_page.robot
 
 ### Web Feature ###
+Resource    ${CURDIR}/../keywords/web/features/login_feature.robot
 
 ### Locator ###
 Resource    ${CURDIR}/locators/web/landing_locator.robot
