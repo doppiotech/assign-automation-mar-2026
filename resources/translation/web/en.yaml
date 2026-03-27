@@ -1,1 +1,3 @@
-mock
+landing_page:
+  BTN_Phone_Email: "Email or Mobile No."
+  BTN_LOGIN: "Log In"

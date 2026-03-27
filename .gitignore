@@ -1,0 +1,5 @@
+*.html
+*.xml
+playwright-log.txt
+browser/
+.DS.Store

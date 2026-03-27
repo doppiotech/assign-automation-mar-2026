@@ -3,3 +3,4 @@ gother_web:
   url:
     en: https://www.gother.online/en-us
     th: https://www.gother.online/th-th
+default_timeout:  20  

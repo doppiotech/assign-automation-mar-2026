@@ -1,1 +1,3 @@
-mock
+landing_page:
+  BTN_Phone_Email: "อีเมลหรือเบอร์มือถือ"
+  BTN_LOGIN: "เข้าสู่ระบบ"
