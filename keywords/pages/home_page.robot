@@ -73,19 +73,25 @@ Select travel date
     Browser.Click    ${locator_out}
     Sleep    10s
 
+
 Select guests and rooms
     [Arguments]    ${target_rooms}    ${target_adults}    ${target_children}
+    # 1. คลิกเปิด Popup
     Browser.Click    ${homepage.btn_guest_room}
-    # 2. จัดการจำนวนห้อง (Rooms) - ปกติ Default คือ 1
-    ${current_rooms}=    Browser.Get Text    xpath=//p[text()='Rooms']/following-sibling::div//p
+    # --- จุดสำคัญ: รอให้ตัวเลขปรากฏก่อน (ป้องกัน Timeout) ---
+    Browser.Wait for elements state    ${homepage.txt_current_rooms}    visible    timeout=10s
+    # 2. อ่านค่าปัจจุบันจากหน้าจอ (ใช้ตัวแปรที่เราเพิ่มใหม่)
+    ${current_rooms}=     Browser.Get Text    ${homepage.txt_current_rooms}
+    ${current_adults}=    Browser.Get Text    ${homepage.txt_current_adults}
+    ${current_children}=  Browser.Get Text    ${homepage.txt_current_children}
+    # 3. Logic ปรับจำนวน Rooms
     IF    ${target_rooms} > ${current_rooms}
         ${clicks}=    Evaluate    ${target_rooms} - ${current_rooms}
         FOR    ${i}    IN RANGE    ${clicks}
             Browser.Click    ${homepage.btn_add_room}
         END
     END
-    # 3. จัดการจำนวนผู้ใหญ่ (Adults) - ปกติ Default คือ 2
-    ${current_adults}=    Browser.Get Text    xpath=//p[text()='Adults']/following-sibling::div//p
+    # 4. Logic ปรับจำนวน Adults
     IF    ${target_adults} > ${current_adults}
         ${clicks}=    Evaluate    ${target_adults} - ${current_adults}
         FOR    ${i}    IN RANGE    ${clicks}
@@ -97,23 +103,17 @@ Select guests and rooms
             Browser.Click    ${homepage.btn_minus_adult}
         END
     END
-    # 4. จัดการจำนวนเด็ก (Children) - ปกติ Default คือ 0
-    ${current_children}=    Browser.Get Text    xpath=//p[text()='Children']/following-sibling::div//p
+    # 5. Logic ปรับจำนวน Children
     IF    ${target_children} > ${current_children}
         ${clicks}=    Evaluate    ${target_children} - ${current_children}
         FOR    ${i}    IN RANGE    ${clicks}
             Browser.Click    ${homepage.btn_add_child}
         END
     END
-    # 5. กดยืนยัน (Confirm) เพื่อปิด Popup
+    # 6. กดยืนยันปิด Popup
     Browser.Click    ${homepage.btn_guest_confirm}
-    
-
-
-
-
-
-
+    Browser.Wait for elements state    ${homepage.btn_guest_confirm}    hidden    timeout=5s
+    Sleep    10s
 
 # Click search button
 #     [Arguments]    ${timeout}=${globle_timeout}
