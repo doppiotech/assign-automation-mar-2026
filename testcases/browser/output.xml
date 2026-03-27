@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.3 on darwin)" generated="2026-03-27T15:38:36.211196" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.14.3 on darwin)" generated="2026-03-27T16:36:13.034026" rpa="false" schemaversion="5">
 <suite id="s1" name="TC HOTELS 001" source="/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/TC_HOTELS_001.robot">
 <test id="s1-t1" name="TC_HOTELS_001" line="7">
 <kw name="Open web gother" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-03-27T15:38:36.441490" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 20000.0, "tracesDir": "/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/browser/traces/temp/f5352223-a932-4dff-99ea-2b60139ea1ee"}</msg>
-<msg time="2026-03-27T15:38:36.512456" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:65167</msg>
-<msg time="2026-03-27T15:38:39.755838" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":20000,"tracesDir":"/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/browser/traces/temp/f5352223-a932-4dff-99ea-2b60139ea1ee"}</msg>
+<msg time="2026-03-27T16:36:13.263231" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 20000.0, "tracesDir": "/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/browser/traces/temp/0c9fded4-5be7-452f-834b-a2f7db70aad1"}</msg>
+<msg time="2026-03-27T16:36:13.331292" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:52323</msg>
+<msg time="2026-03-27T16:36:16.320883" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":20000,"tracesDir":"/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/browser/traces/temp/0c9fded4-5be7-452f-834b-a2f7db70aad1"}</msg>
 <arg>browser=${default_browser}</arg>
 <arg>headless=${headless}</arg>
 <arg>timeout=${timeout}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-27T15:38:36.441090" elapsed="3.315220"/>
+<status status="PASS" start="2026-03-27T16:36:13.262830" elapsed="3.058612"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-03-27T15:38:39.759102" level="INFO">{
+<msg time="2026-03-27T16:36:16.324463" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -30,148 +30,148 @@
     "width": 1280
   }
 }</msg>
-<msg time="2026-03-27T15:38:39.988331" level="INFO">Successfully created context. </msg>
-<msg time="2026-03-27T15:38:39.988514" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2026-03-27T16:36:16.340524" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-27T16:36:16.340589" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-03-27T15:38:39.756862" elapsed="0.231813"/>
+<status status="PASS" start="2026-03-27T16:36:16.322086" elapsed="0.018569"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-03-27T15:38:44.057334" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
+<msg time="2026-03-27T16:36:21.540131" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
 <arg>https://www.gother.online/en-us</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-27T15:38:39.989022" elapsed="4.069533"/>
+<status status="PASS" start="2026-03-27T16:36:16.340800" elapsed="5.200943"/>
 </kw>
 <arg>${default_browser}</arg>
 <arg>${headless}</arg>
-<status status="PASS" start="2026-03-27T15:38:36.440743" elapsed="7.621887"/>
+<status status="PASS" start="2026-03-27T16:36:13.262475" elapsed="8.279959"/>
 </kw>
 <kw name="Click login signup button" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:44.105103" level="INFO">Waited for Element with selector id=signin-and-register-big-button at state visible</msg>
+<msg time="2026-03-27T16:36:21.580202" level="INFO">Waited for Element with selector id=signin-and-register-big-button at state visible</msg>
 <arg>${homepage.btn_loging}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:44.066018" elapsed="0.039234"/>
+<status status="PASS" start="2026-03-27T16:36:21.548064" elapsed="0.032258"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:44.106012" level="INFO">Clicks the element 'id=signin-and-register-big-button'.</msg>
+<msg time="2026-03-27T16:36:21.580946" level="INFO">Clicks the element 'id=signin-and-register-big-button'.</msg>
 <arg>${homepage.btn_loging}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:44.105453" elapsed="0.098232"/>
+<status status="PASS" start="2026-03-27T16:36:21.580496" elapsed="0.064684"/>
 </kw>
-<status status="PASS" start="2026-03-27T15:38:44.065131" elapsed="0.138683"/>
+<status status="PASS" start="2026-03-27T16:36:21.544718" elapsed="0.100567"/>
 </kw>
 <kw name="Click email or mobile no. button" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:44.556907" level="INFO">Waited for Element with selector css=button:has-text("Email or Mobile No.") at state visible</msg>
+<msg time="2026-03-27T16:36:22.033680" level="INFO">Waited for Element with selector css=button:has-text("Email or Mobile No.") at state visible</msg>
 <arg>${homepage.btn_mail_or_mobile}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:44.204831" elapsed="0.352192"/>
+<status status="PASS" start="2026-03-27T16:36:21.645739" elapsed="0.388056"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:44.557566" level="INFO">Clicks the element 'css=button:has-text("Email or Mobile No.")'.</msg>
+<msg time="2026-03-27T16:36:22.034319" level="INFO">Clicks the element 'css=button:has-text("Email or Mobile No.")'.</msg>
 <arg>${homepage.btn_mail_or_mobile}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:44.557184" elapsed="1.198179"/>
+<status status="PASS" start="2026-03-27T16:36:22.033944" elapsed="1.521713"/>
 </kw>
-<status status="PASS" start="2026-03-27T15:38:44.204199" elapsed="1.551264"/>
+<status status="PASS" start="2026-03-27T16:36:21.645472" elapsed="1.910395"/>
 </kw>
 <kw name="Fill info in field email" owner="home_page">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-03-27T15:38:45.757341" level="INFO">Fills the text 'sutida.n@doppiotech.com' in the given field.</msg>
+<msg time="2026-03-27T16:36:23.558600" level="INFO">Fills the text 'sutida.n@doppiotech.com' in the given field.</msg>
 <arg>${homepage.txt.email_popuplogin}</arg>
 <arg>${user_account.email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:45.756739" elapsed="0.044016"/>
+<status status="PASS" start="2026-03-27T16:36:23.557973" elapsed="0.063536"/>
 </kw>
 <arg>${TC_001.user_account}</arg>
-<status status="PASS" start="2026-03-27T15:38:45.755635" elapsed="0.045252"/>
+<status status="PASS" start="2026-03-27T16:36:23.556194" elapsed="0.065415"/>
 </kw>
 <kw name="Click login button" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:45.819483" level="INFO">Waited for Element with selector css=[data-testid="btn-check-step-login-with-email"] at state visible</msg>
+<msg time="2026-03-27T16:36:23.667679" level="INFO">Waited for Element with selector css=[data-testid="btn-check-step-login-with-email"] at state visible</msg>
 <arg>${homepage.btn_login_next_step}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:45.802188" elapsed="0.017413"/>
+<status status="PASS" start="2026-03-27T16:36:23.622051" elapsed="0.045756"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:45.820118" level="INFO">Clicks the element 'css=[data-testid="btn-check-step-login-with-email"]'.</msg>
+<msg time="2026-03-27T16:36:23.668479" level="INFO">Clicks the element 'css=[data-testid="btn-check-step-login-with-email"]'.</msg>
 <arg>${homepage.btn_login_next_step}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:45.819749" elapsed="0.498442"/>
+<status status="PASS" start="2026-03-27T16:36:23.668046" elapsed="0.424305"/>
 </kw>
-<status status="PASS" start="2026-03-27T15:38:45.801466" elapsed="0.516839"/>
+<status status="PASS" start="2026-03-27T16:36:23.621788" elapsed="0.470810"/>
 </kw>
 <kw name="Fill info in field password" owner="home_page">
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-03-27T15:38:46.319665" level="INFO">Fills the text 'Nook_8899' in the given field.</msg>
+<msg time="2026-03-27T16:36:24.098100" level="INFO">Fills the text 'Nook_8899' in the given field.</msg>
 <arg>${homepage.txt_field_pass_popuplogin}</arg>
 <arg>${user_account.password}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:46.319148" elapsed="0.534613"/>
+<status status="PASS" start="2026-03-27T16:36:24.097074" elapsed="0.319085"/>
 </kw>
 <arg>${TC_001.user_account}</arg>
-<status status="PASS" start="2026-03-27T15:38:46.318555" elapsed="0.535302"/>
+<status status="PASS" start="2026-03-27T16:36:24.092957" elapsed="0.323288"/>
 </kw>
 <kw name="Click login in popup loging" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:46.886193" level="INFO">Waited for Element with selector css=[data-testid="btn-login-email-width-pass"] at state visible</msg>
+<msg time="2026-03-27T16:36:24.446663" level="INFO">Waited for Element with selector css=[data-testid="btn-login-email-width-pass"] at state visible</msg>
 <arg>${homepage.btn_login_final_login}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:46.854329" elapsed="0.031986"/>
+<status status="PASS" start="2026-03-27T16:36:24.416699" elapsed="0.030071"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:46.886791" level="INFO">Clicks the element 'css=[data-testid="btn-login-email-width-pass"]'.</msg>
+<msg time="2026-03-27T16:36:24.447246" level="INFO">Clicks the element 'css=[data-testid="btn-login-email-width-pass"]'.</msg>
 <arg>${homepage.btn_login_final_login}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:46.886446" elapsed="0.393685"/>
+<status status="PASS" start="2026-03-27T16:36:24.446910" elapsed="0.394849"/>
 </kw>
-<status status="PASS" start="2026-03-27T15:38:46.854054" elapsed="0.426173"/>
+<status status="PASS" start="2026-03-27T16:36:24.416420" elapsed="0.425428"/>
 </kw>
 <kw name="Verify login success" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:48.789053" level="INFO">Waited for Element with selector css=img[alt="user-icon2"] at state visible</msg>
+<msg time="2026-03-27T16:36:25.991886" level="INFO">Waited for Element with selector css=img[alt="user-icon2"] at state visible</msg>
 <arg>${homepage.icon.profile}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:47.280696" elapsed="1.509612"/>
+<status status="PASS" start="2026-03-27T16:36:24.842285" elapsed="1.149748"/>
 </kw>
 <kw name="Get Element States" owner="Browser">
-<msg time="2026-03-27T15:38:48.833860" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<msg time="2026-03-27T16:36:26.092969" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
 <arg>${homepage.icon.profile}</arg>
 <arg>contains</arg>
 <arg>visible</arg>
@@ -179,302 +179,296 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Get the active states from the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:48.792808" elapsed="0.041146"/>
+<status status="PASS" start="2026-03-27T16:36:25.992591" elapsed="0.100776"/>
 </kw>
-<status status="PASS" start="2026-03-27T15:38:47.280411" elapsed="1.553705"/>
+<status status="PASS" start="2026-03-27T16:36:24.842025" elapsed="1.251483"/>
 </kw>
 <kw name="Click tap hotels" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:48.837900" level="INFO">Waited for Element with selector id=home-menu-hotel at state visible</msg>
+<msg time="2026-03-27T16:36:26.110728" level="INFO">Waited for Element with selector id=home-menu-hotel at state visible</msg>
 <arg>${homepage.menu.hotel}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:48.835000" elapsed="0.002979"/>
+<status status="PASS" start="2026-03-27T16:36:26.094441" elapsed="0.018263"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:48.838412" level="INFO">Clicks the element 'id=home-menu-hotel'.</msg>
+<msg time="2026-03-27T16:36:26.117331" level="INFO">Clicks the element 'id=home-menu-hotel'.</msg>
 <arg>${homepage.menu.hotel}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:48.838104" elapsed="0.089316"/>
+<status status="PASS" start="2026-03-27T16:36:26.114608" elapsed="0.111576"/>
 </kw>
-<status status="PASS" start="2026-03-27T15:38:48.834547" elapsed="0.092992"/>
+<status status="PASS" start="2026-03-27T16:36:26.093995" elapsed="0.132621"/>
 </kw>
 <kw name="Click textbox in section destinatio" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:50.290802" level="INFO">Waited for Element with selector id=hotel-search-destination at state visible</msg>
+<msg time="2026-03-27T16:36:27.342186" level="INFO">Waited for Element with selector id=hotel-search-destination at state visible</msg>
 <arg>${homepage.txt_destination}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:48.928579" elapsed="1.362333"/>
+<status status="PASS" start="2026-03-27T16:36:26.228032" elapsed="1.114522"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:50.291407" level="INFO">Clicks the element 'id=hotel-search-destination'.</msg>
+<msg time="2026-03-27T16:36:27.343570" level="INFO">Clicks the element 'id=hotel-search-destination'.</msg>
 <arg>${homepage.txt_destination}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:50.291054" elapsed="0.147350"/>
+<status status="PASS" start="2026-03-27T16:36:27.342896" elapsed="0.142878"/>
 </kw>
-<status status="PASS" start="2026-03-27T15:38:48.928203" elapsed="1.510322"/>
+<status status="PASS" start="2026-03-27T16:36:26.227483" elapsed="1.258407"/>
 </kw>
 <kw name="Input destination" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:50.465537" level="INFO">Waited for Element with selector id=hotel-search-destination at state visible</msg>
+<msg time="2026-03-27T16:36:27.508296" level="INFO">Waited for Element with selector id=hotel-search-destination at state visible</msg>
 <arg>id=hotel-search-destination</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:50.439575" elapsed="0.026192"/>
+<status status="PASS" start="2026-03-27T16:36:27.486917" elapsed="0.021808"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-03-27T15:38:50.466984" level="INFO">Fills the text 'Bangkok' in the given field.</msg>
+<msg time="2026-03-27T16:36:27.510632" level="INFO">Fills the text 'Bangkok' in the given field.</msg>
 <arg>id=hotel-search-destination</arg>
 <arg>${text}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:50.466538" elapsed="0.099564"/>
+<status status="PASS" start="2026-03-27T16:36:27.509209" elapsed="0.035891"/>
 </kw>
 <arg>${TC_001.booking_info.destination}</arg>
-<status status="PASS" start="2026-03-27T15:38:50.438775" elapsed="0.127803"/>
+<status status="PASS" start="2026-03-27T16:36:27.486111" elapsed="0.059096"/>
 </kw>
 <kw name="Select destination from dropdown" owner="home_page">
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T15:38:50.579507" level="INFO">${dynamic_locator} = xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')]</msg>
+<msg time="2026-03-27T16:36:27.546813" level="INFO">${dynamic_locator} = xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')]</msg>
 <var>${dynamic_locator}</var>
 <arg>${homepage.item_destination_result}</arg>
 <arg>VARIABLE_TEXT</arg>
 <arg>${city_name}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T15:38:50.577265" elapsed="0.002347"/>
+<status status="PASS" start="2026-03-27T16:36:27.546392" elapsed="0.000446"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:38:50.871710" level="INFO">Waited for Element with selector xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')] at state visible</msg>
+<msg time="2026-03-27T16:36:28.382921" level="INFO">Waited for Element with selector xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')] at state visible</msg>
 <arg>${dynamic_locator}</arg>
 <arg>visible</arg>
 <arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:38:50.580016" elapsed="0.291809"/>
+<status status="PASS" start="2026-03-27T16:36:27.546926" elapsed="0.836151"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:50.872336" level="INFO">Clicks the element 'xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')]'.</msg>
+<msg time="2026-03-27T16:36:28.383906" level="INFO">Clicks the element 'xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')]'.</msg>
 <arg>${dynamic_locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:50.871977" elapsed="0.054536"/>
+<status status="PASS" start="2026-03-27T16:36:28.383289" elapsed="0.065013"/>
 </kw>
 <arg>${TC_001.booking_info.destination}</arg>
-<status status="PASS" start="2026-03-27T15:38:50.567126" elapsed="0.360028"/>
+<status status="PASS" start="2026-03-27T16:36:27.545644" elapsed="0.902825"/>
 </kw>
 <kw name="Select travel date" owner="home_page">
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:50.930456" level="INFO">Clicks the element 'id=hotel-search-checkin-date'.</msg>
+<msg time="2026-03-27T16:36:28.453268" level="INFO">Clicks the element 'id=hotel-search-checkin-date'.</msg>
 <arg>${homepage.btn_datepicker_checkin}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:50.930182" elapsed="0.152119"/>
+<status status="PASS" start="2026-03-27T16:36:28.452963" elapsed="0.162425"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T15:38:51.089052" level="INFO">Text: 'April 2026'</msg>
-<msg time="2026-03-27T15:38:51.089159" level="INFO">${current_label} = April 2026</msg>
+<msg time="2026-03-27T16:36:28.623223" level="INFO">Text: 'April 2026'</msg>
+<msg time="2026-03-27T16:36:28.623338" level="INFO">${current_label} = April 2026</msg>
 <var>${current_label}</var>
 <arg>${homepage.datepicker.current_month_label}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.083346" elapsed="0.005830"/>
+<status status="PASS" start="2026-03-27T16:36:28.616478" elapsed="0.006876"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${current_label}</arg>
 <arg>${target_month}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.090051" elapsed="0.000535"/>
+<status status="PASS" start="2026-03-27T16:36:28.624279" elapsed="0.000755"/>
 </kw>
-<msg time="2026-03-27T15:38:51.090644" level="INFO">${status} = True</msg>
+<msg time="2026-03-27T16:36:28.625127" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Should Contain</arg>
 <arg>${current_label}</arg>
 <arg>${target_month}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.089477" elapsed="0.001183"/>
+<status status="PASS" start="2026-03-27T16:36:28.623682" elapsed="0.001463"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${current_label}</arg>
 <arg>${target_year}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.090877" elapsed="0.000145"/>
+<status status="PASS" start="2026-03-27T16:36:28.625467" elapsed="0.000186"/>
 </kw>
-<msg time="2026-03-27T15:38:51.091072" level="INFO">${year_status} = True</msg>
+<msg time="2026-03-27T16:36:28.625703" level="INFO">${year_status} = True</msg>
 <var>${year_status}</var>
 <arg>Should Contain</arg>
 <arg>${current_label}</arg>
 <arg>${target_year}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.090728" elapsed="0.000357"/>
+<status status="PASS" start="2026-03-27T16:36:28.625241" elapsed="0.000477"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2026-03-27T15:38:51.091377" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2026-03-27T16:36:28.626088" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status} and ${year_status}</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.091180" elapsed="0.000286"/>
+<status status="PASS" start="2026-03-27T16:36:28.625827" elapsed="0.000382"/>
 </kw>
 <kw name="Click" owner="Browser">
 <arg>${homepage.datepicker.btn_next_month}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-27T15:38:51.091533" elapsed="0.000029"/>
+<status status="NOT RUN" start="2026-03-27T16:36:28.626295" elapsed="0.000040"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-03-27T15:38:51.083204" elapsed="0.008385"/>
+<status status="PASS" start="2026-03-27T16:36:28.616317" elapsed="0.010048"/>
 </iter>
 <var>${i}</var>
 <value>12</value>
-<status status="PASS" start="2026-03-27T15:38:51.082467" elapsed="0.009163"/>
+<status status="PASS" start="2026-03-27T16:36:28.615549" elapsed="0.010871"/>
 </for>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T15:38:51.091830" level="INFO">${locator_in} = xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='15']</msg>
+<msg time="2026-03-27T16:36:28.626653" level="INFO">${locator_in} = xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='15']</msg>
 <var>${locator_in}</var>
 <arg>${homepage.datepicker.calendar_day}</arg>
 <arg>VARIABLE_DAY</arg>
 <arg>${checkin_day}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.091709" elapsed="0.000135"/>
+<status status="PASS" start="2026-03-27T16:36:28.626504" elapsed="0.000166"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:51.092089" level="INFO">Clicks the element 'xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='15']'.</msg>
+<msg time="2026-03-27T16:36:28.626972" level="INFO">Clicks the element 'xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='15']'.</msg>
 <arg>${locator_in}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:51.091900" elapsed="1.204967"/>
+<status status="PASS" start="2026-03-27T16:36:28.626738" elapsed="1.205202"/>
 </kw>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T15:38:52.299204" level="INFO">${locator_out} = xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='17']</msg>
+<msg time="2026-03-27T16:36:29.832326" level="INFO">${locator_out} = xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='17']</msg>
 <var>${locator_out}</var>
 <arg>${homepage.datepicker.calendar_day}</arg>
 <arg>VARIABLE_DAY</arg>
 <arg>${checkout_day}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T15:38:52.298112" elapsed="0.001126"/>
+<status status="PASS" start="2026-03-27T16:36:29.832086" elapsed="0.000259"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:38:52.300189" level="INFO">Clicks the element 'xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='17']'.</msg>
+<msg time="2026-03-27T16:36:29.832697" level="INFO">Clicks the element 'xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='17']'.</msg>
 <arg>${locator_out}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:38:52.299363" elapsed="0.133998"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-27T15:39:02.435445" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-27T15:38:52.433565" elapsed="10.001972"/>
+<status status="PASS" start="2026-03-27T16:36:29.832423" elapsed="0.177177"/>
 </kw>
 <arg>${TC_001.booking_info.checkin_month}</arg>
 <arg>${TC_001.booking_info.checkin_year}</arg>
 <arg>${TC_001.booking_info.checkin_day}</arg>
 <arg>${TC_001.booking_info.checkout_day}</arg>
-<status status="PASS" start="2026-03-27T15:38:50.928639" elapsed="11.507033"/>
+<status status="PASS" start="2026-03-27T16:36:28.448964" elapsed="1.560790"/>
 </kw>
 <kw name="Select guests and rooms" owner="home_page">
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:39:02.437913" level="INFO">Clicks the element 'id=hotel-search-traveler'.</msg>
+<msg time="2026-03-27T16:36:30.011420" level="INFO">Clicks the element 'id=hotel-search-traveler'.</msg>
 <arg>${homepage.btn_guest_room}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:39:02.437616" elapsed="0.060610"/>
+<status status="PASS" start="2026-03-27T16:36:30.011185" elapsed="0.073431"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-27T15:39:03.501154" level="INFO">Slept 1 second.</msg>
+<msg time="2026-03-27T16:36:31.087274" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-27T15:39:02.498384" elapsed="1.003004"/>
+<status status="PASS" start="2026-03-27T16:36:30.084776" elapsed="1.003656"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:39:03.505766" level="INFO">Waited for Element with selector xpath=(//div[contains(@class,'w-[20px]')])[1] at state visible</msg>
+<msg time="2026-03-27T16:36:31.098233" level="INFO">Waited for Element with selector xpath=(//div[contains(@class,'w-[20px]')])[1] at state visible</msg>
 <arg>${homepage.txt_current_rooms}</arg>
 <arg>visible</arg>
 <arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.501712" elapsed="0.004143"/>
+<status status="PASS" start="2026-03-27T16:36:31.090609" elapsed="0.007762"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T15:39:03.511319" level="INFO">Text: '1'</msg>
-<msg time="2026-03-27T15:39:03.511459" level="INFO">${current_rooms} = 1</msg>
+<msg time="2026-03-27T16:36:31.105451" level="INFO">Text: '1'</msg>
+<msg time="2026-03-27T16:36:31.105573" level="INFO">${current_rooms} = 1</msg>
 <var>${current_rooms}</var>
 <arg>${homepage.txt_current_rooms}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.506004" elapsed="0.005472"/>
+<status status="PASS" start="2026-03-27T16:36:31.098542" elapsed="0.007049"/>
 </kw>
 <kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2026-03-27T15:39:03.511914" level="INFO">${current_rooms} = 1</msg>
+<msg time="2026-03-27T16:36:31.106055" level="INFO">${current_rooms} = 1</msg>
 <var>${current_rooms}</var>
 <arg>${current_rooms}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.511604" elapsed="0.000326"/>
+<status status="PASS" start="2026-03-27T16:36:31.105752" elapsed="0.000319"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T15:39:03.516971" level="INFO">Text: '2'</msg>
-<msg time="2026-03-27T15:39:03.517057" level="INFO">${current_adults} = 2</msg>
+<msg time="2026-03-27T16:36:31.111449" level="INFO">Text: '2'</msg>
+<msg time="2026-03-27T16:36:31.111563" level="INFO">${current_adults} = 2</msg>
 <var>${current_adults}</var>
 <arg>${homepage.txt_current_adults}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.512004" elapsed="0.005068"/>
+<status status="PASS" start="2026-03-27T16:36:31.106144" elapsed="0.005436"/>
 </kw>
 <kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2026-03-27T15:39:03.517421" level="INFO">${current_adults} = 2</msg>
+<msg time="2026-03-27T16:36:31.111979" level="INFO">${current_adults} = 2</msg>
 <var>${current_adults}</var>
 <arg>${current_adults}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.517191" elapsed="0.000245"/>
+<status status="PASS" start="2026-03-27T16:36:31.111707" elapsed="0.000289"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T15:39:03.521885" level="INFO">Text: '0'</msg>
-<msg time="2026-03-27T15:39:03.521967" level="INFO">${current_children} = 0</msg>
+<msg time="2026-03-27T16:36:31.117714" level="INFO">Text: '0'</msg>
+<msg time="2026-03-27T16:36:31.117820" level="INFO">${current_children} = 0</msg>
 <var>${current_children}</var>
 <arg>${homepage.txt_current_children}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.517504" elapsed="0.004478"/>
+<status status="PASS" start="2026-03-27T16:36:31.112073" elapsed="0.005765"/>
 </kw>
 <kw name="Convert To Integer" owner="BuiltIn">
-<msg time="2026-03-27T15:39:03.522326" level="INFO">${current_children} = 0</msg>
+<msg time="2026-03-27T16:36:31.118325" level="INFO">${current_children} = 0</msg>
 <var>${current_children}</var>
 <arg>${current_children}</arg>
 <doc>Converts the given item to an integer number.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.522098" elapsed="0.000243"/>
+<status status="PASS" start="2026-03-27T16:36:31.117966" elapsed="0.000375"/>
 </kw>
 <if>
 <branch type="IF" condition="${target_rooms} &gt; ${current_rooms}">
@@ -482,7 +476,7 @@
 <var>${clicks}</var>
 <arg>${target_rooms} - ${current_rooms}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-03-27T15:39:03.522852" elapsed="0.000032"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.120302" elapsed="0.000041"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -491,18 +485,18 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-27T15:39:03.523070" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.120664" elapsed="0.000029"/>
 </kw>
 <var name="${i}"/>
-<status status="NOT RUN" start="2026-03-27T15:39:03.522997" elapsed="0.000125"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.120572" elapsed="0.000149"/>
 </iter>
 <var>${i}</var>
 <value>${clicks}</value>
-<status status="NOT RUN" start="2026-03-27T15:39:03.522930" elapsed="0.000218"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.120408" elapsed="0.000344"/>
 </for>
-<status status="NOT RUN" start="2026-03-27T15:39:03.522452" elapsed="0.000723"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.119547" elapsed="0.001238"/>
 </branch>
-<status status="PASS" start="2026-03-27T15:39:03.522418" elapsed="0.000784"/>
+<status status="PASS" start="2026-03-27T16:36:31.119419" elapsed="0.001393"/>
 </if>
 <if>
 <branch type="IF" condition="${target_adults} &gt; ${current_adults}">
@@ -510,7 +504,7 @@
 <var>${clicks}</var>
 <arg>${target_adults} - ${current_adults}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-03-27T15:39:03.523389" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.121127" elapsed="0.000027"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -519,45 +513,45 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-27T15:39:03.523538" elapsed="0.000023"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.121363" elapsed="0.000027"/>
 </kw>
 <var name="${i}"/>
-<status status="NOT RUN" start="2026-03-27T15:39:03.523485" elapsed="0.000100"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.121305" elapsed="0.000111"/>
 </iter>
 <var>${i}</var>
 <value>${clicks}</value>
-<status status="NOT RUN" start="2026-03-27T15:39:03.523445" elapsed="0.000162"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.121258" elapsed="0.000182"/>
 </for>
-<status status="NOT RUN" start="2026-03-27T15:39:03.523231" elapsed="0.000399"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.120988" elapsed="0.000479"/>
 </branch>
 <branch type="ELSE IF" condition="${target_adults} &lt; ${current_adults}">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-27T15:39:03.523957" level="INFO">${clicks} = 1</msg>
+<msg time="2026-03-27T16:36:31.121915" level="INFO">${clicks} = 1</msg>
 <var>${clicks}</var>
 <arg>${current_adults} - ${target_adults}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.523754" elapsed="0.000218"/>
+<status status="PASS" start="2026-03-27T16:36:31.121661" elapsed="0.000272"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:39:03.524344" level="INFO">Clicks the element 'xpath=(//button[text()='-'])[2]'.</msg>
+<msg time="2026-03-27T16:36:31.122378" level="INFO">Clicks the element 'xpath=(//button[text()='-'])[2]'.</msg>
 <arg>${homepage.btn_minus_adult}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.524156" elapsed="0.037874"/>
+<status status="PASS" start="2026-03-27T16:36:31.122119" elapsed="0.067268"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-03-27T15:39:03.524099" elapsed="0.038035"/>
+<status status="PASS" start="2026-03-27T16:36:31.122057" elapsed="0.067421"/>
 </iter>
 <var>${i}</var>
 <value>${clicks}</value>
-<status status="PASS" start="2026-03-27T15:39:03.524008" elapsed="0.038180"/>
+<status status="PASS" start="2026-03-27T16:36:31.121968" elapsed="0.067556"/>
 </for>
-<status status="PASS" start="2026-03-27T15:39:03.523652" elapsed="0.038583"/>
+<status status="PASS" start="2026-03-27T16:36:31.121488" elapsed="0.068074"/>
 </branch>
-<status status="PASS" start="2026-03-27T15:39:03.523223" elapsed="0.039072"/>
+<status status="PASS" start="2026-03-27T16:36:31.120976" elapsed="0.068615"/>
 </if>
 <if>
 <branch type="IF" condition="${target_children} &gt; ${current_children}">
@@ -565,7 +559,7 @@
 <var>${clicks}</var>
 <arg>${target_children} - ${current_children}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-03-27T15:39:03.562842" elapsed="0.000044"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.190088" elapsed="0.000059"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -574,86 +568,68 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-27T15:39:03.563094" elapsed="0.000029"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.190408" elapsed="0.000035"/>
 </kw>
 <var name="${i}"/>
-<status status="NOT RUN" start="2026-03-27T15:39:03.563011" elapsed="0.000141"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.190315" elapsed="0.000167"/>
 </iter>
 <var>${i}</var>
 <value>${clicks}</value>
-<status status="NOT RUN" start="2026-03-27T15:39:03.562934" elapsed="0.000246"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.190199" elapsed="0.000312"/>
 </for>
-<status status="NOT RUN" start="2026-03-27T15:39:03.562460" elapsed="0.000750"/>
+<status status="NOT RUN" start="2026-03-27T16:36:31.189642" elapsed="0.000898"/>
 </branch>
-<status status="PASS" start="2026-03-27T15:39:03.562411" elapsed="0.000823"/>
+<status status="PASS" start="2026-03-27T16:36:31.189629" elapsed="0.000936"/>
 </if>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:39:03.563620" level="INFO">Clicks the element 'xpath=//button[text()='Confirm']'.</msg>
+<msg time="2026-03-27T16:36:31.190910" level="INFO">Clicks the element 'xpath=//button[text()='Confirm']'.</msg>
 <arg>${homepage.btn_guest_confirm}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.563282" elapsed="0.155597"/>
+<status status="PASS" start="2026-03-27T16:36:31.190613" elapsed="0.149717"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:39:03.900099" level="INFO">Waited for Element with selector xpath=//button[text()='Confirm'] at state hidden</msg>
+<msg time="2026-03-27T16:36:31.522673" level="INFO">Waited for Element with selector xpath=//button[text()='Confirm'] at state hidden</msg>
 <arg>${homepage.btn_guest_confirm}</arg>
 <arg>hidden</arg>
 <arg>timeout=5s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.719062" elapsed="0.181213"/>
+<status status="PASS" start="2026-03-27T16:36:31.340530" elapsed="0.182321"/>
 </kw>
 <arg>${TC_001.booking_info.guest_info.rooms}</arg>
 <arg>${TC_001.booking_info.guest_info.adults}</arg>
 <arg>${TC_001.booking_info.guest_info.children}</arg>
-<status status="PASS" start="2026-03-27T15:39:02.436240" elapsed="1.464182"/>
+<status status="PASS" start="2026-03-27T16:36:30.010221" elapsed="1.512850"/>
 </kw>
-<kw name="Click search button" owner="home_page">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T15:39:03.905862" level="INFO">Waited for Element with selector id=hotel-search-button at state visible</msg>
-<arg>${homepage.btn_search_submit}</arg>
-<arg>visible</arg>
-<arg>timeout=${timeout}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.901177" elapsed="0.004829"/>
+<kw name="Verify search results summary is correct">
+<msg time="2026-03-27T16:36:31.525879" level="FAIL">No keyword with name 'Verify search results summary is correct' found.</msg>
+<arg>${TC_001.booking_info.expected_result.summary_destination}</arg>
+<arg>${TC_001.booking_info.expected_result.summary_checkin}</arg>
+<arg>${TC_001.booking_info.expected_result.summary_checkout}</arg>
+<arg>${TC_001.booking_info.expected_result.summary_guests}</arg>
+<status status="FAIL" start="2026-03-27T16:36:31.525658" elapsed="0.000308">No keyword with name 'Verify search results summary is correct' found.</status>
 </kw>
-<kw name="Click" owner="Browser">
-<msg time="2026-03-27T15:39:03.906732" level="INFO">Clicks the element 'id=hotel-search-button'.</msg>
-<arg>${homepage.btn_search_submit}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T15:39:03.906205" elapsed="0.341774"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-03-27T15:39:09.252589" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-03-27T15:39:04.249789" elapsed="5.002971"/>
-</kw>
-<status status="PASS" start="2026-03-27T15:39:03.900723" elapsed="5.352178"/>
-</kw>
-<msg time="2026-03-27T15:39:09.265976" level="INFO">Switching context to context=1b2a4ae2-9a35-49f1-b291-e0c32ae28a23 in CURRENT</msg>
-<msg time="2026-03-27T15:39:09.309103" level="INFO">Successfully changed active context: context=1b2a4ae2-9a35-49f1-b291-e0c32ae28a23</msg>
-<msg time="2026-03-27T15:39:09.437377" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-03-27T15:38:36.440398" elapsed="32.812854"/>
+<msg time="2026-03-27T16:36:31.542466" level="INFO">Switching context to context=1ce35b0e-3346-4d14-bf35-1969faf67d00 in CURRENT</msg>
+<msg time="2026-03-27T16:36:31.622636" level="INFO">Successfully changed active context: context=1ce35b0e-3346-4d14-bf35-1969faf67d00</msg>
+<msg time="2026-03-27T16:36:31.699093" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-03-27T16:36:13.262129" elapsed="18.264229">No keyword with name 'Verify search results summary is correct' found.</status>
 </test>
-<status status="PASS" start="2026-03-27T15:38:36.212161" elapsed="33.225794"/>
+<status status="FAIL" start="2026-03-27T16:36:13.034986" elapsed="18.664728"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="TC HOTELS 001" id="s1" pass="1" fail="0" skip="0">TC HOTELS 001</stat>
+<stat name="TC HOTELS 001" id="s1" pass="0" fail="1" skip="0">TC HOTELS 001</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2026-03-27T16:36:13.259578" level="ERROR">Error in file '/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/resources/import.robot' on line 13: Resource file '/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/resources/locators/myacc_page.robot' does not exist.</msg>
 </errors>
 </robot>

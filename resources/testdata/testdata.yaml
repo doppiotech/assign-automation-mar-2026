@@ -12,3 +12,8 @@ TC_001:
             rooms: 1
             adults: 1
             children: 0
+        expected_result:
+            summary_destination: "Bangkok, Thailand"
+            summary_checkin: "15 Apr 2026"   # เช็คแค่ส่วนนี้พอ ไม่ต้องใส่ชื่อวัน เผื่อปีหน้าวันเปลี่ยน
+            summary_checkout: "17 Apr 2026"
+            summary_guests: "1 Adults, 1 Room"

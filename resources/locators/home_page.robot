@@ -36,4 +36,3 @@ ${homepage.btn_search_submit}        id=hotel-search-button
 
 
 
-

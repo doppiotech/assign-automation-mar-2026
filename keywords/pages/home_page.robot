@@ -71,7 +71,6 @@ Select travel date
     Browser.Click    ${locator_in}
     ${locator_out}=    String.Replace String    ${homepage.datepicker.calendar_day}    VARIABLE_DAY    ${checkout_day}
     Browser.Click    ${locator_out}
-    Sleep    10s
 
 
 Select guests and rooms
