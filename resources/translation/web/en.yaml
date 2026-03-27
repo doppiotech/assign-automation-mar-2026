@@ -1,3 +1,6 @@
+footer_section_trans:
+  accept_all:                 Accept All
+
 login_popup_page_trans:
   email_or_mobile_login:      Email or Mobile No.
 
@@ -12,3 +15,6 @@ search_list_page:
 
 contact_information_section_trans:
   country_id:             Passport Issuing Country
+
+payment_success_page_trans:
+  payment_success:            Payment Success

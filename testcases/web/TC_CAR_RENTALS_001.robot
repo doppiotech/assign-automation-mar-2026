@@ -5,7 +5,7 @@ Test Setup           common_web.Open gother website and login with email    ${de
 Test Teardown        common_web.Web teardown
 
 *** Test Cases ***
-TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
+TC_CAR_RENTALS_001 - Verify Hotel Booking with Credit Card Payment
     [Tags]    Feature:Hotels
     header_bar.Click hotels tab on header bar
     hotels_feature.Search destination by typing                           ${TC_HOTELS_001}[destination]

@@ -36,10 +36,10 @@ Input phone number in contact information
 Click passport option in contact information
     common_web.Click element on screen    ${contact_information_section}[ddl_country_id]
 
-Select phone country code in contact information
+Select passport in contact information
     [Arguments]    ${country_id}
     ${country_id}    String.Replace string    ${contact_information_section}[lbl_country_id_selection]    ***country_name***    ${country_id}
     common_web.Click element on screen    ${country_id}
 
 Click confirm booking button
-    common_web.Click element on screen    ${contact_information_section}[ddl_country_id]    
+    common_web.Click element on screen    ${booking_element}[btn_confirm_booking]

@@ -1,6 +1,6 @@
 default_browser: chromium
-global_retry_times: 3
-global_interval_for_retry: 5 sec
+global_retry_times: 10
+global_interval_for_retry: 10 sec
 gother_web:
   url:
     en: https://www.gother.online/en-us

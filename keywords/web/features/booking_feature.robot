@@ -9,4 +9,4 @@ Input contact information
     booking_page.Select phone country code in contact information           ${country_code_or_country_name}
     booking_page.Input phone number in contact information                  ${phone}
     booking_page.Click passport option in contact information
-    booking_page.Select phone country code in contact information           ${country_id}
+    booking_page.Select passport in contact information                     ${country_id}

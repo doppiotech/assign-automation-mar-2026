@@ -15,10 +15,14 @@ Open gother website and login with email
     header_bar_feature.Login with email or mobile no. method    ${email}    ${password}
     home_page.Check if homepage display
     header_bar.Check if login successfully
+    footer.Click accept cookie on footer
 
 Web teardown
     BuiltIn.Run keyword if test failed         Browser.Take screenshot
     Browser.Close browser
+
+Switch tab
+    Browser.Switch Page      NEW
 
 Wait until page display
     [Arguments]    ${locator}    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}

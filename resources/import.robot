@@ -15,6 +15,7 @@ Variables   ${CURDIR}/translation/web/${LANG.lower()}.yaml
 
 ### Web Locators ###
 Resource    ${CURDIR}/../resources/locators/web/header_bar_locator.robot
+Resource    ${CURDIR}/../resources/locators/web/footer_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/home_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/hotels_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/search_result_locator.robot
@@ -38,6 +39,7 @@ Resource    ${CURDIR}/../keywords/web/pages/hotels_item_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/booking_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/payment_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/payment_success_page.robot
+Resource    ${CURDIR}/../keywords/web/pages/footer.robot
 
 ### Web Feature ###
 Resource    ${CURDIR}/../keywords/web/features/header_bar_feature.robot
