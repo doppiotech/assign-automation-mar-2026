@@ -1,116 +1,131 @@
-{"level":30,"time":"2026-03-27T07:17:31.909Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Listening on 127.0.0.1:49207"}
-{"level":30,"time":"2026-03-27T07:17:32.965Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-03-27T07:17:34.526Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
-{"level":30,"time":"2026-03-27T07:17:34.526Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-03-27T07:17:34.526Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-03-27T07:17:34.530Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method newContext"}
-{"level":30,"time":"2026-03-27T07:17:34.531Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
-{"level":30,"time":"2026-03-27T07:17:34.531Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@9f46959c53f98d44ea725f3fef04ebe2\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=8244da8e-7b5d-4042-af2b-bc21c81d2200\"}"}
-{"level":30,"time":"2026-03-27T07:17:34.531Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Trace file: "}
-{"level":30,"time":"2026-03-27T07:17:34.541Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Setting default timeout for context context=41a3e678-e89f-4873-8f41-2635c40584a5 to 10000"}
-{"level":30,"time":"2026-03-27T07:17:34.541Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active context: context=41a3e678-e89f-4873-8f41-2635c40584a5"}
-{"level":30,"time":"2026-03-27T07:17:34.541Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method newContext"}
-{"level":30,"time":"2026-03-27T07:17:34.544Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-03-27T07:17:34.544Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@9f46959c53f98d44ea725f3fef04ebe2\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=41a3e678-e89f-4873-8f41-2635c40584a5\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@d7ca71146b563e37db6eb5878f37823b\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=8244da8e-7b5d-4042-af2b-bc21c81d2200\"}"}
-{"level":30,"time":"2026-03-27T07:17:35.144Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Video path: undefined"}
-{"level":30,"time":"2026-03-27T07:17:35.144Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active page"}
-{"level":30,"time":"2026-03-27T07:17:40.333Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method newPage"}
-{"level":30,"time":"2026-03-27T07:17:40.397Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:40.398Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=signin-and-register-big-button in page."}
-{"level":30,"time":"2026-03-27T07:17:40.430Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:40.433Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:40.433Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=signin-and-register-big-button in page."}
-{"level":30,"time":"2026-03-27T07:17:40.508Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:40.510Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:40.510Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:has-text(\"Email or Mobile No.\") in page."}
-{"level":30,"time":"2026-03-27T07:17:42.753Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:42.756Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:42.756Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:has-text(\"Email or Mobile No.\") in page."}
-{"level":30,"time":"2026-03-27T07:17:43.338Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:43.347Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-03-27T07:17:43.347Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:43.438Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method fillText"}
-{"level":30,"time":"2026-03-27T07:17:43.443Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:43.443Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:43.478Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:43.480Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:43.480Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:44.361Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:44.364Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-03-27T07:17:44.364Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-password\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:44.658Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method fillText"}
-{"level":30,"time":"2026-03-27T07:17:44.661Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:44.661Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:44.686Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:44.688Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:44.688Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:45.050Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:45.052Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:45.052Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=img[alt=\"user-icon2\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:46.548Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:46.551Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getElementStates"}
-{"level":30,"time":"2026-03-27T07:17:46.551Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=img[alt=\"user-icon2\"] in page."}
-{"level":30,"time":"2026-03-27T07:17:46.585Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Element css=img[alt=\"user-icon2\"] is not editable: Error: locator.isEditable: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('img[alt=\"user-icon2\"]').first()\u001b[22m\n"}
-{"level":30,"time":"2026-03-27T07:17:46.585Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Checking checked state"}
-{"level":30,"time":"2026-03-27T07:17:46.607Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getElementStates"}
-{"level":30,"time":"2026-03-27T07:17:46.610Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:46.610Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=home-menu-hotel in page."}
-{"level":30,"time":"2026-03-27T07:17:46.611Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:46.614Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:46.614Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=home-menu-hotel in page."}
-{"level":30,"time":"2026-03-27T07:17:46.720Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:46.724Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:46.724Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T07:17:47.592Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:47.595Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:47.595Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T07:17:47.754Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:47.760Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:47.760Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T07:17:47.779Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:47.783Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-03-27T07:17:47.783Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T07:17:47.820Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method fillText"}
-{"level":30,"time":"2026-03-27T07:17:47.827Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:47.827Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')] in page."}
-{"level":30,"time":"2026-03-27T07:17:48.661Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:48.665Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:48.665Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')] in page."}
-{"level":30,"time":"2026-03-27T07:17:48.751Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:48.756Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:48.756Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkin-date in page."}
-{"level":30,"time":"2026-03-27T07:17:48.940Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:48.943Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-27T07:17:48.943Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//div[contains(@class, 'rdrMonthName')])[1] in page."}
-{"level":30,"time":"2026-03-27T07:17:48.949Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Retrieved text for element xpath=(//div[contains(@class, 'rdrMonthName')])[1] containing April 2026"}
-{"level":30,"time":"2026-03-27T07:17:48.949Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-27T07:17:48.954Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:48.954Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='15'] in page."}
-{"level":30,"time":"2026-03-27T07:17:50.291Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:50.294Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:50.294Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='17'] in page."}
-{"level":30,"time":"2026-03-27T07:17:50.372Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:50.374Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:50.374Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-button in page."}
-{"level":30,"time":"2026-03-27T07:17:50.377Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T07:17:50.379Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T07:17:50.379Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-button in page."}
-{"level":30,"time":"2026-03-27T07:17:50.683Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T07:17:50.688Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.693Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.694Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.697Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.699Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.701Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.706Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.714Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.716Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active context: context=41a3e678-e89f-4873-8f41-2635c40584a5"}
-{"level":30,"time":"2026-03-27T07:17:50.717Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Changing current active page: page=392d7e75-69b9-4381-84ee-5130d5f232fd"}
-{"level":30,"time":"2026-03-27T07:17:50.717Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active page"}
-{"level":30,"time":"2026-03-27T07:17:50.753Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method closeContext"}
-{"level":30,"time":"2026-03-27T07:17:50.884Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Removed page=573c8d36-e8bb-4f6f-b4a7-2206297bd789 from context=41a3e678-e89f-4873-8f41-2635c40584a5 page stack"}
-{"level":30,"time":"2026-03-27T07:17:50.934Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method closeContext"}
-{"level":30,"time":"2026-03-27T07:17:50.937Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.937Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T07:17:50.968Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2026-03-27T07:17:51.110Z","pid":27262,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-27T07:46:44.195Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Listening on 127.0.0.1:53082"}
+{"level":30,"time":"2026-03-27T07:46:45.230Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-27T07:46:47.160Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-27T07:46:47.160Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-27T07:46:47.161Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-27T07:46:47.173Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method newContext"}
+{"level":30,"time":"2026-03-27T07:46:47.173Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}}"}
+{"level":30,"time":"2026-03-27T07:46:47.173Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d0c602bfe7f60b830ab07f918154f3b4\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=82207547-41b6-4f3f-9de9-1c2ea21da52b\"}"}
+{"level":30,"time":"2026-03-27T07:46:47.173Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Trace file: "}
+{"level":30,"time":"2026-03-27T07:46:47.185Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Setting default timeout for context context=e8e4433a-2f85-4d6a-8ba8-79116d3abf7e to 10000"}
+{"level":30,"time":"2026-03-27T07:46:47.185Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active context: context=e8e4433a-2f85-4d6a-8ba8-79116d3abf7e"}
+{"level":30,"time":"2026-03-27T07:46:47.185Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method newContext"}
+{"level":30,"time":"2026-03-27T07:46:47.188Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-27T07:46:47.188Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@d0c602bfe7f60b830ab07f918154f3b4\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=e8e4433a-2f85-4d6a-8ba8-79116d3abf7e\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@44dd17112635e92f68df8f233c33a318\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1280,\"height\":720}},\"traceFile\":\"\"}],\"id\":\"browser=82207547-41b6-4f3f-9de9-1c2ea21da52b\"}"}
+{"level":30,"time":"2026-03-27T07:46:48.267Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-27T07:46:48.267Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-03-27T07:46:50.915Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-27T07:46:50.980Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:50.980Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=signin-and-register-big-button in page."}
+{"level":30,"time":"2026-03-27T07:46:51.913Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:51.916Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:51.917Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=signin-and-register-big-button in page."}
+{"level":30,"time":"2026-03-27T07:46:52.057Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:52.063Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:52.063Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:has-text(\"Email or Mobile No.\") in page."}
+{"level":30,"time":"2026-03-27T07:46:52.401Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:52.407Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:52.407Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:has-text(\"Email or Mobile No.\") in page."}
+{"level":30,"time":"2026-03-27T07:46:53.226Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:53.273Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-27T07:46:53.274Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:53.321Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-27T07:46:53.330Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:53.331Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:53.337Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:53.340Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:53.340Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:53.683Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:53.716Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-27T07:46:53.716Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-password\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:53.917Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-27T07:46:53.919Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:53.919Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:53.921Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:53.923Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:53.923Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:54.193Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:54.202Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:54.202Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=img[alt=\"user-icon2\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:56.185Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:56.192Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2026-03-27T07:46:56.192Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=img[alt=\"user-icon2\"] in page."}
+{"level":30,"time":"2026-03-27T07:46:56.201Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Element css=img[alt=\"user-icon2\"] is not editable: Error: locator.isEditable: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]\nCall log:\n\u001b[2m  - waiting for locator('img[alt=\"user-icon2\"]').first()\u001b[22m\n"}
+{"level":30,"time":"2026-03-27T07:46:56.201Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Checking checked state"}
+{"level":30,"time":"2026-03-27T07:46:56.226Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getElementStates"}
+{"level":30,"time":"2026-03-27T07:46:56.230Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:56.230Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=home-menu-hotel in page."}
+{"level":30,"time":"2026-03-27T07:46:56.232Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:56.233Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:56.233Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=home-menu-hotel in page."}
+{"level":30,"time":"2026-03-27T07:46:56.358Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:56.362Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:56.362Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T07:46:57.243Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:57.245Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:57.245Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T07:46:57.400Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:57.403Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:57.403Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T07:46:57.405Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:57.406Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-27T07:46:57.406Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T07:46:57.434Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-27T07:46:57.445Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:57.445Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')] in page."}
+{"level":30,"time":"2026-03-27T07:46:58.259Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T07:46:58.268Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:58.268Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'Bangkok')] in page."}
+{"level":30,"time":"2026-03-27T07:46:58.349Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:58.364Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:58.364Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkin-date in page."}
+{"level":30,"time":"2026-03-27T07:46:58.530Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:46:58.532Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T07:46:58.532Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//div[contains(@class, 'rdrMonthName')])[1] in page."}
+{"level":30,"time":"2026-03-27T07:46:58.537Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Retrieved text for element xpath=(//div[contains(@class, 'rdrMonthName')])[1] containing April 2026"}
+{"level":30,"time":"2026-03-27T07:46:58.537Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-27T07:46:58.542Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:46:58.542Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='15'] in page."}
+{"level":30,"time":"2026-03-27T07:47:00.005Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:47:00.012Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:47:00.012Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='17'] in page."}
+{"level":30,"time":"2026-03-27T07:47:00.132Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:47:10.271Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T07:47:10.271Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: id=hotel-search-traveler in page."}
+{"level":30,"time":"2026-03-27T07:47:10.420Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T07:47:10.438Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T07:47:10.438Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=//p[text()='Rooms']/following-sibling::div//p in page."}
+{"level":50,"time":"2026-03-27T07:47:20.445Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","err":{"type":"TimeoutError","message":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//p[text()=\\'Rooms\\']/following-sibling::div//p').first()\u001b[22m\n","stack":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//p[text()=\\'Rooms\\']/following-sibling::div//p').first()\u001b[22m\n\n    at getTextContent (/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js:12025:33)\n    at getText (/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js:12039:21)\n    at async PlaywrightServer.getText (/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js:13635:28)","name":"TimeoutError"},"msg":"locator.elementHandle: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//p[text()=\\'Rooms\\']/following-sibling::div//p').first()\u001b[22m\n"}
+================= Original suppressed error =================
+locator.elementHandle: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('//p[text()=\'Rooms\']/following-sibling::div//p').first()[22m
+
+    at getTextContent (/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js:12025:33)
+    at getText (/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js:12039:21)
+    at async PlaywrightServer.getText (/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-03-27T07:47:20.446Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-03-27T07:47:20.470Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T07:47:20.470Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-27T07:47:20.891Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T07:47:20.909Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.910Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.911Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.911Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.913Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.914Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.916Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.917Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:20.918Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active context: context=e8e4433a-2f85-4d6a-8ba8-79116d3abf7e"}
+{"level":30,"time":"2026-03-27T07:47:20.918Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Changing current active page: page=66ba2c58-4a59-440a-9580-17a2a22c4631"}
+{"level":30,"time":"2026-03-27T07:47:20.918Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-03-27T07:47:20.951Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-27T07:47:21.000Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Removed page=2cabd920-5561-4aed-982f-04b7f20e8920 from context=e8e4433a-2f85-4d6a-8ba8-79116d3abf7e page stack"}
+{"level":30,"time":"2026-03-27T07:47:21.035Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-27T07:47:21.039Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:21.039Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T07:47:21.077Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-27T07:47:21.208Z","pid":33307,"hostname":"Nooks-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}

@@ -22,7 +22,10 @@ TC_HOTELS_001
     ...    ${TC_001.booking_info.checkin_year}    
     ...    ${TC_001.booking_info.checkin_day}    
     ...    ${TC_001.booking_info.checkout_day}
-    Click search button
+    Select guests and rooms    
+    ...    ${TC_001.booking_info.guest_info.rooms}    
+    ...    ${TC_001.booking_info.guest_info.adults}    
+    ...    ${TC_001.booking_info.guest_info.children}
 
 
 

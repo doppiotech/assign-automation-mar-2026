@@ -13,8 +13,17 @@ ${homepage.btn_datepicker_checkin}          id=hotel-search-checkin-date
 ${homepage.datepicker.current_month_label}    xpath=(//div[contains(@class, 'rdrMonthName')])[1]
 ${homepage.datepicker.btn_next_month}         xpath=//button[contains(@class, 'rdrNextButton')]
 ${homepage.datepicker.calendar_day}           xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='VARIABLE_DAY']
-${homepage.btn_search}                      id=hotel-search-button
+${homepage.btn_guest_room}                    id=hotel-search-traveler
+${homepage.btn_add_room}                      xpath=//p[text()='Rooms']/following-sibling::div//button[text()='+']
+${homepage.btn_minus_room}                    xpath=//p[text()='Rooms']/following-sibling::div//button[text()='-']
+${homepage.btn_add_adult}                   xpath=//p[text()='Adults']/following-sibling::div//button[text()='+']
+${homepage.btn_minus_adult}                 xpath=//p[text()='Adults']/following-sibling::div//button[text()='-']
+${homepage.btn_add_child}                   xpath=//p[text()='Children']/following-sibling::div//button[text()='+']
+${homepage.btn_minus_child}                 xpath=//p[text()='Children']/following-sibling::div//button[text()='-']
+${homepage.btn_guest_confirm}               xpath=//button[text()='Confirm']
 
-# ${homepage.btn_datepicker_checkout}         id=hotel-search-checkout-date
+# ${homepage.btn_search}                      id=hotel-search-button
+
+
 
 
