@@ -41,3 +41,5 @@ Click menu myaccount
     [Arguments]     ${timeout}=${globle_timeout}
     Browser.Wait for elements state     ${homepage.menu.myacc}           visible    timeout=${timeout}
     Browser.Click   ${homepage.menu.myacc}    
+
+Verify user loging in section email
