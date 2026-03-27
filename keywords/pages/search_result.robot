@@ -9,3 +9,13 @@ Verify search results summary is correct
     BuiltIn.Should Contain    ${actual_checkout}    ${expected_checkout}
     ${actual_guests}=    Browser.Get Attribute    ${search_result.txt_summary_guests}    value
     BuiltIn.Should Contain    ${actual_guests}    ${expected_guests}
+
+Select hotel by name
+    [Arguments]    ${hotel_name}
+    # สร้าง Dynamic XPath เพื่อหาการ์ดโรงแรมที่มี title ตรงกับที่ระบุ
+    ${hotel_card}=    Set Variable    xpath=//a[@title='${hotel_name}']
+    BuiltIn.Log To Console    \n[ACTION] Selecting Hotel: ${hotel_name}
+    # รอให้การ์ดโรงแรมปรากฏและเลื่อนไปหา (Scroll) ก่อนคลิก
+    Browser.Wait for elements state    ${hotel_card}    visible    timeout=15s
+    Browser.Click    ${hotel_card}
+    Sleep    10s

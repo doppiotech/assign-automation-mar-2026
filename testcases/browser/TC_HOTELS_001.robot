@@ -26,12 +26,14 @@ TC_HOTELS_001
     ...    ${TC_001.booking_info.guest_info.rooms}    
     ...    ${TC_001.booking_info.guest_info.adults}    
     ...    ${TC_001.booking_info.guest_info.children}
+    Click search button
     Verify search results summary is correct
     ...    ${TC_001.booking_info.expected_result.summary_destination}
     ...    ${TC_001.booking_info.expected_result.summary_checkin}
     ...    ${TC_001.booking_info.expected_result.summary_checkout}
     ...    ${TC_001.booking_info.expected_result.summary_guests}
-    
+    Select hotel by name    Asia Hotel Bangkok
+    Browser.Switch Page    NEW
 
 
 
