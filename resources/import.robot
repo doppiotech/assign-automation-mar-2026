@@ -4,7 +4,7 @@ Library     DebugLibrary
 Library     String
 
 ### Setting ###
-Variables   ${CURDIR}/settings/setting_web.yaml
+Variables   ${CURDIR}/settings/${ENV.lower()}/setting_web.yaml
 # Variables   ${CURDIR}/settings/setting_mobile.yaml
 
 ### Translation ###
