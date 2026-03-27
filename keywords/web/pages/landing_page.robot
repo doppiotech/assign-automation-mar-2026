@@ -17,3 +17,6 @@ Login to system with email and password
     login_feature.Click on profile icon
     login_feature.Click on My account button
     login_feature.Verify Email    ${login_user.email}
+
+Click on hotels button
+    Browser.Click    ${landing.BTN_HOTEL}
