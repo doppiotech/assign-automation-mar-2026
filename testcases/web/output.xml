@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.9.6 on darwin)" generated="2026-03-26T17:47:11.626930" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc Web" source="/Users/doppio/Documents/GitHub/assign-automation-mar-2026/testcases/web/poc_web.robot">
+<test id="s1-t1" name="TC_WEB_POC_001" line="7">
+<kw name="Open gother web" owner="landing_page" type="SETUP">
+<kw name="Open web browser by url" owner="common_web">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-26T17:47:11.786475" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/doppio/Documents/GitHub/assign-automation-mar-2026/testcases/web/browser/traces/temp/a2117e08-9188-4d0b-b883-63368ad2694e"}</msg>
+<msg time="2026-03-26T17:47:11.804630" level="INFO">Starting Browser process /Users/doppio/Library/Python/3.9/lib/python/site-packages/Browser/wrapper/index.js using at 127.0.0.1:62138</msg>
+<msg time="2026-03-26T17:47:13.985322" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/doppio/Documents/GitHub/assign-automation-mar-2026/testcases/web/browser/traces/temp/a2117e08-9188-4d0b-b883-63368ad2694e"}</msg>
+<arg>browser=${supported_browser}</arg>
+<arg>headless=${headless_mode}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-26T17:47:11.786048" elapsed="2.199549"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-26T17:47:15.498567" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
+<msg time="2026-03-26T17:47:15.498701" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-26T17:47:13.985959" elapsed="1.513022"/>
+</kw>
+<arg>url=${gother_web.url.${LANG.lower()}}</arg>
+<arg>headless_mode=${headless_mode}</arg>
+<doc>ใช้สำหรับเปิด Web browser
+Arguments:
+    - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
+    - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
+    - False (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
+<status status="PASS" start="2026-03-26T17:47:11.785167" elapsed="3.713960"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:11.784096" elapsed="3.715183"/>
+</kw>
+<kw name="Verify system can redirect to landing page" owner="landing_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T17:47:17.760056" level="INFO">Waited for Element with selector css=button#flight-search-button&gt;&gt;nth=0 at state visible</msg>
+<arg>${landing.BTN_SEARCH_FLIGTH}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T17:47:15.500071" elapsed="2.260114"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:15.499666" elapsed="2.260628"/>
+</kw>
+<kw name="Login to system with email and password" owner="landing_page">
+<kw name="Click on Login/Register button" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T17:47:17.765583" level="INFO">Waited for Element with selector css=button#signin-and-register-big-button at state visible</msg>
+<arg>${landing.BTN_LOGIN_AND_REGIS}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T17:47:17.761137" elapsed="0.004576"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-26T17:47:17.766323" level="INFO">Clicks the element 'css=button#signin-and-register-big-button'.</msg>
+<arg>${landing.BTN_LOGIN_AND_REGIS}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T17:47:17.765895" elapsed="0.055347"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:17.760882" elapsed="0.060490"/>
+</kw>
+<kw name="Click on Phone/Email button" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T17:47:18.714791" level="INFO">Waited for Element with selector css=button &gt;&gt; text=Email or Mobile No. at state visible</msg>
+<arg>${landing.BTN_PHONE_OR_EMAIL}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T17:47:17.821886" elapsed="0.893085"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-26T17:47:18.715839" level="INFO">Clicks the element 'css=button &gt;&gt; text=Email or Mobile No.'.</msg>
+<arg>${landing.BTN_PHONE_OR_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T17:47:18.715237" elapsed="0.171215"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:17.821550" elapsed="1.065021"/>
+</kw>
+<kw name="Fill Email" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T17:47:18.891575" level="INFO">Waited for Element with selector css=input[data-testid="input-email"] at state visible</msg>
+<arg>${landing.TXT_Email}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T17:47:18.887096" elapsed="0.004631"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-26T17:47:18.892665" level="INFO">Fills the text 'khumphol.m@doppiotech.com' in the given field.</msg>
+<arg>${landing.TXT_Email}</arg>
+<arg>${login_user.email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T17:47:18.891943" elapsed="0.015335"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:18.886755" elapsed="0.020737"/>
+</kw>
+<kw name="Click on Login button" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T17:47:18.919212" level="INFO">Waited for Element with selector css=button:text-is("Log In") at state visible</msg>
+<arg>${landing.BTN_LOGIN}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T17:47:18.908025" elapsed="0.011527"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-26T17:47:18.920806" level="INFO">Clicks the element 'css=button:text-is("Log In")'.</msg>
+<arg>${landing.BTN_LOGIN}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T17:47:18.920385" elapsed="0.516634"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:18.907687" elapsed="0.529466"/>
+</kw>
+<kw name="Fill Password" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T17:47:20.332162" level="INFO">Waited for Element with selector css=input[data-testid="input-password"] at state visible</msg>
+<arg>${landing.TXT_Password}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T17:47:19.437733" elapsed="0.894557"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-26T17:47:20.333205" level="INFO">Fills the text 'P@ssw0rd' in the given field.</msg>
+<arg>${landing.TXT_Password}</arg>
+<arg>${login_user.password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T17:47:20.332549" elapsed="0.035949"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:19.437352" elapsed="0.931269"/>
+</kw>
+<kw name="Click on Login button" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-26T17:47:20.398742" level="INFO">Waited for Element with selector css=button:text-is("Log In") at state visible</msg>
+<arg>${landing.BTN_LOGIN}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-26T17:47:20.369153" elapsed="0.029720"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-26T17:47:20.399410" level="INFO">Clicks the element 'css=button:text-is("Log In")'.</msg>
+<arg>${landing.BTN_LOGIN}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-26T17:47:20.399046" elapsed="0.204183"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:20.368804" elapsed="0.235079"/>
+</kw>
+<status status="PASS" start="2026-03-26T17:47:17.760530" elapsed="2.843442"/>
+</kw>
+<kw name="Debug" owner="DebugLibrary">
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" start="2026-03-26T17:47:20.604380" elapsed="14.713430"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>hello</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-26T17:47:35.318249" elapsed="0.000654"/>
+</kw>
+<msg time="2026-03-26T17:47:35.340505" level="INFO">Switching context to context=18b13815-17e5-4a51-8b0b-21bd42977a01 in CURRENT</msg>
+<msg time="2026-03-26T17:47:35.357437" level="INFO">Successfully changed active context: context=18b13815-17e5-4a51-8b0b-21bd42977a01</msg>
+<msg time="2026-03-26T17:47:35.401326" level="INFO">Successfully closed Context</msg>
+<tag>TC_WEB_POC_001</tag>
+<status status="PASS" start="2026-03-26T17:47:11.783615" elapsed="23.535758"/>
+</test>
+<status status="PASS" start="2026-03-26T17:47:11.627880" elapsed="23.774094"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">TC_WEB_POC_001</stat>
+</tag>
+<suite>
+<stat name="Poc Web" id="s1" pass="1" fail="0" skip="0">Poc Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-26T17:47:11.777845" level="ERROR">Error in file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/resources/import.robot' on line 11: Processing variable file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/resources/translation/mobile/en.yaml' failed: YAML variable file must be a mapping, got string.</msg>
+<msg time="2026-03-26T17:47:11.778837" level="WARN">Imported resource file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
+<msg time="2026-03-26T17:47:11.780673" level="WARN">Imported resource file '/Users/doppio/Documents/GitHub/assign-automation-mar-2026/keywords/common/common_mobile.robot' is empty.</msg>
+</errors>
+</robot>
