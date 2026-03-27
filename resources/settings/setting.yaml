@@ -1,0 +1,5 @@
+url:  https://www.gother.online/
+default_browser: chromium
+headless: False
+globle_timeout: 20s
+
