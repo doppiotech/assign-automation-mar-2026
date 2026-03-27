@@ -19,6 +19,6 @@ Input password on login or sign up popup
     [Arguments]            ${password}
     Browser.Wait for elements state        ${login_popup_locators.txt_password}         visible         ${global_timeout}
     Browser.Fill text        ${login_popup_locators.txt_password}                ${password}
-Click login button to confirm password on login or sign up with email or mobile no. method
+Click login button to confirm password on login or sign up popup
     Browser.Wait for elements state      ${login_popup_locators.btn_login_password_page}       visible    ${global_timeout}
     Browser.Click        ${login_popup_locators.btn_login_password_page}  

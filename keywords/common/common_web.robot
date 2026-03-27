@@ -11,7 +11,11 @@ Open web browser by url
     Browser.New page        url=${url}        wait_until=domcontentloaded
 
 Verify home page when login success 
-    
+    [Documentation]    ตรวจสอบว่าปุ่ม Login หายไป และไอคอน Profile แสดงขึ้นมา
+     ...                   - detached หมายถึง element นั้นหายไปจาก DOM เลย
+    Browser.Wait for elements state    ${home_page_locators.btn_login_signup}     detached    timeout=${global_timeout}
+    Browser.Wait for elements state    ${home_page_locators.btn_user_icon}    visible    timeout=${global_timeout}
+
 
 
 
