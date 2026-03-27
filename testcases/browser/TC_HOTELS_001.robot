@@ -13,6 +13,11 @@ TC_HOTELS_001
     Fill info in field password     ${TC_001.user_account}
     Click login in popup loging 
     Verify login success
+    Click tap hotels
+    Click textbox in section destinatio
+    Input destination                       ${TC_001.booking_info.destination}
+    Select destination from dropdown        ${TC_001.booking_info.destination}
+
     
 
 

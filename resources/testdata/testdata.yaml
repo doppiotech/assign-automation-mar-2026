@@ -1,7 +1,6 @@
 TC_001:
-    user_account:
-        email: 'sutida.n@doppiotech.com'
-        password: Nook_8899
-
-
-
+  user_account:
+    email: 'sutida.n@doppiotech.com'
+    password: 'Nook_8899'
+  booking_info:
+    destination: 'Bangkok'

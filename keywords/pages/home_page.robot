@@ -32,4 +32,25 @@ Verify login success
     Browser.Wait for elements state    ${homepage.icon.profile}    visible    timeout=${timeout}
     Browser.Get Element States    ${homepage.icon.profile}    contains    visible 
 
+Click tap hotels
+    [Arguments]     ${timeout}=${globle_timeout}
+    Browser.Wait for elements state     ${homepage.menu.hotel}          visible    timeout=${timeout}
+    Browser.Click   ${homepage.menu.hotel}   
+
+Click textbox in section destinatio
+    [Arguments]     ${timeout}=${globle_timeout}
+    Browser.Wait for elements state     ${homepage.txt_destination}           visible    timeout=${timeout}
+    Browser.Click   ${homepage.txt_destination}   
+
+Input destination
+    [Arguments]    ${text}      ${timeout}=${globle_timeout}
+    Browser.Wait for elements state    id=hotel-search-destination    visible    timeout=${timeout}
+    Browser.Fill Text    id=hotel-search-destination    ${text}
+
+Select destination from dropdown
+    [Arguments]    ${city_name}    ${timeout}=${globle_timeout}
+    # 1. ใช้ String.Replace String เพื่อเปลี่ยน VARIABLE_TEXT เป็นชื่อเมืองจริง
+    ${dynamic_locator}=    String.Replace String    ${homepage.item_destination_result}    VARIABLE_TEXT    ${city_name}
+    Browser.Wait for elements state    ${dynamic_locator}    visible    timeout=${timeout}
+    Browser.Click    ${dynamic_locator}
 
