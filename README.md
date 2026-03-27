@@ -4,6 +4,8 @@
 pip3 install -r requirements.txt
 ```
 
-**2. Running Tests Locally
+**2. Running Tests Locally**
 
+``` bash
 robot -d testResult ENV:uat -v LANG:th -v PLATFORM:web -v -L DEBUG -i test_id:tc_001 ./testcases
+```
