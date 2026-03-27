@@ -10,6 +10,11 @@ ${homepage.menu.hotel}                      id=home-menu-hotel
 ${homepage.txt_destination}                 id=hotel-search-destination
 ${homepage.item_destination_result}         xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'VARIABLE_TEXT')]
 ${homepage.btn_datepicker_checkin}          id=hotel-search-checkin-date
-${homepage.btn_datepicker_checkout}         id=hotel-search-checkout-date
+${homepage.datepicker.current_month_label}    xpath=(//div[contains(@class, 'rdrMonthName')])[1]
+${homepage.datepicker.btn_next_month}         xpath=//button[contains(@class, 'rdrNextButton')]
+${homepage.datepicker.calendar_day}           xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='VARIABLE_DAY']
 ${homepage.btn_search}                      id=hotel-search-button
+
+# ${homepage.btn_datepicker_checkout}         id=hotel-search-checkout-date
+
 

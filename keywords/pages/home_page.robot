@@ -54,17 +54,24 @@ Select destination from dropdown
     Browser.Wait for elements state    ${dynamic_locator}    visible    timeout=${timeout}
     Browser.Click    ${dynamic_locator}
 
-Select checkin and checkout date 
-    [Arguments]    ${checkin_day}    ${checkout_day}    ${timeout}=${globle_timeout}
-    # เลือก Check-in
+Select travel date
+    [Arguments]    ${target_month}    ${target_year}    ${checkin_day}    ${checkout_day}
     Browser.Click    ${homepage.btn_datepicker_checkin}
-    ${locator_in}=    String.Replace String    ${homepage.btn_datepicker_checkin}    VARIABLE_DAY    ${checkin_day}
+    # วนลูปกด Next จนกว่าจะเจอเดือนและปีที่ระบุใน Test Data
+    FOR    ${i}    IN RANGE    12    # จำกัดให้กดไม่เกิน 12 ครั้งป้องกัน Loop ตาย
+        ${current_label}=    Browser.Get Text    ${homepage.datepicker.current_month_label}
+        # เช็กว่าในตัวอักษรบนหน้าเว็บ มีคำว่า 'April' และ '2026' หรือยัง
+        ${status}=    Run Keyword And Return Status    Should Contain    ${current_label}    ${target_month}
+        ${year_status}=    Run Keyword And Return Status    Should Contain    ${current_label}    ${target_year}
+        Exit For Loop If    ${status} and ${year_status}
+        Browser.Click    ${homepage.datepicker.btn_next_month}
+    END
+    # เมื่อเจอเดือนที่ใช่แล้ว ค่อยคลิกวันที่
+    ${locator_in}=    String.Replace String    ${homepage.datepicker.calendar_day}    VARIABLE_DAY    ${checkin_day}
     Browser.Click    ${locator_in}
-    # เลือก Check-out (ปกติหน้าจอจะเปิดปฏิทินค้างไว้ให้เลย)
-    ${locator_out}=    String.Replace String    ${homepage.btn_datepicker_checkin}    VARIABLE_DAY    ${checkout_day}
-    Browser.Wait for elements state    ${locator_out}    visible
+    ${locator_out}=    String.Replace String    ${homepage.datepicker.calendar_day}    VARIABLE_DAY    ${checkout_day}
     Browser.Click    ${locator_out}
-    
+
 Click search button
     [Arguments]    ${timeout}=${globle_timeout}
     Browser.Wait for elements state    ${homepage.btn_search}    visible    timeout=${timeout}

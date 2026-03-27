@@ -17,7 +17,11 @@ TC_HOTELS_001
     Click textbox in section destinatio
     Input destination                       ${TC_001.booking_info.destination}
     Select destination from dropdown        ${TC_001.booking_info.destination}
-    Select checkin and checkout date        ${TC_001.booking_info.checkin_day}    ${TC_001.booking_info.checkout_day}
+    Select travel date    
+    ...    ${TC_001.booking_info.checkin_month}    
+    ...    ${TC_001.booking_info.checkin_year}    
+    ...    ${TC_001.booking_info.checkin_day}    
+    ...    ${TC_001.booking_info.checkout_day}
     Click search button
 
 
