@@ -65,4 +65,7 @@ Select checkin and checkout date
     Browser.Wait for elements state    ${locator_out}    visible
     Browser.Click    ${locator_out}
     
-
+Click search button
+    [Arguments]    ${timeout}=${globle_timeout}
+    Browser.Wait for elements state    ${homepage.btn_search}    visible    timeout=${timeout}
+    Browser.Click    ${homepage.btn_search}

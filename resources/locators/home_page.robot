@@ -11,5 +11,5 @@ ${homepage.txt_destination}                 id=hotel-search-destination
 ${homepage.item_destination_result}         xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'VARIABLE_TEXT')]
 ${homepage.btn_datepicker_checkin}          id=hotel-search-checkin-date
 ${homepage.btn_datepicker_checkout}         id=hotel-search-checkout-date
-
+${homepage.btn_search}                      id=hotel-search-button
 
