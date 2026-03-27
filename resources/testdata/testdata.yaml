@@ -4,3 +4,5 @@ TC_001:
     password: 'Nook_8899'
   booking_info:
     destination: 'Bangkok'
+    checkin_day: '15'
+    checkout_day: '17'

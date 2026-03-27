@@ -54,3 +54,15 @@ Select destination from dropdown
     Browser.Wait for elements state    ${dynamic_locator}    visible    timeout=${timeout}
     Browser.Click    ${dynamic_locator}
 
+Select checkin and checkout date 
+    [Arguments]    ${checkin_day}    ${checkout_day}    ${timeout}=${globle_timeout}
+    # เลือก Check-in
+    Browser.Click    ${homepage.btn_datepicker_checkin}
+    ${locator_in}=    String.Replace String    ${homepage.btn_datepicker_checkin}    VARIABLE_DAY    ${checkin_day}
+    Browser.Click    ${locator_in}
+    # เลือก Check-out (ปกติหน้าจอจะเปิดปฏิทินค้างไว้ให้เลย)
+    ${locator_out}=    String.Replace String    ${homepage.btn_datepicker_checkin}    VARIABLE_DAY    ${checkout_day}
+    Browser.Wait for elements state    ${locator_out}    visible
+    Browser.Click    ${locator_out}
+    
+

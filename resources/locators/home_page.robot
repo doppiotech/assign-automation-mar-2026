@@ -9,6 +9,7 @@ ${homepage.icon.profile}                    css=img[alt="user-icon2"]         #à
 ${homepage.menu.hotel}                      id=home-menu-hotel
 ${homepage.txt_destination}                 id=hotel-search-destination
 ${homepage.item_destination_result}         xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'VARIABLE_TEXT')]
-
+${homepage.btn_datepicker_checkin}          id=hotel-search-checkin-date
+${homepage.btn_datepicker_checkout}         id=hotel-search-checkout-date
 
 
