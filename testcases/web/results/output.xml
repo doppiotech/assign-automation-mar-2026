@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.10.5 on darwin)" generated="2026-03-27T17:11:45.601882" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.10.5 on darwin)" generated="2026-03-27T17:34:13.821532" rpa="false" schemaversion="5">
 <suite id="s1" name="TC HOTELS 001" source="/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/TC_HOTELS_001.robot">
 <test id="s1-t1" name="TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment" line="8">
 <kw name="Open gother website and login with email" owner="common_web" type="SETUP">
 <kw name="Open gother web" owner="landing_page">
 <kw name="Open web browser by url" owner="common_web">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-03-27T17:11:45.787131" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/traces/temp/929fcaf0-d0cd-4ca2-ab74-d8585d6d9b18"}</msg>
-<msg time="2026-03-27T17:11:45.807740" level="INFO">Starting Browser process /Users/theemdoppio/Library/Python/3.10/lib/python/site-packages/Browser/wrapper/index.js using at 127.0.0.1:55330</msg>
-<msg time="2026-03-27T17:11:47.897994" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/traces/temp/929fcaf0-d0cd-4ca2-ab74-d8585d6d9b18"}</msg>
+<msg time="2026-03-27T17:34:14.031343" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/traces/temp/bbc2791d-e007-4226-9194-ff0dfaf53e38"}</msg>
+<msg time="2026-03-27T17:34:14.054315" level="INFO">Starting Browser process /Users/theemdoppio/Library/Python/3.10/lib/python/site-packages/Browser/wrapper/index.js using at 127.0.0.1:60831</msg>
+<msg time="2026-03-27T17:34:16.527780" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/traces/temp/bbc2791d-e007-4226-9194-ff0dfaf53e38"}</msg>
 <arg>browser=${supported_browser}</arg>
 <arg>headless=${headless_mode}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-27T17:11:45.786686" elapsed="2.111891"/>
+<status status="PASS" start="2026-03-27T17:34:14.030710" elapsed="2.497396"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-03-27T17:11:49.982908" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
-<msg time="2026-03-27T17:11:49.983003" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-03-27T17:34:18.905689" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
+<msg time="2026-03-27T17:34:18.905777" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>url=${url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-27T17:11:47.898893" elapsed="2.084343"/>
+<status status="PASS" start="2026-03-27T17:34:16.528464" elapsed="2.377442"/>
 </kw>
 <arg>url=${gother_web.url.${LANG.lower()}}</arg>
 <arg>headless_mode=${headless_mode}</arg>
@@ -32,21 +32,21 @@ Arguments:
     - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
     - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
     - False (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
-<status status="PASS" start="2026-03-27T17:11:45.785850" elapsed="4.197561"/>
+<status status="PASS" start="2026-03-27T17:34:14.029685" elapsed="4.876635"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:45.784837" elapsed="4.198635"/>
+<status status="PASS" start="2026-03-27T17:34:14.028625" elapsed="4.877771"/>
 </kw>
 <kw name="Login with email or mobile no. method" owner="header_bar_feature">
 <kw name="Click login button on header bar" owner="header_bar">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:51.017348" level="INFO">Waited for Element with selector css=#signin-and-register-big-button at state visible</msg>
+<msg time="2026-03-27T17:34:19.901980" level="INFO">Waited for Element with selector css=#signin-and-register-big-button at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:49.984839" elapsed="1.032668"/>
+<status status="PASS" start="2026-03-27T17:34:18.907862" elapsed="0.994264"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -54,34 +54,34 @@ Arguments:
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:51.017810" elapsed="0.095712"/>
+<status status="PASS" start="2026-03-27T17:34:19.902369" elapsed="0.095645"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:49.984644" elapsed="1.129015"/>
+<status status="PASS" start="2026-03-27T17:34:18.907660" elapsed="1.090458"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:51.114158" level="INFO">Clicks the element 'css=#signin-and-register-big-button'.</msg>
+<msg time="2026-03-27T17:34:19.998624" level="INFO">Clicks the element 'css=#signin-and-register-big-button'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:51.113818" elapsed="0.061169"/>
+<status status="PASS" start="2026-03-27T17:34:19.998271" elapsed="0.058836"/>
 </kw>
 <arg>${header_bar}[btn_login_signin]</arg>
-<status status="PASS" start="2026-03-27T17:11:49.984406" elapsed="1.190712"/>
+<status status="PASS" start="2026-03-27T17:34:18.907423" elapsed="1.149800"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:49.984175" elapsed="1.191001"/>
+<status status="PASS" start="2026-03-27T17:34:18.907189" elapsed="1.150080"/>
 </kw>
 <kw name="Click login with email or mobile no." owner="header_bar">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:51.564264" level="INFO">Waited for Element with selector css=button:text-is("Email or Mobile No.") at state visible</msg>
+<msg time="2026-03-27T17:34:20.447037" level="INFO">Waited for Element with selector css=button:text-is("Email or Mobile No.") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:51.176320" elapsed="0.388143"/>
+<status status="PASS" start="2026-03-27T17:34:20.058217" elapsed="0.389138"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -89,34 +89,34 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:51.564659" elapsed="0.924523"/>
+<status status="PASS" start="2026-03-27T17:34:20.447685" elapsed="0.922470"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:51.176094" elapsed="1.313458"/>
+<status status="PASS" start="2026-03-27T17:34:20.058012" elapsed="1.312617"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:52.490949" level="INFO">Clicks the element 'css=button:text-is("Email or Mobile No.")'.</msg>
+<msg time="2026-03-27T17:34:21.371936" level="INFO">Clicks the element 'css=button:text-is("Email or Mobile No.")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:52.489973" elapsed="0.272761"/>
+<status status="PASS" start="2026-03-27T17:34:21.371045" elapsed="0.310498"/>
 </kw>
 <arg>${login_popup}[btn_email_or_mobile_login]</arg>
-<status status="PASS" start="2026-03-27T17:11:51.175757" elapsed="1.587427"/>
+<status status="PASS" start="2026-03-27T17:34:20.057783" elapsed="1.623958"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:51.175404" elapsed="1.587887"/>
+<status status="PASS" start="2026-03-27T17:34:20.057487" elapsed="1.624329"/>
 </kw>
 <kw name="Input email or mobile no. on login or sign up popup" owner="header_bar">
 <kw name="Input in text field" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:52.769728" level="INFO">Waited for Element with selector css=[data-testid="input-email"] at state visible</msg>
+<msg time="2026-03-27T17:34:21.690993" level="INFO">Waited for Element with selector css=[data-testid="input-email"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:52.765339" elapsed="0.004468"/>
+<status status="PASS" start="2026-03-27T17:34:21.686433" elapsed="0.004660"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -124,37 +124,37 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:52.769962" elapsed="0.278034"/>
+<status status="PASS" start="2026-03-27T17:34:21.691262" elapsed="0.254105"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:52.765072" elapsed="0.283119"/>
+<status status="PASS" start="2026-03-27T17:34:21.686083" elapsed="0.259705"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-03-27T17:11:53.049167" level="INFO">Fills the text 'doppio.theem@gmail.com' in the given field.</msg>
+<msg time="2026-03-27T17:34:21.947079" level="INFO">Fills the text 'doppio.theem@gmail.com' in the given field.</msg>
 <arg>${locator}</arg>
 <arg>${txt}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.048478" elapsed="0.015043"/>
+<status status="PASS" start="2026-03-27T17:34:21.946203" elapsed="0.022929"/>
 </kw>
 <arg>${login_popup}[txt_email_or_mobile_field]</arg>
 <arg>${email_or_mobile_no}</arg>
-<status status="PASS" start="2026-03-27T17:11:52.764740" elapsed="0.298911"/>
+<status status="PASS" start="2026-03-27T17:34:21.683153" elapsed="0.286130"/>
 </kw>
 <arg>${email_or_mobile_no}</arg>
-<status status="PASS" start="2026-03-27T17:11:52.764331" elapsed="0.299431"/>
+<status status="PASS" start="2026-03-27T17:34:21.682709" elapsed="0.286645"/>
 </kw>
 <kw name="Click login button on login or sign up with email or mobile no. method" owner="header_bar">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:53.069992" level="INFO">Waited for Element with selector css=[data-testid="btn-check-step-login-with-email"] at state visible</msg>
+<msg time="2026-03-27T17:34:21.979399" level="INFO">Waited for Element with selector css=[data-testid="btn-check-step-login-with-email"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.066012" elapsed="0.004068"/>
+<status status="PASS" start="2026-03-27T17:34:21.971578" elapsed="0.007940"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -162,34 +162,34 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.070258" elapsed="0.027715"/>
+<status status="PASS" start="2026-03-27T17:34:21.979745" elapsed="0.030682"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:53.065655" elapsed="0.032479"/>
+<status status="PASS" start="2026-03-27T17:34:21.971179" elapsed="0.039379"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:53.098830" level="INFO">Clicks the element 'css=[data-testid="btn-check-step-login-with-email"]'.</msg>
+<msg time="2026-03-27T17:34:22.011196" level="INFO">Clicks the element 'css=[data-testid="btn-check-step-login-with-email"]'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.098352" elapsed="0.554959"/>
+<status status="PASS" start="2026-03-27T17:34:22.010750" elapsed="0.569291"/>
 </kw>
 <arg>${login_popup}[btn_login_confirm_email_or_mobile]</arg>
-<status status="PASS" start="2026-03-27T17:11:53.065182" elapsed="0.588250"/>
+<status status="PASS" start="2026-03-27T17:34:21.970292" elapsed="0.609861"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:53.064184" elapsed="0.589294"/>
+<status status="PASS" start="2026-03-27T17:34:21.969723" elapsed="0.610476"/>
 </kw>
 <kw name="Input password on login or sign up popup" owner="header_bar">
 <kw name="Input in text field" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:53.680316" level="INFO">Waited for Element with selector css=[data-type="password"] at state visible</msg>
+<msg time="2026-03-27T17:34:22.609722" level="INFO">Waited for Element with selector css=[data-type="password"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.654696" elapsed="0.025753"/>
+<status status="PASS" start="2026-03-27T17:34:22.581120" elapsed="0.029037"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -197,37 +197,37 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.680643" elapsed="0.116783"/>
+<status status="PASS" start="2026-03-27T17:34:22.610531" elapsed="0.116772"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:53.654483" elapsed="0.143047"/>
+<status status="PASS" start="2026-03-27T17:34:22.580937" elapsed="0.146465"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-03-27T17:11:53.798019" level="INFO">Fills the text 'Doppio_123*' in the given field.</msg>
+<msg time="2026-03-27T17:34:22.727884" level="INFO">Fills the text 'Doppio_123*' in the given field.</msg>
 <arg>${locator}</arg>
 <arg>${txt}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.797668" elapsed="0.039155"/>
+<status status="PASS" start="2026-03-27T17:34:22.727537" elapsed="0.058296"/>
 </kw>
 <arg>${login_popup}[txt_password_field]</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-03-27T17:11:53.654166" elapsed="0.182763"/>
+<status status="PASS" start="2026-03-27T17:34:22.580702" elapsed="0.205248"/>
 </kw>
 <arg>${password}</arg>
-<status status="PASS" start="2026-03-27T17:11:53.653693" elapsed="0.183278"/>
+<status status="PASS" start="2026-03-27T17:34:22.580381" elapsed="0.205617"/>
 </kw>
 <kw name="Click login button to confirm password on login or sign up with email or mobile no. method" owner="header_bar">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:53.859800" level="INFO">Waited for Element with selector css=[data-testid="btn-login-email-width-pass"] at state visible</msg>
+<msg time="2026-03-27T17:34:22.798105" level="INFO">Waited for Element with selector css=[data-testid="btn-login-email-width-pass"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.837872" elapsed="0.022070"/>
+<status status="PASS" start="2026-03-27T17:34:22.786997" elapsed="0.011211"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -235,62 +235,62 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.860167" elapsed="0.104843"/>
+<status status="PASS" start="2026-03-27T17:34:22.798376" elapsed="0.109466"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:53.837687" elapsed="0.127430"/>
+<status status="PASS" start="2026-03-27T17:34:22.786804" elapsed="0.121140"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:53.965604" level="INFO">Clicks the element 'css=[data-testid="btn-login-email-width-pass"]'.</msg>
+<msg time="2026-03-27T17:34:22.908462" level="INFO">Clicks the element 'css=[data-testid="btn-login-email-width-pass"]'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:53.965263" elapsed="0.344726"/>
+<status status="PASS" start="2026-03-27T17:34:22.908086" elapsed="0.347703"/>
 </kw>
 <arg>${login_popup}[btn_login_confirm_password]</arg>
-<status status="PASS" start="2026-03-27T17:11:53.837462" elapsed="0.472682"/>
+<status status="PASS" start="2026-03-27T17:34:22.786561" elapsed="0.469344"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:53.837186" elapsed="0.473000"/>
+<status status="PASS" start="2026-03-27T17:34:22.786246" elapsed="0.469703"/>
 </kw>
 <arg>${email}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-03-27T17:11:49.983733" elapsed="4.326506"/>
+<status status="PASS" start="2026-03-27T17:34:18.906707" elapsed="4.349277"/>
 </kw>
 <kw name="Check if homepage display" owner="home_page">
 <kw name="Wait until page display" owner="common_web">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:54.329826" level="INFO">Waited for Element with selector css=[id="home-search-component"]:not([style="display: none !important;"]) at state visible</msg>
+<msg time="2026-03-27T17:34:23.285341" level="INFO">Waited for Element with selector css=[id="home-search-component"]:not([style="display: none !important;"]) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:54.311681" elapsed="0.018781"/>
+<status status="PASS" start="2026-03-27T17:34:23.260411" elapsed="0.025049"/>
 </kw>
 <arg>${retry_times}</arg>
 <arg>${interval_for_retry}</arg>
 <arg>Browser.Wait for elements state</arg>
 <arg>${locator}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-03-27T17:11:54.311191" elapsed="0.019947"/>
+<status status="PASS" start="2026-03-27T17:34:23.256978" elapsed="0.028565"/>
 </kw>
 <arg>${homepage_element}[homepage_section]</arg>
 <arg>${retry_times}</arg>
 <arg>${interval_for_retry}</arg>
-<status status="PASS" start="2026-03-27T17:11:54.310796" elapsed="0.020825"/>
+<status status="PASS" start="2026-03-27T17:34:23.256548" elapsed="0.029055"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:54.310464" elapsed="0.021348"/>
+<status status="PASS" start="2026-03-27T17:34:23.256177" elapsed="0.029468"/>
 </kw>
 <kw name="Check if login successfully" owner="header_bar">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:55.758434" level="INFO">Waited for Element with selector css=[alt="user-icon2"] at state visible</msg>
+<msg time="2026-03-27T17:34:24.785478" level="INFO">Waited for Element with selector css=[alt="user-icon2"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:54.332678" elapsed="1.425881"/>
+<status status="PASS" start="2026-03-27T17:34:23.286498" elapsed="1.499259"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -298,24 +298,24 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:55.758739" elapsed="0.037928"/>
+<status status="PASS" start="2026-03-27T17:34:24.786228" elapsed="0.041731"/>
 </kw>
 <arg>${header_bar}[btn_account_icon]</arg>
-<status status="PASS" start="2026-03-27T17:11:54.332446" elapsed="1.464311"/>
+<status status="PASS" start="2026-03-27T17:34:23.286210" elapsed="1.541896"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:54.332143" elapsed="1.464658"/>
+<status status="PASS" start="2026-03-27T17:34:23.285825" elapsed="1.542346"/>
 </kw>
 <kw name="Click accept cookie on footer" owner="footer">
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:55.800754" level="INFO">Waited for Element with selector css=#fixed-bottom-group button:text-is("Accept All") at state visible</msg>
+<msg time="2026-03-27T17:34:24.833924" level="INFO">Waited for Element with selector css=#fixed-bottom-group button:text-is("Accept All") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:55.797883" elapsed="0.002940"/>
+<status status="PASS" start="2026-03-27T17:34:24.829931" elapsed="0.004076"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -323,43 +323,43 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:55.800961" elapsed="0.028879"/>
+<status status="PASS" start="2026-03-27T17:34:24.834163" elapsed="0.025286"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:55.797702" elapsed="0.032247"/>
+<status status="PASS" start="2026-03-27T17:34:24.829646" elapsed="0.029954"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:55.830334" level="INFO">Clicks the element 'css=#fixed-bottom-group button:text-is("Accept All")'.</msg>
+<msg time="2026-03-27T17:34:24.860127" level="INFO">Clicks the element 'css=#fixed-bottom-group button:text-is("Accept All")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:55.830070" elapsed="0.242603"/>
+<status status="PASS" start="2026-03-27T17:34:24.859760" elapsed="0.249496"/>
 </kw>
 <arg>${cookie_element}[btn_accept_all]</arg>
-<status status="PASS" start="2026-03-27T17:11:55.797483" elapsed="0.275335"/>
+<status status="PASS" start="2026-03-27T17:34:24.829279" elapsed="0.280093"/>
 </kw>
 <arg>common_web.Click element on screen</arg>
 <arg>${cookie_element}[btn_accept_all]</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2026-03-27T17:11:55.797214" elapsed="0.275687"/>
+<status status="PASS" start="2026-03-27T17:34:24.828805" elapsed="0.280610"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:55.796969" elapsed="0.275989"/>
+<status status="PASS" start="2026-03-27T17:34:24.828430" elapsed="0.281028"/>
 </kw>
 <arg>${default_account}[email]</arg>
 <arg>${default_account}[password]</arg>
-<status status="PASS" start="2026-03-27T17:11:45.784547" elapsed="10.288448"/>
+<status status="PASS" start="2026-03-27T17:34:14.028329" elapsed="11.081164"/>
 </kw>
 <kw name="Click hotels tab on header bar" owner="header_bar">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:56.086441" level="INFO">Waited for Element with selector css=#home-menu-hotel at state visible</msg>
+<msg time="2026-03-27T17:34:25.124336" level="INFO">Waited for Element with selector css=#home-menu-hotel at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:56.074585" elapsed="0.011944"/>
+<status status="PASS" start="2026-03-27T17:34:25.110982" elapsed="0.013452"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -367,35 +367,35 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:56.086676" elapsed="0.043415"/>
+<status status="PASS" start="2026-03-27T17:34:25.124684" elapsed="0.034612"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:56.074063" elapsed="0.056137"/>
+<status status="PASS" start="2026-03-27T17:34:25.110774" elapsed="0.048620"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:56.130874" level="INFO">Clicks the element 'css=#home-menu-hotel'.</msg>
+<msg time="2026-03-27T17:34:25.159848" level="INFO">Clicks the element 'css=#home-menu-hotel'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:56.130348" elapsed="0.053961"/>
+<status status="PASS" start="2026-03-27T17:34:25.159530" elapsed="0.046532"/>
 </kw>
 <arg>${header_bar}[btn_hotels_tab]</arg>
-<status status="PASS" start="2026-03-27T17:11:56.073781" elapsed="0.110644"/>
+<status status="PASS" start="2026-03-27T17:34:25.110487" elapsed="0.095683"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:56.073440" elapsed="0.111031"/>
+<status status="PASS" start="2026-03-27T17:34:25.110119" elapsed="0.096097"/>
 </kw>
 <kw name="Search destination by typing" owner="hotels_feature">
 <kw name="Click destination search field" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:56.981567" level="INFO">Waited for Element with selector css=#hotel-search-destination at state visible</msg>
+<msg time="2026-03-27T17:34:26.003297" level="INFO">Waited for Element with selector css=#hotel-search-destination at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:56.186411" elapsed="0.795285"/>
+<status status="PASS" start="2026-03-27T17:34:25.207619" elapsed="0.795816"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -403,34 +403,34 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:56.981908" elapsed="0.032408"/>
+<status status="PASS" start="2026-03-27T17:34:26.003665" elapsed="0.030885"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:56.186190" elapsed="0.828255"/>
+<status status="PASS" start="2026-03-27T17:34:25.207407" elapsed="0.827259"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:57.015048" level="INFO">Clicks the element 'css=#hotel-search-destination'.</msg>
+<msg time="2026-03-27T17:34:26.035205" level="INFO">Clicks the element 'css=#hotel-search-destination'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:57.014623" elapsed="0.125188"/>
+<status status="PASS" start="2026-03-27T17:34:26.034826" elapsed="0.122236"/>
 </kw>
 <arg>${hotels_search_section}[txt_search_bar]</arg>
-<status status="PASS" start="2026-03-27T17:11:56.185331" elapsed="0.954601"/>
+<status status="PASS" start="2026-03-27T17:34:25.207136" elapsed="0.950050"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:56.185131" elapsed="0.954848"/>
+<status status="PASS" start="2026-03-27T17:34:25.206835" elapsed="0.950399"/>
 </kw>
 <kw name="Input destination on search field" owner="hotels_page">
 <kw name="Input in text field" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:57.157710" level="INFO">Waited for Element with selector css=#hotel-search-destination at state visible</msg>
+<msg time="2026-03-27T17:34:26.174241" level="INFO">Waited for Element with selector css=#hotel-search-destination at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:57.141448" elapsed="0.016425"/>
+<status status="PASS" start="2026-03-27T17:34:26.159909" elapsed="0.014443"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -438,46 +438,46 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:57.158084" elapsed="0.042262"/>
+<status status="PASS" start="2026-03-27T17:34:26.174534" elapsed="0.044642"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:57.141166" elapsed="0.059283"/>
+<status status="PASS" start="2026-03-27T17:34:26.159158" elapsed="0.060134"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2026-03-27T17:11:57.200947" level="INFO">Fills the text 'Bangkok' in the given field.</msg>
+<msg time="2026-03-27T17:34:26.219870" level="INFO">Fills the text 'Bangkok' in the given field.</msg>
 <arg>${locator}</arg>
 <arg>${txt}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:57.200588" elapsed="0.033185"/>
+<status status="PASS" start="2026-03-27T17:34:26.219449" elapsed="0.034230"/>
 </kw>
 <arg>${hotels_search_section}[txt_search_bar]</arg>
 <arg>${search_text}</arg>
-<status status="PASS" start="2026-03-27T17:11:57.140785" elapsed="0.093119"/>
+<status status="PASS" start="2026-03-27T17:34:26.157887" elapsed="0.095932"/>
 </kw>
 <arg>${search_text}</arg>
-<status status="PASS" start="2026-03-27T17:11:57.140171" elapsed="0.093780"/>
+<status status="PASS" start="2026-03-27T17:34:26.157413" elapsed="0.096454"/>
 </kw>
 <kw name="Select destination from suggestion list after search with input" owner="hotels_page">
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:57.235112" level="INFO">${destination_locator} = css=[id^="hotel-search-typing-"] b:has-text("Bangkok")</msg>
+<msg time="2026-03-27T17:34:26.255197" level="INFO">${destination_locator} = css=[id^="hotel-search-typing-"] b:has-text("Bangkok")</msg>
 <var>${destination_locator}</var>
 <arg>${hotels_search_section}[btn_search_suggestion_typing]</arg>
 <arg>***destination***</arg>
 <arg>${destination}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:57.234532" elapsed="0.000610"/>
+<status status="PASS" start="2026-03-27T17:34:26.254498" elapsed="0.000764"/>
 </kw>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.068821" level="INFO">Waited for Element with selector css=[id^="hotel-search-typing-"] b:has-text("Bangkok") at state visible</msg>
+<msg time="2026-03-27T17:34:27.079676" level="INFO">Waited for Element with selector css=[id^="hotel-search-typing-"] b:has-text("Bangkok") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:57.236422" elapsed="0.833029"/>
+<status status="PASS" start="2026-03-27T17:34:26.257690" elapsed="0.822559"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -485,38 +485,38 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.070377" elapsed="0.044169"/>
+<status status="PASS" start="2026-03-27T17:34:27.080928" elapsed="0.029730"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:57.235602" elapsed="0.879215"/>
+<status status="PASS" start="2026-03-27T17:34:26.256335" elapsed="0.854544"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:58.115999" level="INFO">Clicks the element 'css=[id^="hotel-search-typing-"] b:has-text("Bangkok")'.</msg>
+<msg time="2026-03-27T17:34:27.111923" level="INFO">Clicks the element 'css=[id^="hotel-search-typing-"] b:has-text("Bangkok")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.115167" elapsed="0.073613"/>
+<status status="PASS" start="2026-03-27T17:34:27.111197" elapsed="0.072901"/>
 </kw>
 <arg>${destination_locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:57.235308" elapsed="0.953728"/>
+<status status="PASS" start="2026-03-27T17:34:26.255634" elapsed="0.928689"/>
 </kw>
 <arg>${search_text}</arg>
-<status status="PASS" start="2026-03-27T17:11:57.234170" elapsed="0.954928"/>
+<status status="PASS" start="2026-03-27T17:34:26.254104" elapsed="0.930274"/>
 </kw>
 <arg>${TC_HOTELS_001}[destination]</arg>
-<status status="PASS" start="2026-03-27T17:11:56.184739" elapsed="2.004406"/>
+<status status="PASS" start="2026-03-27T17:34:25.206466" elapsed="1.977956"/>
 </kw>
 <kw name="Click check in date section" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.193845" level="INFO">Waited for Element with selector css=[for="hotel-search-checkin-date"] at state visible</msg>
+<msg time="2026-03-27T17:34:27.188892" level="INFO">Waited for Element with selector css=[for="hotel-search-checkin-date"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.190368" elapsed="0.003562"/>
+<status status="PASS" start="2026-03-27T17:34:27.185522" elapsed="0.003457"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -524,50 +524,50 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.194084" elapsed="0.036846"/>
+<status status="PASS" start="2026-03-27T17:34:27.189127" elapsed="0.038278"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.190112" elapsed="0.040937"/>
+<status status="PASS" start="2026-03-27T17:34:27.185294" elapsed="0.042233"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:58.231625" level="INFO">Clicks the element 'css=[for="hotel-search-checkin-date"]'.</msg>
+<msg time="2026-03-27T17:34:27.228097" level="INFO">Clicks the element 'css=[for="hotel-search-checkin-date"]'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.231218" elapsed="0.255676"/>
+<status status="PASS" start="2026-03-27T17:34:27.227696" elapsed="0.253760"/>
 </kw>
 <arg>${hotels_search_section}[btn_checkin_date]</arg>
-<status status="PASS" start="2026-03-27T17:11:58.189799" elapsed="0.297207"/>
+<status status="PASS" start="2026-03-27T17:34:27.185013" elapsed="0.296552"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:58.189430" elapsed="0.297620"/>
+<status status="PASS" start="2026-03-27T17:34:27.184684" elapsed="0.296923"/>
 </kw>
 <kw name="Select booking period from today to target days" owner="hotels_feature">
 <kw name="Find today date on calendar and select today date" owner="hotels_feature">
 <kw name="Get Time" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.488261" level="INFO">${month_index_ref} = 03</msg>
+<msg time="2026-03-27T17:34:27.482728" level="INFO">${month_index_ref} = 03</msg>
 <var>${month_index_ref}</var>
 <arg>month</arg>
 <doc>Returns the given time in the requested format.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.488012" elapsed="0.000271"/>
+<status status="PASS" start="2026-03-27T17:34:27.482499" elapsed="0.000249"/>
 </kw>
 <kw name="Convert To Number" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.488571" level="INFO">${month_int_ref} = 3.0</msg>
+<msg time="2026-03-27T17:34:27.483037" level="INFO">${month_int_ref} = 3.0</msg>
 <var>${month_int_ref}</var>
 <arg>${month_index_ref}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.488384" elapsed="0.000204"/>
+<status status="PASS" start="2026-03-27T17:34:27.482858" elapsed="0.000195"/>
 </kw>
 <kw name="Get left month on calendar" owner="hotels_page">
 <kw name="Get text from element" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.492606" level="INFO">Waited for Element with selector css=.date-text-left p at state visible</msg>
+<msg time="2026-03-27T17:34:27.487013" level="INFO">Waited for Element with selector css=.date-text-left p at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.489267" elapsed="0.003421"/>
+<status status="PASS" start="2026-03-27T17:34:27.483704" elapsed="0.003382"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -575,62 +575,62 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.492827" elapsed="0.071551"/>
+<status status="PASS" start="2026-03-27T17:34:27.487212" elapsed="0.105610"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.489087" elapsed="0.075422"/>
+<status status="PASS" start="2026-03-27T17:34:27.483535" elapsed="0.109408"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T17:11:58.570737" level="INFO">Text: 'April 2026'</msg>
-<msg time="2026-03-27T17:11:58.570850" level="INFO">${text} = April 2026</msg>
+<msg time="2026-03-27T17:34:27.599541" level="INFO">Text: 'April 2026'</msg>
+<msg time="2026-03-27T17:34:27.599640" level="INFO">${text} = April 2026</msg>
 <var>${text}</var>
 <arg>${locator}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.564699" elapsed="0.006171"/>
+<status status="PASS" start="2026-03-27T17:34:27.593130" elapsed="0.006530"/>
 </kw>
 <return>
 <value>${text}</value>
-<status status="PASS" start="2026-03-27T17:11:58.570945" elapsed="0.000126"/>
+<status status="PASS" start="2026-03-27T17:34:27.599733" elapsed="0.000120"/>
 </return>
-<msg time="2026-03-27T17:11:58.571184" level="INFO">${left_month} = April 2026</msg>
+<msg time="2026-03-27T17:34:27.599965" level="INFO">${left_month} = April 2026</msg>
 <var>${left_month}</var>
 <arg>${calendar_modal}[lbl_month_left]</arg>
-<status status="PASS" start="2026-03-27T17:11:58.488890" elapsed="0.082312"/>
+<status status="PASS" start="2026-03-27T17:34:27.483344" elapsed="0.116640"/>
 </kw>
 <return>
 <value>${left_month}</value>
-<status status="PASS" start="2026-03-27T17:11:58.571238" elapsed="0.000047"/>
+<status status="PASS" start="2026-03-27T17:34:27.600025" elapsed="0.000049"/>
 </return>
-<msg time="2026-03-27T17:11:58.571360" level="INFO">${month_text} = April 2026</msg>
+<msg time="2026-03-27T17:34:27.600156" level="INFO">${month_text} = April 2026</msg>
 <var>${month_text}</var>
-<status status="PASS" start="2026-03-27T17:11:58.488706" elapsed="0.082671"/>
+<status status="PASS" start="2026-03-27T17:34:27.483168" elapsed="0.117006"/>
 </kw>
 <kw name="Convert month into index" owner="hotels_page">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.572373" level="INFO">${month_index} = 4</msg>
+<msg time="2026-03-27T17:34:27.601219" level="INFO">${month_index} = 4</msg>
 <var>${month_index}</var>
 <arg>${month_to_index}[${month_in_text}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.572143" elapsed="0.000249"/>
+<status status="PASS" start="2026-03-27T17:34:27.600979" elapsed="0.000260"/>
 </kw>
 <return>
 <value>${month_index}</value>
-<status status="PASS" start="2026-03-27T17:11:58.572432" elapsed="0.000043"/>
+<status status="PASS" start="2026-03-27T17:34:27.601280" elapsed="0.000043"/>
 </return>
-<msg time="2026-03-27T17:11:58.572550" level="INFO">${month_index} = 4</msg>
+<msg time="2026-03-27T17:34:27.601404" level="INFO">${month_index} = 4</msg>
 <var>${month_index}</var>
 <arg>${month_text[0:-5]}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.571539" elapsed="0.001027"/>
+<status status="PASS" start="2026-03-27T17:34:27.600343" elapsed="0.001078"/>
 </kw>
 <kw name="Convert To Number" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.572841" level="INFO">${month_int} = 4.0</msg>
+<msg time="2026-03-27T17:34:27.601720" level="INFO">${month_int} = 4.0</msg>
 <var>${month_int}</var>
 <arg>${month_index}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.572661" elapsed="0.000197"/>
+<status status="PASS" start="2026-03-27T17:34:27.601525" elapsed="0.000213"/>
 </kw>
 <if>
 <branch type="IF" condition="${month_int} &lt; ${month_int_ref}">
@@ -638,32 +638,32 @@ unless it is completely visible.</doc>
 <var>${diff}</var>
 <arg>${month_int_ref}-${month_int}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-03-27T17:11:58.573123" elapsed="0.000034"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.602022" elapsed="0.000036"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Click next one month on calendar" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:11:58.573398" elapsed="0.000034"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.602322" elapsed="0.000037"/>
 </kw>
 <var name="${i}"/>
-<status status="NOT RUN" start="2026-03-27T17:11:58.573274" elapsed="0.000184"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.602187" elapsed="0.000199"/>
 </iter>
 <var>${i}</var>
 <value>{diff}</value>
-<status status="NOT RUN" start="2026-03-27T17:11:58.573206" elapsed="0.000279"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.602106" elapsed="0.000310"/>
 </for>
 <kw name="Select today date on calendar" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:11:58.573595" elapsed="0.000033"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.602536" elapsed="0.000035"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:11:58.572943" elapsed="0.000707"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.601819" elapsed="0.000777"/>
 </branch>
 <branch type="ELSE IF" condition="${month_int} &gt; ${month_int_ref}">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.574019" level="INFO">${diff} = 1.0</msg>
+<msg time="2026-03-27T17:34:27.603003" level="INFO">${diff} = 1.0</msg>
 <var>${diff}</var>
 <arg>${month_int}-${month_int_ref}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.573819" elapsed="0.000218"/>
+<status status="PASS" start="2026-03-27T17:34:27.602789" elapsed="0.000233"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -671,12 +671,12 @@ unless it is completely visible.</doc>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.577146" level="INFO">Waited for Element with selector css=[title="back-one-month"] at state visible</msg>
+<msg time="2026-03-27T17:34:27.606335" level="INFO">Waited for Element with selector css=[title="back-one-month"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.574854" elapsed="0.002357"/>
+<status status="PASS" start="2026-03-27T17:34:27.603922" elapsed="0.002481"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -684,41 +684,41 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.577351" elapsed="0.036783"/>
+<status status="PASS" start="2026-03-27T17:34:27.606525" elapsed="0.036136"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.574681" elapsed="0.039573"/>
+<status status="PASS" start="2026-03-27T17:34:27.603723" elapsed="0.039084"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:58.614650" level="INFO">Clicks the element 'css=[title="back-one-month"]'.</msg>
+<msg time="2026-03-27T17:34:27.643301" level="INFO">Clicks the element 'css=[title="back-one-month"]'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.614381" elapsed="0.050545"/>
+<status status="PASS" start="2026-03-27T17:34:27.642959" elapsed="0.052061"/>
 </kw>
 <arg>${calendar_modal}[btn_back_one_month]</arg>
-<status status="PASS" start="2026-03-27T17:11:58.574483" elapsed="0.090575"/>
+<status status="PASS" start="2026-03-27T17:34:27.603500" elapsed="0.091643"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:58.574303" elapsed="0.090804"/>
+<status status="PASS" start="2026-03-27T17:34:27.603298" elapsed="0.091894"/>
 </kw>
 <var name="${i}">0.0</var>
-<status status="PASS" start="2026-03-27T17:11:58.574191" elapsed="0.090944"/>
+<status status="PASS" start="2026-03-27T17:34:27.603176" elapsed="0.092046"/>
 </iter>
 <var>${i}</var>
 <value>${diff}</value>
-<status status="PASS" start="2026-03-27T17:11:58.574076" elapsed="0.091101"/>
+<status status="PASS" start="2026-03-27T17:34:27.603065" elapsed="0.092197"/>
 </for>
 <kw name="Select today date on calendar" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.669291" level="INFO">Waited for Element with selector css=.rdrDay.rdrDayToday at state visible</msg>
+<msg time="2026-03-27T17:34:27.699094" level="INFO">Waited for Element with selector css=.rdrDay.rdrDayToday at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.666258" elapsed="0.003123"/>
+<status status="PASS" start="2026-03-27T17:34:27.696323" elapsed="0.002839"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -726,46 +726,46 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.669525" elapsed="0.027336"/>
+<status status="PASS" start="2026-03-27T17:34:27.699289" elapsed="0.026630"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.666050" elapsed="0.030917"/>
+<status status="PASS" start="2026-03-27T17:34:27.696101" elapsed="0.029897"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:11:58.697474" level="INFO">Clicks the element 'css=.rdrDay.rdrDayToday'.</msg>
+<msg time="2026-03-27T17:34:27.726393" level="INFO">Clicks the element 'css=.rdrDay.rdrDayToday'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.697121" elapsed="0.073622"/>
+<status status="PASS" start="2026-03-27T17:34:27.726123" elapsed="0.075722"/>
 </kw>
 <arg>${calendar_modal}[btn_today_date]</arg>
-<status status="PASS" start="2026-03-27T17:11:58.665776" elapsed="0.105093"/>
+<status status="PASS" start="2026-03-27T17:34:27.695835" elapsed="0.106135"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:58.665414" elapsed="0.105512"/>
+<status status="PASS" start="2026-03-27T17:34:27.695473" elapsed="0.106543"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:11:58.573674" elapsed="0.197277"/>
+<status status="PASS" start="2026-03-27T17:34:27.602624" elapsed="0.199419"/>
 </branch>
 <branch type="ELSE">
 <kw name="Select today date on calendar" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:11:58.771226" elapsed="0.000064"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.802334" elapsed="0.000048"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:11:58.770984" elapsed="0.000330"/>
+<status status="NOT RUN" start="2026-03-27T17:34:27.802080" elapsed="0.000327"/>
 </branch>
-<status status="PASS" start="2026-03-27T17:11:58.572924" elapsed="0.198411"/>
+<status status="PASS" start="2026-03-27T17:34:27.601803" elapsed="0.200626"/>
 </if>
-<status status="PASS" start="2026-03-27T17:11:58.487815" elapsed="0.283557"/>
+<status status="PASS" start="2026-03-27T17:34:27.482312" elapsed="0.320150"/>
 </kw>
 <kw name="Get left month on calendar" owner="hotels_page">
 <kw name="Get text from element" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.774842" level="INFO">Waited for Element with selector css=.date-text-left p at state visible</msg>
+<msg time="2026-03-27T17:34:27.806025" level="INFO">Waited for Element with selector css=.date-text-left p at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.772115" elapsed="0.002796"/>
+<status status="PASS" start="2026-03-27T17:34:27.803239" elapsed="0.002855"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -773,68 +773,68 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.775037" elapsed="0.021447"/>
+<status status="PASS" start="2026-03-27T17:34:27.806219" elapsed="0.036325"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.771938" elapsed="0.024617"/>
+<status status="PASS" start="2026-03-27T17:34:27.803040" elapsed="0.039584"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T17:11:58.800494" level="INFO">Text: 'March 2026'</msg>
-<msg time="2026-03-27T17:11:58.800567" level="INFO">${text} = March 2026</msg>
+<msg time="2026-03-27T17:34:27.847044" level="INFO">Text: 'March 2026'</msg>
+<msg time="2026-03-27T17:34:27.847123" level="INFO">${text} = March 2026</msg>
 <var>${text}</var>
 <arg>${locator}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.796669" elapsed="0.003915"/>
+<status status="PASS" start="2026-03-27T17:34:27.842752" elapsed="0.004391"/>
 </kw>
 <return>
 <value>${text}</value>
-<status status="PASS" start="2026-03-27T17:11:58.800637" elapsed="0.000059"/>
+<status status="PASS" start="2026-03-27T17:34:27.847199" elapsed="0.000069"/>
 </return>
-<msg time="2026-03-27T17:11:58.800783" level="INFO">${left_month} = March 2026</msg>
+<msg time="2026-03-27T17:34:27.847362" level="INFO">${left_month} = March 2026</msg>
 <var>${left_month}</var>
 <arg>${calendar_modal}[lbl_month_left]</arg>
-<status status="PASS" start="2026-03-27T17:11:58.771715" elapsed="0.029085"/>
+<status status="PASS" start="2026-03-27T17:34:27.802809" elapsed="0.044571"/>
 </kw>
 <return>
 <value>${left_month}</value>
-<status status="PASS" start="2026-03-27T17:11:58.800834" elapsed="0.000042"/>
+<status status="PASS" start="2026-03-27T17:34:27.847419" elapsed="0.000045"/>
 </return>
-<msg time="2026-03-27T17:11:58.800947" level="INFO">${month_text} = March 2026</msg>
+<msg time="2026-03-27T17:34:27.847544" level="INFO">${month_text} = March 2026</msg>
 <var>${month_text}</var>
-<status status="PASS" start="2026-03-27T17:11:58.771485" elapsed="0.029477"/>
+<status status="PASS" start="2026-03-27T17:34:27.802582" elapsed="0.044979"/>
 </kw>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:58.801240" level="INFO">${available_month_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(***index*** of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:27.847867" level="INFO">${available_month_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(***index*** of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_month_locator}</var>
 <arg>${calendar_modal}[btn_available_date_by_index]</arg>
 <arg>***month***</arg>
 <arg>${month_text}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.801066" elapsed="0.000192"/>
+<status status="PASS" start="2026-03-27T17:34:27.847675" elapsed="0.000212"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:58.801680" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:27.848356" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_date_locator}</var>
 <arg>${available_month_locator}</arg>
 <arg>***index***</arg>
 <arg>${available_date_in_current_month}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.801529" elapsed="0.000169"/>
+<status status="PASS" start="2026-03-27T17:34:27.848190" elapsed="0.000185"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.804743" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
+<msg time="2026-03-27T17:34:27.852964" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.802234" elapsed="0.002565"/>
+<status status="PASS" start="2026-03-27T17:34:27.848947" elapsed="0.004078"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -842,56 +842,45 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.804912" elapsed="0.024831"/>
+<status status="PASS" start="2026-03-27T17:34:27.853148" elapsed="0.022607"/>
 </kw>
 <arg>${available_date_locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.802034" elapsed="0.027782"/>
+<status status="PASS" start="2026-03-27T17:34:27.848740" elapsed="0.027089"/>
 </kw>
-<msg time="2026-03-27T17:11:58.829886" level="INFO">${status} = True</msg>
+<msg time="2026-03-27T17:34:27.875903" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>common_web.Check if element display</arg>
 <arg>${available_date_locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.801799" elapsed="0.028107"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.830256" level="INFO">1</msg>
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.830030" elapsed="0.000257"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.830388" elapsed="0.000185"/>
+<status status="PASS" start="2026-03-27T17:34:27.848483" elapsed="0.027440"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${status}==False</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.830715" elapsed="0.000218"/>
+<status status="PASS" start="2026-03-27T17:34:27.876042" elapsed="0.000273"/>
 </kw>
 <var name="${available_date_in_current_month}">1</var>
-<status status="PASS" start="2026-03-27T17:11:58.801429" elapsed="0.029538"/>
+<status status="PASS" start="2026-03-27T17:34:27.848075" elapsed="0.028276"/>
 </iter>
 <iter>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:58.831319" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:27.876773" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_date_locator}</var>
 <arg>${available_month_locator}</arg>
 <arg>***index***</arg>
 <arg>${available_date_in_current_month}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.831157" elapsed="0.000181"/>
+<status status="PASS" start="2026-03-27T17:34:27.876592" elapsed="0.000201"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.834253" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
+<msg time="2026-03-27T17:34:27.879967" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.831878" elapsed="0.002431"/>
+<status status="PASS" start="2026-03-27T17:34:27.877377" elapsed="0.002651"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -899,56 +888,45 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.834426" elapsed="0.028821"/>
+<status status="PASS" start="2026-03-27T17:34:27.880154" elapsed="0.029346"/>
 </kw>
 <arg>${available_date_locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.831672" elapsed="0.031666"/>
+<status status="PASS" start="2026-03-27T17:34:27.877158" elapsed="0.032433"/>
 </kw>
-<msg time="2026-03-27T17:11:58.863419" level="INFO">${status} = True</msg>
+<msg time="2026-03-27T17:34:27.909675" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>common_web.Check if element display</arg>
 <arg>${available_date_locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.831444" elapsed="0.031998"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.863827" level="INFO">2</msg>
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.863582" elapsed="0.000279"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.863974" elapsed="0.000204"/>
+<status status="PASS" start="2026-03-27T17:34:27.876909" elapsed="0.032789"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${status}==False</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.864292" elapsed="0.000234"/>
+<status status="PASS" start="2026-03-27T17:34:27.909837" elapsed="0.000315"/>
 </kw>
 <var name="${available_date_in_current_month}">2</var>
-<status status="PASS" start="2026-03-27T17:11:58.831052" elapsed="0.033511"/>
+<status status="PASS" start="2026-03-27T17:34:27.876473" elapsed="0.033724"/>
 </iter>
 <iter>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:58.864944" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:27.910633" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_date_locator}</var>
 <arg>${available_month_locator}</arg>
 <arg>***index***</arg>
 <arg>${available_date_in_current_month}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.864768" elapsed="0.000199"/>
+<status status="PASS" start="2026-03-27T17:34:27.910431" elapsed="0.000225"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.868234" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
+<msg time="2026-03-27T17:34:27.914136" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.865566" elapsed="0.002728"/>
+<status status="PASS" start="2026-03-27T17:34:27.911309" elapsed="0.002894"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -956,56 +934,45 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.868414" elapsed="0.028354"/>
+<status status="PASS" start="2026-03-27T17:34:27.914340" elapsed="0.028217"/>
 </kw>
 <arg>${available_date_locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.865336" elapsed="0.031552"/>
+<status status="PASS" start="2026-03-27T17:34:27.911065" elapsed="0.031578"/>
 </kw>
-<msg time="2026-03-27T17:11:58.896984" level="INFO">${status} = True</msg>
+<msg time="2026-03-27T17:34:27.942729" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>common_web.Check if element display</arg>
 <arg>${available_date_locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.865083" elapsed="0.031928"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.897466" level="INFO">3</msg>
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.897173" elapsed="0.000329"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.897620" elapsed="0.000216"/>
+<status status="PASS" start="2026-03-27T17:34:27.910785" elapsed="0.031968"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${status}==False</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.897954" elapsed="0.000254"/>
+<status status="PASS" start="2026-03-27T17:34:27.942898" elapsed="0.000323"/>
 </kw>
 <var name="${available_date_in_current_month}">3</var>
-<status status="PASS" start="2026-03-27T17:11:58.864653" elapsed="0.033593"/>
+<status status="PASS" start="2026-03-27T17:34:27.910291" elapsed="0.032974"/>
 </iter>
 <iter>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:58.898652" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:27.943735" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_date_locator}</var>
 <arg>${available_month_locator}</arg>
 <arg>***index***</arg>
 <arg>${available_date_in_current_month}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.898465" elapsed="0.000209"/>
+<status status="PASS" start="2026-03-27T17:34:27.943515" elapsed="0.000245"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.902626" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
+<msg time="2026-03-27T17:34:27.947486" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.899294" elapsed="0.003411"/>
+<status status="PASS" start="2026-03-27T17:34:27.944472" elapsed="0.003080"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1013,56 +980,45 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.902852" elapsed="0.026970"/>
+<status status="PASS" start="2026-03-27T17:34:27.947689" elapsed="0.028201"/>
 </kw>
 <arg>${available_date_locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.899055" elapsed="0.030854"/>
+<status status="PASS" start="2026-03-27T17:34:27.944204" elapsed="0.031773"/>
 </kw>
-<msg time="2026-03-27T17:11:58.929987" level="INFO">${status} = True</msg>
+<msg time="2026-03-27T17:34:27.976064" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>common_web.Check if element display</arg>
 <arg>${available_date_locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.898794" elapsed="0.031215"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.930382" level="INFO">4</msg>
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.930146" elapsed="0.000309"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.930570" elapsed="0.000206"/>
+<status status="PASS" start="2026-03-27T17:34:27.943899" elapsed="0.032189"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${status}==False</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.930888" elapsed="0.000233"/>
+<status status="PASS" start="2026-03-27T17:34:27.976234" elapsed="0.000321"/>
 </kw>
 <var name="${available_date_in_current_month}">4</var>
-<status status="PASS" start="2026-03-27T17:11:58.898345" elapsed="0.032811"/>
+<status status="PASS" start="2026-03-27T17:34:27.943367" elapsed="0.033233"/>
 </iter>
 <iter>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:58.931525" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:27.977065" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_date_locator}</var>
 <arg>${available_month_locator}</arg>
 <arg>***index***</arg>
 <arg>${available_date_in_current_month}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.931352" elapsed="0.000194"/>
+<status status="PASS" start="2026-03-27T17:34:27.976845" elapsed="0.000244"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:11:58.934796" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
+<msg time="2026-03-27T17:34:27.981032" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.932120" elapsed="0.002741"/>
+<status status="PASS" start="2026-03-27T17:34:27.977794" elapsed="0.003312"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1070,53 +1026,42 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.934990" elapsed="0.028181"/>
+<status status="PASS" start="2026-03-27T17:34:27.981259" elapsed="0.028034"/>
 </kw>
 <arg>${available_date_locator}</arg>
-<status status="PASS" start="2026-03-27T17:11:58.931902" elapsed="0.031353"/>
+<status status="PASS" start="2026-03-27T17:34:27.977528" elapsed="0.031866"/>
 </kw>
-<msg time="2026-03-27T17:11:58.963333" level="INFO">${status} = True</msg>
+<msg time="2026-03-27T17:34:28.009491" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>common_web.Check if element display</arg>
 <arg>${available_date_locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.931660" elapsed="0.031695"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-03-27T17:11:58.963732" level="INFO">5</msg>
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.963496" elapsed="0.000273"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.963887" elapsed="0.000210"/>
+<status status="PASS" start="2026-03-27T17:34:27.977227" elapsed="0.032292"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
 <arg>${status}==False</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.964214" elapsed="0.000249"/>
+<status status="PASS" start="2026-03-27T17:34:28.009682" elapsed="0.000364"/>
 </kw>
 <var name="${available_date_in_current_month}">5</var>
-<status status="PASS" start="2026-03-27T17:11:58.931242" elapsed="0.033259"/>
+<status status="PASS" start="2026-03-27T17:34:27.976702" elapsed="0.033393"/>
 </iter>
 <iter>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:11:58.964914" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(6 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:28.010630" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(6 of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_date_locator}</var>
 <arg>${available_month_locator}</arg>
 <arg>***index***</arg>
 <arg>${available_date_in_current_month}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.964719" elapsed="0.000218"/>
+<status status="PASS" start="2026-03-27T17:34:28.010385" elapsed="0.000273"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.098283" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-03-27T17:12:09.098364" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
-<msg time="2026-03-27T17:12:09.098651" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+<msg time="2026-03-27T17:34:38.144177" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T17:34:38.144327" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T17:34:38.144731" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
 Call log:
   - waiting for locator('.rdrMonth:has-text("March 2026") .rdrDay:nth-child(6 of :not(.rdrDayDisabled):not(.invisible))').first() to be visible
 </msg>
@@ -1124,7 +1069,7 @@ Call log:
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="FAIL" start="2026-03-27T17:11:58.965586" elapsed="10.136391">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+<status status="FAIL" start="2026-03-27T17:34:28.011471" elapsed="10.136460">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
 Call log:
   - waiting for locator('.rdrMonth:has-text("March 2026") .rdrDay:nth-child(6 of :not(.rdrDayDisabled):not(.invisible))').first() to be visible
 </status>
@@ -1135,46 +1080,42 @@ Call log:
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:09.102158" elapsed="0.000057"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.148215" elapsed="0.000087"/>
 </kw>
 <arg>${available_date_locator}</arg>
-<status status="FAIL" start="2026-03-27T17:11:58.965340" elapsed="10.136957">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+<status status="FAIL" start="2026-03-27T17:34:28.011159" elapsed="10.137240">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
 Call log:
   - waiting for locator('.rdrMonth:has-text("March 2026") .rdrDay:nth-child(6 of :not(.rdrDayDisabled):not(.invisible))').first() to be visible
 </status>
 </kw>
-<msg time="2026-03-27T17:12:09.102373" level="INFO">${status} = False</msg>
+<msg time="2026-03-27T17:34:38.148485" level="INFO">${status} = False</msg>
 <var>${status}</var>
 <arg>common_web.Check if element display</arg>
 <arg>${available_date_locator}</arg>
 <doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-03-27T17:11:58.965064" elapsed="10.137325"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2026-03-27T17:12:09.102685" level="INFO">6</msg>
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.102483" elapsed="0.000230"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${available_date_in_current_month}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.102798" elapsed="0.000171"/>
+<status status="PASS" start="2026-03-27T17:34:28.010815" elapsed="10.137686"/>
 </kw>
 <kw name="Exit For Loop If" owner="BuiltIn">
-<msg time="2026-03-27T17:12:09.103269" level="INFO">Exiting for loop altogether.</msg>
+<msg time="2026-03-27T17:34:38.148896" level="INFO">Exiting for loop altogether.</msg>
 <arg>${status}==False</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.103067" elapsed="0.000235"/>
+<status status="PASS" start="2026-03-27T17:34:38.148595" elapsed="0.000346"/>
 </kw>
 <var name="${available_date_in_current_month}">6</var>
-<status status="PASS" start="2026-03-27T17:11:58.964596" elapsed="10.138737"/>
+<status status="PASS" start="2026-03-27T17:34:28.010224" elapsed="10.138753"/>
 </iter>
 <var>${available_date_in_current_month}</var>
 <value>1</value>
 <value>31</value>
-<status status="PASS" start="2026-03-27T17:11:58.801305" elapsed="10.302068"/>
+<status status="PASS" start="2026-03-27T17:34:27.847941" elapsed="10.301076"/>
 </for>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-27T17:34:38.149321" level="INFO">${available_date_in_current_month} = 5</msg>
+<var>${available_date_in_current_month}</var>
+<arg>${available_date_in_current_month}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-27T17:34:38.149125" elapsed="0.000212"/>
+</kw>
 <if>
 <branch type="IF" condition="${days_to_book}&lt;=${available_date_in_current_month}">
 <kw name="Replace String" owner="String">
@@ -1183,32 +1124,32 @@ Call log:
 <arg>***index***</arg>
 <arg>${available_date_in_current_month}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:09.103600" elapsed="0.000037"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.149542" elapsed="0.000034"/>
 </kw>
 <kw name="Click element on screen" owner="common_web">
 <arg>${available_date_locator}</arg>
-<status status="NOT RUN" start="2026-03-27T17:12:09.103766" elapsed="0.000035"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.149708" elapsed="0.000034"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:09.103437" elapsed="0.000422"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.149392" elapsed="0.000375"/>
 </branch>
 <branch type="ELSE IF" condition="${days_to_book}&gt;${available_date_in_current_month}">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-27T17:12:09.104221" level="INFO">${days_over} = 4</msg>
+<msg time="2026-03-27T17:34:38.150136" level="INFO">${days_over} = 5</msg>
 <var>${days_over}</var>
 <arg>${days_to_book}-${available_date_in_current_month}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.104031" elapsed="0.000206"/>
+<status status="PASS" start="2026-03-27T17:34:38.149932" elapsed="0.000222"/>
 </kw>
 <kw name="Get right month on calendar" owner="hotels_page">
 <kw name="Get text from element" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.107592" level="INFO">Waited for Element with selector css=.date-text-right p at state visible</msg>
+<msg time="2026-03-27T17:34:38.154587" level="INFO">Waited for Element with selector css=.date-text-right p at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.104867" elapsed="0.002794"/>
+<status status="PASS" start="2026-03-27T17:34:38.150877" elapsed="0.003786"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1216,66 +1157,66 @@ Call log:
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.107795" elapsed="0.022557"/>
+<status status="PASS" start="2026-03-27T17:34:38.154811" elapsed="0.038505"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.104707" elapsed="0.025749"/>
+<status status="PASS" start="2026-03-27T17:34:38.150699" elapsed="0.042731"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T17:12:09.135702" level="INFO">Text: 'April 2026'</msg>
-<msg time="2026-03-27T17:12:09.135792" level="INFO">${text} = April 2026</msg>
+<msg time="2026-03-27T17:34:38.198472" level="INFO">Text: 'April 2026'</msg>
+<msg time="2026-03-27T17:34:38.198560" level="INFO">${text} = April 2026</msg>
 <var>${text}</var>
 <arg>${locator}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.130600" elapsed="0.005209"/>
+<status status="PASS" start="2026-03-27T17:34:38.193584" elapsed="0.004993"/>
 </kw>
 <return>
 <value>${text}</value>
-<status status="PASS" start="2026-03-27T17:12:09.135870" elapsed="0.000069"/>
+<status status="PASS" start="2026-03-27T17:34:38.198637" elapsed="0.000074"/>
 </return>
-<msg time="2026-03-27T17:12:09.136028" level="INFO">${right_month} = April 2026</msg>
+<msg time="2026-03-27T17:34:38.198803" level="INFO">${right_month} = April 2026</msg>
 <var>${right_month}</var>
 <arg>${calendar_modal}[lbl_month_right]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.104522" elapsed="0.031521"/>
+<status status="PASS" start="2026-03-27T17:34:38.150494" elapsed="0.048326"/>
 </kw>
 <return>
 <value>${right_month}</value>
-<status status="PASS" start="2026-03-27T17:12:09.136076" elapsed="0.000040"/>
+<status status="PASS" start="2026-03-27T17:34:38.198857" elapsed="0.000046"/>
 </return>
-<msg time="2026-03-27T17:12:09.136183" level="INFO">${next_month_text} = April 2026</msg>
+<msg time="2026-03-27T17:34:38.199255" level="INFO">${next_month_text} = April 2026</msg>
 <var>${next_month_text}</var>
-<status status="PASS" start="2026-03-27T17:12:09.104345" elapsed="0.031853"/>
+<status status="PASS" start="2026-03-27T17:34:38.150282" elapsed="0.048991"/>
 </kw>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:12:09.136475" level="INFO">${available_month_locator} = css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(***index*** of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:38.199585" level="INFO">${available_month_locator} = css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(***index*** of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_month_locator}</var>
 <arg>${calendar_modal}[btn_available_date_by_index]</arg>
 <arg>***month***</arg>
 <arg>${next_month_text}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.136305" elapsed="0.000187"/>
+<status status="PASS" start="2026-03-27T17:34:38.199388" elapsed="0.000216"/>
 </kw>
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:12:09.136714" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<msg time="2026-03-27T17:34:38.199857" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible))</msg>
 <var>${available_date_locator}</var>
 <arg>${available_month_locator}</arg>
 <arg>***index***</arg>
 <arg>${days_over}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.136582" elapsed="0.000147"/>
+<status status="PASS" start="2026-03-27T17:34:38.199705" elapsed="0.000170"/>
 </kw>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.141811" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
+<msg time="2026-03-27T17:34:38.202831" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.137254" elapsed="0.004629"/>
+<status status="PASS" start="2026-03-27T17:34:38.200404" elapsed="0.002484"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1283,39 +1224,39 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.142010" elapsed="0.021218"/>
+<status status="PASS" start="2026-03-27T17:34:38.203002" elapsed="0.022777"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.137077" elapsed="0.026220"/>
+<status status="PASS" start="2026-03-27T17:34:38.200227" elapsed="0.025617"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:09.163638" level="INFO">Clicks the element 'css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible))'.</msg>
+<msg time="2026-03-27T17:34:38.226198" level="INFO">Clicks the element 'css=.rdrMonth:has-text("April 2026") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible))'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.163404" elapsed="0.072405"/>
+<status status="PASS" start="2026-03-27T17:34:38.225953" elapsed="0.091026"/>
 </kw>
 <arg>${available_date_locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.136854" elapsed="0.099085"/>
+<status status="PASS" start="2026-03-27T17:34:38.200009" elapsed="0.117121"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:09.103885" elapsed="0.132086"/>
+<status status="PASS" start="2026-03-27T17:34:38.149792" elapsed="0.167381"/>
 </branch>
-<status status="PASS" start="2026-03-27T17:12:09.103424" elapsed="0.132582"/>
+<status status="PASS" start="2026-03-27T17:34:38.149379" elapsed="0.167856"/>
 </if>
 <arg>${TC_HOTELS_001}[days_to_book]</arg>
-<status status="PASS" start="2026-03-27T17:11:58.487403" elapsed="10.748634"/>
+<status status="PASS" start="2026-03-27T17:34:27.481937" elapsed="10.835341"/>
 </kw>
 <kw name="Click guests and rooms section" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.246016" level="INFO">Waited for Element with selector css=[for="hotel-search-traveler"] at state visible</msg>
+<msg time="2026-03-27T17:34:38.324029" level="INFO">Waited for Element with selector css=[for="hotel-search-traveler"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.237139" elapsed="0.008963"/>
+<status status="PASS" start="2026-03-27T17:34:38.318634" elapsed="0.005551"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1323,35 +1264,35 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.246248" elapsed="0.033926"/>
+<status status="PASS" start="2026-03-27T17:34:38.324340" elapsed="0.035245"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.236954" elapsed="0.043318"/>
+<status status="PASS" start="2026-03-27T17:34:38.318401" elapsed="0.041312"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:09.280723" level="INFO">Clicks the element 'css=[for="hotel-search-traveler"]'.</msg>
+<msg time="2026-03-27T17:34:38.360205" level="INFO">Clicks the element 'css=[for="hotel-search-traveler"]'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.280410" elapsed="0.221699"/>
+<status status="PASS" start="2026-03-27T17:34:38.359859" elapsed="0.237177"/>
 </kw>
 <arg>${hotels_search_section}[btn_guests_and_rooms]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.236712" elapsed="0.265506"/>
+<status status="PASS" start="2026-03-27T17:34:38.318111" elapsed="0.279542"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:09.236334" elapsed="0.265927"/>
+<status status="PASS" start="2026-03-27T17:34:38.317746" elapsed="0.280208"/>
 </kw>
 <kw name="Adjust rooms amount to" owner="hotels_feature">
 <kw name="Get rooms amount" owner="hotels_page">
 <kw name="Get text from element" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.506868" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("-") + div at state visible</msg>
+<msg time="2026-03-27T17:34:38.603806" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("-") + div at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.503515" elapsed="0.003427"/>
+<status status="PASS" start="2026-03-27T17:34:38.600414" elapsed="0.003462"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1359,47 +1300,47 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.507071" elapsed="0.107342"/>
+<status status="PASS" start="2026-03-27T17:34:38.603999" elapsed="0.056427"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.503331" elapsed="0.111308"/>
+<status status="PASS" start="2026-03-27T17:34:38.600238" elapsed="0.060316"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T17:12:09.621283" level="INFO">Text: '1'</msg>
-<msg time="2026-03-27T17:12:09.621396" level="INFO">${text} = 1</msg>
+<msg time="2026-03-27T17:34:38.666187" level="INFO">Text: '1'</msg>
+<msg time="2026-03-27T17:34:38.666280" level="INFO">${text} = 1</msg>
 <var>${text}</var>
 <arg>${locator}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.614895" elapsed="0.006523"/>
+<status status="PASS" start="2026-03-27T17:34:38.660746" elapsed="0.005553"/>
 </kw>
 <return>
 <value>${text}</value>
-<status status="PASS" start="2026-03-27T17:12:09.621496" elapsed="0.000085"/>
+<status status="PASS" start="2026-03-27T17:34:38.666361" elapsed="0.000075"/>
 </return>
-<msg time="2026-03-27T17:12:09.621692" level="INFO">${room_amount} = 1</msg>
+<msg time="2026-03-27T17:34:38.666535" level="INFO">${room_amount} = 1</msg>
 <var>${room_amount}</var>
 <arg>${guests_and_rooms_modal}[lbl_rooms_amount]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.503123" elapsed="0.118590"/>
+<status status="PASS" start="2026-03-27T17:34:38.600035" elapsed="0.066519"/>
 </kw>
 <return>
 <value>${room_amount}</value>
-<status status="PASS" start="2026-03-27T17:12:09.621757" elapsed="0.000052"/>
+<status status="PASS" start="2026-03-27T17:34:38.666594" elapsed="0.000046"/>
 </return>
-<msg time="2026-03-27T17:12:09.621895" level="INFO">${rooms_amount} = 1</msg>
+<msg time="2026-03-27T17:34:38.666717" level="INFO">${rooms_amount} = 1</msg>
 <var>${rooms_amount}</var>
-<status status="PASS" start="2026-03-27T17:12:09.502924" elapsed="0.118991"/>
+<status status="PASS" start="2026-03-27T17:34:38.599832" elapsed="0.066902"/>
 </kw>
 <if>
 <branch type="IF" condition="${rooms_amount} &lt; ${target_rooms_amount}">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-27T17:12:09.622500" level="INFO">${adjust_amount} = 1</msg>
+<msg time="2026-03-27T17:34:38.667242" level="INFO">${adjust_amount} = 1</msg>
 <var>${adjust_amount}</var>
 <arg>${target_rooms_amount}-${rooms_amount}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.622207" elapsed="0.000316"/>
+<status status="PASS" start="2026-03-27T17:34:38.666992" elapsed="0.000269"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -1407,12 +1348,12 @@ unless it is completely visible.</doc>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.630579" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("+") at state visible</msg>
+<msg time="2026-03-27T17:34:38.670748" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("+") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.623563" elapsed="0.007262"/>
+<status status="PASS" start="2026-03-27T17:34:38.668168" elapsed="0.002641"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1420,77 +1361,77 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.631226" elapsed="0.048844"/>
+<status status="PASS" start="2026-03-27T17:34:38.670934" elapsed="0.021622"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.623351" elapsed="0.056840"/>
+<status status="PASS" start="2026-03-27T17:34:38.667981" elapsed="0.024665"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:09.680752" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("+")'.</msg>
+<msg time="2026-03-27T17:34:38.693099" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("+")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.680358" elapsed="0.044722"/>
+<status status="PASS" start="2026-03-27T17:34:38.692783" elapsed="0.042792"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_rooms_increase]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.623107" elapsed="0.102096"/>
+<status status="PASS" start="2026-03-27T17:34:38.667761" elapsed="0.067913"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:09.622868" elapsed="0.102387"/>
+<status status="PASS" start="2026-03-27T17:34:38.667553" elapsed="0.068169"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-03-27T17:12:09.622714" elapsed="0.102571"/>
+<status status="PASS" start="2026-03-27T17:34:38.667420" elapsed="0.068332"/>
 </iter>
 <var>${i}</var>
 <value>${adjust_amount}</value>
-<status status="PASS" start="2026-03-27T17:12:09.622579" elapsed="0.102751"/>
+<status status="PASS" start="2026-03-27T17:34:38.667309" elapsed="0.068485"/>
 </for>
-<status status="PASS" start="2026-03-27T17:12:09.621978" elapsed="0.103399"/>
+<status status="PASS" start="2026-03-27T17:34:38.666790" elapsed="0.069047"/>
 </branch>
 <branch type="ELSE IF" condition="${rooms_amount} &gt; ${target_rooms_amount}">
 <kw name="Evaluate" owner="BuiltIn">
 <var>${adjust_amount}</var>
 <arg>${rooms_amount}-${target_rooms_amount}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:09.725642" elapsed="0.000049"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.736070" elapsed="0.000051"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Click decrease button on rooms amount" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:12:09.725970" elapsed="0.000044"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.736393" elapsed="0.000045"/>
 </kw>
 <var name="${i}"/>
-<status status="NOT RUN" start="2026-03-27T17:12:09.725813" elapsed="0.000231"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.736243" elapsed="0.000224"/>
 </iter>
 <var>${i}</var>
 <value>${adjust_amount}</value>
-<status status="NOT RUN" start="2026-03-27T17:12:09.725742" elapsed="0.000332"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.736170" elapsed="0.000326"/>
 </for>
-<status status="NOT RUN" start="2026-03-27T17:12:09.725410" elapsed="0.000699"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.735868" elapsed="0.000663"/>
 </branch>
 <branch type="ELSE">
 <kw name="No Operation" owner="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:09.726249" elapsed="0.000037"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.736677" elapsed="0.000036"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:09.726135" elapsed="0.000181"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.736556" elapsed="0.000185"/>
 </branch>
-<status status="PASS" start="2026-03-27T17:12:09.621964" elapsed="0.104376"/>
+<status status="PASS" start="2026-03-27T17:34:38.666777" elapsed="0.069987"/>
 </if>
 <arg>${TC_HOTELS_001}[rooms_amount]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.502562" elapsed="0.223814"/>
+<status status="PASS" start="2026-03-27T17:34:38.599322" elapsed="0.137475"/>
 </kw>
 <kw name="Adjust adults amount to" owner="hotels_feature">
 <kw name="Get adults amount" owner="hotels_page">
 <kw name="Get text from element" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.731253" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("-") + div at state visible</msg>
+<msg time="2026-03-27T17:34:38.741074" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("-") + div at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.727630" elapsed="0.003707"/>
+<status status="PASS" start="2026-03-27T17:34:38.738031" elapsed="0.003108"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1498,47 +1439,47 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.731496" elapsed="0.031956"/>
+<status status="PASS" start="2026-03-27T17:34:38.741269" elapsed="0.034700"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.727408" elapsed="0.036142"/>
+<status status="PASS" start="2026-03-27T17:34:38.737821" elapsed="0.038251"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T17:12:09.769170" level="INFO">Text: '2'</msg>
-<msg time="2026-03-27T17:12:09.769259" level="INFO">${text} = 2</msg>
+<msg time="2026-03-27T17:34:38.781344" level="INFO">Text: '2'</msg>
+<msg time="2026-03-27T17:34:38.781437" level="INFO">${text} = 2</msg>
 <var>${text}</var>
 <arg>${locator}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.763701" elapsed="0.005579"/>
+<status status="PASS" start="2026-03-27T17:34:38.776231" elapsed="0.005228"/>
 </kw>
 <return>
 <value>${text}</value>
-<status status="PASS" start="2026-03-27T17:12:09.769345" elapsed="0.000072"/>
+<status status="PASS" start="2026-03-27T17:34:38.781547" elapsed="0.000080"/>
 </return>
-<msg time="2026-03-27T17:12:09.769519" level="INFO">${adults_amount} = 2</msg>
+<msg time="2026-03-27T17:34:38.781735" level="INFO">${adults_amount} = 2</msg>
 <var>${adults_amount}</var>
 <arg>${guests_and_rooms_modal}[lbl_adults_amount]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.727170" elapsed="0.042370"/>
+<status status="PASS" start="2026-03-27T17:34:38.737567" elapsed="0.044189"/>
 </kw>
 <return>
 <value>${adults_amount}</value>
-<status status="PASS" start="2026-03-27T17:12:09.769582" elapsed="0.000048"/>
+<status status="PASS" start="2026-03-27T17:34:38.781801" elapsed="0.000054"/>
 </return>
-<msg time="2026-03-27T17:12:09.769715" level="INFO">${adults_amount} = 2</msg>
+<msg time="2026-03-27T17:34:38.781945" level="INFO">${adults_amount} = 2</msg>
 <var>${adults_amount}</var>
-<status status="PASS" start="2026-03-27T17:12:09.726955" elapsed="0.042779"/>
+<status status="PASS" start="2026-03-27T17:34:38.737353" elapsed="0.044611"/>
 </kw>
 <if>
 <branch type="IF" condition="${adults_amount} &lt; ${target_adults_amount}">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-27T17:12:09.770271" level="INFO">${adjust_amount} = 2</msg>
+<msg time="2026-03-27T17:34:38.782559" level="INFO">${adjust_amount} = 2</msg>
 <var>${adjust_amount}</var>
 <arg>${target_adults_amount}-${adults_amount}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.770006" elapsed="0.000285"/>
+<status status="PASS" start="2026-03-27T17:34:38.782252" elapsed="0.000328"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -1546,12 +1487,12 @@ unless it is completely visible.</doc>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.774109" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+") at state visible</msg>
+<msg time="2026-03-27T17:34:38.786216" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.771290" elapsed="0.002885"/>
+<status status="PASS" start="2026-03-27T17:34:38.783632" elapsed="0.002646"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1559,38 +1500,38 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.774307" elapsed="0.022194"/>
+<status status="PASS" start="2026-03-27T17:34:38.786406" elapsed="0.022706"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.771082" elapsed="0.025498"/>
+<status status="PASS" start="2026-03-27T17:34:38.783427" elapsed="0.025759"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:09.796994" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+")'.</msg>
+<msg time="2026-03-27T17:34:38.809582" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.796712" elapsed="0.041192"/>
+<status status="PASS" start="2026-03-27T17:34:38.809312" elapsed="0.041248"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_adults_increase]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.770838" elapsed="0.067177"/>
+<status status="PASS" start="2026-03-27T17:34:38.783187" elapsed="0.067475"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:09.770610" elapsed="0.067461"/>
+<status status="PASS" start="2026-03-27T17:34:38.782957" elapsed="0.067758"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-03-27T17:12:09.770462" elapsed="0.067644"/>
+<status status="PASS" start="2026-03-27T17:34:38.782788" elapsed="0.067960"/>
 </iter>
 <iter>
 <kw name="Click increase button on adults amount" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.842719" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+") at state visible</msg>
+<msg time="2026-03-27T17:34:38.855036" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.839446" elapsed="0.003348"/>
+<status status="PASS" start="2026-03-27T17:34:38.851917" elapsed="0.003187"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1598,77 +1539,77 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.842942" elapsed="0.020497"/>
+<status status="PASS" start="2026-03-27T17:34:38.855247" elapsed="0.020722"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.839065" elapsed="0.024490"/>
+<status status="PASS" start="2026-03-27T17:34:38.851666" elapsed="0.024452"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:09.864115" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+")'.</msg>
+<msg time="2026-03-27T17:34:38.876647" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.863727" elapsed="0.039564"/>
+<status status="PASS" start="2026-03-27T17:34:38.876282" elapsed="0.040431"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_adults_increase]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.838758" elapsed="0.064642"/>
+<status status="PASS" start="2026-03-27T17:34:38.851368" elapsed="0.065458"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:09.838460" elapsed="0.064996"/>
+<status status="PASS" start="2026-03-27T17:34:38.851077" elapsed="0.065812"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-03-27T17:12:09.838221" elapsed="0.065269"/>
+<status status="PASS" start="2026-03-27T17:34:38.850855" elapsed="0.066073"/>
 </iter>
 <var>${i}</var>
 <value>${adjust_amount}</value>
-<status status="PASS" start="2026-03-27T17:12:09.770343" elapsed="0.133195"/>
+<status status="PASS" start="2026-03-27T17:34:38.782659" elapsed="0.134321"/>
 </for>
-<status status="PASS" start="2026-03-27T17:12:09.769796" elapsed="0.133802"/>
+<status status="PASS" start="2026-03-27T17:34:38.782028" elapsed="0.135003"/>
 </branch>
 <branch type="ELSE IF" condition="${adults_amount} &gt; ${target_adults_amount}">
 <kw name="Evaluate" owner="BuiltIn">
 <var>${adjust_amount}</var>
 <arg>${adults_amount}-${target_adults_amount}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:09.903864" elapsed="0.000056"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.917284" elapsed="0.000059"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Click decrease button on adults amount" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:12:09.904233" elapsed="0.000051"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.917658" elapsed="0.000050"/>
 </kw>
 <var name="${i}"/>
-<status status="NOT RUN" start="2026-03-27T17:12:09.904057" elapsed="0.000261"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.917485" elapsed="0.000257"/>
 </iter>
 <var>${i}</var>
 <value>${adjust_amount}</value>
-<status status="NOT RUN" start="2026-03-27T17:12:09.903977" elapsed="0.000376"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.917401" elapsed="0.000376"/>
 </for>
-<status status="NOT RUN" start="2026-03-27T17:12:09.903638" elapsed="0.000755"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.917066" elapsed="0.000751"/>
 </branch>
 <branch type="ELSE">
 <kw name="No Operation" owner="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:09.904554" elapsed="0.000038"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.917980" elapsed="0.000041"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:09.904423" elapsed="0.000200"/>
+<status status="NOT RUN" start="2026-03-27T17:34:38.917848" elapsed="0.000205"/>
 </branch>
-<status status="PASS" start="2026-03-27T17:12:09.769781" elapsed="0.134868"/>
+<status status="PASS" start="2026-03-27T17:34:38.782013" elapsed="0.136066"/>
 </if>
 <arg>${TC_HOTELS_001}[adults_amount]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.726630" elapsed="0.178055"/>
+<status status="PASS" start="2026-03-27T17:34:38.737048" elapsed="0.181071"/>
 </kw>
 <kw name="Adjust children amount and select age" owner="hotels_feature">
 <kw name="Get children amount" owner="hotels_page">
 <kw name="Get text from element" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.909700" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("-") + div at state visible</msg>
+<msg time="2026-03-27T17:34:38.922926" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("-") + div at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.905975" elapsed="0.003811"/>
+<status status="PASS" start="2026-03-27T17:34:38.919512" elapsed="0.003491"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1676,47 +1617,47 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.909948" elapsed="0.036688"/>
+<status status="PASS" start="2026-03-27T17:34:38.923162" elapsed="0.036345"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.905755" elapsed="0.040992"/>
+<status status="PASS" start="2026-03-27T17:34:38.919269" elapsed="0.040351"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-03-27T17:12:09.952461" level="INFO">Text: '0'</msg>
-<msg time="2026-03-27T17:12:09.952570" level="INFO">${text} = 0</msg>
+<msg time="2026-03-27T17:34:38.965863" level="INFO">Text: '0'</msg>
+<msg time="2026-03-27T17:34:38.965996" level="INFO">${text} = 0</msg>
 <var>${text}</var>
 <arg>${locator}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.946914" elapsed="0.005680"/>
+<status status="PASS" start="2026-03-27T17:34:38.959801" elapsed="0.006221"/>
 </kw>
 <return>
 <value>${text}</value>
-<status status="PASS" start="2026-03-27T17:12:09.952665" elapsed="0.000077"/>
+<status status="PASS" start="2026-03-27T17:34:38.966104" elapsed="0.000084"/>
 </return>
-<msg time="2026-03-27T17:12:09.952853" level="INFO">${children_amount} = 0</msg>
+<msg time="2026-03-27T17:34:38.966331" level="INFO">${children_amount} = 0</msg>
 <var>${children_amount}</var>
 <arg>${guests_and_rooms_modal}[lbl_children_amount]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.905501" elapsed="0.047374"/>
+<status status="PASS" start="2026-03-27T17:34:38.918993" elapsed="0.047360"/>
 </kw>
 <return>
 <value>${children_amount}</value>
-<status status="PASS" start="2026-03-27T17:12:09.952920" elapsed="0.000051"/>
+<status status="PASS" start="2026-03-27T17:34:38.966402" elapsed="0.000058"/>
 </return>
-<msg time="2026-03-27T17:12:09.953061" level="INFO">${children_amount} = 0</msg>
+<msg time="2026-03-27T17:34:38.966556" level="INFO">${children_amount} = 0</msg>
 <var>${children_amount}</var>
-<status status="PASS" start="2026-03-27T17:12:09.905275" elapsed="0.047806"/>
+<status status="PASS" start="2026-03-27T17:34:38.918748" elapsed="0.047829"/>
 </kw>
 <if>
 <branch type="IF" condition="${children_amount} &lt; ${target_children_amount}">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-03-27T17:12:09.953656" level="INFO">${adjust_amount} = 2</msg>
+<msg time="2026-03-27T17:34:38.967211" level="INFO">${adjust_amount} = 2</msg>
 <var>${adjust_amount}</var>
 <arg>${target_children_amount}-${children_amount}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.953369" elapsed="0.000310"/>
+<status status="PASS" start="2026-03-27T17:34:38.966886" elapsed="0.000349"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
@@ -1724,12 +1665,12 @@ unless it is completely visible.</doc>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:09.957579" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+") at state visible</msg>
+<msg time="2026-03-27T17:34:38.972134" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.954740" elapsed="0.002909"/>
+<status status="PASS" start="2026-03-27T17:34:38.968408" elapsed="0.003804"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1737,38 +1678,38 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.957898" elapsed="0.021969"/>
+<status status="PASS" start="2026-03-27T17:34:38.972370" elapsed="0.036907"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:09.954517" elapsed="0.025444"/>
+<status status="PASS" start="2026-03-27T17:34:38.968149" elapsed="0.041222"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:09.980439" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+")'.</msg>
+<msg time="2026-03-27T17:34:39.009885" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:09.980113" elapsed="0.049071"/>
+<status status="PASS" start="2026-03-27T17:34:39.009537" elapsed="0.055738"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_children_increase]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.954257" elapsed="0.075064"/>
+<status status="PASS" start="2026-03-27T17:34:38.967867" elapsed="0.097588"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:09.954016" elapsed="0.075365"/>
+<status status="PASS" start="2026-03-27T17:34:38.967608" elapsed="0.097904"/>
 </kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2026-03-27T17:12:09.953860" elapsed="0.075554"/>
+<status status="PASS" start="2026-03-27T17:34:38.967438" elapsed="0.098107"/>
 </iter>
 <iter>
 <kw name="Click increase button on children amount" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:10.034474" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+") at state visible</msg>
+<msg time="2026-03-27T17:34:39.070114" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.030917" elapsed="0.003642"/>
+<status status="PASS" start="2026-03-27T17:34:39.066756" elapsed="0.003448"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1776,65 +1717,65 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.034720" elapsed="0.028568"/>
+<status status="PASS" start="2026-03-27T17:34:39.070373" elapsed="0.022155"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:10.030658" elapsed="0.032724"/>
+<status status="PASS" start="2026-03-27T17:34:39.066517" elapsed="0.026098"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:10.063862" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+")'.</msg>
+<msg time="2026-03-27T17:34:39.093090" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+")'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.063531" elapsed="0.045721"/>
+<status status="PASS" start="2026-03-27T17:34:39.092764" elapsed="0.044879"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_children_increase]</arg>
-<status status="PASS" start="2026-03-27T17:12:10.030328" elapsed="0.079056"/>
+<status status="PASS" start="2026-03-27T17:34:39.066229" elapsed="0.071527"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:10.029865" elapsed="0.079577"/>
+<status status="PASS" start="2026-03-27T17:34:39.065938" elapsed="0.071868"/>
 </kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2026-03-27T17:12:10.029537" elapsed="0.079939"/>
+<status status="PASS" start="2026-03-27T17:34:39.065679" elapsed="0.072159"/>
 </iter>
 <var>${i}</var>
 <value>${adjust_amount}</value>
-<status status="PASS" start="2026-03-27T17:12:09.953735" elapsed="0.155794"/>
+<status status="PASS" start="2026-03-27T17:34:38.967297" elapsed="0.170585"/>
 </for>
-<status status="PASS" start="2026-03-27T17:12:09.953147" elapsed="0.156436"/>
+<status status="PASS" start="2026-03-27T17:34:38.966646" elapsed="0.171284"/>
 </branch>
 <branch type="ELSE IF" condition="${children_amount} &gt; ${target_children_amount}">
 <kw name="Evaluate" owner="BuiltIn">
 <var>${adjust_amount}</var>
 <arg>${children_amount}-${target_children_amount}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:10.109874" elapsed="0.000057"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.138196" elapsed="0.000054"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Click decrease button on children amount" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:12:10.110238" elapsed="0.000046"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.138539" elapsed="0.000049"/>
 </kw>
 <var name="${i}"/>
-<status status="NOT RUN" start="2026-03-27T17:12:10.110066" elapsed="0.000251"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.138380" elapsed="0.000240"/>
 </iter>
 <var>${i}</var>
 <value>${adjust_amount}</value>
-<status status="NOT RUN" start="2026-03-27T17:12:10.109986" elapsed="0.000364"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.138304" elapsed="0.000347"/>
 </for>
-<status status="NOT RUN" start="2026-03-27T17:12:10.109621" elapsed="0.000768"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.137963" elapsed="0.000726"/>
 </branch>
 <branch type="ELSE">
 <kw name="No Operation" owner="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:10.110543" elapsed="0.000038"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.138891" elapsed="0.000068"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:10.110419" elapsed="0.000192"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.138715" elapsed="0.000286"/>
 </branch>
-<status status="PASS" start="2026-03-27T17:12:09.953132" elapsed="0.157522"/>
+<status status="PASS" start="2026-03-27T17:34:38.966631" elapsed="0.172400"/>
 </if>
 <arg>${TC_HOTELS_001}[children_amount]</arg>
-<status status="PASS" start="2026-03-27T17:12:09.904949" elapsed="0.205767"/>
+<status status="PASS" start="2026-03-27T17:34:38.918408" elapsed="0.220663"/>
 </kw>
 <kw name="Select children age" owner="hotels_feature">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -1842,12 +1783,12 @@ unless it is completely visible.</doc>
 <kw name="check if confirm button on guests and rooms section display" owner="hotels_page">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:10.116659" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
+<msg time="2026-03-27T17:34:39.144892" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.112666" elapsed="0.004106"/>
+<status status="PASS" start="2026-03-27T17:34:39.140915" elapsed="0.004080"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1855,32 +1796,32 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.117045" elapsed="0.029734"/>
+<status status="PASS" start="2026-03-27T17:34:39.145170" elapsed="0.031460"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_confirm]</arg>
-<status status="PASS" start="2026-03-27T17:12:10.112420" elapsed="0.034469"/>
+<status status="PASS" start="2026-03-27T17:34:39.140672" elapsed="0.036057"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:10.112199" elapsed="0.034735"/>
+<status status="PASS" start="2026-03-27T17:34:39.140450" elapsed="0.036330"/>
 </kw>
 <kw name="Click children age selection" owner="hotels_page">
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:12:10.147629" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button</msg>
+<msg time="2026-03-27T17:34:39.177515" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button</msg>
 <var>${children_age_locator}</var>
 <arg>${guests_and_rooms_modal}[ddl_children_age_dropdown]</arg>
 <arg>***index***</arg>
 <arg>${child_index}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.147436" elapsed="0.000214"/>
+<status status="PASS" start="2026-03-27T17:34:39.177292" elapsed="0.000248"/>
 </kw>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:10.151873" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button at state visible</msg>
+<msg time="2026-03-27T17:34:39.182071" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.148172" elapsed="0.003784"/>
+<status status="PASS" start="2026-03-27T17:34:39.178193" elapsed="0.003951"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1888,35 +1829,35 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.152089" elapsed="0.215013"/>
+<status status="PASS" start="2026-03-27T17:34:39.182286" elapsed="0.168244"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:10.147986" elapsed="0.219289"/>
+<status status="PASS" start="2026-03-27T17:34:39.177961" elapsed="0.172743"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:10.367859" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button'.</msg>
+<msg time="2026-03-27T17:34:39.352115" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.367459" elapsed="0.151573"/>
+<status status="PASS" start="2026-03-27T17:34:39.351084" elapsed="0.139053"/>
 </kw>
 <arg>${children_age_locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:10.147778" elapsed="0.371365"/>
+<status status="PASS" start="2026-03-27T17:34:39.177699" elapsed="0.312566"/>
 </kw>
 <arg>${children_index}</arg>
-<status status="PASS" start="2026-03-27T17:12:10.147124" elapsed="0.372094"/>
+<status status="PASS" start="2026-03-27T17:34:39.176961" elapsed="0.313351"/>
 </kw>
 <kw name="Run Keyword And Return" owner="BuiltIn">
 <kw name="Check if children age list display" owner="hotels_page">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:10.538268" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
+<msg time="2026-03-27T17:34:39.506975" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.520165" elapsed="0.018225"/>
+<status status="PASS" start="2026-03-27T17:34:39.491312" elapsed="0.015778"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1924,51 +1865,51 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.538575" elapsed="0.377933"/>
+<status status="PASS" start="2026-03-27T17:34:39.507267" elapsed="0.338653"/>
 </kw>
 <arg>${guests_and_rooms_modal}[lbl_children_age_list]</arg>
-<status status="PASS" start="2026-03-27T17:12:10.519954" elapsed="0.396668"/>
+<status status="PASS" start="2026-03-27T17:34:39.491097" elapsed="0.354940"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:10.519721" elapsed="0.396950"/>
+<status status="PASS" start="2026-03-27T17:34:39.490848" elapsed="0.355242"/>
 </kw>
-<msg time="2026-03-27T17:12:10.916702" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2026-03-27T17:34:39.846131" level="INFO">Returning from the enclosing user keyword.</msg>
 <var>${status}</var>
 <arg>hotels_page.Check if children age list display</arg>
 <doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.519367" elapsed="0.397390"/>
+<status status="PASS" start="2026-03-27T17:34:39.490466" elapsed="0.355721"/>
 </kw>
 <return>
 <value>${status}</value>
-<status status="NOT RUN" start="2026-03-27T17:12:10.916804" elapsed="0.000118"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.846237" elapsed="0.000100"/>
 </return>
 <arg>${children_index}</arg>
-<status status="PASS" start="2026-03-27T17:12:10.111928" elapsed="0.805058"/>
+<status status="PASS" start="2026-03-27T17:34:39.140184" elapsed="0.706223"/>
 </kw>
 <arg>${retry_times}</arg>
 <arg>${interval_for_retry}</arg>
 <arg>hotels_feature.Click children age selection and recheck age list display</arg>
 <arg>${children_index}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.111486" elapsed="0.805538"/>
+<status status="PASS" start="2026-03-27T17:34:39.139736" elapsed="0.706712"/>
 </kw>
 <if>
 <branch type="IF" condition="${age} &lt; 0">
 <kw name="Select children age selection with less than 1 year option" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:12:10.917352" elapsed="0.000045"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.846813" elapsed="0.000051"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:10.917086" elapsed="0.000338"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.846522" elapsed="0.000371"/>
 </branch>
 <branch type="ELSE IF" condition="${age} == 1">
 <kw name="Select children age selection with 1 year option" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:10.921826" level="INFO">Waited for Element with selector css=li span:nth-child(1):has-text("1"):not(span:has-text("Less")) at state visible</msg>
+<msg time="2026-03-27T17:34:39.851830" level="INFO">Waited for Element with selector css=li span:nth-child(1):has-text("1"):not(span:has-text("Less")) at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.918277" elapsed="0.003643"/>
+<status status="PASS" start="2026-03-27T17:34:39.847901" elapsed="0.004021"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -1976,38 +1917,38 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.922071" elapsed="0.027967"/>
+<status status="PASS" start="2026-03-27T17:34:39.852074" elapsed="0.027004"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:10.918077" elapsed="0.032070"/>
+<status status="PASS" start="2026-03-27T17:34:39.847673" elapsed="0.031514"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:10.950641" level="INFO">Clicks the element 'css=li span:nth-child(1):has-text("1"):not(span:has-text("Less"))'.</msg>
+<msg time="2026-03-27T17:34:39.879712" level="INFO">Clicks the element 'css=li span:nth-child(1):has-text("1"):not(span:has-text("Less"))'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:10.950297" elapsed="0.059230"/>
+<status status="PASS" start="2026-03-27T17:34:39.879345" elapsed="0.060900"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_children_age_selection_1]</arg>
-<status status="PASS" start="2026-03-27T17:12:10.917843" elapsed="0.091794"/>
+<status status="PASS" start="2026-03-27T17:34:39.847410" elapsed="0.092964"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:10.917618" elapsed="0.092065"/>
+<status status="PASS" start="2026-03-27T17:34:39.847163" elapsed="0.093255"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:10.917451" elapsed="0.092257"/>
+<status status="PASS" start="2026-03-27T17:34:39.846967" elapsed="0.093476"/>
 </branch>
 <branch type="ELSE IF" condition="${age} &lt; 1">
 <kw name="Select children age selection" owner="hotels_page">
 <arg>${age}</arg>
-<status status="NOT RUN" start="2026-03-27T17:12:11.009995" elapsed="0.000046"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.940760" elapsed="0.000052"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:11.009744" elapsed="0.000323"/>
+<status status="NOT RUN" start="2026-03-27T17:34:39.940477" elapsed="0.000364"/>
 </branch>
-<status status="PASS" start="2026-03-27T17:12:10.917071" elapsed="0.093018"/>
+<status status="PASS" start="2026-03-27T17:34:39.846505" elapsed="0.094359"/>
 </if>
 <arg>${TC_HOTELS_001}[children_1_index]</arg>
 <arg>${TC_HOTELS_001}[children_1_age]</arg>
-<status status="PASS" start="2026-03-27T17:12:10.111142" elapsed="0.898976"/>
+<status status="PASS" start="2026-03-27T17:34:39.139337" elapsed="0.801558"/>
 </kw>
 <kw name="Select children age" owner="hotels_feature">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
@@ -2015,12 +1956,12 @@ unless it is completely visible.</doc>
 <kw name="check if confirm button on guests and rooms section display" owner="hotels_page">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:11.020044" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
+<msg time="2026-03-27T17:34:39.949823" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.011542" elapsed="0.008608"/>
+<status status="PASS" start="2026-03-27T17:34:39.943712" elapsed="0.006207"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -2028,32 +1969,32 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.020319" elapsed="0.030986"/>
+<status status="PASS" start="2026-03-27T17:34:39.950072" elapsed="0.051739"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_confirm]</arg>
-<status status="PASS" start="2026-03-27T17:12:11.011356" elapsed="0.040054"/>
+<status status="PASS" start="2026-03-27T17:34:39.942845" elapsed="0.059072"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:11.011199" elapsed="0.040254"/>
+<status status="PASS" start="2026-03-27T17:34:39.942400" elapsed="0.059560"/>
 </kw>
 <kw name="Click children age selection" owner="hotels_page">
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:12:11.052115" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button</msg>
+<msg time="2026-03-27T17:34:40.002815" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button</msg>
 <var>${children_age_locator}</var>
 <arg>${guests_and_rooms_modal}[ddl_children_age_dropdown]</arg>
 <arg>***index***</arg>
 <arg>${child_index}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.051932" elapsed="0.000202"/>
+<status status="PASS" start="2026-03-27T17:34:40.002473" elapsed="0.000367"/>
 </kw>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:11.056814" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button at state visible</msg>
+<msg time="2026-03-27T17:34:40.007875" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.052613" elapsed="0.004295"/>
+<status status="PASS" start="2026-03-27T17:34:40.003524" elapsed="0.004450"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -2061,40 +2002,40 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.057053" elapsed="0.027709"/>
+<status status="PASS" start="2026-03-27T17:34:40.008125" elapsed="0.038836"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:11.052446" elapsed="0.032420"/>
+<status status="PASS" start="2026-03-27T17:34:40.003252" elapsed="0.043818"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:11.085361" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button'.</msg>
+<msg time="2026-03-27T17:34:40.047564" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.085007" elapsed="0.126332"/>
+<status status="PASS" start="2026-03-27T17:34:40.047216" elapsed="0.104682"/>
 </kw>
 <arg>${children_age_locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:11.052251" elapsed="0.159229"/>
+<status status="PASS" start="2026-03-27T17:34:40.002996" elapsed="0.149011"/>
 </kw>
 <arg>${children_index}</arg>
-<status status="PASS" start="2026-03-27T17:12:11.051630" elapsed="0.159893"/>
+<status status="PASS" start="2026-03-27T17:34:40.002149" elapsed="0.149902"/>
 </kw>
 <kw name="Run Keyword And Return" owner="BuiltIn">
 <kw name="Check if children age list display" owner="hotels_page">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:11.217870" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
+<msg time="2026-03-27T17:34:40.184511" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.212798" elapsed="0.005180"/>
+<status status="PASS" start="2026-03-27T17:34:40.153051" elapsed="0.031591"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
-<msg time="2026-03-27T17:12:11.570043" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-03-27T17:12:11.570130" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
-<msg time="2026-03-27T17:12:11.570242" level="FAIL">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+<msg time="2026-03-27T17:34:40.534573" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T17:34:40.534649" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T17:34:40.534759" level="FAIL">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
 Call log:
   - attempting scroll into view action
     2 × waiting for element to be stable
@@ -2112,7 +2053,7 @@ Call log:
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="FAIL" start="2026-03-27T17:12:11.218148" elapsed="0.353449">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+<status status="FAIL" start="2026-03-27T17:34:40.184833" elapsed="0.351265">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
 Call log:
   - attempting scroll into view action
     2 × waiting for element to be stable
@@ -2127,7 +2068,7 @@ Call log:
 </status>
 </kw>
 <arg>${guests_and_rooms_modal}[lbl_children_age_list]</arg>
-<status status="FAIL" start="2026-03-27T17:12:11.212214" elapsed="0.359517">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+<status status="FAIL" start="2026-03-27T17:34:40.152835" elapsed="0.383397">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
 Call log:
   - attempting scroll into view action
     2 × waiting for element to be stable
@@ -2141,7 +2082,7 @@ Call log:
     - waiting for element to be stable
 </status>
 </kw>
-<status status="FAIL" start="2026-03-27T17:12:11.211994" elapsed="0.359802">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+<status status="FAIL" start="2026-03-27T17:34:40.152595" elapsed="0.383698">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
 Call log:
   - attempting scroll into view action
     2 × waiting for element to be stable
@@ -2155,18 +2096,18 @@ Call log:
     - waiting for element to be stable
 </status>
 </kw>
-<msg time="2026-03-27T17:12:11.571827" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2026-03-27T17:34:40.536322" level="INFO">Returning from the enclosing user keyword.</msg>
 <var>${status}</var>
 <arg>hotels_page.Check if children age list display</arg>
 <doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
-<status status="FAIL" start="2026-03-27T17:12:11.211666" elapsed="0.360190"/>
+<status status="FAIL" start="2026-03-27T17:34:40.152206" elapsed="0.384142"/>
 </kw>
 <return>
 <value>${status}</value>
-<status status="NOT RUN" start="2026-03-27T17:12:11.571895" elapsed="0.000062"/>
+<status status="NOT RUN" start="2026-03-27T17:34:40.536385" elapsed="0.000055"/>
 </return>
 <arg>${children_index}</arg>
-<status status="FAIL" start="2026-03-27T17:12:11.011004" elapsed="0.561012">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
+<status status="FAIL" start="2026-03-27T17:34:39.941950" elapsed="0.594543">Error: locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
 Call log:
   - attempting scroll into view action
     2 × waiting for element to be stable
@@ -2184,12 +2125,12 @@ Call log:
 <kw name="check if confirm button on guests and rooms section display" owner="hotels_page">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:21.591033" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
+<msg time="2026-03-27T17:34:50.550693" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.578705" elapsed="0.012565"/>
+<status status="PASS" start="2026-03-27T17:34:50.542324" elapsed="0.008561"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -2197,32 +2138,32 @@ Call log:
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.591693" elapsed="0.039101"/>
+<status status="PASS" start="2026-03-27T17:34:50.551250" elapsed="0.024588"/>
 </kw>
 <arg>${guests_and_rooms_modal}[btn_confirm]</arg>
-<status status="PASS" start="2026-03-27T17:12:21.577867" elapsed="0.053126"/>
+<status status="PASS" start="2026-03-27T17:34:50.541645" elapsed="0.034316"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:21.577013" elapsed="0.054086"/>
+<status status="PASS" start="2026-03-27T17:34:50.541022" elapsed="0.034997"/>
 </kw>
 <kw name="Click children age selection" owner="hotels_page">
 <kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:12:21.632643" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button</msg>
+<msg time="2026-03-27T17:34:50.576867" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button</msg>
 <var>${children_age_locator}</var>
 <arg>${guests_and_rooms_modal}[ddl_children_age_dropdown]</arg>
 <arg>***index***</arg>
 <arg>${child_index}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.632185" elapsed="0.000509"/>
+<status status="PASS" start="2026-03-27T17:34:50.576616" elapsed="0.000279"/>
 </kw>
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:21.643248" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button at state visible</msg>
+<msg time="2026-03-27T17:34:50.583654" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.634004" elapsed="0.009362"/>
+<status status="PASS" start="2026-03-27T17:34:50.577618" elapsed="0.006135"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -2230,35 +2171,35 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.643597" elapsed="0.036576"/>
+<status status="PASS" start="2026-03-27T17:34:50.583948" elapsed="0.026244"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:21.633545" elapsed="0.046759"/>
+<status status="PASS" start="2026-03-27T17:34:50.577367" elapsed="0.032955"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:21.680938" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button'.</msg>
+<msg time="2026-03-27T17:34:50.610933" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.680491" elapsed="0.084022"/>
+<status status="PASS" start="2026-03-27T17:34:50.610536" elapsed="0.070953"/>
 </kw>
 <arg>${children_age_locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:21.633013" elapsed="0.131631"/>
+<status status="PASS" start="2026-03-27T17:34:50.577071" elapsed="0.104576"/>
 </kw>
 <arg>${children_index}</arg>
-<status status="PASS" start="2026-03-27T17:12:21.631480" elapsed="0.133210"/>
+<status status="PASS" start="2026-03-27T17:34:50.576234" elapsed="0.105483"/>
 </kw>
 <kw name="Run Keyword And Return" owner="BuiltIn">
 <kw name="Check if children age list display" owner="hotels_page">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:21.778878" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
+<msg time="2026-03-27T17:34:50.686098" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.765827" elapsed="0.013247"/>
+<status status="PASS" start="2026-03-27T17:34:50.682952" elapsed="0.003210"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -2266,69 +2207,69 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.779518" elapsed="0.385607"/>
+<status status="PASS" start="2026-03-27T17:34:50.686279" elapsed="0.376753"/>
 </kw>
 <arg>${guests_and_rooms_modal}[lbl_children_age_list]</arg>
-<status status="PASS" start="2026-03-27T17:12:21.765587" elapsed="0.399766"/>
+<status status="PASS" start="2026-03-27T17:34:50.682720" elapsed="0.380831"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:21.765276" elapsed="0.400182"/>
+<status status="PASS" start="2026-03-27T17:34:50.682429" elapsed="0.381277"/>
 </kw>
-<msg time="2026-03-27T17:12:22.165524" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2026-03-27T17:34:51.063820" level="INFO">Returning from the enclosing user keyword.</msg>
 <var>${status}</var>
 <arg>hotels_page.Check if children age list display</arg>
 <doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
-<status status="PASS" start="2026-03-27T17:12:21.764860" elapsed="0.400767"/>
+<status status="PASS" start="2026-03-27T17:34:50.681912" elapsed="0.382138"/>
 </kw>
 <return>
 <value>${status}</value>
-<status status="NOT RUN" start="2026-03-27T17:12:22.165722" elapsed="0.000151"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.064217" elapsed="0.000442"/>
 </return>
 <arg>${children_index}</arg>
-<status status="PASS" start="2026-03-27T17:12:21.574861" elapsed="0.591140"/>
+<status status="PASS" start="2026-03-27T17:34:50.539422" elapsed="0.525485"/>
 </kw>
 <arg>${retry_times}</arg>
 <arg>${interval_for_retry}</arg>
 <arg>hotels_feature.Click children age selection and recheck age list display</arg>
 <arg>${children_index}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-03-27T17:12:11.010661" elapsed="11.155421"/>
+<status status="PASS" start="2026-03-27T17:34:39.941493" elapsed="11.123536"/>
 </kw>
 <if>
 <branch type="IF" condition="${age} &lt; 0">
 <kw name="Select children age selection with less than 1 year option" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:12:22.166755" elapsed="0.000089"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.066487" elapsed="0.000157"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:22.166216" elapsed="0.000682"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.065284" elapsed="0.001662"/>
 </branch>
 <branch type="ELSE IF" condition="${age} == 1">
 <kw name="Select children age selection with 1 year option" owner="hotels_page">
-<status status="NOT RUN" start="2026-03-27T17:12:22.167315" elapsed="0.000078"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.067661" elapsed="0.000095"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:22.166953" elapsed="0.000494"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.067048" elapsed="0.000772"/>
 </branch>
 <branch type="ELSE IF" condition="${age} &lt; 1">
 <kw name="Select children age selection" owner="hotels_page">
 <arg>${age}</arg>
-<status status="NOT RUN" start="2026-03-27T17:12:22.167848" elapsed="0.000077"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.068320" elapsed="0.000091"/>
 </kw>
-<status status="NOT RUN" start="2026-03-27T17:12:22.167498" elapsed="0.000486"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.067881" elapsed="0.000600"/>
 </branch>
-<status status="PASS" start="2026-03-27T17:12:22.166187" elapsed="0.001846"/>
+<status status="PASS" start="2026-03-27T17:34:51.065223" elapsed="0.003317"/>
 </if>
 <arg>${TC_HOTELS_001}[children_2_index]</arg>
 <arg>${TC_HOTELS_001}[children_2_age]</arg>
-<status status="PASS" start="2026-03-27T17:12:11.010332" elapsed="11.157767"/>
+<status status="PASS" start="2026-03-27T17:34:39.941100" elapsed="11.127542"/>
 </kw>
 <kw name="Click search button" owner="hotels_page">
 <kw name="Click element on screen" owner="common_web">
 <kw name=" Check if element display" owner="common_web">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:22.176299" level="INFO">Waited for Element with selector css=#hotel-search-button at state visible</msg>
+<msg time="2026-03-27T17:34:51.078815" level="INFO">Waited for Element with selector css=#hotel-search-button at state visible</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:22.169942" elapsed="0.006493"/>
+<status status="PASS" start="2026-03-27T17:34:51.070979" elapsed="0.008013"/>
 </kw>
 <kw name="Scroll To Element" owner="Browser">
 <arg>${locator}</arg>
@@ -2336,283 +2277,47 @@ unless it is completely visible.</doc>
 <tag>Setter</tag>
 <doc>This method waits for actionability checks, then tries to scroll element into view,
 unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:22.176640" elapsed="0.037970"/>
+<status status="PASS" start="2026-03-27T17:34:51.079303" elapsed="0.029819"/>
 </kw>
 <arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:22.169414" elapsed="0.045408"/>
+<status status="PASS" start="2026-03-27T17:34:51.070452" elapsed="0.038816"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:22.215853" level="INFO">Clicks the element 'css=#hotel-search-button'.</msg>
+<msg time="2026-03-27T17:34:51.110024" level="INFO">Clicks the element 'css=#hotel-search-button'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:22.215141" elapsed="0.245224"/>
+<status status="PASS" start="2026-03-27T17:34:51.109495" elapsed="0.247723"/>
 </kw>
 <arg>${hotels_search_section}[btn_search_button]</arg>
-<status status="PASS" start="2026-03-27T17:12:22.168914" elapsed="0.291556"/>
+<status status="PASS" start="2026-03-27T17:34:51.069824" elapsed="0.287712"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:22.168424" elapsed="0.292094"/>
+<status status="PASS" start="2026-03-27T17:34:51.069102" elapsed="0.288627"/>
 </kw>
-<kw name="Check if search result page display" owner="search_result_page">
-<kw name="Wait until page display" owner="common_web">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:22.464990" level="INFO">Waited for Element with selector css=#hotel-search-layout-main-page at state visible</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:22.461681" elapsed="0.003396"/>
+<kw name="search_result_page.Check if search result page display">
+<msg time="2026-03-27T17:34:51.361203" level="FAIL">No keyword with name 'search_result_page.Check if search result page display' found.</msg>
+<status status="FAIL" start="2026-03-27T17:34:51.361081" elapsed="0.000167">No keyword with name 'search_result_page.Check if search result page display' found.</status>
 </kw>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<arg>Browser.Wait for elements state</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-03-27T17:12:22.461365" elapsed="0.003775"/>
-</kw>
-<arg>${search_result_element}[search_result_section]</arg>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<status status="PASS" start="2026-03-27T17:12:22.461096" elapsed="0.004091"/>
-</kw>
-<kw name="Wait until page display" owner="common_web">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:23.267933" level="INFO">Waited for Element with selector css=[class="text-sm font-normal md:text-base"]:has-text("Results") at state visible</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:22.465931" elapsed="0.802130"/>
-</kw>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<arg>Browser.Wait for elements state</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-03-27T17:12:22.465637" elapsed="0.802507"/>
-</kw>
-<arg>${search_list_section}[lbl_total_search_result_items]</arg>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<status status="PASS" start="2026-03-27T17:12:22.465329" elapsed="0.802877"/>
-</kw>
-<status status="PASS" start="2026-03-27T17:12:22.460770" elapsed="0.807480"/>
-</kw>
-<kw name="Select hotel by index from search result" owner="search_result_page">
-<kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:12:23.268992" level="INFO">${hotel_locator} = css=.infinite-scroll-component__outerdiv div[class^="order"]:nth-of-type(1) a[id^="hotel-item-card-"]</msg>
-<var>${hotel_locator}</var>
-<arg>${search_list_section}[lbl_search_result_item_by_idex]</arg>
-<arg>***hotel_index***</arg>
-<arg>${hotel_index}</arg>
-<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:12:23.268803" elapsed="0.000209"/>
-</kw>
-<kw name="Click element on screen" owner="common_web">
-<kw name=" Check if element display" owner="common_web">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:24.157556" level="INFO">Waited for Element with selector css=.infinite-scroll-component__outerdiv div[class^="order"]:nth-of-type(1) a[id^="hotel-item-card-"] at state visible</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:23.269490" elapsed="0.888368"/>
-</kw>
-<kw name="Scroll To Element" owner="Browser">
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>This method waits for actionability checks, then tries to scroll element into view,
-unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:24.158281" elapsed="0.040431"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:23.269323" elapsed="0.929560"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:24.199737" level="INFO">Clicks the element 'css=.infinite-scroll-component__outerdiv div[class^="order"]:nth-of-type(1) a[id^="hotel-item-card-"]'.</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:24.199142" elapsed="0.271670"/>
-</kw>
-<arg>${hotel_locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:23.269130" elapsed="1.201804"/>
-</kw>
+<kw name="search_result_page.Select hotel by index from search result">
 <arg>${TC_HOTELS_001}[hotel_index]</arg>
-<status status="PASS" start="2026-03-27T17:12:23.268496" elapsed="1.202487"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.361548" elapsed="0.000053"/>
 </kw>
 <kw name="Switch tab" owner="common_web">
-<kw name="Switch Page" owner="Browser">
-<msg time="2026-03-27T17:12:24.472029" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
-<msg time="2026-03-27T17:12:25.391436" level="INFO">Activated new page page=c42b7b15-c5fe-46c3-84bd-8bb92567984d</msg>
-<arg>NEW</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
-<status status="PASS" start="2026-03-27T17:12:24.471556" elapsed="0.920055"/>
-</kw>
-<status status="PASS" start="2026-03-27T17:12:24.471242" elapsed="0.920517"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.361781" elapsed="0.000064"/>
 </kw>
 <kw name="Check if hotels item display" owner="hotels_item_page">
-<kw name="Wait until page display" owner="common_web">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:25.532078" level="INFO">Waited for Element with selector css=#breadcrumb-hotels at state visible</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:25.393857" elapsed="0.138379"/>
-</kw>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<arg>Browser.Wait for elements state</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-03-27T17:12:25.393180" elapsed="0.139151"/>
-</kw>
-<arg>${hotels_item_element}[hotels_item_section]</arg>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<status status="PASS" start="2026-03-27T17:12:25.392722" elapsed="0.139675"/>
-</kw>
-<status status="PASS" start="2026-03-27T17:12:25.392170" elapsed="0.140274"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.361989" elapsed="0.000038"/>
 </kw>
 <kw name="Book room by index" owner="hotels_item_page">
-<kw name="Replace String" owner="String">
-<msg time="2026-03-27T17:12:25.533377" level="INFO">${book_button_locator} = xpath=(//button[contains(text(),'Book now')])[2]</msg>
-<var>${book_button_locator}</var>
-<arg>${room_option}[btn_book_now_by_index]</arg>
-<arg>***index***</arg>
-<arg>${room_index}</arg>
-<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2026-03-27T17:12:25.533169" elapsed="0.000227"/>
-</kw>
-<kw name="Click element on screen" owner="common_web">
-<kw name=" Check if element display" owner="common_web">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:27.196724" level="INFO">Waited for Element with selector xpath=(//button[contains(text(),'Book now')])[2] at state visible</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:25.533929" elapsed="1.662911"/>
-</kw>
-<kw name="Scroll To Element" owner="Browser">
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>This method waits for actionability checks, then tries to scroll element into view,
-unless it is completely visible.</doc>
-<status status="PASS" start="2026-03-27T17:12:27.197020" elapsed="0.415924"/>
-</kw>
-<arg>${locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:25.533735" elapsed="2.079418"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2026-03-27T17:12:27.614159" level="INFO">Clicks the element 'xpath=(//button[contains(text(),'Book now')])[2]'.</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-27T17:12:27.613436" elapsed="0.426748"/>
-</kw>
-<arg>${book_button_locator}</arg>
-<status status="PASS" start="2026-03-27T17:12:25.533522" elapsed="2.506787"/>
-</kw>
 <arg>${TC_HOTELS_001}[room_index]</arg>
-<status status="PASS" start="2026-03-27T17:12:25.532806" elapsed="2.507551"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.362434" elapsed="0.000272"/>
 </kw>
 <kw name="Check if booking display" owner="booking_page">
-<kw name="Wait until page display" owner="common_web">
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:28.856587" level="INFO">Waited for Element with selector css=[class^="booking-page"] at state visible</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-27T17:12:28.042479" elapsed="0.814280"/>
-</kw>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<arg>Browser.Wait for elements state</arg>
-<arg>${locator}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-03-27T17:12:28.041350" elapsed="0.815507"/>
-</kw>
-<arg>${booking_element}[booking_section]</arg>
-<arg>${retry_times}</arg>
-<arg>${interval_for_retry}</arg>
-<status status="PASS" start="2026-03-27T17:12:28.041036" elapsed="0.815884"/>
-</kw>
-<status status="PASS" start="2026-03-27T17:12:28.040652" elapsed="0.816314"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.363191" elapsed="0.000058"/>
 </kw>
 <kw name="Select gender as male" owner="booking_page">
-<kw name="Click element on screen" owner="common_web">
-<kw name=" Check if element display" owner="common_web">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-27T17:12:39.117103" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-03-27T17:12:39.117188" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
-<msg time="2026-03-27T17:12:39.117281" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('input[value="Mr"]').first() to be visible
-    - waiting for" https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…" navigation to finish...
-    - navigated to "https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…"
-</msg>
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="FAIL" start="2026-03-27T17:12:28.859944" elapsed="10.257547">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('input[value="Mr"]').first() to be visible
-    - waiting for" https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…" navigation to finish...
-    - navigated to "https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…"
-</status>
-</kw>
-<kw name="Scroll To Element" owner="Browser">
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>This method waits for actionability checks, then tries to scroll element into view,
-unless it is completely visible.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:39.117934" elapsed="0.000066"/>
-</kw>
-<arg>${locator}</arg>
-<status status="FAIL" start="2026-03-27T17:12:28.858754" elapsed="10.259331">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('input[value="Mr"]').first() to be visible
-    - waiting for" https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…" navigation to finish...
-    - navigated to "https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…"
-</status>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>${locator}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:39.118193" elapsed="0.000037"/>
-</kw>
-<arg>${contact_information_section}[rdo_gender_male]</arg>
-<status status="FAIL" start="2026-03-27T17:12:28.857989" elapsed="10.260301">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('input[value="Mr"]').first() to be visible
-    - waiting for" https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…" navigation to finish...
-    - navigated to "https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…"
-</status>
-</kw>
-<status status="FAIL" start="2026-03-27T17:12:28.857446" elapsed="10.260899">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('input[value="Mr"]').first() to be visible
-    - waiting for" https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…" navigation to finish...
-    - navigated to "https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…"
-</status>
+<status status="NOT RUN" start="2026-03-27T17:34:51.363388" elapsed="0.000040"/>
 </kw>
 <kw name="Input contact information" owner="booking_feature">
 <arg>${default_account}[first_name]</arg>
@@ -2621,64 +2326,59 @@ Call log:
 <arg>${default_account}[country_name]</arg>
 <arg>${default_account}[phone]</arg>
 <arg>${default_account}[country_name]</arg>
-<status status="NOT RUN" start="2026-03-27T17:12:39.118578" elapsed="0.000068"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.363561" elapsed="0.000035"/>
 </kw>
 <kw name="Click confirm booking button" owner="booking_page">
-<status status="NOT RUN" start="2026-03-27T17:12:39.118798" elapsed="0.000040"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.363715" elapsed="0.000033"/>
 </kw>
 <kw name="Check if payment page display" owner="payment_page">
-<status status="NOT RUN" start="2026-03-27T17:12:39.118972" elapsed="0.000035"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.363853" elapsed="0.000030"/>
 </kw>
 <kw name="Select credit card as payment method" owner="payment_page">
-<status status="NOT RUN" start="2026-03-27T17:12:39.119117" elapsed="0.000029"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.364016" elapsed="0.000047"/>
 </kw>
 <kw name="Input credit card information" owner="payment_feature">
 <arg>${default_credit_card_information}[card_num]</arg>
 <arg>${default_credit_card_information}[card_holder_name]</arg>
 <arg>${default_credit_card_information}[card_exp]</arg>
 <arg>${default_credit_card_information}[card_cvv]</arg>
-<status status="NOT RUN" start="2026-03-27T17:12:39.119258" elapsed="0.000032"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.364199" elapsed="0.000038"/>
 </kw>
 <kw name="Click pay now button to confirm payment" owner="payment_page">
-<status status="NOT RUN" start="2026-03-27T17:12:39.119407" elapsed="0.000028"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.364359" elapsed="0.000034"/>
 </kw>
 <kw name="Debug" owner="DebugLibrary">
 <doc>Open a interactive shell, run any RobotFramework keywords.</doc>
-<status status="NOT RUN" start="2026-03-27T17:12:39.119589" elapsed="0.000034"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.364504" elapsed="0.000030"/>
 </kw>
 <kw name="Check if success page display" owner="payment_success_page">
-<status status="NOT RUN" start="2026-03-27T17:12:39.119733" elapsed="0.000030"/>
+<status status="NOT RUN" start="2026-03-27T17:34:51.364738" elapsed="0.000071"/>
 </kw>
 <kw name="Web teardown" owner="common_web" type="TEARDOWN">
 <kw name="Run Keyword If Test Failed" owner="BuiltIn">
 <kw name="Take Screenshot" owner="Browser">
-<msg time="2026-03-27T17:12:39.277010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T17:34:51.520385" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="PASS" start="2026-03-27T17:12:39.120943" elapsed="0.156186"/>
+<status status="PASS" start="2026-03-27T17:34:51.365799" elapsed="0.154720"/>
 </kw>
 <arg>Browser.Take screenshot</arg>
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
-<status status="PASS" start="2026-03-27T17:12:39.120592" elapsed="0.156611"/>
+<status status="PASS" start="2026-03-27T17:34:51.365533" elapsed="0.155244"/>
 </kw>
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-03-27T17:12:39.420870" level="INFO">Closed browser</msg>
+<msg time="2026-03-27T17:34:51.651371" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-27T17:12:39.277354" elapsed="0.143836"/>
+<status status="PASS" start="2026-03-27T17:34:51.520957" elapsed="0.130538"/>
 </kw>
-<status status="PASS" start="2026-03-27T17:12:39.120058" elapsed="0.301248"/>
+<status status="PASS" start="2026-03-27T17:34:51.365290" elapsed="0.286300"/>
 </kw>
 <tag>Feature:Hotels</tag>
-<status status="FAIL" start="2026-03-27T17:11:45.784033" elapsed="53.637488">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('input[value="Mr"]').first() to be visible
-    - waiting for" https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…" navigation to finish...
-    - navigated to "https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…"
-</status>
+<status status="FAIL" start="2026-03-27T17:34:14.027866" elapsed="37.623810">No keyword with name 'search_result_page.Check if search result page display' found.</status>
 </test>
-<status status="FAIL" start="2026-03-27T17:11:45.602824" elapsed="53.821644"/>
+<status status="FAIL" start="2026-03-27T17:34:13.823039" elapsed="37.831470"/>
 </suite>
 <statistics>
 <total>
@@ -2692,8 +2392,9 @@ Call log:
 </suite>
 </statistics>
 <errors>
-<msg time="2026-03-27T17:11:45.759265" level="ERROR">Error in file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/resources/import.robot' on line 13: Processing variable file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/resources/translation/mobile/en.yaml' failed: YAML variable file must be a mapping, got string.</msg>
-<msg time="2026-03-27T17:11:45.764618" level="WARN">Imported resource file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
-<msg time="2026-03-27T17:11:45.766839" level="WARN">Imported resource file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/common/common_mobile.robot' is empty.</msg>
+<msg time="2026-03-27T17:34:14.007990" level="ERROR">Error in file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/resources/import.robot' on line 13: Processing variable file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/resources/translation/mobile/en.yaml' failed: YAML variable file must be a mapping, got string.</msg>
+<msg time="2026-03-27T17:34:14.012651" level="WARN">Imported resource file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
+<msg time="2026-03-27T17:34:14.014590" level="WARN">Imported resource file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/common/common_mobile.robot' is empty.</msg>
+<msg time="2026-03-27T17:34:14.018492" level="ERROR">Error in file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/resources/import.robot' on line 37: Resource file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/web/pages/search_result_page.robot' does not exist.</msg>
 </errors>
 </robot>

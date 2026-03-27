@@ -1,203 +1,203 @@
-{"level":30,"time":"2026-03-27T10:11:46.148Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Listening on 127.0.0.1:55330"}
-{"level":30,"time":"2026-03-27T10:11:47.250Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-03-27T10:11:47.896Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
-{"level":30,"time":"2026-03-27T10:11:47.896Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-03-27T10:11:47.896Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-03-27T10:11:47.900Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-03-27T10:11:47.901Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@1a36089c06b4f2d45ecd5b9379b098c7\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=f942e315-da5d-4c1e-b65f-a168b5a046d3\"}"}
-{"level":30,"time":"2026-03-27T10:11:47.906Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Setting default timeout for context context=1a4af7b3-6444-4547-af78-186b175e1eb4 to 10000"}
-{"level":30,"time":"2026-03-27T10:11:47.906Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Changed active context: context=1a4af7b3-6444-4547-af78-186b175e1eb4"}
-{"level":30,"time":"2026-03-27T10:11:48.173Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Video path: undefined"}
-{"level":30,"time":"2026-03-27T10:11:48.173Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Changed active page"}
-{"level":30,"time":"2026-03-27T10:11:49.982Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method newPage"}
-{"level":30,"time":"2026-03-27T10:11:49.986Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:49.986Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#signin-and-register-big-button in page."}
-{"level":30,"time":"2026-03-27T10:11:51.016Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:51.020Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:51.021Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#signin-and-register-big-button in page."}
-{"level":30,"time":"2026-03-27T10:11:51.112Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:51.114Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:51.115Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#signin-and-register-big-button in page."}
-{"level":30,"time":"2026-03-27T10:11:51.174Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:51.179Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:51.179Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Email or Mobile No.\") in page."}
-{"level":30,"time":"2026-03-27T10:11:51.563Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:51.565Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:51.565Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Email or Mobile No.\") in page."}
-{"level":30,"time":"2026-03-27T10:11:52.487Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:52.492Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:52.492Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Email or Mobile No.\") in page."}
-{"level":30,"time":"2026-03-27T10:11:52.760Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:52.766Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:52.766Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:52.769Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:52.770Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:52.770Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.046Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:53.050Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-03-27T10:11:53.050Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.062Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method fillText"}
-{"level":30,"time":"2026-03-27T10:11:53.067Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:53.067Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.069Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:53.071Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:53.071Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.097Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:53.099Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:53.099Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.652Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:53.655Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:53.655Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-type=\"password\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.679Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:53.681Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:53.681Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-type=\"password\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.796Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:53.798Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-03-27T10:11:53.798Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-type=\"password\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.836Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method fillText"}
-{"level":30,"time":"2026-03-27T10:11:53.838Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:53.838Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.859Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:53.861Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:53.861Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:53.964Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:53.966Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:53.966Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:54.309Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:54.312Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:54.313Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id=\"home-search-component\"]:not([style=\"display: none !important;\"]) in page."}
-{"level":30,"time":"2026-03-27T10:11:54.328Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:54.333Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:54.333Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[alt=\"user-icon2\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:55.757Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:55.759Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:55.759Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[alt=\"user-icon2\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:55.796Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:55.798Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:55.798Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#fixed-bottom-group button:text-is(\"Accept All\") in page."}
-{"level":30,"time":"2026-03-27T10:11:55.800Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:55.801Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:55.801Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#fixed-bottom-group button:text-is(\"Accept All\") in page."}
-{"level":30,"time":"2026-03-27T10:11:55.829Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:55.830Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:55.830Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#fixed-bottom-group button:text-is(\"Accept All\") in page."}
-{"level":30,"time":"2026-03-27T10:11:56.069Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:56.075Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:56.075Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#home-menu-hotel in page."}
-{"level":30,"time":"2026-03-27T10:11:56.085Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:56.087Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:56.087Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#home-menu-hotel in page."}
-{"level":30,"time":"2026-03-27T10:11:56.129Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:56.131Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:56.131Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#home-menu-hotel in page."}
-{"level":30,"time":"2026-03-27T10:11:56.183Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:56.187Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:56.188Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T10:11:56.981Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:56.983Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:56.983Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T10:11:57.013Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:57.015Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:57.015Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T10:11:57.138Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:57.142Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:57.142Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T10:11:57.155Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:57.159Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:57.159Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T10:11:57.199Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:57.201Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method fillText"}
-{"level":30,"time":"2026-03-27T10:11:57.201Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
-{"level":30,"time":"2026-03-27T10:11:57.233Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method fillText"}
-{"level":30,"time":"2026-03-27T10:11:57.243Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:57.243Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id^=\"hotel-search-typing-\"] b:has-text(\"Bangkok\") in page."}
-{"level":30,"time":"2026-03-27T10:11:58.067Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.075Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.075Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id^=\"hotel-search-typing-\"] b:has-text(\"Bangkok\") in page."}
-{"level":30,"time":"2026-03-27T10:11:58.113Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.117Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.117Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id^=\"hotel-search-typing-\"] b:has-text(\"Bangkok\") in page."}
-{"level":30,"time":"2026-03-27T10:11:58.187Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.191Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.191Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-checkin-date\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:58.193Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.194Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.195Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-checkin-date\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:58.230Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.232Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.232Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-checkin-date\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:58.486Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.490Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.490Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
-{"level":30,"time":"2026-03-27T10:11:58.492Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.493Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.493Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
-{"level":30,"time":"2026-03-27T10:11:58.563Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.565Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-27T10:11:58.565Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
-{"level":30,"time":"2026-03-27T10:11:58.570Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=.date-text-left p containing April 2026"}
-{"level":30,"time":"2026-03-27T10:11:58.570Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-27T10:11:58.575Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.575Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[title=\"back-one-month\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:58.576Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.578Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.578Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[title=\"back-one-month\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:58.613Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.615Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.615Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[title=\"back-one-month\"] in page."}
-{"level":30,"time":"2026-03-27T10:11:58.664Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.667Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.667Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrDay.rdrDayToday in page."}
-{"level":30,"time":"2026-03-27T10:11:58.668Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.670Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.670Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrDay.rdrDayToday in page."}
-{"level":30,"time":"2026-03-27T10:11:58.696Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.698Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.698Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrDay.rdrDayToday in page."}
-{"level":30,"time":"2026-03-27T10:11:58.770Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:11:58.773Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.773Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
-{"level":30,"time":"2026-03-27T10:11:58.774Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.775Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.775Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
-{"level":30,"time":"2026-03-27T10:11:58.796Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.797Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-27T10:11:58.797Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
-{"level":30,"time":"2026-03-27T10:11:58.800Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=.date-text-left p containing March 2026"}
-{"level":30,"time":"2026-03-27T10:11:58.800Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-27T10:11:58.803Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.803Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.804Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.805Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.805Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.829Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.832Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.832Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.834Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.835Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.835Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.862Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.866Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.866Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.867Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.869Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.869Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.896Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.900Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.900Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.902Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.903Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.903Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.929Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.933Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.933Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.934Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.935Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.935Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:11:58.962Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:11:58.966Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:11:58.966Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(6 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:12:08.969Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:14.416Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Listening on 127.0.0.1:60831"}
+{"level":30,"time":"2026-03-27T10:34:15.505Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-27T10:34:16.526Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-27T10:34:16.527Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-27T10:34:16.527Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-27T10:34:16.529Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-27T10:34:16.530Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@3a6ccad90086b2725afc7732a51f4b0e\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=6bbd0caf-4f76-40ab-b4ff-614cceb9feec\"}"}
+{"level":30,"time":"2026-03-27T10:34:16.555Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Setting default timeout for context context=5b110672-3b39-493b-a5c6-379dc71ae44d to 10000"}
+{"level":30,"time":"2026-03-27T10:34:16.555Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Changed active context: context=5b110672-3b39-493b-a5c6-379dc71ae44d"}
+{"level":30,"time":"2026-03-27T10:34:17.044Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-27T10:34:17.044Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-03-27T10:34:18.904Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-27T10:34:18.909Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:18.909Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#signin-and-register-big-button in page."}
+{"level":30,"time":"2026-03-27T10:34:19.901Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:19.903Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:19.904Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#signin-and-register-big-button in page."}
+{"level":30,"time":"2026-03-27T10:34:19.997Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:19.999Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:19.999Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#signin-and-register-big-button in page."}
+{"level":30,"time":"2026-03-27T10:34:20.056Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:20.059Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:20.059Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Email or Mobile No.\") in page."}
+{"level":30,"time":"2026-03-27T10:34:20.446Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:20.450Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:20.450Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Email or Mobile No.\") in page."}
+{"level":30,"time":"2026-03-27T10:34:21.367Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:21.374Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:21.374Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Email or Mobile No.\") in page."}
+{"level":30,"time":"2026-03-27T10:34:21.679Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:21.688Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:21.688Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:21.690Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:21.692Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:21.692Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:21.943Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:21.948Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-27T10:34:21.949Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"input-email\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:21.968Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-27T10:34:21.973Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:21.973Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:21.978Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:21.980Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:21.980Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:22.009Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:22.012Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:22.012Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-check-step-login-with-email\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:22.579Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:22.582Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:22.582Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-type=\"password\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:22.608Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:22.611Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:22.611Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-type=\"password\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:22.726Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:22.728Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-27T10:34:22.728Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-type=\"password\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:22.785Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-27T10:34:22.788Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:22.788Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:22.797Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:22.799Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:22.799Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:22.907Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:22.909Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:22.909Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-testid=\"btn-login-email-width-pass\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:23.255Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:23.261Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:23.261Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id=\"home-search-component\"]:not([style=\"display: none !important;\"]) in page."}
+{"level":30,"time":"2026-03-27T10:34:23.284Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:23.287Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:23.287Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[alt=\"user-icon2\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:24.784Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:24.788Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:24.788Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[alt=\"user-icon2\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:24.827Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:24.831Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:24.831Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#fixed-bottom-group button:text-is(\"Accept All\") in page."}
+{"level":30,"time":"2026-03-27T10:34:24.833Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:24.835Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:24.835Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#fixed-bottom-group button:text-is(\"Accept All\") in page."}
+{"level":30,"time":"2026-03-27T10:34:24.858Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:24.860Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:24.860Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#fixed-bottom-group button:text-is(\"Accept All\") in page."}
+{"level":30,"time":"2026-03-27T10:34:25.106Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:25.112Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:25.112Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#home-menu-hotel in page."}
+{"level":30,"time":"2026-03-27T10:34:25.123Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:25.125Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:25.125Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#home-menu-hotel in page."}
+{"level":30,"time":"2026-03-27T10:34:25.158Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:25.160Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:25.160Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#home-menu-hotel in page."}
+{"level":30,"time":"2026-03-27T10:34:25.205Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:25.208Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:25.208Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T10:34:26.002Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:26.004Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:26.004Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T10:34:26.034Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:26.035Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:26.035Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T10:34:26.156Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:26.161Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:26.161Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T10:34:26.173Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:26.176Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:26.176Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T10:34:26.218Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:26.220Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-27T10:34:26.220Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-destination in page."}
+{"level":30,"time":"2026-03-27T10:34:26.252Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-27T10:34:26.261Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:26.261Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id^=\"hotel-search-typing-\"] b:has-text(\"Bangkok\") in page."}
+{"level":30,"time":"2026-03-27T10:34:27.078Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.083Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.083Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id^=\"hotel-search-typing-\"] b:has-text(\"Bangkok\") in page."}
+{"level":30,"time":"2026-03-27T10:34:27.109Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.113Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.113Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[id^=\"hotel-search-typing-\"] b:has-text(\"Bangkok\") in page."}
+{"level":30,"time":"2026-03-27T10:34:27.183Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.186Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.186Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-checkin-date\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:27.188Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.190Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.190Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-checkin-date\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:27.226Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.228Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.228Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-checkin-date\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:27.480Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.484Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.484Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
+{"level":30,"time":"2026-03-27T10:34:27.486Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.487Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.487Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
+{"level":30,"time":"2026-03-27T10:34:27.592Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.594Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:27.594Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
+{"level":30,"time":"2026-03-27T10:34:27.599Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=.date-text-left p containing April 2026"}
+{"level":30,"time":"2026-03-27T10:34:27.599Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:27.604Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.604Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[title=\"back-one-month\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:27.606Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.607Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.607Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[title=\"back-one-month\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:27.642Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.644Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.644Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[title=\"back-one-month\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:27.694Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.697Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.697Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrDay.rdrDayToday in page."}
+{"level":30,"time":"2026-03-27T10:34:27.698Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.700Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.700Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrDay.rdrDayToday in page."}
+{"level":30,"time":"2026-03-27T10:34:27.725Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.727Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.727Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrDay.rdrDayToday in page."}
+{"level":30,"time":"2026-03-27T10:34:27.801Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:27.804Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.804Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
+{"level":30,"time":"2026-03-27T10:34:27.805Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.806Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.807Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
+{"level":30,"time":"2026-03-27T10:34:27.842Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.843Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:27.843Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-left p in page."}
+{"level":30,"time":"2026-03-27T10:34:27.846Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=.date-text-left p containing March 2026"}
+{"level":30,"time":"2026-03-27T10:34:27.846Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:27.849Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.849Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.852Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.853Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.853Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.875Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.878Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.878Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.879Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.880Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.880Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(2 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.909Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.912Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.912Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.913Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.915Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.915Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(3 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.942Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.945Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.945Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.947Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.948Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.948Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.975Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.979Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.979Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:27.980Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:27.982Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:27.982Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:28.008Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:28.012Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:28.012Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"March 2026\") .rdrDay:nth-child(6 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:38.015Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Error of node method  waitForElementState"}
 ================= Original suppressed error =================
 locator.waitFor: Timeout 10000ms exceeded.
 Call log:
@@ -208,163 +208,163 @@ Call log:
   name: 'TimeoutError'
 }
 =============================================================
-{"level":30,"time":"2026-03-27T10:12:08.981Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:08.982Z","pid":37562,"hostname":"Theems-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2026-03-27T10:12:09.097Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:09.105Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.105Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-right p in page."}
-{"level":30,"time":"2026-03-27T10:12:09.107Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.108Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.108Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-right p in page."}
-{"level":30,"time":"2026-03-27T10:12:09.129Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.131Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.131Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-right p in page."}
-{"level":30,"time":"2026-03-27T10:12:09.135Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=.date-text-right p containing April 2026"}
-{"level":30,"time":"2026-03-27T10:12:09.135Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.138Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.138Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"April 2026\") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:12:09.141Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.142Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.142Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"April 2026\") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:12:09.162Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.164Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.164Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"April 2026\") .rdrDay:nth-child(4 of :not(.rdrDayDisabled):not(.invisible)) in page."}
-{"level":30,"time":"2026-03-27T10:12:09.235Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.238Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.238Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-traveler\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:09.245Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.247Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.247Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-traveler\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:09.279Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.281Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.281Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-traveler\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:09.501Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.504Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.504Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.506Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.507Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.507Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.613Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.616Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.616Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.620Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div containing 1"}
-{"level":30,"time":"2026-03-27T10:12:09.620Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.624Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.624Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.627Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.633Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.633Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.679Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.681Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.681Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.724Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.728Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.728Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.730Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.732Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.732Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.762Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.764Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.764Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.768Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div containing 2"}
-{"level":30,"time":"2026-03-27T10:12:09.768Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.772Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.772Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.773Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.775Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.775Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.796Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.797Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.797Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.837Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.840Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.840Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.842Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.843Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.843Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.862Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.864Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.864Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.902Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.907Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.907Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.909Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.910Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.910Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.946Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.948Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.948Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div in page."}
-{"level":30,"time":"2026-03-27T10:12:09.952Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div containing 0"}
-{"level":30,"time":"2026-03-27T10:12:09.952Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
-{"level":30,"time":"2026-03-27T10:12:09.955Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.955Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.957Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:09.958Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.958Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:09.979Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:09.981Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:09.981Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:10.028Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:10.032Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.032Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:10.034Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.035Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.035Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:10.062Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.064Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:10.064Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
-{"level":30,"time":"2026-03-27T10:12:10.108Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:10.114Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.114Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
-{"level":30,"time":"2026-03-27T10:12:10.116Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.118Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.118Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
-{"level":30,"time":"2026-03-27T10:12:10.146Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.149Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.149Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"1\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:10.151Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.152Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.152Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"1\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:10.366Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.368Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:10.368Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"1\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:10.518Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:10.521Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.521Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:10.537Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.539Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.539Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:10.915Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.919Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.919Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=li span:nth-child(1):has-text(\"1\"):not(span:has-text(\"Less\")) in page."}
-{"level":30,"time":"2026-03-27T10:12:10.921Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:10.922Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.922Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=li span:nth-child(1):has-text(\"1\"):not(span:has-text(\"Less\")) in page."}
-{"level":30,"time":"2026-03-27T10:12:10.949Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:10.951Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:10.951Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=li span:nth-child(1):has-text(\"1\"):not(span:has-text(\"Less\")) in page."}
-{"level":30,"time":"2026-03-27T10:12:11.008Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:11.012Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:11.012Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
-{"level":30,"time":"2026-03-27T10:12:11.019Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:11.021Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:11.021Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
-{"level":30,"time":"2026-03-27T10:12:11.050Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:11.053Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:11.053Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:11.056Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:11.057Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:11.057Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:11.084Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:11.086Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:11.086Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:11.210Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:11.214Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:11.214Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:11.217Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:11.219Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:11.219Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:11.464Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Error of node method  scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.024Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T10:34:38.024Z","pid":45152,"hostname":"Theems-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-27T10:34:38.142Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T10:34:38.152Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.152Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-right p in page."}
+{"level":30,"time":"2026-03-27T10:34:38.154Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.155Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.155Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-right p in page."}
+{"level":30,"time":"2026-03-27T10:34:38.192Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.194Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.194Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.date-text-right p in page."}
+{"level":30,"time":"2026-03-27T10:34:38.198Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=.date-text-right p containing April 2026"}
+{"level":30,"time":"2026-03-27T10:34:38.198Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.201Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.201Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"April 2026\") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:38.202Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.203Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.203Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"April 2026\") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:38.225Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.226Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.226Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.rdrMonth:has-text(\"April 2026\") .rdrDay:nth-child(5 of :not(.rdrDayDisabled):not(.invisible)) in page."}
+{"level":30,"time":"2026-03-27T10:34:38.315Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.319Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.319Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-traveler\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:38.323Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.325Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.325Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-traveler\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:38.359Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.360Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.360Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[for=\"hotel-search-traveler\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:38.592Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.601Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.601Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.603Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.604Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.604Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.659Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.661Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.661Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.665Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"-\") + div containing 1"}
+{"level":30,"time":"2026-03-27T10:34:38.665Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.669Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.669Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.670Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.671Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.671Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.692Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.693Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.693Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Rooms\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.735Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.739Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.739Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.740Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.742Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.742Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.775Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.777Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.777Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.781Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"-\") + div containing 2"}
+{"level":30,"time":"2026-03-27T10:34:38.781Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.784Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.784Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.785Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.787Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.787Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.808Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.810Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.810Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.850Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.853Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.853Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.854Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.856Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.856Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.875Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.877Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.877Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Adults\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.916Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:38.920Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.920Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.922Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.924Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.924Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.958Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.960Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.960Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div in page."}
+{"level":30,"time":"2026-03-27T10:34:38.965Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Retrieved text for element css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"-\") + div containing 0"}
+{"level":30,"time":"2026-03-27T10:34:38.965Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getText"}
+{"level":30,"time":"2026-03-27T10:34:38.970Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.970Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:38.971Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:38.973Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:38.973Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.008Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.010Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.010Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.064Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.067Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.067Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.069Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.071Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.071Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.092Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.093Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.093Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[role=\"menuitem\"]:has(div:text-is(\"Children\")) button:text-is(\"+\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.137Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.142Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.142Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.144Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.146Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.146Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.176Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.179Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.179Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"1\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:39.181Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.183Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.183Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"1\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:39.349Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.353Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.353Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"1\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:39.489Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.492Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.492Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:39.506Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.508Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.508Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:39.845Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.849Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.849Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=li span:nth-child(1):has-text(\"1\"):not(span:has-text(\"Less\")) in page."}
+{"level":30,"time":"2026-03-27T10:34:39.851Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.853Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.853Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=li span:nth-child(1):has-text(\"1\"):not(span:has-text(\"Less\")) in page."}
+{"level":30,"time":"2026-03-27T10:34:39.878Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.880Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.880Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=li span:nth-child(1):has-text(\"1\"):not(span:has-text(\"Less\")) in page."}
+{"level":30,"time":"2026-03-27T10:34:39.939Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:39.945Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.945Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
+{"level":30,"time":"2026-03-27T10:34:39.949Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:39.950Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:39.950Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
+{"level":30,"time":"2026-03-27T10:34:40.001Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:40.004Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:40.004Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:40.007Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:40.010Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:40.010Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:40.046Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:40.048Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:40.048Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:40.151Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:40.154Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:40.154Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:40.183Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:40.185Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:40.185Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:40.428Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Error of node method  scrollToElement"}
 ================= Original suppressed error =================
 locator.scrollIntoViewIfNeeded: Element is not attached to the DOM
 Call log:
@@ -384,97 +384,45 @@ Call log:
   name: 'Error'
 }
 =============================================================
-{"level":30,"time":"2026-03-27T10:12:11.469Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:11.469Z","pid":37562,"hostname":"Theems-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/screenshot/fail-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2026-03-27T10:12:11.569Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:21.583Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:21.583Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
-{"level":30,"time":"2026-03-27T10:12:21.589Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:21.593Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:21.594Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
-{"level":30,"time":"2026-03-27T10:12:21.629Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:21.637Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:21.637Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:21.642Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:21.644Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:21.644Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:21.679Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:21.681Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:21.681Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
-{"level":30,"time":"2026-03-27T10:12:21.763Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:21.768Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:21.768Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:21.777Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:21.781Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:21.781Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:22.164Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:22.172Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:22.172Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-button in page."}
-{"level":30,"time":"2026-03-27T10:12:22.175Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:22.177Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:22.177Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-button in page."}
-{"level":30,"time":"2026-03-27T10:12:22.213Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:22.216Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:22.216Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-button in page."}
-{"level":30,"time":"2026-03-27T10:12:22.459Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:22.463Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:22.463Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-layout-main-page in page."}
-{"level":30,"time":"2026-03-27T10:12:22.464Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:22.466Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:22.466Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[class=\"text-sm font-normal md:text-base\"]:has-text(\"Results\") in page."}
-{"level":30,"time":"2026-03-27T10:12:23.267Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:23.270Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:23.270Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.infinite-scroll-component__outerdiv div[class^=\"order\"]:nth-of-type(1) a[id^=\"hotel-item-card-\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:24.156Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:24.160Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:24.160Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.infinite-scroll-component__outerdiv div[class^=\"order\"]:nth-of-type(1) a[id^=\"hotel-item-card-\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:24.197Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:24.201Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:24.201Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.infinite-scroll-component__outerdiv div[class^=\"order\"]:nth-of-type(1) a[id^=\"hotel-item-card-\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:24.470Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:24.472Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T10:12:24.473Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T10:12:25.381Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Changed active page"}
-{"level":30,"time":"2026-03-27T10:12:25.395Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:25.395Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#breadcrumb-hotels in page."}
-{"level":30,"time":"2026-03-27T10:12:25.531Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:25.535Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:25.535Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//button[contains(text(),'Book now')])[2] in page."}
-{"level":30,"time":"2026-03-27T10:12:27.196Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:27.198Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:27.198Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//button[contains(text(),'Book now')])[2] in page."}
-{"level":30,"time":"2026-03-27T10:12:27.612Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
-{"level":30,"time":"2026-03-27T10:12:27.614Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-27T10:12:27.614Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: xpath=(//button[contains(text(),'Book now')])[2] in page."}
-{"level":30,"time":"2026-03-27T10:12:28.035Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
-{"level":30,"time":"2026-03-27T10:12:28.054Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:28.054Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[class^=\"booking-page\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:28.855Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:28.861Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2026-03-27T10:12:28.861Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=input[value=\"Mr\"] in page."}
-{"level":30,"time":"2026-03-27T10:12:38.861Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Error of node method  waitForElementState"}
-================= Original suppressed error =================
-locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-[2m  - waiting for locator('input[value="Mr"]').first() to be visible[22m
-[2m    - waiting for" https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…" navigation to finish...[22m
-[2m    - navigated to "https://www.gother.online/en-us/hotels/booking?q=YWM9JTdCJTIyc3RhclJhdGluZyUyMiUzQTQlMkMlMjJjaXR5SWQlMjIlM0E5Mzk1JTJDJTIyY291bnRyeUlkJTIyJTNBMTA2JTJDJTIyYXJlYUlkJTIyJTNBMTAzOSUyQyUyMndob2xlc2FsZUlkJT…"[22m
-
-    at waitForElementState (/Users/theemdoppio/Library/Python/3.10/lib/python/site-packages/Browser/wrapper/index.js:11750:19)
-    at async PlaywrightServer.waitForElementsState (/Users/theemdoppio/Library/Python/3.10/lib/python/site-packages/Browser/wrapper/index.js:13690:28) {
-  name: 'TimeoutError'
-}
-=============================================================
-{"level":30,"time":"2026-03-27T10:12:38.865Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:38.865Z","pid":37562,"hostname":"Theems-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/screenshot/fail-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2026-03-27T10:12:39.115Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:39.123Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:39.123Z","pid":37562,"hostname":"Theems-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2026-03-27T10:12:39.276Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2026-03-27T10:12:39.278Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method closeBrowser"}
-{"level":30,"time":"2026-03-27T10:12:39.298Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Removed page=c42b7b15-c5fe-46c3-84bd-8bb92567984d from context=1a4af7b3-6444-4547-af78-186b175e1eb4 page stack"}
-{"level":30,"time":"2026-03-27T10:12:39.298Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Removed page=aa3aeeb2-240b-4aa7-824e-41553ba16bb8 from context=1a4af7b3-6444-4547-af78-186b175e1eb4 page stack"}
-{"level":30,"time":"2026-03-27T10:12:39.420Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2026-03-27T10:34:40.436Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T10:34:40.437Z","pid":45152,"hostname":"Theems-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/screenshot/fail-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-27T10:34:40.533Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T10:34:50.545Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:50.545Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
+{"level":30,"time":"2026-03-27T10:34:50.549Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:50.552Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:50.552Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=button:text-is(\"Confirm\") in page."}
+{"level":30,"time":"2026-03-27T10:34:50.575Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:50.578Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:50.578Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:50.583Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:50.585Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:50.585Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:50.609Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:50.611Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:50.611Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=.selector-child-age .flex:has(p:has-text(\"Child\"):has-text(\"2\")) button in page."}
+{"level":30,"time":"2026-03-27T10:34:50.680Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:50.684Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:50.684Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:50.685Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:50.687Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:50.687Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=[data-slot=\"content\"] in page."}
+{"level":30,"time":"2026-03-27T10:34:51.059Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:51.074Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:51.074Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-button in page."}
+{"level":30,"time":"2026-03-27T10:34:51.078Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-27T10:34:51.081Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:51.081Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-button in page."}
+{"level":30,"time":"2026-03-27T10:34:51.108Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2026-03-27T10:34:51.111Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-27T10:34:51.111Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Strict mode is disabled, return first Locator: css=#hotel-search-button in page."}
+{"level":30,"time":"2026-03-27T10:34:51.353Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method click"}
+{"level":30,"time":"2026-03-27T10:34:51.368Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T10:34:51.368Z","pid":45152,"hostname":"Theems-MacBook-Air.local","Take screenshot with options: ":{"path":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-27T10:34:51.519Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-27T10:34:51.523Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-03-27T10:34:51.543Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Removed page=fd026616-842d-4e74-bfaa-267889bbe6f1 from context=5b110672-3b39-493b-a5c6-379dc71ae44d page stack"}
+{"level":30,"time":"2026-03-27T10:34:51.650Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method closeBrowser"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/Users/theemdoppio/Library/Python/3.10/lib/python/site-packages/Browser/wrapper/index.js:12757:15)
@@ -488,8 +436,8 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1729:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2026-03-27T10:12:39.423Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T10:12:39.423Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T10:34:51.653Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T10:34:51.653Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
 ================= Original suppressed error =================
 Error: Browser has been closed.
     at PlaywrightState.getActiveBrowser (/Users/theemdoppio/Library/Python/3.10/lib/python/site-packages/Browser/wrapper/index.js:12757:15)
@@ -503,7 +451,7 @@ Error: Browser has been closed.
     at endReadableNT (node:internal/streams/readable:1729:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2026-03-27T10:12:39.431Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T10:12:39.431Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2026-03-27T10:12:39.476Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2026-03-27T10:12:39.476Z","pid":37562,"hostname":"Theems-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-27T10:34:51.655Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T10:34:51.655Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-27T10:34:51.692Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-27T10:34:51.692Z","pid":45152,"hostname":"Theems-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}
