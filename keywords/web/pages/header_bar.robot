@@ -12,7 +12,7 @@ Input email or mobile no. on login or sign up popup
 Click login button on login or sign up with email or mobile no. method
     common_web.Click element on screen    ${login_popup}[btn_login_confirm_email_or_mobile]
 
-Input email or mobile no. on login or sign up popup
+Input password on login or sign up popup
     [Arguments]    ${password}
     common_web.Input in text field        ${login_popup}[txt_password_field]    ${password}
 

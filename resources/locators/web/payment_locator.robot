@@ -1,7 +1,7 @@
 *** Variables ***
 &{payment_element}
 ...            payment_section=css=[class^="title-payment-channel"]
-...            btn_confirm_booking=css=#confirmBooking2
+...            btn_pay_now=css=#confirmBooking2
 &{payment_method}
 ...            rdo_credit_card_method=css=#CREDIT_RADIO
 &{credit_card_information}

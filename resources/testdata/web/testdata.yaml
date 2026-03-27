@@ -3,10 +3,25 @@ default_account:
   password:         Doppio_123*
   first_name:       Test
   last_name:        Automate
-  mobile_phone:     812345678
+  phone:            812345678
+  country_name:     Thailand
 
 default_credit_card_information:
   card_num:         4111111111111111
   card_holder_name: Test Automation
   card_exp:         11/30
   card_cvv:         123
+
+TC_HOTELS_001:
+  destination:             Bangkok
+  hotel_name:              Convenient Park Bangkok Hotel
+  days_to_book:            10
+  rooms_amount:            2
+  adults_amount:           4
+  children_amount:         2
+  children_1_index:        1
+  children_1_age:          1
+  children_2_index:        2
+  children_2_age:          6
+  hotel_index:             1
+  room_index:              2

@@ -1,0 +1,2466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.5 on darwin)" generated="2026-03-27T15:21:49.199757" rpa="false" schemaversion="5">
+<suite id="s1" name="TC HOTELS 001" source="/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/TC_HOTELS_001.robot">
+<test id="s1-t1" name="TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment" line="8">
+<kw name="Open gother website and login with email" owner="common_web" type="SETUP">
+<kw name="Open gother web" owner="landing_page">
+<kw name="Open web browser by url" owner="common_web">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-27T15:21:49.546967" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/traces/temp/7d2ddeef-4c14-4ba1-8538-681bbec387f3"}</msg>
+<msg time="2026-03-27T15:21:49.582133" level="INFO">Starting Browser process /Users/theemdoppio/Library/Python/3.10/lib/python/site-packages/Browser/wrapper/index.js using at 127.0.0.1:55117</msg>
+<msg time="2026-03-27T15:21:51.936886" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/browser/traces/temp/7d2ddeef-4c14-4ba1-8538-681bbec387f3"}</msg>
+<arg>browser=${supported_browser}</arg>
+<arg>headless=${headless_mode}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-27T15:21:49.546179" elapsed="2.391400"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-27T15:21:55.457325" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
+<msg time="2026-03-27T15:21:55.458149" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-03-27T15:21:51.938142" elapsed="3.520758"/>
+</kw>
+<arg>url=${gother_web.url.${LANG.lower()}}</arg>
+<arg>headless_mode=${headless_mode}</arg>
+<doc>ใช้สำหรับเปิด Web browser
+Arguments:
+    - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
+    - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
+    - False (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
+<status status="PASS" start="2026-03-27T15:21:49.544659" elapsed="5.914876"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:21:49.540886" elapsed="5.918762"/>
+</kw>
+<kw name="Login with email or mobile no. method" owner="header_bar_feature">
+<kw name="Click login button on header bar" owner="header_bar">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:21:56.974248" level="INFO">Waited for Element with selector css=#signin-and-register-big-button at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:21:55.464757" elapsed="1.509699"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:21:56.974836" elapsed="0.070073"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:21:55.463440" elapsed="1.581862"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:21:57.046408" level="INFO">Clicks the element 'css=#signin-and-register-big-button'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:21:57.045715" elapsed="0.094071"/>
+</kw>
+<arg>${header_bar}[btn_login_signin]</arg>
+<status status="PASS" start="2026-03-27T15:21:55.462400" elapsed="1.677572"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:21:55.461987" elapsed="1.678068"/>
+</kw>
+<kw name="Click login with email or mobile no." owner="header_bar">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:21:57.440642" level="INFO">Waited for Element with selector css=button:text-is("Email or Mobile No.") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:21:57.143423" elapsed="0.297543"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:21:57.441299" elapsed="0.044839"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:21:57.142659" elapsed="0.343637"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:21:57.487021" level="INFO">Clicks the element 'css=button:text-is("Email or Mobile No.")'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:21:57.486523" elapsed="0.482165"/>
+</kw>
+<arg>${login_popup}[btn_email_or_mobile_login]</arg>
+<status status="PASS" start="2026-03-27T15:21:57.141735" elapsed="0.827179"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:21:57.140711" elapsed="0.828322"/>
+</kw>
+<kw name="Input email or mobile no. on login or sign up popup" owner="header_bar">
+<kw name="Input in text field" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:21:58.133458" level="INFO">Waited for Element with selector css=[data-testid="input-email"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:21:57.970946" elapsed="0.163019"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:21:58.135048" elapsed="0.034411"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:21:57.970492" elapsed="0.199180"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-27T15:21:58.170549" level="INFO">Fills the text 'doppio.theem@gmail.com' in the given field.</msg>
+<arg>${locator}</arg>
+<arg>${txt}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:21:58.169929" elapsed="0.016982"/>
+</kw>
+<arg>${login_popup}[txt_email_or_mobile_field]</arg>
+<arg>${email_or_mobile_no}</arg>
+<status status="PASS" start="2026-03-27T15:21:57.969932" elapsed="0.217153"/>
+</kw>
+<arg>${email_or_mobile_no}</arg>
+<status status="PASS" start="2026-03-27T15:21:57.969385" elapsed="0.217780"/>
+</kw>
+<kw name="Click login button on login or sign up with email or mobile no. method" owner="header_bar">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:21:58.196598" level="INFO">Waited for Element with selector css=[data-testid="btn-check-step-login-with-email"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:21:58.191265" elapsed="0.005457"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:21:58.196964" elapsed="0.040745"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:21:58.190501" elapsed="0.047374"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:21:58.239059" level="INFO">Clicks the element 'css=[data-testid="btn-check-step-login-with-email"]'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:21:58.238418" elapsed="0.488400"/>
+</kw>
+<arg>${login_popup}[btn_login_confirm_email_or_mobile]</arg>
+<status status="PASS" start="2026-03-27T15:21:58.189111" elapsed="0.537859"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:21:58.187863" elapsed="0.539191"/>
+</kw>
+<kw name="Input password on login or sign up popup" owner="header_bar">
+<kw name="Input in text field" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:21:59.571562" level="INFO">Waited for Element with selector css=[data-type="password"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:21:58.728487" elapsed="0.843238"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:21:59.571975" elapsed="0.147666"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:21:58.728165" elapsed="0.991614"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-27T15:21:59.720496" level="INFO">Fills the text 'Doppio_123*' in the given field.</msg>
+<arg>${locator}</arg>
+<arg>${txt}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:21:59.719980" elapsed="0.076719"/>
+</kw>
+<arg>${login_popup}[txt_password_field]</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-03-27T15:21:58.727778" elapsed="1.069085"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2026-03-27T15:21:58.727316" elapsed="1.069617"/>
+</kw>
+<kw name="Click login button to confirm password on login or sign up with email or mobile no. method" owner="header_bar">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:21:59.843313" level="INFO">Waited for Element with selector css=[data-testid="btn-login-email-width-pass"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:21:59.798409" elapsed="0.045085"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:21:59.843794" elapsed="0.145369"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:21:59.798095" elapsed="0.191226"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:21:59.990050" level="INFO">Clicks the element 'css=[data-testid="btn-login-email-width-pass"]'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:21:59.989534" elapsed="0.562978"/>
+</kw>
+<arg>${login_popup}[btn_login_confirm_password]</arg>
+<status status="PASS" start="2026-03-27T15:21:59.797713" elapsed="0.754973"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:21:59.797260" elapsed="0.755503"/>
+</kw>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-03-27T15:21:55.460784" elapsed="5.092043"/>
+</kw>
+<kw name="Check if homepage display" owner="home_page">
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:00.592628" level="INFO">Waited for Element with selector css=[id="home-search-component"]:not([style="display: none !important;"]) at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:00.555511" elapsed="0.037284"/>
+</kw>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-03-27T15:22:00.554607" elapsed="0.038310"/>
+</kw>
+<arg>${homepage_element}[homepage_section]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="PASS" start="2026-03-27T15:22:00.553739" elapsed="0.039273"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:00.553138" elapsed="0.039945"/>
+</kw>
+<kw name="Check if login successfully" owner="header_bar">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:02.321798" level="INFO">Waited for Element with selector css=[alt="user-icon2"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:00.594245" elapsed="1.727781"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:02.322575" elapsed="0.063571"/>
+</kw>
+<arg>${header_bar}[btn_account_icon]</arg>
+<status status="PASS" start="2026-03-27T15:22:00.593843" elapsed="1.792497"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:00.593354" elapsed="1.793148"/>
+</kw>
+<arg>${default_account}[email]</arg>
+<arg>${default_account}[password]</arg>
+<status status="PASS" start="2026-03-27T15:21:49.538605" elapsed="12.848296"/>
+</kw>
+<kw name="Click hotels tab on header bar" owner="header_bar">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:02.428070" level="INFO">Waited for Element with selector css=#home-menu-hotel at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:02.390428" elapsed="0.038130"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:02.429161" elapsed="0.158163"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:02.390011" elapsed="0.197488"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:02.588353" level="INFO">Clicks the element 'css=#home-menu-hotel'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:02.587741" elapsed="0.108867"/>
+</kw>
+<arg>${header_bar}[btn_hotels_tab]</arg>
+<status status="PASS" start="2026-03-27T15:22:02.388748" elapsed="0.308589"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:02.388135" elapsed="0.309384"/>
+</kw>
+<kw name="Search destination by typing" owner="hotels_feature">
+<kw name="Click destination search field" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:03.595901" level="INFO">Waited for Element with selector css=#hotel-search-destination at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:02.704050" elapsed="0.892032"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:03.596387" elapsed="0.046490"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:02.703655" elapsed="0.939430"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:03.643960" level="INFO">Clicks the element 'css=#hotel-search-destination'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:03.643343" elapsed="0.184701"/>
+</kw>
+<arg>${hotels_search_section}[txt_search_bar]</arg>
+<status status="PASS" start="2026-03-27T15:22:02.702909" elapsed="1.125335"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:02.702400" elapsed="1.125926"/>
+</kw>
+<kw name="Input destination on search field" owner="hotels_page">
+<kw name="Input in text field" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:03.873461" level="INFO">Waited for Element with selector css=#hotel-search-destination at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:03.831122" elapsed="0.042511"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:03.874067" elapsed="0.060465"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:03.830597" elapsed="0.104406"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-27T15:22:03.944037" level="INFO">Fills the text 'Bangkok' in the given field.</msg>
+<arg>${locator}</arg>
+<arg>${txt}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:03.942409" elapsed="0.119818"/>
+</kw>
+<arg>${hotels_search_section}[txt_search_bar]</arg>
+<arg>${search_text}</arg>
+<status status="PASS" start="2026-03-27T15:22:03.829707" elapsed="0.232709"/>
+</kw>
+<arg>${search_text}</arg>
+<status status="PASS" start="2026-03-27T15:22:03.828655" elapsed="0.234022"/>
+</kw>
+<kw name="Select destination from suggestion list after search with input" owner="hotels_page">
+<kw name="Replace String" owner="String">
+<msg time="2026-03-27T15:22:04.065652" level="INFO">${destination_locator} = css=[id^="hotel-search-typing-"] b:has-text("Bangkok")</msg>
+<var>${destination_locator}</var>
+<arg>${hotels_search_section}[btn_search_suggestion_typing]</arg>
+<arg>***destination***</arg>
+<arg>${destination}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-03-27T15:22:04.064871" elapsed="0.000844"/>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:04.881979" level="INFO">Waited for Element with selector css=[id^="hotel-search-typing-"] b:has-text("Bangkok") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:04.068502" elapsed="0.813760"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:04.882714" elapsed="0.037373"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:04.067314" elapsed="0.853034"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:04.921543" level="INFO">Clicks the element 'css=[id^="hotel-search-typing-"] b:has-text("Bangkok")'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:04.920728" elapsed="0.068103"/>
+</kw>
+<arg>${destination_locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:04.066463" elapsed="0.922624"/>
+</kw>
+<arg>${search_text}</arg>
+<status status="PASS" start="2026-03-27T15:22:04.063479" elapsed="0.925686"/>
+</kw>
+<arg>${TC_HOTELS_001}[destination]</arg>
+<status status="PASS" start="2026-03-27T15:22:02.698106" elapsed="2.291116"/>
+</kw>
+<kw name="Click check in date section" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:04.994792" level="INFO">Waited for Element with selector css=[for="hotel-search-checkin-date"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:04.990894" elapsed="0.004004"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:04.995076" elapsed="0.026316"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:04.990597" elapsed="0.030966"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:05.022700" level="INFO">Clicks the element 'css=[for="hotel-search-checkin-date"]'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.021814" elapsed="0.400255"/>
+</kw>
+<arg>${hotels_search_section}[btn_checkin_date]</arg>
+<status status="PASS" start="2026-03-27T15:22:04.990194" elapsed="0.432473"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:04.989596" elapsed="0.433207"/>
+</kw>
+<kw name="Select booking period from today to target days" owner="hotels_feature">
+<kw name="Find today date on calendar and select today date" owner="hotels_feature">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2026-03-27T15:22:05.425287" level="INFO">${month_index_ref} = 03</msg>
+<var>${month_index_ref}</var>
+<arg>month</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.424868" elapsed="0.000455"/>
+</kw>
+<kw name="Convert To Number" owner="BuiltIn">
+<msg time="2026-03-27T15:22:05.425872" level="INFO">${month_int_ref} = 3.0</msg>
+<var>${month_int_ref}</var>
+<arg>${month_index_ref}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.425510" elapsed="0.000390"/>
+</kw>
+<kw name="Get left month on calendar" owner="hotels_page">
+<kw name="Get text from element" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:05.432212" level="INFO">Waited for Element with selector css=.date-text-left p at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.427062" elapsed="0.005268"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.432543" elapsed="0.035985"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:05.426774" elapsed="0.041895"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-27T15:22:05.480048" level="INFO">Text: 'April 2026'</msg>
+<msg time="2026-03-27T15:22:05.480199" level="INFO">${text} = April 2026</msg>
+<var>${text}</var>
+<arg>${locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.468890" elapsed="0.011337"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2026-03-27T15:22:05.480331" elapsed="0.000194"/>
+</return>
+<msg time="2026-03-27T15:22:05.480676" level="INFO">${left_month} = April 2026</msg>
+<var>${left_month}</var>
+<arg>${calendar_modal}[lbl_month_left]</arg>
+<status status="PASS" start="2026-03-27T15:22:05.426432" elapsed="0.054271"/>
+</kw>
+<return>
+<value>${left_month}</value>
+<status status="PASS" start="2026-03-27T15:22:05.480760" elapsed="0.000071"/>
+</return>
+<msg time="2026-03-27T15:22:05.480942" level="INFO">${month_text} = April 2026</msg>
+<var>${month_text}</var>
+<status status="PASS" start="2026-03-27T15:22:05.426111" elapsed="0.054856"/>
+</kw>
+<kw name="Convert month into index" owner="hotels_page">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-03-27T15:22:05.482495" level="INFO">${month_index} = 4</msg>
+<var>${month_index}</var>
+<arg>${month_to_index}[${month_in_text}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.482085" elapsed="0.000449"/>
+</kw>
+<return>
+<value>${month_index}</value>
+<status status="PASS" start="2026-03-27T15:22:05.482606" elapsed="0.000094"/>
+</return>
+<msg time="2026-03-27T15:22:05.482835" level="INFO">${month_index} = 4</msg>
+<var>${month_index}</var>
+<arg>${month_text[0:-5]}</arg>
+<status status="PASS" start="2026-03-27T15:22:05.481237" elapsed="0.001625"/>
+</kw>
+<kw name="Convert To Number" owner="BuiltIn">
+<msg time="2026-03-27T15:22:05.483450" level="INFO">${month_int} = 4.0</msg>
+<var>${month_int}</var>
+<arg>${month_index}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.483040" elapsed="0.000438"/>
+</kw>
+<if>
+<branch type="IF" condition="${month_int} &lt; ${month_int_ref}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${diff}</var>
+<arg>${month_int_ref}-${month_int}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:05.484154" elapsed="0.000064"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click next one month on calendar" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:05.484631" elapsed="0.000053"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2026-03-27T15:22:05.484427" elapsed="0.000297"/>
+</iter>
+<var>${i}</var>
+<value>${diff}</value>
+<status status="NOT RUN" start="2026-03-27T15:22:05.484312" elapsed="0.000468"/>
+</for>
+<kw name="Select today date on calendar" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:05.484950" elapsed="0.000052"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:05.483595" elapsed="0.001444"/>
+</branch>
+<branch type="ELSE IF" condition="${month_int} &gt; ${month_int_ref}">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-27T15:22:05.485638" level="INFO">${diff} = 1.0</msg>
+<var>${diff}</var>
+<arg>${month_int}-${month_int_ref}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.485318" elapsed="0.000349"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click back one month on calendar" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:05.490667" level="INFO">Waited for Element with selector css=[title="back-one-month"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.486942" elapsed="0.003825"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.490950" elapsed="0.027698"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:05.486666" elapsed="0.032118"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:05.519428" level="INFO">Clicks the element 'css=[title="back-one-month"]'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.518968" elapsed="0.058144"/>
+</kw>
+<arg>${calendar_modal}[btn_back_one_month]</arg>
+<status status="PASS" start="2026-03-27T15:22:05.486347" elapsed="0.090935"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:05.486060" elapsed="0.091287"/>
+</kw>
+<var name="${i}">0.0</var>
+<status status="PASS" start="2026-03-27T15:22:05.485889" elapsed="0.091500"/>
+</iter>
+<var>${i}</var>
+<value>${diff}</value>
+<status status="PASS" start="2026-03-27T15:22:05.485729" elapsed="0.091718"/>
+</for>
+<kw name="Select today date on calendar" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:05.582331" level="INFO">Waited for Element with selector css=.rdrDay.rdrDayToday at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.578770" elapsed="0.003661"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.582613" elapsed="0.036116"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:05.578500" elapsed="0.040411"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:05.619535" level="INFO">Clicks the element 'css=.rdrDay.rdrDayToday'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.619094" elapsed="0.088772"/>
+</kw>
+<arg>${calendar_modal}[btn_today_date]</arg>
+<status status="PASS" start="2026-03-27T15:22:05.578155" elapsed="0.129859"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:05.577736" elapsed="0.130341"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:05.485077" elapsed="0.223036"/>
+</branch>
+<branch type="ELSE">
+<kw name="Select today date on calendar" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:05.708489" elapsed="0.000068"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:05.708163" elapsed="0.000429"/>
+</branch>
+<status status="PASS" start="2026-03-27T15:22:05.483570" elapsed="0.225053"/>
+</if>
+<status status="PASS" start="2026-03-27T15:22:05.424551" elapsed="0.284114"/>
+</kw>
+<kw name="Get left month on calendar" owner="hotels_page">
+<kw name="Get text from element" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:05.713860" level="INFO">Waited for Element with selector css=.date-text-left p at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.709741" elapsed="0.004238"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.714189" elapsed="0.037966"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:05.709476" elapsed="0.042852"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-27T15:22:05.759073" level="INFO">Text: 'March 2026'</msg>
+<msg time="2026-03-27T15:22:05.759194" level="INFO">${text} = March 2026</msg>
+<var>${text}</var>
+<arg>${locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.752552" elapsed="0.006668"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2026-03-27T15:22:05.759304" elapsed="0.000117"/>
+</return>
+<msg time="2026-03-27T15:22:05.759552" level="INFO">${left_month} = March 2026</msg>
+<var>${left_month}</var>
+<arg>${calendar_modal}[lbl_month_left]</arg>
+<status status="PASS" start="2026-03-27T15:22:05.709158" elapsed="0.050419"/>
+</kw>
+<return>
+<value>${left_month}</value>
+<status status="PASS" start="2026-03-27T15:22:05.759631" elapsed="0.000065"/>
+</return>
+<msg time="2026-03-27T15:22:05.759801" level="INFO">${month_text} = March 2026</msg>
+<var>${month_text}</var>
+<status status="PASS" start="2026-03-27T15:22:05.708832" elapsed="0.050992"/>
+</kw>
+<kw name="Replace String" owner="String">
+<msg time="2026-03-27T15:22:05.762726" level="INFO">${available_month_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(***index*** of :not(.rdrDayDisabled):not(.invisible))</msg>
+<var>${available_month_locator}</var>
+<arg>${calendar_modal}[btn_available_date_by_index]</arg>
+<arg>***month***</arg>
+<arg>${month_text}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.760955" elapsed="0.001846"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Replace String" owner="String">
+<msg time="2026-03-27T15:22:05.763926" level="INFO">${available_date_locator} = css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible))</msg>
+<var>${available_date_locator}</var>
+<arg>${available_month_locator}</arg>
+<arg>***index***</arg>
+<arg>${available_date_in_current_month}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.763631" elapsed="0.000327"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:05.784463" level="INFO">Waited for Element with selector css=.rdrMonth:has-text("March 2026") .rdrDay:nth-child(1 of :not(.rdrDayDisabled):not(.invisible)) at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.764847" elapsed="0.019790"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.784908" elapsed="0.033644"/>
+</kw>
+<arg>${available_date_locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:05.764529" elapsed="0.054154"/>
+</kw>
+<msg time="2026-03-27T15:22:05.818794" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>common_web.Check if element display</arg>
+<arg>${available_date_locator}</arg>
+<doc>Runs the specified keyword and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.764124" elapsed="0.054700"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-27T15:22:05.819353" level="INFO">1</msg>
+<arg>${available_date_in_current_month}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.819011" elapsed="0.000383"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${available_date_in_current_month}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.819532" elapsed="0.000265"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${FALSE} == ${status}</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.819929" elapsed="0.000322"/>
+</kw>
+<return>
+<value>${available_date_in_current_month}</value>
+<status status="PASS" start="2026-03-27T15:22:05.820305" elapsed="0.000072"/>
+</return>
+<var name="${available_date_in_current_month}">1</var>
+<status status="PASS" start="2026-03-27T15:22:05.763403" elapsed="0.057014"/>
+</iter>
+<var>${available_date_in_current_month}</var>
+<value>1</value>
+<value>31</value>
+<status status="PASS" start="2026-03-27T15:22:05.762983" elapsed="0.057482"/>
+</for>
+<if>
+<branch type="IF" condition="${days_to_book}&lt;=${available_date_in_current_month}">
+<kw name="Replace String" owner="String">
+<var>${available_date_locator}</var>
+<arg>${available_month_locator}</arg>
+<arg>***index***</arg>
+<arg>${available_date_in_current_month}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:05.820700" elapsed="0.000047"/>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<arg>${available_date_locator}</arg>
+<status status="NOT RUN" start="2026-03-27T15:22:05.820923" elapsed="0.000047"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:05.820552" elapsed="0.000453"/>
+</branch>
+<branch type="ELSE IF" condition="${days_to_book}&gt;${available_date_in_current_month}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${days_over}</var>
+<arg>${days_to_book}-${available_date_in_current_month}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:05.821170" elapsed="0.000041"/>
+</kw>
+<kw name="Get right month on calendar" owner="hotels_page">
+<var>${next_month_text}</var>
+<status status="NOT RUN" start="2026-03-27T15:22:05.821424" elapsed="0.000048"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${available_month_locator}</var>
+<arg>${calendar_modal}[btn_available_date_by_index]</arg>
+<arg>***month***</arg>
+<arg>${next_month_text}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:05.821584" elapsed="0.000042"/>
+</kw>
+<kw name="Replace String" owner="String">
+<var>${available_date_locator}</var>
+<arg>${available_month_locator}</arg>
+<arg>***index***</arg>
+<arg>${days_over}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:05.821742" elapsed="0.000042"/>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<arg>${available_date_locator}</arg>
+<status status="NOT RUN" start="2026-03-27T15:22:05.821930" elapsed="0.000043"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:05.821039" elapsed="0.000969"/>
+</branch>
+<status status="NOT RUN" start="2026-03-27T15:22:05.820535" elapsed="0.001505"/>
+</if>
+<arg>${TC_HOTELS_001}[days_to_book]</arg>
+<status status="PASS" start="2026-03-27T15:22:05.423934" elapsed="0.398185"/>
+</kw>
+<kw name="Click guests and rooms section" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:05.826849" level="INFO">Waited for Element with selector css=[for="hotel-search-traveler"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.823104" elapsed="0.003841"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.827114" elapsed="0.024744"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:05.822858" elapsed="0.029125"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:05.852598" level="INFO">Clicks the element 'css=[for="hotel-search-traveler"]'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:05.852168" elapsed="0.349572"/>
+</kw>
+<arg>${hotels_search_section}[btn_guests_and_rooms]</arg>
+<status status="PASS" start="2026-03-27T15:22:05.822576" elapsed="0.379551"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:05.822298" elapsed="0.380455"/>
+</kw>
+<kw name="Adjust rooms amount to" owner="hotels_feature">
+<kw name="Get rooms amount" owner="hotels_page">
+<kw name="Get text from element" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.235721" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("-") + div at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.224594" elapsed="0.011257"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.236125" elapsed="0.032878"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.223029" elapsed="0.046119"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-27T15:22:06.277117" level="INFO">Text: '1'</msg>
+<msg time="2026-03-27T15:22:06.277249" level="INFO">${text} = 1</msg>
+<var>${text}</var>
+<arg>${locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.269354" elapsed="0.007923"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2026-03-27T15:22:06.277370" elapsed="0.000126"/>
+</return>
+<msg time="2026-03-27T15:22:06.277636" level="INFO">${room_amount} = 1</msg>
+<var>${room_amount}</var>
+<arg>${guests_and_rooms_modal}[lbl_rooms_amount]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.221559" elapsed="0.056102"/>
+</kw>
+<return>
+<value>${room_amount}</value>
+<status status="PASS" start="2026-03-27T15:22:06.277718" elapsed="0.000070"/>
+</return>
+<msg time="2026-03-27T15:22:06.277900" level="INFO">${rooms_amount} = 1</msg>
+<var>${rooms_amount}</var>
+<status status="PASS" start="2026-03-27T15:22:06.203808" elapsed="0.074116"/>
+</kw>
+<if>
+<branch type="IF" condition="${rooms_amount} &lt; ${target_rooms_amount}">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-27T15:22:06.278659" level="INFO">${adjust_amount} = 1</msg>
+<var>${adjust_amount}</var>
+<arg>${target_rooms_amount}-${rooms_amount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.278301" elapsed="0.000384"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click increase button on rooms amount" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.306595" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("+") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.280005" elapsed="0.026853"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.307147" elapsed="0.045878"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.279720" elapsed="0.073447"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:06.353848" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Rooms")) button:text-is("+")'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.353369" elapsed="0.054025"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_rooms_increase]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.279402" elapsed="0.128143"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:06.279101" elapsed="0.128510"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-03-27T15:22:06.278910" elapsed="0.128743"/>
+</iter>
+<var>${i}</var>
+<value>${adjust_amount}</value>
+<status status="PASS" start="2026-03-27T15:22:06.278753" elapsed="0.128958"/>
+</for>
+<status status="PASS" start="2026-03-27T15:22:06.278006" elapsed="0.129765"/>
+</branch>
+<branch type="ELSE IF" condition="${rooms_amount} &gt; ${target_rooms_amount}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${adjust_amount}</var>
+<arg>${rooms_amount}-${target_rooms_amount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:06.408125" elapsed="0.000073"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click decrease button on rooms amount" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:06.408589" elapsed="0.000120"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2026-03-27T15:22:06.408372" elapsed="0.000379"/>
+</iter>
+<var>${i}</var>
+<value>${adjust_amount}</value>
+<status status="NOT RUN" start="2026-03-27T15:22:06.408271" elapsed="0.000521"/>
+</for>
+<status status="NOT RUN" start="2026-03-27T15:22:06.407815" elapsed="0.001026"/>
+</branch>
+<branch type="ELSE">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:06.409032" elapsed="0.000053"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:06.408878" elapsed="0.000248"/>
+</branch>
+<status status="PASS" start="2026-03-27T15:22:06.277987" elapsed="0.131172"/>
+</if>
+<arg>${TC_HOTELS_001}[rooms_amount]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.203231" elapsed="0.205980"/>
+</kw>
+<kw name="Adjust adults amount to" owner="hotels_feature">
+<kw name="Get adults amount" owner="hotels_page">
+<kw name="Get text from element" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.416752" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("-") + div at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.410927" elapsed="0.005962"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.417125" elapsed="0.035613"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.410633" elapsed="0.042248"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-27T15:22:06.460490" level="INFO">Text: '2'</msg>
+<msg time="2026-03-27T15:22:06.460623" level="INFO">${text} = 2</msg>
+<var>${text}</var>
+<arg>${locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.453086" elapsed="0.007567"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2026-03-27T15:22:06.460747" elapsed="0.000116"/>
+</return>
+<msg time="2026-03-27T15:22:06.461005" level="INFO">${adults_amount} = 2</msg>
+<var>${adults_amount}</var>
+<arg>${guests_and_rooms_modal}[lbl_adults_amount]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.410298" elapsed="0.050733"/>
+</kw>
+<return>
+<value>${adults_amount}</value>
+<status status="PASS" start="2026-03-27T15:22:06.461087" elapsed="0.000070"/>
+</return>
+<msg time="2026-03-27T15:22:06.461266" level="INFO">${adults_amount} = 2</msg>
+<var>${adults_amount}</var>
+<status status="PASS" start="2026-03-27T15:22:06.409996" elapsed="0.051294"/>
+</kw>
+<if>
+<branch type="IF" condition="${adults_amount} &lt; ${target_adults_amount}">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-27T15:22:06.461986" level="INFO">${adjust_amount} = 2</msg>
+<var>${adjust_amount}</var>
+<arg>${target_adults_amount}-${adults_amount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.461655" elapsed="0.000355"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click increase button on adults amount" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.467275" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.463201" elapsed="0.004444"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.468650" elapsed="0.033430"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.462952" elapsed="0.039255"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:06.502835" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+")'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.502392" elapsed="0.045696"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_adults_increase]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.462666" elapsed="0.085581"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:06.462388" elapsed="0.085919"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-03-27T15:22:06.462214" elapsed="0.086130"/>
+</iter>
+<iter>
+<kw name="Click increase button on adults amount" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.554503" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.549823" elapsed="0.004785"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.554794" elapsed="0.034863"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.549531" elapsed="0.040259"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:06.590444" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Adults")) button:text-is("+")'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.589969" elapsed="0.037516"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_adults_increase]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.549122" elapsed="0.078497"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:06.548788" elapsed="0.078892"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-03-27T15:22:06.548480" elapsed="0.079237"/>
+</iter>
+<var>${i}</var>
+<value>${adjust_amount}</value>
+<status status="PASS" start="2026-03-27T15:22:06.462073" elapsed="0.165695"/>
+</for>
+<status status="PASS" start="2026-03-27T15:22:06.461370" elapsed="0.166450"/>
+</branch>
+<branch type="ELSE IF" condition="${adults_amount} &gt; ${target_adults_amount}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${adjust_amount}</var>
+<arg>${adults_amount}-${target_adults_amount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:06.628132" elapsed="0.000063"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click decrease button on adults amount" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:06.628529" elapsed="0.000053"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2026-03-27T15:22:06.628343" elapsed="0.000274"/>
+</iter>
+<var>${i}</var>
+<value>${adjust_amount}</value>
+<status status="NOT RUN" start="2026-03-27T15:22:06.628257" elapsed="0.000395"/>
+</for>
+<status status="NOT RUN" start="2026-03-27T15:22:06.627858" elapsed="0.000899"/>
+</branch>
+<branch type="ELSE">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:06.628925" elapsed="0.000043"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:06.628790" elapsed="0.000211"/>
+</branch>
+<status status="PASS" start="2026-03-27T15:22:06.461351" elapsed="0.167678"/>
+</if>
+<arg>${TC_HOTELS_001}[adults_amount]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.409556" elapsed="0.219518"/>
+</kw>
+<kw name="Adjust children amount and select age" owner="hotels_feature">
+<kw name="Get children amount" owner="hotels_page">
+<kw name="Get text from element" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.636556" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("-") + div at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.630538" elapsed="0.006135"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.636871" elapsed="0.032576"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.630288" elapsed="0.039293"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-03-27T15:22:06.680079" level="INFO">Text: '0'</msg>
+<msg time="2026-03-27T15:22:06.680216" level="INFO">${text} = 0</msg>
+<var>${text}</var>
+<arg>${locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.669770" elapsed="0.010473"/>
+</kw>
+<return>
+<value>${text}</value>
+<status status="PASS" start="2026-03-27T15:22:06.680339" elapsed="0.000131"/>
+</return>
+<msg time="2026-03-27T15:22:06.680609" level="INFO">${children_amount} = 0</msg>
+<var>${children_amount}</var>
+<arg>${guests_and_rooms_modal}[lbl_children_amount]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.630002" elapsed="0.050631"/>
+</kw>
+<return>
+<value>${children_amount}</value>
+<status status="PASS" start="2026-03-27T15:22:06.680687" elapsed="0.000066"/>
+</return>
+<msg time="2026-03-27T15:22:06.680873" level="INFO">${children_amount} = 0</msg>
+<var>${children_amount}</var>
+<status status="PASS" start="2026-03-27T15:22:06.629750" elapsed="0.051145"/>
+</kw>
+<if>
+<branch type="IF" condition="${children_amount} &lt; ${target_children_amount}">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-03-27T15:22:06.681700" level="INFO">${adjust_amount} = 2</msg>
+<var>${adjust_amount}</var>
+<arg>${target_children_amount}-${children_amount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.681263" elapsed="0.000462"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click increase button on children amount" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.686934" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.682954" elapsed="0.004076"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.687205" elapsed="0.031438"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.682708" elapsed="0.036060"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:06.719385" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+")'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.718950" elapsed="0.050051"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_children_increase]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.682402" elapsed="0.086786"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:06.682124" elapsed="0.087134"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2026-03-27T15:22:06.681942" elapsed="0.087543"/>
+</iter>
+<iter>
+<kw name="Click increase button on children amount" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.778072" level="INFO">Waited for Element with selector css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.771020" elapsed="0.007176"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.778406" elapsed="0.040296"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.770742" elapsed="0.048088"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:06.819459" level="INFO">Clicks the element 'css=[role="menuitem"]:has(div:text-is("Children")) button:text-is("+")'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.819012" elapsed="0.059258"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_children_increase]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.770399" elapsed="0.108049"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:06.770060" elapsed="0.108463"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2026-03-27T15:22:06.769682" elapsed="0.108881"/>
+</iter>
+<var>${i}</var>
+<value>${adjust_amount}</value>
+<status status="PASS" start="2026-03-27T15:22:06.681791" elapsed="0.196823"/>
+</for>
+<status status="PASS" start="2026-03-27T15:22:06.680970" elapsed="0.197698"/>
+</branch>
+<branch type="ELSE IF" condition="${children_amount} &gt; ${target_children_amount}">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${adjust_amount}</var>
+<arg>${children_amount}-${target_children_amount}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:06.878990" elapsed="0.000067"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Click decrease button on children amount" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:06.879394" elapsed="0.000054"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2026-03-27T15:22:06.879205" elapsed="0.000278"/>
+</iter>
+<var>${i}</var>
+<value>${adjust_amount}</value>
+<status status="NOT RUN" start="2026-03-27T15:22:06.879116" elapsed="0.000403"/>
+</for>
+<status status="NOT RUN" start="2026-03-27T15:22:06.878711" elapsed="0.000849"/>
+</branch>
+<branch type="ELSE">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT RUN" start="2026-03-27T15:22:06.879725" elapsed="0.000117"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:06.879591" elapsed="0.000288"/>
+</branch>
+<status status="PASS" start="2026-03-27T15:22:06.680953" elapsed="0.198955"/>
+</if>
+<arg>${TC_HOTELS_001}[children_amount]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.629374" elapsed="0.250577"/>
+</kw>
+<kw name="Select children age" owner="hotels_feature">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click children age selection and recheck age list display" owner="hotels_feature">
+<kw name="check if confirm button on guests and rooms section display" owner="hotels_page">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.886793" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.882230" elapsed="0.004675"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.887100" elapsed="0.031612"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_confirm]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.881946" elapsed="0.036897"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:06.881690" elapsed="0.037210"/>
+</kw>
+<kw name="Click children age selection" owner="hotels_page">
+<kw name="Replace String" owner="String">
+<msg time="2026-03-27T15:22:06.919807" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button</msg>
+<var>${children_age_locator}</var>
+<arg>${guests_and_rooms_modal}[ddl_children_age_dropdown]</arg>
+<arg>***index***</arg>
+<arg>${child_index}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.919537" elapsed="0.000298"/>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:06.925538" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.920566" elapsed="0.005074"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.925821" elapsed="0.350836"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.920312" elapsed="0.356506"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:07.277602" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("1")) button'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:07.277038" elapsed="0.186256"/>
+</kw>
+<arg>${children_age_locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.920012" elapsed="0.543452"/>
+</kw>
+<arg>${children_index}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.919131" elapsed="0.544402"/>
+</kw>
+<kw name="Run Keyword And Return" owner="BuiltIn">
+<kw name="Check if children age list display" owner="hotels_page">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:07.515173" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:07.466854" elapsed="0.048510"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:07.515669" elapsed="0.335953"/>
+</kw>
+<arg>${guests_and_rooms_modal}[lbl_children_age_list]</arg>
+<status status="PASS" start="2026-03-27T15:22:07.466021" elapsed="0.385900"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:07.465468" elapsed="0.386630"/>
+</kw>
+<msg time="2026-03-27T15:22:07.852238" level="INFO">Returning from the enclosing user keyword.</msg>
+<var>${status}</var>
+<arg>hotels_page.Check if children age list display</arg>
+<doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2026-03-27T15:22:07.463761" elapsed="0.388594"/>
+</kw>
+<return>
+<value>${status}</value>
+<status status="NOT RUN" start="2026-03-27T15:22:07.852502" elapsed="0.000152"/>
+</return>
+<arg>${children_index}</arg>
+<status status="PASS" start="2026-03-27T15:22:06.881359" elapsed="0.971480"/>
+</kw>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>hotels_feature.Click children age selection and recheck age list display</arg>
+<arg>${children_index}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-03-27T15:22:06.880748" elapsed="0.972163"/>
+</kw>
+<if>
+<branch type="IF" condition="${age} &lt; 0">
+<kw name="Select children age selection with less than 1 year option" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:07.853430" elapsed="0.000074"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:07.853021" elapsed="0.000530"/>
+</branch>
+<branch type="ELSE IF" condition="${age} == 1">
+<kw name="Select children age selection with 1 year option" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:07.887980" level="INFO">Waited for Element with selector css=li span:nth-child(1):has-text("1"):not(span:has-text("Less")) at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:07.855066" elapsed="0.033110"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:07.889180" elapsed="0.137452"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:07.854631" elapsed="0.172160"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:08.027589" level="INFO">Clicks the element 'css=li span:nth-child(1):has-text("1"):not(span:has-text("Less"))'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.027019" elapsed="0.155449"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_children_age_selection_1]</arg>
+<status status="PASS" start="2026-03-27T15:22:07.854236" elapsed="0.328613"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:07.853877" elapsed="0.329084"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:07.853595" elapsed="0.329477"/>
+</branch>
+<branch type="ELSE IF" condition="${age} &lt; 1">
+<kw name="Select children age selection" owner="hotels_page">
+<arg>${age}</arg>
+<status status="NOT RUN" start="2026-03-27T15:22:08.184318" elapsed="0.000160"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:08.183181" elapsed="0.001516"/>
+</branch>
+<status status="PASS" start="2026-03-27T15:22:07.852998" elapsed="0.331771"/>
+</if>
+<arg>${TC_HOTELS_001}[children_1_index]</arg>
+<arg>${TC_HOTELS_001}[children_1_age]</arg>
+<status status="PASS" start="2026-03-27T15:22:06.880295" elapsed="1.304643"/>
+</kw>
+<kw name="Select children age" owner="hotels_feature">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click children age selection and recheck age list display" owner="hotels_feature">
+<kw name="check if confirm button on guests and rooms section display" owner="hotels_page">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:08.212285" level="INFO">Waited for Element with selector css=button:text-is("Confirm") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.191627" elapsed="0.020841"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.212773" elapsed="0.047214"/>
+</kw>
+<arg>${guests_and_rooms_modal}[btn_confirm]</arg>
+<status status="PASS" start="2026-03-27T15:22:08.191223" elapsed="0.068938"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:08.190899" elapsed="0.069342"/>
+</kw>
+<kw name="Click children age selection" owner="hotels_page">
+<kw name="Replace String" owner="String">
+<msg time="2026-03-27T15:22:08.261510" level="INFO">${children_age_locator} = css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button</msg>
+<var>${children_age_locator}</var>
+<arg>${guests_and_rooms_modal}[ddl_children_age_dropdown]</arg>
+<arg>***index***</arg>
+<arg>${child_index}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.261140" elapsed="0.000410"/>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:08.277775" level="INFO">Waited for Element with selector css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.262515" elapsed="0.015416"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.278212" elapsed="0.061787"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:08.262183" elapsed="0.077959"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:08.340844" level="INFO">Clicks the element 'css=.selector-child-age .flex:has(p:has-text("Child"):has-text("2")) button'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.340343" elapsed="0.125523"/>
+</kw>
+<arg>${children_age_locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:08.261787" elapsed="0.204888"/>
+</kw>
+<arg>${children_index}</arg>
+<status status="PASS" start="2026-03-27T15:22:08.260557" elapsed="0.206877"/>
+</kw>
+<kw name="Run Keyword And Return" owner="BuiltIn">
+<kw name="Check if children age list display" owner="hotels_page">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:08.531987" level="INFO">Waited for Element with selector css=[data-slot="content"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.472377" elapsed="0.059865"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.532552" elapsed="0.254167"/>
+</kw>
+<arg>${guests_and_rooms_modal}[lbl_children_age_list]</arg>
+<status status="PASS" start="2026-03-27T15:22:08.471363" elapsed="0.315610"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:08.470448" elapsed="0.316654"/>
+</kw>
+<msg time="2026-03-27T15:22:08.787188" level="INFO">Returning from the enclosing user keyword.</msg>
+<var>${status}</var>
+<arg>hotels_page.Check if children age list display</arg>
+<doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.468353" elapsed="0.318958"/>
+</kw>
+<return>
+<value>${status}</value>
+<status status="NOT RUN" start="2026-03-27T15:22:08.787433" elapsed="0.000188"/>
+</return>
+<arg>${children_index}</arg>
+<status status="PASS" start="2026-03-27T15:22:08.190437" elapsed="0.597344"/>
+</kw>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>hotels_feature.Click children age selection and recheck age list display</arg>
+<arg>${children_index}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.189694" elapsed="0.598204"/>
+</kw>
+<if>
+<branch type="IF" condition="${age} &lt; 0">
+<kw name="Select children age selection with less than 1 year option" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:08.788731" elapsed="0.000119"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:08.788072" elapsed="0.000853"/>
+</branch>
+<branch type="ELSE IF" condition="${age} == 1">
+<kw name="Select children age selection with 1 year option" owner="hotels_page">
+<status status="NOT RUN" start="2026-03-27T15:22:08.789493" elapsed="0.000109"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:08.788999" elapsed="0.000677"/>
+</branch>
+<branch type="ELSE IF" condition="${age} &lt; 1">
+<kw name="Select children age selection" owner="hotels_page">
+<arg>${age}</arg>
+<status status="NOT RUN" start="2026-03-27T15:22:08.790194" elapsed="0.000098"/>
+</kw>
+<status status="NOT RUN" start="2026-03-27T15:22:08.789744" elapsed="0.000628"/>
+</branch>
+<status status="PASS" start="2026-03-27T15:22:08.788036" elapsed="0.002402"/>
+</if>
+<arg>${TC_HOTELS_001}[children_2_index]</arg>
+<arg>${TC_HOTELS_001}[children_2_age]</arg>
+<status status="PASS" start="2026-03-27T15:22:08.186706" elapsed="0.603820"/>
+</kw>
+<kw name="Click search button" owner="hotels_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:08.798143" level="INFO">Waited for Element with selector css=#hotel-search-button at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.792718" elapsed="0.005556"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.798487" elapsed="0.037893"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:08.792220" elapsed="0.044480"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:08.837630" level="INFO">Clicks the element 'css=#hotel-search-button'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:08.837027" elapsed="0.396769"/>
+</kw>
+<arg>${hotels_search_section}[btn_search_button]</arg>
+<status status="PASS" start="2026-03-27T15:22:08.791565" elapsed="0.442661"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:08.790935" elapsed="0.443424"/>
+</kw>
+<kw name="Check if search result page display" owner="search_result_page">
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:09.250467" level="INFO">Waited for Element with selector css=#hotel-search-layout-main-page at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:09.237490" elapsed="0.013213"/>
+</kw>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-03-27T15:22:09.236373" elapsed="0.014443"/>
+</kw>
+<arg>${search_result_element}[search_result_section]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="PASS" start="2026-03-27T15:22:09.235705" elapsed="0.015196"/>
+</kw>
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:10.423903" level="INFO">Waited for Element with selector css=[class="text-sm font-normal md:text-base"]:has-text("Results") at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:09.252258" elapsed="1.172025"/>
+</kw>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2026-03-27T15:22:09.251711" elapsed="1.172824"/>
+</kw>
+<arg>${search_list_section}[lbl_total_search_result_items]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="PASS" start="2026-03-27T15:22:09.251159" elapsed="1.174026"/>
+</kw>
+<status status="PASS" start="2026-03-27T15:22:09.234935" elapsed="1.190833"/>
+</kw>
+<kw name="Select hotel by index from search result" owner="search_result_page">
+<kw name="Replace String" owner="String">
+<msg time="2026-03-27T15:22:10.427962" level="INFO">${hotel_locator} = css=.infinite-scroll-component__outerdiv div[class^="order"]:nth-of-type(4) a[id^="hotel-item-card-"]</msg>
+<var>${hotel_locator}</var>
+<arg>${search_list_section}[lbl_search_result_item_by_idex]</arg>
+<arg>***hotel_index***</arg>
+<arg>${hotel_index}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-03-27T15:22:10.427289" elapsed="0.000738"/>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:10.964764" level="INFO">Waited for Element with selector css=.infinite-scroll-component__outerdiv div[class^="order"]:nth-of-type(4) a[id^="hotel-item-card-"] at state visible</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T15:22:10.429797" elapsed="0.535507"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2026-03-27T15:22:10.965839" elapsed="0.088158"/>
+</kw>
+<arg>${locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:10.429249" elapsed="0.624921"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T15:22:11.054982" level="INFO">Clicks the element 'css=.infinite-scroll-component__outerdiv div[class^="order"]:nth-of-type(4) a[id^="hotel-item-card-"]'.</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T15:22:11.054406" elapsed="0.786247"/>
+</kw>
+<arg>${hotel_locator}</arg>
+<status status="PASS" start="2026-03-27T15:22:10.428417" elapsed="1.412421"/>
+</kw>
+<arg>${TC_HOTELS_001}[hotel_index]</arg>
+<status status="PASS" start="2026-03-27T15:22:10.426480" elapsed="1.414438"/>
+</kw>
+<kw name="Debug" owner="DebugLibrary">
+<kw name="Check if hotels item display" owner="hotels_item_page">
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:22:42.723618" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:22:42.723993" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:22:42.725140" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:22:32.485714" elapsed="10.243503">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<msg time="2026-03-27T15:22:42.729483" level="FAIL">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</msg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2026-03-27T15:22:32.485054" elapsed="10.244643">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<arg>${hotels_item_element}[hotels_item_section]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="FAIL" start="2026-03-27T15:22:32.484518" elapsed="10.245393">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<status status="FAIL" start="2026-03-27T15:22:32.477948" elapsed="10.252069">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<kw name="Check if hotels item display" owner="hotels_item_page">
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:23:29.098010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:23:29.098179" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:23:29.098452" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:23:18.876856" elapsed="10.222007">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<msg time="2026-03-27T15:23:29.099050" level="FAIL">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</msg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2026-03-27T15:23:18.872562" elapsed="10.226632">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<arg>${hotels_item_element}[hotels_item_section]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="FAIL" start="2026-03-27T15:23:18.872064" elapsed="10.227272">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<status status="FAIL" start="2026-03-27T15:23:18.867780" elapsed="10.231643">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('#breadcrumb-hotels').first() to be visible
+</status>
+</kw>
+<kw name="Book room by index" owner="hotels_item_page">
+<kw name="Replace String" owner="String">
+<msg time="2026-03-27T15:23:40.527436" level="INFO">${book_button_locator} = xpath=(//button[contains(text(),'Book now')])[2]</msg>
+<var>${book_button_locator}</var>
+<arg>${room_option}[btn_book_now_by_index]</arg>
+<arg>***index***</arg>
+<arg>${room_index}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2026-03-27T15:23:40.527158" elapsed="0.000320"/>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:23:50.719369" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:23:50.719681" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:23:50.720069" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:23:40.528172" elapsed="10.192377">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="NOT RUN" start="2026-03-27T15:23:50.721413" elapsed="0.000186"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2026-03-27T15:23:40.527917" elapsed="10.193861">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:23:50.721930" elapsed="0.000052"/>
+</kw>
+<arg>${book_button_locator}</arg>
+<status status="FAIL" start="2026-03-27T15:23:40.527654" elapsed="10.194409">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<arg>${TC_HOTELS_001}[room_index]</arg>
+<status status="FAIL" start="2026-03-27T15:23:40.526494" elapsed="10.195656">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:25:01.723987" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:25:01.724652" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:25:01.725748" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:24:51.376064" elapsed="10.350535">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</status>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="NOT RUN" start="2026-03-27T15:25:01.728060" elapsed="0.000239"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2026-03-27T15:24:51.375468" elapsed="10.353094">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:25:01.728735" elapsed="0.000053"/>
+</kw>
+<arg>xpath=//button[contains(text(),\'Book now\')]</arg>
+<status status="FAIL" start="2026-03-27T15:24:51.372764" elapsed="10.356687">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</status>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:27:28.147141" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:27:28.147290" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:27:28.147517" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:27:17.968157" elapsed="10.179757">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="NOT RUN" start="2026-03-27T15:27:28.148256" elapsed="0.000097"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2026-03-27T15:27:17.967368" elapsed="10.181102">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:27:28.148594" elapsed="0.000043"/>
+</kw>
+<arg>xpath=(//button[contains(text(),'Book now')])[2]</arg>
+<status status="FAIL" start="2026-03-27T15:27:17.964025" elapsed="10.184691">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:27:55.015742" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-6.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-6.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:27:55.015848" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:27:55.015963" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:27:44.892296" elapsed="10.123925">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="NOT RUN" start="2026-03-27T15:27:55.016453" elapsed="0.000090"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2026-03-27T15:27:44.891705" elapsed="10.124936">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:27:55.016767" elapsed="0.000046"/>
+</kw>
+<arg>xpath=(//button[contains(text(),'Book now')])[2]</arg>
+<status status="FAIL" start="2026-03-27T15:27:44.890738" elapsed="10.126141">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//button[contains(text(),\'Book now\')])[2]').first() to be visible
+</status>
+</kw>
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:28:16.203037" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-7.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-7.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:28:16.203435" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:28:16.204172" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:28:05.988611" elapsed="10.216359">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</status>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="NOT RUN" start="2026-03-27T15:28:16.206430" elapsed="0.000289"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2026-03-27T15:28:05.988097" elapsed="10.218876">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:28:16.207145" elapsed="0.000046"/>
+</kw>
+<arg>xpath=//button[contains(text(),'Book now')]</arg>
+<status status="FAIL" start="2026-03-27T15:28:05.987298" elapsed="10.220021">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//button[contains(text(),\'Book now\')]').first() to be visible
+</status>
+</kw>
+<kw name="Check if booking display" owner="booking_page">
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:30:00.907728" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-8.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-8.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:30:00.910318" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:30:00.911058" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:29:50.636079" elapsed="10.283154">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<msg time="2026-03-27T15:30:00.919942" level="FAIL">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</msg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2026-03-27T15:29:50.633710" elapsed="10.286518">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<arg>${booking_element}[booking_section]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="FAIL" start="2026-03-27T15:29:50.631380" elapsed="10.289165">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<status status="FAIL" start="2026-03-27T15:29:50.622831" elapsed="10.297964">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<kw name="Check if booking display" owner="booking_page">
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:30:28.727086" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-9.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-9.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:30:28.727321" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:30:28.727675" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:30:18.477505" elapsed="10.250701">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<msg time="2026-03-27T15:30:28.728484" level="FAIL">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</msg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2026-03-27T15:30:18.476029" elapsed="10.252769">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<arg>${booking_element}[booking_section]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="FAIL" start="2026-03-27T15:30:18.475303" elapsed="10.253745">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<status status="FAIL" start="2026-03-27T15:30:18.473580" elapsed="10.255613">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[class^="booking-page"]').first() to be visible
+</status>
+</kw>
+<kw name="Select gender as male" owner="booking_page">
+<kw name="Click element on screen" owner="common_web">
+<kw name=" Check if element display" owner="common_web">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:30:51.680984" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-10.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-10.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T15:30:51.681138" level="INFO">See also file:///Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/testcases/web/results/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T15:30:51.681304" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('input[value="Mr"]').first() to be visible
+</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:30:41.389244" elapsed="10.292399">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('input[value="Mr"]').first() to be visible
+</status>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="NOT RUN" start="2026-03-27T15:30:51.682027" elapsed="0.000139"/>
+</kw>
+<arg>${locator}</arg>
+<status status="FAIL" start="2026-03-27T15:30:41.388801" elapsed="10.293511">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('input[value="Mr"]').first() to be visible
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-27T15:30:51.682546" elapsed="0.000144"/>
+</kw>
+<arg>${contact_information_section}[rdo_gender_male]</arg>
+<status status="FAIL" start="2026-03-27T15:30:41.388320" elapsed="10.294486">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('input[value="Mr"]').first() to be visible
+</status>
+</kw>
+<status status="FAIL" start="2026-03-27T15:30:41.386815" elapsed="10.298864">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('input[value="Mr"]').first() to be visible
+</status>
+</kw>
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="PASS" start="2026-03-27T15:22:11.841672" elapsed="527.114516"/>
+</kw>
+<kw name="Check if hotels item display" owner="hotels_item_page">
+<kw name="Wait until page display" owner="common_web">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T15:31:08.959311" level="FAIL">ConnectionError: Playwright process has been terminated with code 130</msg>
+<arg>${locator}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T15:30:58.958684" elapsed="10.000988">ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<msg time="2026-03-27T15:31:08.959906" level="FAIL">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: ConnectionError: Playwright process has been terminated with code 130</msg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<arg>Browser.Wait for elements state</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2026-03-27T15:30:58.958084" elapsed="10.001946">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<arg>${hotels_item_element}[hotels_item_section]</arg>
+<arg>${retry_times}</arg>
+<arg>${interval_for_retry}</arg>
+<status status="FAIL" start="2026-03-27T15:30:58.957557" elapsed="10.002646">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<status status="FAIL" start="2026-03-27T15:30:58.956897" elapsed="10.003395">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<kw name="Book room by index" owner="hotels_item_page">
+<arg>${TC_HOTELS_001}[room_index]</arg>
+<status status="NOT RUN" start="2026-03-27T15:31:08.960722" elapsed="0.000150"/>
+</kw>
+<kw name="Check if booking display" owner="booking_page">
+<status status="NOT RUN" start="2026-03-27T15:31:08.961071" elapsed="0.000060"/>
+</kw>
+<kw name="Select gender as male" owner="booking_page">
+<status status="NOT RUN" start="2026-03-27T15:31:08.961287" elapsed="0.000051"/>
+</kw>
+<kw name="Input contact information" owner="booking_feature">
+<arg>${TC_HOTELS_001}[first_name]</arg>
+<arg>${TC_HOTELS_001}[last_name]</arg>
+<arg>${TC_HOTELS_001}[email]</arg>
+<arg>${TC_HOTELS_001}[country_name]</arg>
+<arg>${TC_HOTELS_001}[phone]</arg>
+<arg>${TC_HOTELS_001}[country_name]</arg>
+<status status="NOT RUN" start="2026-03-27T15:31:08.961514" elapsed="0.000050"/>
+</kw>
+<kw name="Click confirm booking button" owner="booking_page">
+<status status="NOT RUN" start="2026-03-27T15:31:08.961724" elapsed="0.000046"/>
+</kw>
+<kw name="Check if payment page display" owner="payment_page">
+<status status="NOT RUN" start="2026-03-27T15:31:08.961915" elapsed="0.000044"/>
+</kw>
+<kw name="Input credit card information" owner="payment_feature">
+<arg>${default_credit_card_information}[card_num]</arg>
+<arg>${default_credit_card_information}[card_holder_name]</arg>
+<arg>${default_credit_card_information}[card_exp]</arg>
+<arg>${default_credit_card_information}[card_cvv]</arg>
+<status status="NOT RUN" start="2026-03-27T15:31:08.962116" elapsed="0.000049"/>
+</kw>
+<kw name="Check if success page display" owner="payment_success_page">
+<status status="NOT RUN" start="2026-03-27T15:31:08.962326" elapsed="0.000062"/>
+</kw>
+<kw name="Web teardown" owner="common_web" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2026-03-27T15:31:08.969352" level="FAIL">ConnectionError: Playwright process has been terminated with code 130</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="FAIL" start="2026-03-27T15:31:08.967411" elapsed="0.002084">ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<arg>Browser.Take screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="FAIL" start="2026-03-27T15:31:08.966914" elapsed="0.002658">ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-03-27T15:31:08.970032" level="FAIL">ConnectionError: Playwright process has been terminated with code 130</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="FAIL" start="2026-03-27T15:31:08.969716" elapsed="0.000418">ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<status status="FAIL" start="2026-03-27T15:31:08.966324" elapsed="0.004012">Several failures occurred:
+
+1) ConnectionError: Playwright process has been terminated with code 130
+
+2) ConnectionError: Playwright process has been terminated with code 130</status>
+</kw>
+<tag>Feature:Hotels</tag>
+<status status="FAIL" start="2026-03-27T15:21:49.537848" elapsed="559.432890">Keyword 'Browser.Wait for elements state' failed after retrying for 3 seconds. The last error was: ConnectionError: Playwright process has been terminated with code 130
+
+Also teardown failed:
+Several failures occurred:
+
+1) ConnectionError: Playwright process has been terminated with code 130
+
+2) ConnectionError: Playwright process has been terminated with code 130</status>
+</test>
+<status status="FAIL" start="2026-03-27T15:21:49.204586" elapsed="559.768002"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Feature:Hotels</stat>
+</tag>
+<suite>
+<stat name="TC HOTELS 001" id="s1" pass="0" fail="1" skip="0">TC HOTELS 001</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-27T15:21:49.496068" level="ERROR">Error in file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/resources/import.robot' on line 13: Processing variable file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/resources/translation/mobile/en.yaml' failed: YAML variable file must be a mapping, got string.</msg>
+<msg time="2026-03-27T15:21:49.504371" level="WARN">Imported resource file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
+<msg time="2026-03-27T15:21:49.511104" level="WARN">Imported resource file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/common/common_mobile.robot' is empty.</msg>
+<msg time="2026-03-27T15:21:49.524301" level="ERROR">Error in file '/Users/theemdoppio/Desktop/Automation/GitHub/assign-automation-mar-2026/keywords/web/pages/booking_page.robot' on line 39: Creating keyword 'Select phone country code in contact information' failed: Keyword with same name defined multiple times.</msg>
+<msg time="2026-03-27T15:31:08.972097" level="ERROR">Calling method '_end_test' of listener 'Browser' failed: ConnectionError: Playwright process has been terminated with code 130</msg>
+<msg time="2026-03-27T15:31:08.972834" level="ERROR">Calling method '_end_suite' of listener 'Browser' failed: ConnectionError: Playwright process has been terminated with code 130</msg>
+</errors>
+</robot>
