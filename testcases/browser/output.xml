@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.3 on darwin)" generated="2026-03-26T17:10:25.502902" rpa="false" schemaversion="5">
-<suite id="s1" name="Overall" source="/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/overall.robot">
-<test id="s1-t1" name="TC-BASIC Keywords 02" line="19">
-<kw name="Open web gother">
+<robot generator="Robot 7.4.1 (Python 3.14.3 on darwin)" generated="2026-03-27T11:58:52.662672" rpa="false" schemaversion="5">
+<suite id="s1" name="TC HOTELS 001" source="/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/TC_HOTELS_001.robot">
+<test id="s1-t1" name="TC_HOTELS_001" line="7">
+<kw name="Open web gother" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-03-26T17:10:25.641879" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 60000.0, "tracesDir": "/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/browser/traces/temp/355bc2e2-ac29-4f0c-90b3-829881e58736"}</msg>
-<msg time="2026-03-26T17:10:25.715711" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:62634</msg>
-<msg time="2026-03-26T17:10:28.542821" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":60000,"tracesDir":"/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/browser/traces/temp/355bc2e2-ac29-4f0c-90b3-829881e58736"}</msg>
-<arg>browser=chromium</arg>
+<msg time="2026-03-27T11:58:52.890727" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 20000.0, "tracesDir": "/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/browser/traces/temp/dc080172-fece-40cc-ae67-70c2fa89cf4b"}</msg>
+<msg time="2026-03-27T11:58:52.963009" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/Browser/wrapper/index.js using at 127.0.0.1:57190</msg>
+<msg time="2026-03-27T11:58:55.867866" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":20000,"tracesDir":"/Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/browser/traces/temp/dc080172-fece-40cc-ae67-70c2fa89cf4b"}</msg>
+<arg>browser=${default_browser}</arg>
 <arg>headless=${headless}</arg>
-<arg>timeout=60s</arg>
+<arg>timeout=${timeout}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-26T17:10:25.641476" elapsed="2.901610"/>
+<status status="PASS" start="2026-03-27T11:58:52.890289" elapsed="2.977856"/>
 </kw>
 <kw name="New Context" owner="Browser">
-<msg time="2026-03-26T17:10:28.544690" level="INFO">{
+<msg time="2026-03-27T11:58:55.870643" level="INFO">{
   "acceptDownloads": true,
   "bypassCSP": false,
   "forcedColors": "none",
@@ -26,138 +26,235 @@
   "reducedMotion": "no-preference",
   "serviceWorkers": "allow",
   "viewport": {
-    "height": 720,
-    "width": 1280
+    "width": 1280,
+    "height": 720
   }
 }</msg>
-<msg time="2026-03-26T17:10:28.559955" level="INFO">Successfully created context. </msg>
-<msg time="2026-03-26T17:10:28.560021" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<msg time="2026-03-27T11:58:55.887465" level="INFO">Successfully created context. </msg>
+<msg time="2026-03-27T11:58:55.887537" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-03-26T17:10:28.543522" elapsed="0.016557"/>
+<status status="PASS" start="2026-03-27T11:58:55.868556" elapsed="0.019049"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-03-26T17:10:31.365070" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
+<msg time="2026-03-27T11:58:57.367864" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
 <arg>https://www.gother.online/en-us</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-26T17:10:28.560213" elapsed="2.809734"/>
+<status status="PASS" start="2026-03-27T11:58:55.887785" elapsed="1.484302"/>
 </kw>
-<status status="PASS" start="2026-03-26T17:10:25.641161" elapsed="5.731033"/>
+<arg>${default_browser}</arg>
+<arg>${headless}</arg>
+<status status="PASS" start="2026-03-27T11:58:52.889912" elapsed="4.484144"/>
 </kw>
-<kw name="Click log in/sign up button">
+<kw name="Click login signup button" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-26T17:10:32.711676" level="INFO">Waited for Element with selector id=signin-and-register-big-button at state visible</msg>
-<arg>id=signin-and-register-big-button</arg>
+<msg time="2026-03-27T11:58:59.773330" level="INFO">Waited for Element with selector id=signin-and-register-big-button at state visible</msg>
+<arg>${homepage.btn_loging}</arg>
 <arg>visible</arg>
-<arg>timeout=10s</arg>
+<arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-26T17:10:31.377189" elapsed="1.334633"/>
+<status status="PASS" start="2026-03-27T11:58:57.381835" elapsed="2.391820"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-26T17:10:32.712656" level="INFO">Clicks the element 'id=signin-and-register-big-button'.</msg>
-<arg>id=signin-and-register-big-button</arg>
+<msg time="2026-03-27T11:58:59.774699" level="INFO">Clicks the element 'id=signin-and-register-big-button'.</msg>
+<arg>${homepage.btn_loging}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-26T17:10:32.712139" elapsed="0.063093"/>
+<status status="PASS" start="2026-03-27T11:58:59.774044" elapsed="0.122295"/>
 </kw>
-<status status="PASS" start="2026-03-26T17:10:31.374560" elapsed="1.400778"/>
+<status status="PASS" start="2026-03-27T11:58:57.378803" elapsed="2.517651"/>
 </kw>
-<msg time="2026-03-26T17:10:32.793946" level="INFO">Switching context to context=c980850f-6a89-419b-b1ff-a2c87f199cb8 in CURRENT</msg>
-<msg time="2026-03-26T17:10:32.806575" level="INFO">Successfully changed active context: context=c980850f-6a89-419b-b1ff-a2c87f199cb8</msg>
-<msg time="2026-03-26T17:10:32.906916" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-03-26T17:10:25.640790" elapsed="7.134697"/>
-</test>
-<test id="s1-t2" name="TC-BASIC Keywords 02" line="64">
-<kw name="Open web gother">
-<kw name="New Browser" owner="Browser">
-<msg time="2026-03-26T17:10:32.909849" level="INFO">Switching browser to browser=de7c300d-e731-4c3e-851b-d4e895a4d301</msg>
-<msg time="2026-03-26T17:10:32.910562" level="INFO">Successfully changed active browser: browser=de7c300d-e731-4c3e-851b-d4e895a4d301</msg>
-<msg time="2026-03-26T17:10:32.910600" level="INFO">Reusing existing browser with id: browser=de7c300d-e731-4c3e-851b-d4e895a4d301</msg>
-<arg>browser=chromium</arg>
-<arg>headless=${headless}</arg>
-<arg>timeout=60s</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-26T17:10:32.909247" elapsed="0.001382"/>
-</kw>
-<kw name="New Context" owner="Browser">
-<msg time="2026-03-26T17:10:32.911449" level="INFO">{
-  "acceptDownloads": true,
-  "bypassCSP": false,
-  "forcedColors": "none",
-  "ignoreHTTPSErrors": false,
-  "javaScriptEnabled": true,
-  "offline": false,
-  "reducedMotion": "no-preference",
-  "serviceWorkers": "allow",
-  "viewport": {
-    "height": 720,
-    "width": 1280
-  }
-}</msg>
-<msg time="2026-03-26T17:10:32.989332" level="INFO">Successfully created context. </msg>
-<msg time="2026-03-26T17:10:32.989428" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new BrowserContext with specified options.</doc>
-<status status="PASS" start="2026-03-26T17:10:32.910717" elapsed="0.078759"/>
-</kw>
-<kw name="New Page" owner="Browser">
-<msg time="2026-03-26T17:10:34.093488" level="INFO">Successfully initialized new page object and opened url: https://www.gother.online/en-us</msg>
-<arg>https://www.gother.online/en-us</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-26T17:10:32.989684" elapsed="1.104008"/>
-</kw>
-<status status="PASS" start="2026-03-26T17:10:32.909040" elapsed="1.184749"/>
-</kw>
-<kw name="Click log in/sign up button">
+<kw name="Click email or mobile no. button" owner="home_page">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-26T17:10:35.108460" level="INFO">Waited for Element with selector id=signin-and-register-big-button at state visible</msg>
-<arg>id=signin-and-register-big-button</arg>
+<msg time="2026-03-27T11:59:00.228567" level="INFO">Waited for Element with selector css=button:has-text("Email or Mobile No.") at state visible</msg>
+<arg>${homepage.btn_mail_or_mobile}</arg>
 <arg>visible</arg>
-<arg>timeout=10s</arg>
+<arg>timeout=${timeout}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-26T17:10:34.094398" elapsed="1.014625"/>
+<status status="PASS" start="2026-03-27T11:58:59.896959" elapsed="0.331712"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-03-26T17:10:35.110627" level="INFO">Clicks the element 'id=signin-and-register-big-button'.</msg>
-<arg>id=signin-and-register-big-button</arg>
+<msg time="2026-03-27T11:59:00.229380" level="INFO">Clicks the element 'css=button:has-text("Email or Mobile No.")'.</msg>
+<arg>${homepage.btn_mail_or_mobile}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-26T17:10:35.109565" elapsed="0.058407"/>
+<status status="PASS" start="2026-03-27T11:59:00.228818" elapsed="0.385055"/>
 </kw>
-<status status="PASS" start="2026-03-26T17:10:34.093987" elapsed="1.074108"/>
+<status status="PASS" start="2026-03-27T11:58:59.896681" elapsed="0.717330"/>
 </kw>
-<msg time="2026-03-26T17:10:35.172956" level="INFO">Switching context to context=af496799-bf46-4d1d-980e-e0f05fa7db99 in CURRENT</msg>
-<msg time="2026-03-26T17:10:35.177933" level="INFO">Successfully changed active context: context=af496799-bf46-4d1d-980e-e0f05fa7db99</msg>
-<msg time="2026-03-26T17:10:35.198348" level="INFO">Successfully closed Context</msg>
-<status status="PASS" start="2026-03-26T17:10:32.907275" elapsed="2.261099"/>
+<kw name="Fill info in field email" owner="home_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-27T11:59:00.617091" level="INFO">Fills the text 'sutida.n@doppiotech.com' in the given field.</msg>
+<arg>${homepage.txt.email_popuplogin}</arg>
+<arg>${user_account.email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T11:59:00.615902" elapsed="0.076802"/>
+</kw>
+<arg>${TC_001.user_account}</arg>
+<status status="PASS" start="2026-03-27T11:59:00.614436" elapsed="0.078384"/>
+</kw>
+<kw name="Click login button" owner="home_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T11:59:00.703726" level="INFO">Waited for Element with selector css=[data-testid="btn-check-step-login-with-email"] at state visible</msg>
+<arg>${homepage.btn_login_next_step}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T11:59:00.693288" elapsed="0.010551"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T11:59:00.704334" level="INFO">Clicks the element 'css=[data-testid="btn-check-step-login-with-email"]'.</msg>
+<arg>${homepage.btn_login_next_step}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T11:59:00.703985" elapsed="0.854007"/>
+</kw>
+<status status="PASS" start="2026-03-27T11:59:00.693021" elapsed="0.865229"/>
+</kw>
+<kw name="Fill info in field password" owner="home_page">
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-03-27T11:59:01.559852" level="INFO">Fills the text 'Nook_8899' in the given field.</msg>
+<arg>${homepage.txt_field_pass_popuplogin}</arg>
+<arg>${user_account.password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T11:59:01.559339" elapsed="0.194681"/>
+</kw>
+<arg>${TC_001.user_account}</arg>
+<status status="PASS" start="2026-03-27T11:59:01.558476" elapsed="0.195662"/>
+</kw>
+<kw name="Click login in popup loging" owner="home_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T11:59:01.758524" level="INFO">Waited for Element with selector css=[data-testid="btn-login-email-width-pass"] at state visible</msg>
+<arg>${homepage.btn_login_final_login}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T11:59:01.754667" elapsed="0.003962"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T11:59:01.759156" level="INFO">Clicks the element 'css=[data-testid="btn-login-email-width-pass"]'.</msg>
+<arg>${homepage.btn_login_final_login}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T11:59:01.758777" elapsed="0.688474"/>
+</kw>
+<status status="PASS" start="2026-03-27T11:59:01.754341" elapsed="0.693141"/>
+</kw>
+<kw name="Verify login success" owner="home_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T11:59:03.674789" level="INFO">Waited for Element with selector css=img[alt="user-icon2"] at state visible</msg>
+<arg>${homepage.icon.profile}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T11:59:02.448077" elapsed="1.227502"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2026-03-27T11:59:03.781765" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<arg>${homepage.icon.profile}</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T11:59:03.676599" elapsed="0.105256"/>
+</kw>
+<status status="PASS" start="2026-03-27T11:59:02.447738" elapsed="1.334251"/>
+</kw>
+<kw name="Click user profile" owner="home_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T11:59:03.785299" level="INFO">Waited for Element with selector css=img[alt="user-icon2"] at state visible</msg>
+<arg>${homepage.icon.profile}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-03-27T11:59:03.782647" elapsed="0.002727"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-03-27T11:59:03.785765" level="INFO">Clicks the element 'css=img[alt="user-icon2"]'.</msg>
+<arg>${homepage.icon.profile}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-03-27T11:59:03.785483" elapsed="0.096442"/>
+</kw>
+<status status="PASS" start="2026-03-27T11:59:03.782300" elapsed="0.099914"/>
+</kw>
+<kw name="Click menu myaccount" owner="home_page">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-03-27T11:59:24.010925" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-27T11:59:24.011161" level="INFO">See also file:///Users/nookdoppio/Documents/GitHub/assign-automation-mar-2026/testcases/browser/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-27T11:59:24.012288" level="FAIL">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=span:has-text("My Account")". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=span:has-text("My Account") &gt;&gt; nth=0 to be visible
+</msg>
+<arg>${homepage.menu.myacc}</arg>
+<arg>visible</arg>
+<arg>timeout=${timeout}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2026-03-27T11:59:03.883019" elapsed="20.137607">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=span:has-text("My Account")". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=span:has-text("My Account") &gt;&gt; nth=0 to be visible
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${homepage.menu.myacc}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-27T11:59:24.021196" elapsed="0.000171"/>
+</kw>
+<status status="FAIL" start="2026-03-27T11:59:03.882640" elapsed="20.138896">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=span:has-text("My Account")". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=span:has-text("My Account") &gt;&gt; nth=0 to be visible
+</status>
+</kw>
+<msg time="2026-03-27T11:59:24.028995" level="INFO">Switching context to context=4355df4f-1153-4417-b63c-27950002a2ef in CURRENT</msg>
+<msg time="2026-03-27T11:59:24.074986" level="INFO">Successfully changed active context: context=4355df4f-1153-4417-b63c-27950002a2ef</msg>
+<msg time="2026-03-27T11:59:24.184877" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-03-27T11:58:52.889542" elapsed="31.132355">Error: locator.waitFor: Unexpected token "=" while parsing css selector "css=span:has-text("My Account")". Did you mean to CSS.escape it?
+Call log:
+  - waiting for css=css=span:has-text("My Account") &gt;&gt; nth=0 to be visible
+</status>
 </test>
-<status status="PASS" start="2026-03-26T17:10:25.503988" elapsed="9.694840"/>
+<status status="FAIL" start="2026-03-27T11:58:52.663645" elapsed="31.521720"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Overall" id="s1" pass="2" fail="0" skip="0">Overall</stat>
+<stat name="TC HOTELS 001" id="s1" pass="0" fail="1" skip="0">TC HOTELS 001</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-03-26T17:10:32.907693" level="WARN">Multiple tests with name 'TC-BASIC Keywords 02' executed in suite 'Overall'.</msg>
 </errors>
 </robot>
