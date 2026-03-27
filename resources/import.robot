@@ -22,7 +22,6 @@ Resource    ${CURDIR}/../keywords/web/features/login_feature.robot
 
 # Web Pages 
 Resource    ${CURDIR}/../keywords/web/pages/landing_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/main_home_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/login_popup_page.robot
 
 Resource    ${CURDIR}/../keywords/web/pages/hotels_main_page.robot
@@ -43,7 +42,7 @@ Resource        ${CURDIR}/../keywords/web/pages/car_rentals_payment/car_rentals_
 Resource        ${CURDIR}/../keywords/web/pages/hotels_payment/hotels_booking_page.robot
 
 #============ Locators ============
-Resource        ${CURDIR}/../resources/locators/web/main_home_page_locators.robot
+Resource        ${CURDIR}/../resources/locators/web/home_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/login_popup_locators.robot
 
 Resource        ${CURDIR}/../resources/locators/web/hotels_main_page_locators.robot

@@ -10,6 +10,9 @@ Open web browser by url
     Browser.New browser     browser=${supported_browser}    headless=${HEADLESS}
     Browser.New page        url=${url}        wait_until=domcontentloaded
 
+Verify home page when login success 
+    
+
 
 
 
