@@ -13,8 +13,7 @@ TC_HOTELS_001
     Fill info in field password     ${TC_001.user_account}
     Click login in popup loging 
     Verify login success
-    Click user profile
-    Click menu myaccount
+    
 
 
 

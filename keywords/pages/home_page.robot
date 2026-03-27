@@ -32,14 +32,4 @@ Verify login success
     Browser.Wait for elements state    ${homepage.icon.profile}    visible    timeout=${timeout}
     Browser.Get Element States    ${homepage.icon.profile}    contains    visible 
 
-Click user profile
-    [Arguments]     ${timeout}=${globle_timeout}
-    Browser.Wait for elements state     ${homepage.icon.profile}           visible    timeout=${timeout}
-    Browser.Click   ${homepage.icon.profile}    
 
-Click menu myaccount
-    [Arguments]     ${timeout}=${globle_timeout}
-    Browser.Wait for elements state     ${homepage.menu.myacc}           visible    timeout=${timeout}
-    Browser.Click   ${homepage.menu.myacc}    
-
-Verify user loging in section email
