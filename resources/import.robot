@@ -19,6 +19,9 @@ Resource    ${CURDIR}/../keywords/common/common_web.robot
 
 # Web Features
 Resource    ${CURDIR}/../keywords/web/features/login_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/hotels_select_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/hotels_booking_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/payment_feature.robot
 
 # Web Pages 
 Resource    ${CURDIR}/../keywords/web/pages/landing_page.robot

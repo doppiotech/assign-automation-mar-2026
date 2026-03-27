@@ -4,7 +4,7 @@ home_page:
 login_popup:
   t_email_or_mobile_login_or_signup:      Email or Mobile No.
 
-guests_and_rooms_modal:
+guests_and_rooms:
   rooms:                      Rooms
   adults:                     Adults
   children:                   Children

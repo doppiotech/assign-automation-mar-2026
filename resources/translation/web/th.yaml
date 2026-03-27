@@ -3,3 +3,10 @@ home_page:
 
 login_popup:
   t_email_or_mobile_login_or_signup:      อีเมลหรือเบอร์มือถือ
+
+guests_and_rooms:
+  rooms:                      จำนวนห้อง
+  adults:                     ผู้ใหญ่ (คน)
+  children:                   เด็ก (คน)
+  confirm:                    ยืนยัน
+  
