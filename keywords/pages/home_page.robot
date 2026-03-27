@@ -78,12 +78,20 @@ Select guests and rooms
     [Arguments]    ${target_rooms}    ${target_adults}    ${target_children}
     # 1. คลิกเปิด Popup
     Browser.Click    ${homepage.btn_guest_room}
-    # --- จุดสำคัญ: รอให้ตัวเลขปรากฏก่อน (ป้องกัน Timeout) ---
+    # --- เพิ่ม Sleep สั้นๆ เพื่อให้ Animation ของ Popup นิ่งก่อนอ่านค่า ---
+    Sleep    1s
     Browser.Wait for elements state    ${homepage.txt_current_rooms}    visible    timeout=10s
-    # 2. อ่านค่าปัจจุบันจากหน้าจอ (ใช้ตัวแปรที่เราเพิ่มใหม่)
+
+    # 2. อ่านค่าปัจจุบันและแปลงเป็นตัวเลข (Convert to Integer) เพื่อป้องกันการเปรียบเทียบผิดพลาด
     ${current_rooms}=     Browser.Get Text    ${homepage.txt_current_rooms}
+    ${current_rooms}=     Convert To Integer    ${current_rooms}
+    
     ${current_adults}=    Browser.Get Text    ${homepage.txt_current_adults}
+    ${current_adults}=    Convert To Integer    ${current_adults}
+    
     ${current_children}=  Browser.Get Text    ${homepage.txt_current_children}
+    ${current_children}=  Convert To Integer    ${current_children}
+
     # 3. Logic ปรับจำนวน Rooms
     IF    ${target_rooms} > ${current_rooms}
         ${clicks}=    Evaluate    ${target_rooms} - ${current_rooms}
@@ -91,6 +99,7 @@ Select guests and rooms
             Browser.Click    ${homepage.btn_add_room}
         END
     END
+
     # 4. Logic ปรับจำนวน Adults
     IF    ${target_adults} > ${current_adults}
         ${clicks}=    Evaluate    ${target_adults} - ${current_adults}
@@ -103,6 +112,7 @@ Select guests and rooms
             Browser.Click    ${homepage.btn_minus_adult}
         END
     END
+
     # 5. Logic ปรับจำนวน Children
     IF    ${target_children} > ${current_children}
         ${clicks}=    Evaluate    ${target_children} - ${current_children}
@@ -110,13 +120,13 @@ Select guests and rooms
             Browser.Click    ${homepage.btn_add_child}
         END
     END
+
     # 6. กดยืนยันปิด Popup
     Browser.Click    ${homepage.btn_guest_confirm}
     Browser.Wait for elements state    ${homepage.btn_guest_confirm}    hidden    timeout=5s
-    Sleep    10s
 
-# Click search button
-#     [Arguments]    ${timeout}=${globle_timeout}
-#     Browser.Wait for elements state    ${homepage.btn_search}    visible    timeout=${timeout}
-#     Browser.Click    ${homepage.btn_search}
-#     Sleep    10s
+Click search button
+    [Arguments]    ${timeout}=${globle_timeout}
+    Browser.Wait for elements state    ${homepage.btn_search_submit}     visible    timeout=${timeout}
+    Browser.Click    ${homepage.btn_search_submit} 
+    Sleep    5s

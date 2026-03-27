@@ -24,13 +24,12 @@ ${homepage.btn_minus_adult}      xpath=(//button[text()='-'])[2]
 ${homepage.btn_add_child}        xpath=(//button[text()='+'])[3]
 ${homepage.btn_minus_child}      xpath=(//button[text()='-'])[3]
 
-${homepage.txt_current_rooms}      xpath=(//div[contains(@class,'flex')]//p[not(text()='+') and not(text()='-')])[1]
-${homepage.txt_current_adults}     xpath=(//div[contains(@class,'flex')]//p[not(text()='+') and not(text()='-')])[2]
-${homepage.txt_current_children}   xpath=(//div[contains(@class,'flex')]//p[not(text()='+') and not(text()='-')])[3]
+${homepage.txt_current_rooms}      xpath=(//div[contains(@class,'w-[20px]')])[1]
+${homepage.txt_current_adults}     xpath=(//div[contains(@class,'w-[20px]')])[2]
+${homepage.txt_current_children}   xpath=(//div[contains(@class,'w-[20px]')])[3]
 
 ${homepage.btn_guest_confirm}      xpath=//button[text()='Confirm']
-
-
+${homepage.btn_search_submit}        id=hotel-search-button
 
 
 
