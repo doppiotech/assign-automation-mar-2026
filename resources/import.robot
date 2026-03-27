@@ -2,6 +2,7 @@
 Library     Browser    strict=${FALSE}
 Library     DebugLibrary
 Library     String
+Library     DateTime
 
 ### Setting ###
 Variables   ${CURDIR}/settings/setting_web.yaml
@@ -18,9 +19,13 @@ Resource    ${CURDIR}/../keywords/common/common_mobile.robot
 
 ### Web Page ###
 Resource    ${CURDIR}/../keywords/web/pages/landing_page.robot
+Resource    ${CURDIR}/../keywords/web/pages/hotel_page.robot
 
 ### Web Feature ###
 Resource    ${CURDIR}/../keywords/web/features/login_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/calendar_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/guest_room_feature.robot
 
 ### Locator ###
 Resource    ${CURDIR}/locators/web/landing_locator.robot
+Resource    ${CURDIR}/locators/web/hotel_locator.robot

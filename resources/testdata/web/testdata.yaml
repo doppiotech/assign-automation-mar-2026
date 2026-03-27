@@ -1,3 +1,12 @@
 login_user: 
   email: "khumphol.m@doppiotech.com"
   password: "P@ssw0rd"
+hotel_info:
+  destination:  "bangkok"
+  amount_day:
+    from_day: 1
+    to_day: 31
+  guest_room:
+    amount_room:  2
+    amount_adult:  1
+    amount_children:  2

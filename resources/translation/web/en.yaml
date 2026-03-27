@@ -4,3 +4,8 @@ landing_page:
   BTN_MY_ACC: "My Account"
   TXT_DISPALY_EMAIL: "Email"
   BTN_HOTEL: "Hotels"
+hotel_page:
+  BTN_GUEST_CONFIRM: "Confirm"
+  TXT_ROOM: "Rooms"
+  TXT_ADULT: "Adults"
+  TXT_CHILDREN: "Children"

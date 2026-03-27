@@ -4,3 +4,8 @@ landing_page:
   BTN_MY_ACC: "บัญชีของฉัน"
   TXT_DISPALY_EMAIL: "อีเมล"
   BTN_HOTEL: "ที่พัก"
+hotel_page:
+  BTN_GUEST_CONFIRM: "ยืนยัน"
+  TXT_ROOM: "จำนวนห้อง"
+  TXT_ADULT: "ผู้ใหญ่ (คน)"
+  TXT_CHILDREN: "เด็ก (คน)"
