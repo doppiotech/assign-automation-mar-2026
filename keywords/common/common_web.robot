@@ -8,12 +8,9 @@ Open web browser by url
     ...                        e.g robot -v HEADLESS:FALSE ./web/TC_web_hotels_001.robot
     [Arguments]        ${url}    ${supported_browser}=${default_browser}    
     Browser.New browser     browser=${supported_browser}    headless=${HEADLESS}
-    Browser.New page        url=${url}
+    Browser.New page        url=${url}        wait_until=domcontentloaded
 
-Check if element display
-    [Arguments]    ${locator}
-    Browser.Wait for elements state    ${locator}
-    Browser.Scroll to element            ${locator}
+
 
 
 

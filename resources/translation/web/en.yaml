@@ -1,1 +1,14 @@
-mock
+home_page:
+  t_signin_and_register:                     Log In/Sign Up  
+
+login_popup:
+  t_email_or_mobile_login_and_register:      Email or Mobile No.
+
+guests_and_rooms_modal:
+  rooms:                      Rooms
+  adults:                     Adults
+  children:                   Children
+  confirm:                    Confirm
+
+contact_information_section:
+  country_id:             Passport Issuing Country
