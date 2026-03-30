@@ -19,3 +19,5 @@ Select hotel by name
     Browser.Wait for elements state    ${hotel_card}    visible    timeout=15s
     Browser.Click    ${hotel_card}
     Sleep    10s
+
+    

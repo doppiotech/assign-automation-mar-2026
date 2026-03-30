@@ -1,12 +1,11 @@
 *** Keywords ***
 Verify hotel name on detail page is correct
     [Arguments]    ${expected_name}    ${timeout}=${globle_timeout}
-    # รอให้ Element แสดงขึ้นมาก่อนโดยใช้เวลาที่กำหนด (Default 10s)
+    # 1. รอให้ h1 ที่เป็นชื่อโรงแรมแสดงผล และมีข้อความข้างใน (ไม่ใช่ค่าว่าง)
     Browser.Wait For Elements State    ${hotel_detail.txt_name}    visible    timeout=${timeout}
-    # ดึงชื่อโรงแรมจากหน้าเว็บจริง
-    ${actual_name}=    Browser.Get Text    ${hotel_detail.txt_name}
-    # ตรวจสอบว่าชื่อที่ดึงมา (Actual) ตรงกับที่เราคาดหวัง (Expected) ใน YAML หรือไม่
-    BuiltIn.Should Be Equal As Strings    ${actual_name}    ${expected_name}
+    # "Get Text ของชื่อโรงแรม ต้องเท่ากับ ชื่อที่เราคาดหวัง"
+    Browser.Get Text    ${hotel_detail.txt_name}    ==    ${expected_name}
+    Log To Console    Verified Hotel: ${expected_name}
 
 Click book now button 
     [Arguments]    ${timeout}=${globle_timeout}

@@ -30,8 +30,7 @@ ${homepage.btn_add_child}           css=button:has-text("+"):right-of(:text-is("
 ${homepage.btn_minus_child}         css=button:has-text("-"):right-of(:text-is("Children"))
 ${homepage.txt_current_children}    css=div.body:right-of(:text-is("Children"))
 
-
-${homepage.btn_guest_confirm}      xpath=//button[text()='Confirm']
+${homepage.btn_guest_confirm}      css=button:text-is("Confirm")
 ${homepage.btn_search_submit}      id=hotel-search-button
 
 

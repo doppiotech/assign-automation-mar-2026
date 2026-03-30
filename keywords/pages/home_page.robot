@@ -91,28 +91,22 @@ Select travel date
     Browser.Click    ${homepage.calendar_day}:has-text("${checkout_day}")
     Log To Console   Selected Date: ${checkin_day} - ${checkout_day} ${target_month} ${target_year}
 
-
-
 Select guests and rooms
     [Arguments]    ${target_rooms}    ${target_adults}    ${target_children}
     # 1. คลิกเปิดส่วนเลือกผู้เข้าพัก
     Browser.Click    ${homepage.btn_guest_room}
-    
     # 2. ปรับจำนวนแต่ละอย่าง (เรียกใช้ Sub-keyword)
     Adjust guest quantity    ${homepage.txt_current_rooms}     ${homepage.btn_add_room}     ${homepage.btn_minus_room}    ${target_rooms}
     Adjust guest quantity    ${homepage.txt_current_adults}    ${homepage.btn_add_adult}    ${homepage.btn_minus_adult}   ${target_adults}
     Adjust guest quantity    ${homepage.txt_current_children}  ${homepage.btn_add_child}    ${homepage.btn_minus_child}   ${target_children}
-
     # 3. กดยืนยันเพื่อบันทึกค่า
     Browser.Click    ${homepage.btn_guest_confirm}
     Browser.Wait For Elements State    ${homepage.btn_guest_confirm}    hidden    timeout=5s
-
 Adjust guest quantity
     [Arguments]    ${locator_display}    ${btn_add}    ${btn_minus}    ${target_count}
     # อ่านค่าตัวเลขปัจจุบันจากหน้าจอ
     ${current_count}=    Browser.Get Text    ${locator_display}
     ${current_count}=    Convert To Integer    ${current_count}
-    
     # วนลูปคลิกจนกว่าตัวเลขบนหน้าจอจะเท่ากับค่าที่เราต้องการใน Test Data
     WHILE    ${current_count} != ${target_count}
         IF    ${target_count} > ${current_count}
@@ -124,7 +118,6 @@ Adjust guest quantity
         ${current_count}=    Browser.Get Text    ${locator_display}
         ${current_count}=    Convert To Integer    ${current_count}
     END
-
 
 
 Click search button
