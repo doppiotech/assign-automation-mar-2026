@@ -7,11 +7,13 @@ Library    String
 Resource    ${CURDIR}/../keywords/common/common.robot
 Resource    ${CURDIR}/../keywords/pages/home_page.robot    
 Resource    ${CURDIR}/../keywords/pages/search_result.robot
+Resource    ${CURDIR}/../keywords/pages/hotel_detail.robot
+
 
 #locators
-# แก้ไข: เพิ่มโฟลเดอร์ /web/ เข้าไปตามโครงสร้างจริงใน Explorer
 Resource    ${CURDIR}/locators/home_page.robot
 Resource    ${CURDIR}/locators/search_result.robot
+Resource    ${CURDIR}/locators/hotel_detail.robot
 
 #testdata
 Variables    ${CURDIR}/settings/setting.yaml

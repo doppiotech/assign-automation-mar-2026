@@ -29,7 +29,9 @@ ${homepage.txt_current_adults}     xpath=(//div[contains(@class,'w-[20px]')])[2]
 ${homepage.txt_current_children}   xpath=(//div[contains(@class,'w-[20px]')])[3]
 
 ${homepage.btn_guest_confirm}      xpath=//button[text()='Confirm']
-${homepage.btn_search_submit}        id=hotel-search-button
+${homepage.btn_search_submit}      id=hotel-search-button
+
+
 
 
 

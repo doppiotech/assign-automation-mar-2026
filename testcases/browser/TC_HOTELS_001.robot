@@ -34,6 +34,7 @@ TC_HOTELS_001
     ...    ${TC_001.booking_info.expected_result.summary_guests}
     Select hotel by name    Asia Hotel Bangkok
     Browser.Switch Page    NEW
+    
 
 
 
