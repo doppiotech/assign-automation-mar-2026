@@ -20,12 +20,22 @@ Verify hotels page
     [Documentation]    ตรวจสอบว่าเข้ามาหน้า hotels แล้ว
     ...                    - ตรวจสอบว่า URL ปัจจุบันมีคำว่า hotels
     #Browser.Wait for condition    Url    contains    hotels    timeout=${global_timeout}
-    Browser.Wait for elements state        ${hotels_main_page_locators.txt_search_destination}    visible    timeout=${global_timeout} 
+    Browser.Wait for elements state        ${hotels_main_page_locators.txt_search_hotels}     visible    timeout=${global_timeout} 
     Browser.Wait for elements state        ${hotels_main_page_locators.btn_check_in}     visible    timeout=${global_timeout} 
     Browser.Wait for elements state        ${hotels_main_page_locators.btn_check_out}      visible    timeout=${global_timeout} 
     Browser.Wait for elements state        ${hotels_main_page_locators.btn_check_out}     visible    timeout=${global_timeout} 
     Browser.Wait for elements state        ${hotels_main_page_locators.btn_guests_and_room}    visible    timeout=${global_timeout} 
     Browser.Wait for elements state        ${hotels_main_page_locators.btn_hotel_search_button}     visible    timeout=${global_timeout} 
+
+Verify hotels select page
+    [Documentation]    ตรวจสอบว่าเข้ามาหน้าเลือก hotels แล้ว
+    Browser.Wait for elements state        ${select_hotels_page_locators.hotels_search_page}     visible    timeout=${global_timeout} 
+
+Switch new tab
+    Browser.Switch page      NEW
+
+Verify hotels item page
+    Browser.Wait for elements state        ${select_hotels_page_locators.hotels_item_page}       visible    timeout=${global_timeout} 
                     
                                
                                

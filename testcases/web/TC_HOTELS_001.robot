@@ -11,6 +11,8 @@ TC_HOTELS_001
     ...    ${account_user.email_address}           
     ...    ${account_user.password}
     BuiltIn.Log to console    User is logged in successfully
-    hotels_select_feature.Search and select hotels            โตเกียว
+    hotels_select_feature.Search and select hotels            
+    ...    โตเกียว
+    ...    0
     #DEBUG
     

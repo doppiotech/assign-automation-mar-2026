@@ -28,11 +28,11 @@ Resource    ${CURDIR}/../keywords/web/pages/landing_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/login_popup_page.robot
 
 Resource    ${CURDIR}/../keywords/web/pages/hotels_main_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/search_hotels_page.robot
+Resource    ${CURDIR}/../keywords/web/pages/select_hotels_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/book_now_hotels.robot
 
 Resource    ${CURDIR}/../keywords/web/pages/car_rentals_main_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/search_car_rentals_page.robot
+Resource    ${CURDIR}/../keywords/web/pages/select_car_rentals_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/book_now_car_rentals.robot
 
 #Payment page 
@@ -49,11 +49,11 @@ Resource        ${CURDIR}/../resources/locators/web/home_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/login_popup_locators.robot
 
 Resource        ${CURDIR}/../resources/locators/web/hotels_main_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/search_hotels_page_locators.robot
+Resource        ${CURDIR}/../resources/locators/web/select_hotels_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/book_now_hotels_locators.robot
 
 Resource        ${CURDIR}/../resources/locators/web/car_rentals_main_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/search_car_rentals_page_locators.robot
+Resource        ${CURDIR}/../resources/locators/web/select_car_rentals_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/book_now_car_rentals_locators.robot
 
 #Payment page / Select payment medtod
