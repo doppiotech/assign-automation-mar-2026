@@ -14,8 +14,6 @@ Select Random Destination From Search Results
     [Arguments]    ${item_count}
     ${random_index}=    Evaluate    random.randint(0, ${item_count} - 1)    modules=random
     ${target_locator}=    Replace String    ${hotel.LIST_DESTINATION}    @#INDEX@#    ${random_index}
-    ${selected_name}=    Browser.Get Text    ${target_locator} ${hotel.DESTINATION_NAME}
-    Log To Console    ✅ สุ่มเลือกสถานที่: ${selected_name} (Index: ${random_index})
     Browser.Click    ${target_locator}
 
 Search Destination

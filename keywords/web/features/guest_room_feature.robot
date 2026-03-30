@@ -19,14 +19,12 @@ Adjust Guest Or Room Quantity
     IF    ${diff} > 0
         FOR    ${i}    IN RANGE    ${diff}
             Browser.Click    ${plus_locator}
-            Sleep    0.2s    # หน่วงเวลาเล็กน้อยให้ UI ขยับทัน
         END
         Log To Console    ✅ กดเพิ่ม (+) ${type} เป็นจำนวน ${target_number}
     ELSE IF    ${diff} < 0
         ${abs_diff}=    Evaluate    abs(${diff})    # แปลงผลต่างติดลบให้เป็นค่าบวกเพื่อนับรอบ
         FOR    ${i}    IN RANGE    ${abs_diff}
             Browser.Click    ${minus_locator}
-            Sleep    0.2s
         END
         Log To Console    ✅ กดลด (-) ${type} เป็นจำนวน ${target_number}
     ELSE
@@ -34,18 +32,16 @@ Adjust Guest Or Room Quantity
     END
     
     # 5. ตรวจสอบยืนยันความถูกต้องว่าตัวเลขบนจอเปลี่ยนเป็นค่าเป้าหมายจริงๆ
-    ${new_text}=    Browser.Get Text    ${val_locator}
-    Should Be Equal As Strings    ${new_text}    ${target_number}    msg=❌ ปรับจำนวน ${type} ไม่สำเร็จ!
+    ${new_text}=    Browser.Get text    ${val_locator}
+    Should be equal as strings    ${new_text}    ${target_number}    msg=❌ ปรับจำนวน ${type} ไม่สำเร็จ!
 
 Open Guests And Rooms Dropdown
     [Arguments]    ${timeout}=${default_timeout}
     Browser.Click    ${hotel.TXT_GUEST} 
     Browser.Wait For Elements State    ${hotel.DDL_GUEST}    visible    timeout=${timeout}
-    Log To Console    ✅ เปิดหน้าต่างเลือกจำนวนผู้เข้าพักสำเร็จ
 
 
 Confirm Guests And Rooms Selection
     [Arguments]    ${timeout}=${default_timeout}
     Browser.Click    ${hotel.BTN_GUEST_CONFIRM}
     Browser.Wait For Elements State    ${hotel.BTN_GUEST_CONFIRM}    hidden    timeout=${timeout}
-    Log To Console    ✅ กดยืนยันจำนวนผู้เข้าพักเรียบร้อย

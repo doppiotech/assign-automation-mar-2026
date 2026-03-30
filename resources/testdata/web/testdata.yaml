@@ -5,8 +5,18 @@ hotel_info:
   destination:  "bangkok"
   amount_day:
     from_day: 1
-    to_day: 31
+    to_day: 2
   guest_room:
-    amount_room:  2
-    amount_adult:  1
-    amount_children:  2
+    amount_room:  1
+    amount_adult:  3
+    amount_children:  1
+booking_info:
+  gender: "Mr"
+  firstname: "QA"
+  lastname: "TESTER"
+  phone_number: "0991231234"
+payment_info:
+  card_number: "4111111111111111"
+  card_name: "QA TESTER"
+  exp_date: "11/30"
+  cvv_number: "123"
