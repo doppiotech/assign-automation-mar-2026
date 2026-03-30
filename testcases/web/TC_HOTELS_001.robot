@@ -20,13 +20,14 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     hotels_feature.Select children age                                    ${TC_HOTELS_001}[children_2_index]    ${TC_HOTELS_001}[children_2_age]
     hotels_page.Click search button
     hotels_search_result_page.Check if search result page display
-    hotels_search_result_page.Select hotel by index from search result           ${TC_HOTELS_001}[hotel_index]
+    hotels_search_result_page.Select hotel by index from search result    ${TC_HOTELS_001}[hotel_index]
     common_web.Switch tab
     hotels_item_page.Check if hotels item display
     hotels_item_page.Book room by index                                   ${TC_HOTELS_001}[room_index]
-    booking_page.Check if booking display
+    booking_page.Check if booking page display
     booking_page.Select gender as male
-    booking_feature.Input contact information    ${default_account}[first_name]
+    booking_feature.Input contact information
+    ...    ${default_account}[first_name]
     ...    ${default_account}[last_name]
     ...    ${default_account}[email]
     ...    ${default_account}[country_name]
@@ -36,7 +37,8 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     booking_page.Wait until confirm loading is complete
     payment_page.Check if payment page display
     payment_page.Select credit card as payment method
-    payment_feature.Input credit card information                        ${default_credit_card_information}[card_num]
+    payment_feature.Input credit card information
+    ...    ${default_credit_card_information}[card_num]
     ...    ${default_credit_card_information}[card_holder_name]
     ...    ${default_credit_card_information}[card_exp]
     ...    ${default_credit_card_information}[card_cvv]

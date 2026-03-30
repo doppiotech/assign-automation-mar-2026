@@ -24,4 +24,3 @@ Book room by room type and price
     ${book_button_room_type_locator}=        String.Replace string    ${room_option}[btn_book_now_by_price]    ***room_type***    ${room_type}
     ${book_button_locator}=        String.Replace string    ${book_button_room_type_locator}    ***price***    ${room_price}
     common_web.Click element on screen      ${book_button_locator}
-

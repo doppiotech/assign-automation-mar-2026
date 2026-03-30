@@ -1,5 +1,5 @@
 *** Keywords ***
-Check if booking display
+Check if booking page display
     [Arguments]    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
     common_web.Wait until page display    ${booking_element}[booking_section]    ${retry_times}    ${interval_for_retry}
 
