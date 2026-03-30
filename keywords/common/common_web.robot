@@ -64,25 +64,25 @@ Get text from element
     RETURN    ${text}
 
 Get left month on calendar
-    ${left_month}=    common_web.Get text from element        ${calendar_modal}[lbl_month_left]
+    ${left_month}=    common_web.Get text from element        ${calendar_modal_locator}[lbl_month_left]
     RETURN    ${left_month}
 
 Get right month on calendar
-    ${right_month}=    common_web.Get text from element        ${calendar_modal}[lbl_month_right]
+    ${right_month}=    common_web.Get text from element        ${calendar_modal_locator}[lbl_month_right]
     RETURN    ${right_month}
 
 Click back one month on calendar
-    common_web.Click element on screen      ${calendar_modal}[btn_back_one_month]
+    common_web.Click element on screen      ${calendar_modal_locator}[btn_back_one_month]
 
 Click next one month on calendar
-    common_web.Click element on screen      ${calendar_modal}[btn_next_one_month]
+    common_web.Click element on screen      ${calendar_modal_locator}[btn_next_one_month]
 
 Select today date on calendar
-    common_web.Click element on screen      ${calendar_modal}[btn_today_date]
+    common_web.Click element on screen      ${calendar_modal_locator}[btn_today_date]
 
 Select available date on calendar by index
     [Arguments]    ${month}    ${index}
-    ${date_month}=        String.Replace string    ${calendar_modal}[btn_available_date_by_index]    ***month***    ${month}
+    ${date_month}=        String.Replace string    ${calendar_modal_locator}[btn_available_date_by_index]    ***month***    ${month}
     ${date_month_index}=        String.Replace string    ${date_month}    ***index***    ${index}
     common_web.Click element on screen      ${date_month_index}
 

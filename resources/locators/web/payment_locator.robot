@@ -1,12 +1,12 @@
 *** Variables ***
-&{payment_element}
+&{payment_element_locator}
 ...            payment_section=css=[class$="title-payment-channel"]
 ...            btn_pay_now=css=#confirmBooking2
 ...            lbl_payment_loading=css=#confirmBooking2 [src*="loading"]
 ...            lbl_payment_page_loading=css=.Loading
-&{payment_method}
+&{payment_method_locator}
 ...            rdo_credit_card_method=css=#CREDIT_RADIO
-&{credit_card_information_section}
+&{credit_card_information_section_locator}
 ...            txt_new_credit_card=css=#CREDITCARD_NEWCARD
 ...            txt_creadit_card_num=css=#card-number-creditcard input
 ...            txt_creadit_card_name=css=#card_name_creditcard

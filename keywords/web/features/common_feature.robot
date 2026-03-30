@@ -24,7 +24,7 @@ Find today date on calendar and select today date
 Select period from selected date to target days
     [Arguments]    ${days_to_book}
     ${month_text}=    common_web.Get left month on calendar
-    ${available_month_locator}=    String.Replace string    ${calendar_modal}[btn_available_date_by_index]    ***month***    ${month_text}
+    ${available_month_locator}=    String.Replace string    ${calendar_modal_locator}[btn_available_date_by_index]    ***month***    ${month_text}
     FOR    ${available_date_in_current_month}    IN RANGE        1    31
         ${available_date_locator}=    String.Replace string    ${available_month_locator}    ***index***    ${available_date_in_current_month}
         ${status}=    BuiltIn.Run keyword and return status   common_web.Check if element display    ${available_date_locator}
@@ -37,7 +37,7 @@ Select period from selected date to target days
     ELSE IF    ${days_to_book}>${available_date_in_current_month}
         ${days_over}=    BuiltIn.Evaluate    ${days_to_book}-${available_date_in_current_month}
         ${next_month_text}=    common_web.Get right month on calendar
-        ${available_month_locator}=    String.Replace string    ${calendar_modal}[btn_available_date_by_index]    ***month***    ${next_month_text}
+        ${available_month_locator}=    String.Replace string    ${calendar_modal_locator}[btn_available_date_by_index]    ***month***    ${next_month_text}
         ${available_date_locator}=    String.Replace string    ${available_month_locator}    ***index***    ${days_over}
         common_web.Click element on screen    ${available_date_locator}
     END

@@ -1,5 +1,5 @@
 *** Variables ***
-&{calendar_modal}
+&{calendar_modal_locator}
 ...            lbl_month_left=css=.date-text-left p
 ...            lbl_month_right=css=.date-text-right p
 ...            btn_back_one_month=css=[title="back-one-month"]

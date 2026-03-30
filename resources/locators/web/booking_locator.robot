@@ -1,9 +1,9 @@
 *** Variables ***
-&{booking_element}
+&{booking_element_locator}
 ...            booking_section=css=[class^="booking-page"]
 ...            btn_confirm_booking=css=[type="submit"]
 ...            lbl_loading=css=#loading-gother [alt="loading"]
-&{contact_information_section}
+&{contact_information_section_locator}
 ...            rdo_gender=css=[for="prefixName"] label:has(span:text-is("***gender***")) input
 ...            txt_first_name=css=input[name="firstName"]
 ...            txt_last_name=css=input[name="lastName"]

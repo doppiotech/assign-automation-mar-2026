@@ -1,13 +1,13 @@
 *** Variables ***
-&{hotels_element}
+&{hotels_element_locator}
 ...            hotels_section=css=[id="hotel-search-layout-main-page"]:not([style="display: none !important;"])
-&{hotels_search_section}
+&{hotels_search_section_locator}
 ...            txt_search_bar=css=#hotel-search-destination
 ...            btn_search_suggestion_typing=css=[id^="hotel-search-typing-"] b:has-text("***destination***")
 ...            btn_checkin_date=css=[for="hotel-search-checkin-date"]
 ...            btn_guests_and_rooms=css=[for="hotel-search-traveler"]
 ...            btn_search_button=css=#hotel-search-button
-&{guests_and_rooms_modal}
+&{guests_and_rooms_modal_locator}
 ...            lbl_rooms_amount=css=[role="menuitem"]:has(div:text-is("${guests_and_rooms_modal_trans}[rooms]")) button:text-is("-") + div
 ...            btn_rooms_decrease=css=[role="menuitem"]:has(div:text-is("${guests_and_rooms_modal_trans}[rooms]")) button:text-is("-")
 ...            btn_rooms_increase=css=[role="menuitem"]:has(div:text-is("${guests_and_rooms_modal_trans}[rooms]")) button:text-is("+")
