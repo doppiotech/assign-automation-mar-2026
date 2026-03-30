@@ -9,12 +9,14 @@ Find today date on calendar and select today date
         ${diff}=    BuiltIn.Evaluate    ${month_int_ref}-${month_int}
         FOR    ${i}    IN RANGE    {diff}
             common_web.Click next one month on calendar
+            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
         END
         common_web.Select today date on calendar
     ELSE IF    ${month_int} > ${month_int_ref}
         ${diff}=    BuiltIn.Evaluate    ${month_int}-${month_int_ref}
         FOR    ${i}    IN RANGE    ${diff}
             common_web.Click back one month on calendar
+            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
         END
         common_web.Select today date on calendar
     ELSE
@@ -32,12 +34,14 @@ Find date and select date
         ${diff}=    BuiltIn.Evaluate    ${month_int_ref}-${month_int}
         FOR    ${i}    IN RANGE    {diff}
             common_web.Click next one month on calendar
+            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
         END
         common_web.Select available date on calendar by date    ${month}    ${day}
     ELSE IF    ${month_int} > ${month_int_ref}
         ${diff}=    BuiltIn.Evaluate    ${month_int}-${month_int_ref}
         FOR    ${i}    IN RANGE    ${diff}
             common_web.Click back one month on calendar
+            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
         END
         common_web.Select available date on calendar by date    ${month}    ${day}
     ELSE
