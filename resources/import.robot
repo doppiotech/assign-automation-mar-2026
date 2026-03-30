@@ -30,18 +30,9 @@ Resource    ${CURDIR}/../keywords/web/pages/hotels_main_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/select_hotels_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/booking_hotels.robot
 
-Resource    ${CURDIR}/../keywords/web/pages/car_rentals_main_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/select_car_rentals_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/booking_car_rentals.robot
-
 #Payment page 
 Resource        ${CURDIR}/../keywords/web/pages/payment_page.robot
-
-#Payment for hotels page
-Resource        ${CURDIR}/../keywords/web/pages/car_rentals_payment/car_rentals_booking_page.robot
-
-#Payment for Car rentals page
-Resource        ${CURDIR}/../keywords/web/pages/hotels_payment/hotels_booking_page.robot
+Resource        ${CURDIR}/../keywords/web/pages/hotels_payment_success_page.robot 
 
 #============ Locators ============
 Resource        ${CURDIR}/../resources/locators/web/home_page_locators.robot
@@ -51,17 +42,11 @@ Resource        ${CURDIR}/../resources/locators/web/hotels_main_page_locators.ro
 Resource        ${CURDIR}/../resources/locators/web/select_hotels_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/booking_hotels_locators.robot
 
-Resource        ${CURDIR}/../resources/locators/web/car_rentals_main_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/select_car_rentals_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/booking_car_rentals_locators.robot
-
 #Payment page / Select payment medtod
 Resource        ${CURDIR}/../resources/locators/web/payment_page_locators.robot
 
 #Payment for hotels page
-Resource        ${CURDIR}/../resources/locators/web/hotels_payment/hotels_booking_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/hotels_payment/hotels_payment_success_page_locators.robot
+Resource        ${CURDIR}/../resources/locators/web/hotels_booking_page_locators.robot
+Resource        ${CURDIR}/../resources/locators/web/hotels_payment_success_page_locators.robot
 
-#Payment for Car rentals page
-Resource        ${CURDIR}/../resources/locators/web/car_rentals_payment/car_rentals_booking_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/car_rentals_payment/car_rentals_payment_success_page_locators.robot
+

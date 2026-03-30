@@ -11,7 +11,6 @@ Search and select hotels
     common_web.Switch new tab
     common_web.Verify hotels item page
     Sleep    2s
-    #Book room by index    ${room_type}    ${room_index}
-    #Sleep    2s
+
     
     

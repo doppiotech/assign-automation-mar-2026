@@ -16,13 +16,22 @@ Select destination or accommodation name from suggestion list
     Browser.Wait for elements state    ${้hotels_main_page.destination_locator}      visible        ${global_timeout}
     Browser.Click            ${้hotels_main_page.destination_locator}
     
+Clcik check in
+    Browser.Click    ${hotels_main_page_locators.btn_check_in} 
 Select check-in date
-    [Arguments] 
+    [Arguments]     ${checkin_month}    ${checkin_year}    ${checkin_day}  
+    Browser.Wait for elements state    ${hotels_main_page_locators.btn_check_in}       visible        ${global_timeout}  
+    
 
 Select check-out date
-    [Arguments] 
+
+
+Click guests and room
+    Browser.Click    ${hotels_main_page_locators.btn_guests_and_room}
 
 Select guests and room 
+    [Arguments]    ${total_rooms}    ${total_adults}    ${total_children}
+
 
 Click confirm guests and rooms
     Browser.Wait for elements state    ${hotels_main_page_locators.btn_confirm_guests_room_button}    visible    ${global_timeout}
