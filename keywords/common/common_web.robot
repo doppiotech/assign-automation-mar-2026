@@ -9,9 +9,8 @@ Open web browser by url
     Browser.New browser     browser=${supported_browser}    headless=${headless_mode}
     Browser.New page        url=${url}
 
-Open gother website and login with email
+login with email
     [Arguments]    ${email}    ${password}
-    landing_page.Open gother web
     header_bar_feature.Login with email or mobile no. method    ${email}    ${password}
     home_page.Check if homepage display
     header_bar.Check if login successfully

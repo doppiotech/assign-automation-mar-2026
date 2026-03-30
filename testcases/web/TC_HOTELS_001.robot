@@ -1,7 +1,9 @@
 *** Settings ***
 Resource        ${CURDIR}/../../resources/import.robot
 
-Test Setup           common_web.Open gother website and login with email    ${default_account}[email]    ${default_account}[password]
+Test Setup           BuiltIn.Run keywords
+...                  landing_page.Open gother web    AND
+...                  common_web.login with email    ${default_account}[email]    ${default_account}[password]
 Test Teardown        common_web.Web teardown
 
 *** Test Cases ***
