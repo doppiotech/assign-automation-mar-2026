@@ -1,7 +1,7 @@
 *** Variables ***
-${homepage.btn_accept_all_cookie}           css=button:text-is("Accept All")
+${homepage.btn_accept_all_cookie}           css=button:text-is("${page.home_page.btn_accept_all_cookie}")
 ${homepage.btn_loging}                      id=signin-and-register-big-button
-${homepage.btn_mail_or_mobile}              css=button:has-text("Email or Mobile No.")
+${homepage.btn_mail_or_mobile}              css=button:has-text("${page.home_page.btn_mail_or_mobile}")
 ${homepage.txt.email_popuplogin}            css=[data-testid="input-email"]
 ${homepage.btn_login_next_step}             css=[data-testid="btn-check-step-login-with-email"]
 ${homepage.txt_field_pass_popuplogin}       css=[data-testid="input-password"]      
@@ -39,3 +39,4 @@ ${homepage.btn_search_submit}      id=hotel-search-button
 
 
 
+ 

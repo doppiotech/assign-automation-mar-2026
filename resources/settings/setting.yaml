@@ -1,4 +1,7 @@
-url:  https://www.gother.online/en-us
+gother_web:
+  url:
+    en: https://www.gother.online/en-us
+    th: https://www.gother.online/th-th
 default_browser: chromium
 headless: False
 globle_timeout: 20s

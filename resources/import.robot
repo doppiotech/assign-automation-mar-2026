@@ -24,3 +24,4 @@ Resource    ${CURDIR}/locators/successful_page.robot
 
 #testdata
 Variables    ${CURDIR}/settings/setting.yaml
+Variables    ${CURDIR}/translation/${LANG.lower()}.yaml

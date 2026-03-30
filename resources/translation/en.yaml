@@ -1,1 +1,14 @@
-mock
+page:
+  booking_page:
+    txt_guest_type: "Type"
+    txt_total_price: "Including taxes and fees"
+    rdo_section_gender: "Gender"
+  home_page:
+    btn_accept_all_cookie: "Accept All"
+    btn_mail_or_mobile: "Email or Mobile No."
+  successfulpage:
+    lbl_booking_prefix:     "conformation"
+    lbl_booking_id: "conformation"
+    lbl_email_value: "The system will send"
+    lbl_email_prefix: "The system will send"
+    lbl_email_value: "The system will send"

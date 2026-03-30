@@ -1,0 +1,14 @@
+page:
+  home_page:
+    btn_accept_all_cookie: "ยอมรับทั้งหมด"
+    btn_mail_or_mobile: "อีเมลหรือเบอร์มือถือ"
+  booking_page:
+    txt_guest_type: "จำนวนคน"
+    txt_total_price: "รวมภาษีและค่าธรรมเนียม"
+    rdo_section_gender: "เพศ"
+  successfulpage:
+    lbl_booking_prefix:     "ข้อมูลการจองของคุณ หมายเลข"
+    lbl_booking_id: "ข้อมูลการจองของคุณ หมายเลข"
+    lbl_email_value: "ระบบจะส่งข้อมูลการจองของคุณไปยัง"
+    lbl_email_prefix: "ระบบจะส่งข้อมูลการจองของคุณไปยัง"
+    lbl_email_value: "ระบบจะส่งข้อมูลการจองของคุณไปยัง"
