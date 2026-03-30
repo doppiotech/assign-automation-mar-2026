@@ -6,6 +6,7 @@ Variables   ${CURDIR}/../../resources/testdata/testdata.yaml
 *** Test Cases ***
 TC_HOTELS_001
     Common.Open web gother    ${default_browser}    ${headless}
+    Handle cookie consent if present
     Click login signup button
     Click email or mobile no. button
     Fill info in field email        ${TC_001.user_account}
@@ -34,9 +35,13 @@ TC_HOTELS_001
     ...    ${TC_001.booking_info.expected_result.summary_guests}
     Select hotel by name    Asia Hotel Bangkok
     Browser.Switch Page    NEW
-    Verify hotel name on detail page is correct    ${TC_001.booking_info.target_hotel}
-
-
+    Verify hotel name on detail page is correct     ${TC_001.booking_info.target_hotel}
+    Click book now button
+    Verify hotel name on checkout page is correct       ${TC_001.booking_info.booking_info_hotel}
+    Verify guest type on checkout page is correct       ${TC_001.booking_info.summary_guest_type}
+    Verify total price on checkout page is correct      ${TC_001.booking_info.expected_total_price}
+    Click confirm booking button
+    
 
 
 

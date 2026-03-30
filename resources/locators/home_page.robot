@@ -1,4 +1,5 @@
 *** Variables ***
+${homepage.btn_accept_all_cookie}           css=button:text-is("Accept All")
 ${homepage.btn_loging}                      id=signin-and-register-big-button
 ${homepage.btn_mail_or_mobile}              css=button:has-text("Email or Mobile No.")
 ${homepage.txt.email_popuplogin}            css=[data-testid="input-email"]

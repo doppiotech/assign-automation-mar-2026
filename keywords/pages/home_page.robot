@@ -1,4 +1,17 @@
 *** Keywords ***
+Handle cookie consent if present
+    [Arguments]    ${timeout}=10s
+    ${status}=    BuiltIn.Run Keyword And Return Status    
+    ...    Browser.Wait For Elements State    ${homepage.btn_accept_all_cookie}    visible    timeout=${timeout}
+    IF    ${status}
+        BuiltIn.Sleep    1s
+        Browser.Click    ${homepage.btn_accept_all_cookie}
+        Browser.Wait For Elements State    ${homepage.btn_accept_all_cookie}    hidden    timeout=10s
+        Log To Console    Cookie Accepted Successfully.
+    ELSE
+        Log To Console    Cookie consent didn't appear within ${timeout}, skipping...
+    END
+
 Click login signup button
     [Arguments]     ${timeout}=${globle_timeout}
     Browser.Wait for elements state     ${homepage.btn_loging}       visible    timeout=${timeout}
