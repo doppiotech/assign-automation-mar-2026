@@ -23,31 +23,6 @@ Find today date on calendar and select today date
         common_web.Select today date on calendar
     END
 
-Find date and select date
-    [Arguments]    ${day}    ${month}
-    ${month_index_ref}=    common_web.Convert index into month    ${month}
-    ${month_int_ref}=    BuiltIn.Convert to number    ${month_index_ref}
-    ${month_text}=    common_web.Get left month on calendar
-    ${month_index}=    common_web.Convert month into index    ${month_text[0:-5]}
-    ${month_int}=    BuiltIn.Convert to number    ${month_index}
-    IF    ${month_int} < ${month_int_ref}
-        ${diff}=    BuiltIn.Evaluate    ${month_int_ref}-${month_int}
-        FOR    ${i}    IN RANGE    {diff}
-            common_web.Click next one month on calendar
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
-        END
-        common_web.Select available date on calendar by date    ${month}    ${day}
-    ELSE IF    ${month_int} > ${month_int_ref}
-        ${diff}=    BuiltIn.Evaluate    ${month_int}-${month_int_ref}
-        FOR    ${i}    IN RANGE    ${diff}
-            common_web.Click back one month on calendar
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
-        END
-        common_web.Select available date on calendar by date    ${month}    ${day}
-    ELSE
-        common_web.Select available date on calendar by date    ${month}    ${day}
-    END
-
 Select period from selected date to target days
     [Arguments]    ${days_to_book}
     ${month_text}=    common_web.Get left month on calendar

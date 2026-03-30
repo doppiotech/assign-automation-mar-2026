@@ -7,9 +7,3 @@
 ...            btn_today_date=css=.rdrDay.rdrDayToday
 ...            btn_available_date_by_index=css=.rdrMonth:has-text("***month***") .rdrDay:nth-child(***index*** of :not(.rdrDayDisabled):not(.invisible))
 ...            btn_available_date_by_date=css=.rdrMonth:has-text("***month***") .rdrDay:not(.rdrDayDisabled):not(.invisible) span:text-is("***day***")
-&{time_modal}
-...            lbl_time=css=[data-key="***time***"]
-&{age_modal}
-...            lbl_age=css=[data-key="***age***"]
-&{country_modal}
-...            lbl_country=css=div[src*="country/flag"],[alt="***country***"]

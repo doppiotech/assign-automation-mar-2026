@@ -24,6 +24,3 @@ Check if login successfully
 
 Click hotels tab on header bar
     common_web.Click element on screen    ${header_bar}[btn_hotels_tab]
-
-Click car rentals tab on header bar
-    common_web.Click element on screen    ${header_bar}[btn_car_retals_tab]

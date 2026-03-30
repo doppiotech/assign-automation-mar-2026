@@ -8,8 +8,3 @@ Select hotel by index from search result
     [Arguments]    ${hotel_index}
     ${hotel_locator}=        String.Replace string    ${hotels_search_list_section}[lbl_search_result_item_by_index]    ***hotel_index***    ${hotel_index}
     common_web.Click element on screen      ${hotel_locator}
-
-Select hotel by name from search result
-    [Arguments]    ${hotel_name}
-    ${hotel_locator}=        String.Replace string    ${hotels_search_list_section}[lbl_search_result_item_by_name]    ***hotel_name***    ${hotel_name}
-    common_web.Click element on screen      ${hotel_locator}

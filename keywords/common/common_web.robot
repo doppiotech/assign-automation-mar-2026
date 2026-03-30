@@ -86,23 +86,7 @@ Select available date on calendar by index
     ${date_month_index}=        String.Replace string    ${date_month}    ***index***    ${index}
     common_web.Click element on screen      ${date_month_index}
 
-Select available date on calendar by date
-    [Arguments]    ${month}    ${day}
-    ${date_month}=        String.Replace string    ${calendar_modal}[btn_available_date_by_date]    ***month***    ${month}
-    ${date_month_day}=        String.Replace string    ${date_month}    ***day***    ${day}
-    common_web.Click element on screen      ${date_month_index}
-
 Convert month into index
     [Arguments]    ${month_in_text}
     ${month_index}=    BuiltIn.Set variable    ${month_to_index}[${month_in_text}]
     RETURN    ${month_index}
-
-Convert index into month
-    [Arguments]    ${month_in_index}
-    ${month_text}=    BuiltIn.Set variable    ${index_to_month}[${month_in_index}]
-    RETURN    ${month_text}
-
-Select time
-    [Arguments]    ${time}
-    ${tiem_locator}=        String.Replace string    ${time_modal}[lbl_time]    ***time***    ${time}
-    common_web.Click element on screen      ${tiem_locator}

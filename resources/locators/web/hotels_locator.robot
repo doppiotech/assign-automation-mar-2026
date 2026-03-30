@@ -3,11 +3,8 @@
 ...            hotels_section=css=[id="hotel-search-layout-main-page"]:not([style="display: none !important;"])
 &{hotels_search_section}
 ...            txt_search_bar=css=#hotel-search-destination
-...            btn_search_suggestion=css=[id="hotel-search-suggestion"] p:text-is("***destination***")
-...            btn_search_suggestion_by_index=css=[id="hotel-search-suggestion"]:nth-of-type(***index***)
 ...            btn_search_suggestion_typing=css=[id^="hotel-search-typing-"] b:has-text("***destination***")
 ...            btn_checkin_date=css=[for="hotel-search-checkin-date"]
-...            btn_checkout_date=css=[for="hotel-search-checkout-date"]
 ...            btn_guests_and_rooms=css=[for="hotel-search-traveler"]
 ...            btn_search_button=css=#hotel-search-button
 &{guests_and_rooms_modal}

@@ -4,7 +4,6 @@
 ...            btn_login_signin=css=#signin-and-register-big-button
 ...            btn_account_icon=css=[alt="user-icon2"]
 ...            btn_hotels_tab=css=#home-menu-hotel
-...            btn_car_retals_tab=css=#home-menu-carrental
 &{login_popup}
 ...            btn_email_or_mobile_login=css=button:text-is("${login_popup_page_trans}[email_or_mobile_login]")
 ...            txt_email_or_mobile_field=css=[data-testid="input-email"]

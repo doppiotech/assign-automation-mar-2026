@@ -6,9 +6,6 @@ Check if booking page display
 Select gender as male
     common_web.Click element on screen    ${contact_information_section}[rdo_gender_male]
 
-Select gender as female
-    common_web.Click element on screen    ${contact_information_section}[rdo_gender_female]
-
 Input first name in contact information
     [Arguments]    ${first_name}
     common_web.Input in text field    ${contact_information_section}[txt_first_name]    ${first_name}
