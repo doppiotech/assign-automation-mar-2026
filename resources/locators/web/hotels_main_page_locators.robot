@@ -2,7 +2,8 @@
 #Search
 ${hotels_main_page_locators.txt_search_hotels}                           css=#hotel-search-destination
 ${hotels_main_page_locators.btn_hotel_search_button}                     css=#hotel-search-button
-${hotels_main_page_locators.btn_search_suggestion}                       css=#search-suggestion-container
+${hotels_main_page_locators.btn_search_suggestion}                       css=button[id^="hotel-search-typing-"] b:has-text("{DESTINATION}")
+                                            
 
 #Check in and Check out
 ${hotels_main_page_locators.btn_check_in}                                css=#hotel-search-checkin-date

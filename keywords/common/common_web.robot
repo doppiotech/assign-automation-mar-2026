@@ -36,6 +36,9 @@ Switch new tab
 
 Verify hotels item page
     Browser.Wait for elements state        ${select_hotels_page_locators.hotels_item_page}       visible    timeout=${global_timeout} 
+
+Verify booking page
+    Browser.Wait for elements state        ${select_hotels_page_locators.hotels_item_page}       visible    timeout=${global_timeout} 
                     
                                
                                

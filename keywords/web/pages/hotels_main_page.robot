@@ -7,13 +7,13 @@ Click destination or accommodation name search field
     Browser.Wait for elements state    ${hotels_main_page_locators.txt_search_hotels}         visible    ${global_timeout}
     Browser.Click        ${hotels_main_page_locators.txt_search_hotels}     
 Input your destination or accommodation name search field
-    [Arguments]        ${search_text}
-    Browser.Fill text        ${hotels_main_page_locators.txt_search_hotels}                    ${search_text}
+    [Arguments]        ${search_hotels_text}
+    Browser.Fill text        ${hotels_main_page_locators.txt_search_hotels}                    ${search_hotels_text}
 
 Select destination or accommodation name from suggestion list
-    [Arguments]    ${search_text}
-    Browser.Wait for elements state    ${hotels_main_page_locators.btn_search_suggestion}    visible    ${global_timeout}
-    ${้hotels_main_page.destination_locator}=        String.Replace string    ${hotels_main_page_locators.btn_search_suggestion}    ***destination***    ${search_text}
+    [Arguments]    ${search_hotels_text}
+    ${้hotels_main_page.destination_locator}=        String.Replace string    ${hotels_main_page_locators.btn_search_suggestion}    {DESTINATION}    ${search_hotels_text}
+    #Browser.Wait for elements state    ${hotels_main_page_locators.btn_search_suggestion}        visible        ${global_timeout}
     Browser.Click            ${้hotels_main_page.destination_locator}
     
 Select check-in date

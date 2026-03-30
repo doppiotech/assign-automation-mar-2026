@@ -12,10 +12,11 @@ TC_HOTELS_001
     ...    ${account_user.password}
     BuiltIn.Log to console    User is logged in successfully
     hotels_select_feature.Search and select hotels          
-    ...    โตเกียว
+    ...    ${search_hotel_information.search_hotels_text} 
     ...    0
     BuiltIn.Log to console    Hotel search and select results page is successfully
     select_hotels_page.Book room by index        0        0
     BuiltIn.Log to console    Select a room and click Book now is successfully
+    Payment for hotels
     #DEBUG
     
