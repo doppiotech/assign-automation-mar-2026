@@ -50,7 +50,7 @@ Select period from selected date to target days
     ${available_month_locator}=    String.Replace string    ${calendar_modal}[btn_available_date_by_index]    ***month***    ${month_text}
     FOR    ${available_date_in_current_month}    IN RANGE        1    31
         ${available_date_locator}=    String.Replace string    ${available_month_locator}    ***index***    ${available_date_in_current_month}
-        ${status}=    BuiltIn.Run Keyword And Return Status   common_web.Check if element display    ${available_date_locator}
+        ${status}=    BuiltIn.Run keyword and return status   common_web.Check if element display    ${available_date_locator}
         BuiltIn.Exit for loop if    ${status}==${False}
     END
     ${available_date_in_current_month}=    BuiltIn.Evaluate    ${available_date_in_current_month}-1

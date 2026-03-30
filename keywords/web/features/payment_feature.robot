@@ -1,6 +1,11 @@
 *** Keywords ***
 Input credit card information
     [Arguments]    ${card_number}    ${card_name}    ${card_exp}    ${card_cvv}
+    
+    ${status}    BuiltIn.Run keyword and return status    payment_page.Check if new credit card section display
+    IF    ${status}==${False}
+        payment_page.Select credit card as payment method
+    END
     payment_page.Input card number in credit card payment method             ${card_number}
     payment_page.Input card holder name in credit card payment method        ${card_name}
     payment_page.Input card expiry date in credit card payment method        ${card_exp}

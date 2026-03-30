@@ -7,12 +7,10 @@ Search pickup location by typing
 
 Select pickup time
     [Arguments]    ${time}
-    ${time_str}=    BuiltIn.Convert to string    ${time}
     car_rentals_page.Click pickup time
-    common_web.Select time        ${time_str}
+    common_web.Select time        ${time}
 
 Select dropoff time
     [Arguments]    ${time}
-    ${time_str}=    BuiltIn.Convert to string    ${time}
     car_rentals_page.Click droppoff time
-    common_web.Select time        ${time_str}
+    common_web.Select time        ${time}

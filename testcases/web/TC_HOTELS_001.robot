@@ -34,7 +34,6 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     ...    ${default_account}[country_name]
     booking_page.Click confirm booking button
     booking_page.Wait until confirm loading is complete
-    Debug
     payment_page.Check if payment page display
     payment_page.Select credit card as payment method
     payment_feature.Input credit card information                        ${default_credit_card_information}[card_num]

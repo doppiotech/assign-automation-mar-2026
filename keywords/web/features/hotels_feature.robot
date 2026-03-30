@@ -72,5 +72,5 @@ Click children age selection and recheck age list display
     [Arguments]    ${children_index}
     hotels_page.check if confirm button on guests and rooms section display
     hotels_page.Click children age selection    ${children_index}
-    ${status}    BuiltIn.Run Keyword And Return    hotels_page.Check if children age list display
+    ${status}    BuiltIn.Run keyword and return status    hotels_page.Check if children age list display
     RETURN   ${status}

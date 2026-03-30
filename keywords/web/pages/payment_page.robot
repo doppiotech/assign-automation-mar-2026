@@ -6,6 +6,9 @@ Check if payment page display
 Select credit card as payment method
     common_web.Click element on screen      ${payment_method}[rdo_credit_card_method]
 
+Check if new credit card section display
+    common_web.Check if element display    ${credit_card_information}[txt_new_credit_card]
+
 Input card number in credit card payment method
     [Arguments]    ${card_number}
     common_web.Input in text field        ${credit_card_information}[txt_creadit_card_num]        ${card_number}

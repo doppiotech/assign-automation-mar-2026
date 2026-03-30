@@ -28,15 +28,15 @@ Wait until page display
     [Arguments]    ${locator}    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
     BuiltIn.Wait until keyword succeeds    ${retry_times}    ${interval_for_retry}    Browser.Wait for elements state    ${locator}
 
- Check if element display
+Check if element display
     [Arguments]    ${locator}
     Browser.Wait for elements state    ${locator}
     Browser.Scroll to element            ${locator}
 
 Wait until element not display
     [Arguments]    ${locator}    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
-    ${status}    BuiltIn.Run Keyword And Return Status    Browser.Wait for elements state    ${locator}
-    BuiltIn.Run Keyword If    ${status} == ${True}   
+    ${status}    BuiltIn.Run keyword and return status    Browser.Wait for elements state    ${locator}
+    BuiltIn.Run keyword if    ${status} == ${True}   
     ...    BuiltIn.Wait until keyword succeeds    ${retry_times}    ${interval_for_retry}    
     ...    Browser.Wait for elements state    ${locator}    hidden
 

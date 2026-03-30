@@ -29,7 +29,7 @@ TC_HOTELS_001:
 TC_CAR_RENTALS_001:
   pick_up_location:     Bangkok Suvarnabhumi Airport
   days_to_rent:         10
-  pick_up_time:         23:00
-  drop_off_time:        16:00
+  pick_up_time:         '23:00'
+  drop_off_time:        '16:00'
   car_list_index:       2             
   car_option_index:     1

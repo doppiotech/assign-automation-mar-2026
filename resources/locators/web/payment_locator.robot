@@ -7,6 +7,7 @@
 &{payment_method}
 ...            rdo_credit_card_method=css=#CREDIT_RADIO
 &{credit_card_information}
+...            txt_new_credit_card=css=#CREDITCARD_NEWCARD
 ...            txt_creadit_card_num=css=#card-number-creditcard input
 ...            txt_creadit_card_name=css=#card_name_creditcard
 ...            txt_creadit_card_exp=css=#expire_of_creditcard_creditcard
