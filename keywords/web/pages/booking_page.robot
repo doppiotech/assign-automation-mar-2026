@@ -6,7 +6,7 @@ Check if booking page display
 Select gender
     [Arguments]    ${gender}
     ${gender_locator}    String.Replace string    ${contact_information_section}[rdo_gender]    ***gender***    ${gender}
-    common_web.Click element on screen    ${contact_information_section}[rdo_gender_male]
+    common_web.Click element on screen    ${contact_information_section}[rdo_gender]
 
 Input first name in contact information
     [Arguments]    ${first_name}
