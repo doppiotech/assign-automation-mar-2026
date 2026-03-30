@@ -17,3 +17,5 @@ TC_001:
             summary_checkin: "15 Apr 2026"   # เช็คแค่ส่วนนี้พอ ไม่ต้องใส่ชื่อวัน เผื่อปีหน้าวันเปลี่ยน
             summary_checkout: "17 Apr 2026"
             summary_guests: "1 Adult, 1 Room"
+        target_hotel: "Asia Hotel Bangkok"
+
