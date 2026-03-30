@@ -45,10 +45,14 @@ TC_HOTELS_001
     Fill last name                                      ${TC_001.contact_info.last_name}
     Fill email                                          ${TC_001.contact_info.email}
     Fill phone number                                   ${TC_001.contact_info.phone_number}
-    Click confirm booking button
+    Click confirm booking button to booking
     Fill credit card number                             ${TC_001.payment_info.card_number}
-    
+    Fill credit card name                               ${TC_001.payment_info.holder_name}
+    Fill credit card expiry date                        ${TC_001.payment_info.expiry_date}
+    Fill credit card cvv                                ${TC_001.payment_info.cvv}
+    Tick save credit card information
+    Click confirm booking button
 
 
 
-    
+

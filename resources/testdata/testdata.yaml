@@ -29,5 +29,6 @@ TC_001:
         phone_number: "0988888888"
     payment_info:
         card_number: "4111 1111 1111 1111"
-        
-
+        holder_name: "SUTIDA NOOSEN"
+        expiry_date: "11/30"
+        cvv: "123"

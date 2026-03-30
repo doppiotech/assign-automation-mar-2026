@@ -29,7 +29,7 @@ Select gender
     ELSE IF    '${gender_lower}' == 'male'
         Browser.Click With Options    ${bookingpage.checkout.radio_gender_male}       force=${True}
     END
-    Log To Console    Selected gender: ${gender}
+    # Log To Console    Selected gender: ${gender}
 
 Fill first name
     [Arguments]    ${first_name}    ${timeout}=${globle_timeout}
@@ -55,7 +55,7 @@ Fill phone number
     Browser.Fill Text    ${bookingpage.checkout.input_phone}    ${phone_number}
     Log To Console     Filled Phone: ${phone_number}
 
-Click confirm booking button
+Click confirm booking button to booking
     [Arguments]    ${timeout}=${globle_timeout}
     Browser.Scroll To Element    ${bookingpage.checkout.btn_confirm_booking}
     Browser.Wait For Elements State    ${bookingpage.checkout.btn_confirm_booking}    visible    timeout=${timeout}
