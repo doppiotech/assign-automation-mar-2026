@@ -38,6 +38,7 @@ Wait until element not display
     ${status}    BuiltIn.Run keyword and return status    Browser.Wait for elements state    ${locator}
     BuiltIn.Run keyword if    ${status} == ${True}   
     ...    BuiltIn.Wait until keyword succeeds    ${retry_times}    ${interval_for_retry}    
+    ...    BuiltIn.Run keyword and ignore error
     ...    Browser.Wait for elements state    ${locator}    hidden
 
 Click element on screen
