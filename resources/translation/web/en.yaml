@@ -17,4 +17,10 @@ contact_information_section_trans:
   country_id:             Passport Issuing Country
 
 payment_success_page_trans:
-  payment_success:            Payment Success
+  payment_success:            Payment Success!
+
+car_rentals_page_trans:
+  self_drive:               Self-Drive
+  with_driver:              With Driver
+  select_driver_age:        Select Driver's age
+  driver_license:           Driver's license

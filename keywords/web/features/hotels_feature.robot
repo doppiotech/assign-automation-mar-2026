@@ -35,7 +35,7 @@ Select booking period from today to target days
     FOR    ${available_date_in_current_month}    IN RANGE        1    31
         ${available_date_locator}=    String.Replace string    ${available_month_locator}    ***index***    ${available_date_in_current_month}
         ${status}=    BuiltIn.Run Keyword And Return Status   common_web.Check if element display    ${available_date_locator}
-        BuiltIn.Exit for loop if    ${status}==False
+        BuiltIn.Exit for loop if    ${status}==${False}
     END
     ${available_date_in_current_month}=    BuiltIn.Evaluate    ${available_date_in_current_month}-1
     IF    ${days_to_book}<=${available_date_in_current_month}

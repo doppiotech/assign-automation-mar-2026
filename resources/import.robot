@@ -18,11 +18,13 @@ Resource    ${CURDIR}/../resources/locators/web/header_bar_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/footer_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/home_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/hotels_locator.robot
-Resource    ${CURDIR}/../resources/locators/web/search_result_locator.robot
+Resource    ${CURDIR}/../resources/locators/web/hotels_search_result_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/hotels_item_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/booking_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/payment_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/payment_success_locator.robot
+Resource    ${CURDIR}/../resources/locators/web/car_rentals_locator.robot
+Resource    ${CURDIR}/../resources/locators/web/car_rentals_search_result_locator.robot
 
 ### Common ###
 Resource    ${CURDIR}/../keywords/common/common.robot
@@ -34,7 +36,7 @@ Resource    ${CURDIR}/../keywords/web/pages/landing_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/header_bar.robot
 Resource    ${CURDIR}/../keywords/web/pages/home_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/hotels_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/search_result_page.robot
+Resource    ${CURDIR}/../keywords/web/pages/hotels_search_result_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/hotels_item_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/booking_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/payment_page.robot

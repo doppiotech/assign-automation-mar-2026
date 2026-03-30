@@ -33,6 +33,13 @@ Wait until page display
     Browser.Wait for elements state    ${locator}
     Browser.Scroll to element            ${locator}
 
+Wait until element not display
+    [Arguments]    ${locator}    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
+    ${status}    BuiltIn.Run Keyword And Return Status    Browser.Wait for elements state    ${locator}
+    BuiltIn.Run Keyword If    ${status} == ${True}   
+    ...    BuiltIn.Wait until keyword succeeds    ${retry_times}    ${interval_for_retry}    
+    ...    Browser.Wait for elements state    ${locator}    hidden
+
 Click element on screen
     [Arguments]    ${locator}
     common_web.Check if element display                    ${locator}

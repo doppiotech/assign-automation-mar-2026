@@ -23,3 +23,9 @@ Input card cvv in credit card payment method
     
 Click pay now button to confirm payment
     common_web.Click element on screen      ${payment_element}[btn_pay_now]
+
+Wait until payment bar loading is complete
+    common_web.Wait until element not display        ${payment_element}[lbl_payment_loading]
+
+Wait until payment page loading is complete
+    common_web.Wait until element not display        ${payment_element}[lbl_payment_page_loading]

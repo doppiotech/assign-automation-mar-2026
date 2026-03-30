@@ -2,6 +2,7 @@
 &{booking_element}
 ...            booking_section=css=[class^="booking-page"]
 ...            btn_confirm_booking=css=[type="submit"]
+...            lbl_loading=css=#loading-gother [alt="loading"]
 &{contact_information_section}
 ...            rdo_gender_male=css=input[value="Mr"]
 ...            rdo_gender_female=css=input[value="Ms"]

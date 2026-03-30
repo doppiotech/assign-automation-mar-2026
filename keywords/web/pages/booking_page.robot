@@ -43,3 +43,6 @@ Select passport in contact information
 
 Click confirm booking button
     common_web.Click element on screen    ${booking_element}[btn_confirm_booking]
+
+Wait until confirm loading is complete
+    common_web.Wait until element not display        ${booking_element}[lbl_loading]

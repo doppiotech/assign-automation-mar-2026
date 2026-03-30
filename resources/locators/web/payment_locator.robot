@@ -2,6 +2,8 @@
 &{payment_element}
 ...            payment_section=css=[class$="title-payment-channel"]
 ...            btn_pay_now=css=#confirmBooking2
+...            lbl_payment_loading=css=#confirmBooking2 [src*="loading"]
+...            lbl_payment_page_loading=css=.Loading
 &{payment_method}
 ...            rdo_credit_card_method=css=#CREDIT_RADIO
 &{credit_card_information}
