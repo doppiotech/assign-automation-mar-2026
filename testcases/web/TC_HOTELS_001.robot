@@ -19,6 +19,7 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     hotels_feature.Adjust adults amount to                                ${booking_information}[adults_amount]
     hotels_feature.Adjust children amount and select age                  ${booking_information}[children_amount]
     hotels_feature.Select children age                                    ${booking_information}[children_1_index]    ${booking_information}[children_1_age]
+    Debug
     hotels_feature.Select children age                                    ${booking_information}[children_2_index]    ${booking_information}[children_2_age]
     hotels_page.Click search button
     hotels_search_result_page.Check if search result page display
@@ -27,6 +28,7 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     hotels_item_page.Check if hotels item display
     hotels_item_page.Book room by index                                   ${booking_information}[room_index]
     booking_page.Check if booking page display
+    Debug
     booking_page.Select gender                                            ${account}[gender]
     booking_feature.Input contact information
     ...    ${account}[first_name]

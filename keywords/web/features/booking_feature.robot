@@ -10,5 +10,3 @@ Input contact information
     booking_page.Input phone number in contact information                  ${phone}
     booking_page.Click passport option in contact information
     booking_page.Select passport in contact information                     ${country_id}
-
-Wait until 
