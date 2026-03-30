@@ -12,17 +12,14 @@ Find today date on calendar and select today date
             common_web.Click next one month on calendar
             BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
-        common_web.Select today date on calendar
     ELSE IF    ${month_int} > ${month_int_ref}
         ${diff}=    BuiltIn.Evaluate    ${month_int}-${month_int_ref}
         FOR    ${i}    IN RANGE    ${diff}
             common_web.Click back one month on calendar
             BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
-        common_web.Select today date on calendar
-    ELSE
-        common_web.Select today date on calendar
     END
+    common_web.Select today date on calendar
 
 Select period from selected date to target days
     [Arguments]    ${days_to_book}
