@@ -1,6 +1,6 @@
 *** Keywords ***
 Search and select hotels
-    [Arguments]        ${search_text}        ${hotel_index}
+    [Arguments]        ${search_text}        ${hotel_index}       
     hotels_main_page.Click hotels tab 
     common_web.Verify hotels page
     hotels_main_page.Click destination or accommodation name search field
@@ -11,5 +11,7 @@ Search and select hotels
     common_web.Switch new tab
     common_web.Verify hotels item page
     Sleep    2s
+    #Book room by index    ${room_type}    ${room_index}
+    #Sleep    2s
     
     

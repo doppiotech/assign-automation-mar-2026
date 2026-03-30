@@ -20,7 +20,6 @@ Resource    ${CURDIR}/../keywords/common/common_web.robot
 # Web Features
 Resource    ${CURDIR}/../keywords/web/features/login_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/hotels_select_feature.robot
-Resource    ${CURDIR}/../keywords/web/features/hotels_booking_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/payment_feature.robot
 
 # Web Pages 
@@ -29,11 +28,11 @@ Resource    ${CURDIR}/../keywords/web/pages/login_popup_page.robot
 
 Resource    ${CURDIR}/../keywords/web/pages/hotels_main_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/select_hotels_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/book_now_hotels.robot
+Resource    ${CURDIR}/../keywords/web/pages/booking_hotels.robot
 
 Resource    ${CURDIR}/../keywords/web/pages/car_rentals_main_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/select_car_rentals_page.robot
-Resource    ${CURDIR}/../keywords/web/pages/book_now_car_rentals.robot
+Resource    ${CURDIR}/../keywords/web/pages/booking_car_rentals.robot
 
 #Payment page 
 Resource        ${CURDIR}/../keywords/web/pages/payment_page.robot
@@ -50,11 +49,11 @@ Resource        ${CURDIR}/../resources/locators/web/login_popup_locators.robot
 
 Resource        ${CURDIR}/../resources/locators/web/hotels_main_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/select_hotels_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/book_now_hotels_locators.robot
+Resource        ${CURDIR}/../resources/locators/web/booking_hotels_locators.robot
 
 Resource        ${CURDIR}/../resources/locators/web/car_rentals_main_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/select_car_rentals_page_locators.robot
-Resource        ${CURDIR}/../resources/locators/web/book_now_car_rentals_locators.robot
+Resource        ${CURDIR}/../resources/locators/web/booking_car_rentals_locators.robot
 
 #Payment page / Select payment medtod
 Resource        ${CURDIR}/../resources/locators/web/payment_page_locators.robot
