@@ -5,10 +5,13 @@ login_popup:
   t_email_or_mobile_login_or_signup:      Email or Mobile No.
 
 guests_and_rooms:
-  rooms:                      Rooms
-  adults:                     Adults
-  children:                   Children
-  confirm:                    Confirm
+  t_rooms:                      Rooms
+  t_adults:                     Adults
+  t_children:                   Children
+  t_confirm:                    Confirm
 
-contact_information_section:
-  country_id:             Passport Issuing Country
+payment_success_page:
+  t_payment_success:            Payment Success
+
+ฺbooking:
+  t_ฺbooking_button:             Book now

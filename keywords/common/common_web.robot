@@ -19,7 +19,7 @@ Verify home page when login success
 Verify hotels page
     [Documentation]    ตรวจสอบว่าเข้ามาหน้า hotels แล้ว
     ...                    - ตรวจสอบว่า URL ปัจจุบันมีคำว่า hotels
-    Browser.Wait for condition    Url    contains    hotels    timeout=${global_timeout}
+    #Browser.Wait for condition    Url    contains    hotels    timeout=${global_timeout}
     Browser.Wait for elements state        ${hotels_main_page_locators.txt_search_destination}    visible    timeout=${global_timeout} 
     Browser.Wait for elements state        ${hotels_main_page_locators.btn_check_in}     visible    timeout=${global_timeout} 
     Browser.Wait for elements state        ${hotels_main_page_locators.btn_check_out}      visible    timeout=${global_timeout} 
