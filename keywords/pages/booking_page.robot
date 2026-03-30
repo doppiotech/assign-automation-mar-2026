@@ -22,13 +22,13 @@ Verify total price on checkout page is correct
 
 Select gender
     [Arguments]    ${gender}    ${timeout}=${globle_timeout}
-    Browser.Scroll To Element    ${bookingpage.checkout.section_gender}
-    IF    '${gender}' == 'Female'
-        Browser.Click With Options     ${bookingpage.checkout.radio_gender_female}   force=${True}
-    ELSE IF    '${gender}' == 'male'
-        Browser.Click With Options    ${bookingpage.checkout.radio_gender_male}    force=${True}
+    Browser.Scroll To Element    ${bookingpage.checkout.section_gender} 
+    ${gender_lower}=    Convert To Lower Case    ${gender}
+    IF    '${gender_lower}' == 'female'
+        Browser.Click With Options    ${bookingpage.checkout.radio_gender_female}    force=${True}
+    ELSE IF    '${gender_lower}' == 'male'
+        Browser.Click With Options    ${bookingpage.checkout.radio_gender_male}       force=${True}
     END
-    
     Log To Console    Selected gender: ${gender}
 
 Fill first name

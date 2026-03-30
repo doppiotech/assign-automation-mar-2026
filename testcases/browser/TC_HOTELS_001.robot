@@ -46,6 +46,7 @@ TC_HOTELS_001
     Fill email                                          ${TC_001.contact_info.email}
     Fill phone number                                   ${TC_001.contact_info.phone_number}
     Click confirm booking button
+    Fill credit card number                             ${TC_001.payment_info.card_number}
     
 
 

@@ -27,5 +27,7 @@ TC_001:
         last_name: "Noosen"
         email: "sutida.n@doppiotech.com"
         phone_number: "0988888888"
-
+    payment_info:
+        card_number: "4111 1111 1111 1111"
+        
 
