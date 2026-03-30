@@ -10,7 +10,8 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     header_bar.Click hotels tab on header bar
     hotels_feature.Search destination by typing                           ${TC_HOTELS_001}[destination]
     hotels_page.Click check in date section
-    hotels_feature.Select booking period from today to target days        ${TC_HOTELS_001}[days_to_book]
+    common_feature.Find today date on calendar and select today date
+    common_feature.Select period from selected date to target days        ${TC_HOTELS_001}[days_to_book]
     hotels_page.Click guests and rooms section
     hotels_feature.Adjust rooms amount to                                 ${TC_HOTELS_001}[rooms_amount]
     hotels_feature.Adjust adults amount to                                ${TC_HOTELS_001}[adults_amount]
@@ -18,7 +19,6 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     hotels_feature.Select children age                                    ${TC_HOTELS_001}[children_1_index]    ${TC_HOTELS_001}[children_1_age]
     hotels_feature.Select children age                                    ${TC_HOTELS_001}[children_2_index]    ${TC_HOTELS_001}[children_2_age]
     hotels_page.Click search button
-    # Debug
     hotels_search_result_page.Check if search result page display
     hotels_search_result_page.Select hotel by index from search result           ${TC_HOTELS_001}[hotel_index]
     common_web.Switch tab
@@ -34,15 +34,13 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     ...    ${default_account}[country_name]
     booking_page.Click confirm booking button
     booking_page.Wait until confirm loading is complete
+    Debug
     payment_page.Check if payment page display
-    Browser.Take screenshot
     payment_page.Select credit card as payment method
-    Browser.Take screenshot
     payment_feature.Input credit card information                        ${default_credit_card_information}[card_num]
     ...    ${default_credit_card_information}[card_holder_name]
     ...    ${default_credit_card_information}[card_exp]
     ...    ${default_credit_card_information}[card_cvv]
     payment_page.Click pay now button to confirm payment
     payment_feature.Wait until payment loading is complete
-    Debug
     payment_success_page.Check if success page display

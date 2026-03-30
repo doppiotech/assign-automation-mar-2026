@@ -10,14 +10,6 @@
 ...            btn_checkout_date=css=[for="hotel-search-checkout-date"]
 ...            btn_guests_and_rooms=css=[for="hotel-search-traveler"]
 ...            btn_search_button=css=#hotel-search-button
-&{calendar_modal}
-...            lbl_month_left=css=.date-text-left p
-...            lbl_month_right=css=.date-text-right p
-...            btn_back_one_month=css=[title="back-one-month"]
-...            btn_next_one_month=css=[title="next-one-month"]
-...            btn_today_date=css=.rdrDay.rdrDayToday
-...            btn_available_date_by_index=css=.rdrMonth:has-text("***month***") .rdrDay:nth-child(***index*** of :not(.rdrDayDisabled):not(.invisible))
-...            btn_available_date_by_date=css=.rdrMonth:has-text("***month***") .rdrDay:not(.rdrDayDisabled):not(.invisible) span:text-is("***day***")
 &{guests_and_rooms_modal}
 ...            lbl_rooms_amount=css=[role="menuitem"]:has(div:text-is("${guests_and_rooms_modal_trans}[rooms]")) button:text-is("-") + div
 ...            btn_rooms_decrease=css=[role="menuitem"]:has(div:text-is("${guests_and_rooms_modal_trans}[rooms]")) button:text-is("-")

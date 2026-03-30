@@ -14,6 +14,7 @@ Variables   ${CURDIR}/translation/mobile/${LANG.lower()}.yaml
 Variables   ${CURDIR}/translation/web/${LANG.lower()}.yaml
 
 ### Web Locators ###
+Resource    ${CURDIR}/../resources/locators/web/common_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/header_bar_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/footer_locator.robot
 Resource    ${CURDIR}/../resources/locators/web/home_locator.robot
@@ -42,9 +43,13 @@ Resource    ${CURDIR}/../keywords/web/pages/booking_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/payment_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/payment_success_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/footer.robot
+Resource    ${CURDIR}/../keywords/web/pages/car_rentals_page.robot
+Resource    ${CURDIR}/../keywords/web/pages/car_rentals_search_result_page.robot
 
 ### Web Feature ###
+Resource    ${CURDIR}/../keywords/web/features/common_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/header_bar_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/hotels_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/booking_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/payment_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/car_rentals_feature.robot
