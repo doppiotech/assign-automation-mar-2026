@@ -21,9 +21,11 @@ booking_information:
   rooms_amount:            2
   adults_amount:           4
   children_amount:         2
-  children_1_index:        1
-  children_1_age:          1
-  children_2_index:        2
-  children_2_age:          6
+  children_1:
+    index:                 1
+    age:                   1
+  children_2:
+    index:                 2
+    age:                   6
   hotel_index:             1
   room_index:              2
