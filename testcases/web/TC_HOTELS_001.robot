@@ -27,7 +27,7 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     hotels_item_page.Check if hotels item display
     hotels_item_page.Book room by index                                   ${booking_information}[room_index]
     booking_page.Check if booking page display
-    booking_page.Select gender as male
+    booking_page.Select gender                                            ${account}[gender]
     booking_feature.Input contact information
     ...    ${account}[first_name]
     ...    ${account}[last_name]
@@ -36,7 +36,6 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     ...    ${account}[phone]
     ...    ${account}[country_name]
     booking_page.Click confirm booking button
-    booking_page.Wait until confirm loading is complete
     payment_page.Check if payment page display
     payment_page.Select credit card as payment method
     payment_feature.Input credit card information
@@ -45,5 +44,4 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     ...    ${credit_card_information}[card_exp]
     ...    ${credit_card_information}[card_cvv]
     payment_page.Click pay now button to confirm payment
-    payment_feature.Wait until payment loading is complete
     payment_success_page.Check if success page display

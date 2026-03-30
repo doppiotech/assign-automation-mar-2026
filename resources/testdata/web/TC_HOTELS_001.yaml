@@ -5,6 +5,7 @@ account:
   last_name:        Automate
   phone:            812345678
   country_name:     Thailand
+  gender:           Male
 
 credit_card_information:
   card_num:         4111111111111111

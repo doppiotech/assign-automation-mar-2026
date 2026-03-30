@@ -6,53 +6,53 @@ Search destination by typing
     hotels_page.Select destination from suggestion list after search with input    ${search_text}
 
 Adjust rooms amount to
-    [Arguments]    ${target_rooms_amount}
+    [Arguments]    ${target_rooms_amount}    ${max_loop}=${gobal_max_loop}
     ${rooms_amount}=    hotels_page.Get rooms amount
     IF         ${rooms_amount} < ${target_rooms_amount}
         ${adjust_amount}=    BuiltIn.Evaluate    ${target_rooms_amount}-${rooms_amount}
         FOR    ${i}    IN RANGE    ${adjust_amount}
             hotels_page.Click increase button on rooms amount
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
     ELSE IF    ${rooms_amount} > ${target_rooms_amount}
         ${adjust_amount}=    BuiltIn.Evaluate    ${rooms_amount}-${target_rooms_amount}
         FOR    ${i}    IN RANGE    ${adjust_amount}
             hotels_page.Click decrease button on rooms amount
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
     END
 
 Adjust adults amount to
-    [Arguments]    ${target_adults_amount}
+    [Arguments]    ${target_adults_amount}    ${max_loop}=${gobal_max_loop}
     ${adults_amount}=    hotels_page.Get adults amount
     IF         ${adults_amount} < ${target_adults_amount}
         ${adjust_amount}=    BuiltIn.Evaluate    ${target_adults_amount}-${adults_amount}
         FOR    ${i}    IN RANGE    ${adjust_amount}
             hotels_page.Click increase button on adults amount
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
     ELSE IF    ${adults_amount} > ${target_adults_amount}
         ${adjust_amount}=    BuiltIn.Evaluate    ${adults_amount}-${target_adults_amount}
         FOR    ${i}    IN RANGE    ${adjust_amount}
             hotels_page.Click decrease button on adults amount
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
     END
 
 Adjust children amount and select age
-    [Arguments]    ${target_children_amount}
+    [Arguments]    ${target_children_amount}    ${max_loop}=${gobal_max_loop}
     ${children_amount}=    hotels_page.Get children amount
     IF         ${children_amount} < ${target_children_amount}
         ${adjust_amount}=    BuiltIn.Evaluate    ${target_children_amount}-${children_amount}
         FOR    ${i}    IN RANGE    ${adjust_amount}
             hotels_page.Click increase button on children amount
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
     ELSE IF    ${children_amount} > ${target_children_amount}
         ${adjust_amount}=    BuiltIn.Evaluate    ${children_amount}-${target_children_amount}
         FOR    ${i}    IN RANGE    ${adjust_amount}
             hotels_page.Click decrease button on children amount
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
     END
 

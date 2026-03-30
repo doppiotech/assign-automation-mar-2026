@@ -2,6 +2,7 @@
 Check if payment page display
     [Arguments]    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
     common_web.Wait until page display    ${payment_element}[payment_section]    ${retry_times}    ${interval_for_retry}
+    booking_page.Wait until confirm loading is complete
 
 Select credit card as payment method
     common_web.Click element on screen      ${payment_method}[rdo_credit_card_method]

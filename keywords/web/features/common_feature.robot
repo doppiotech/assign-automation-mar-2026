@@ -1,5 +1,6 @@
 *** Keywords ***
 Find today date on calendar and select today date
+    [Arguments]        ${max_loop}=${gobal_max_loop}
     ${month_index_ref}=    BuiltIn.Get time   month
     ${month_int_ref}=    BuiltIn.Convert to number    ${month_index_ref}
     ${month_text}=    common_web.Get left month on calendar
@@ -7,16 +8,16 @@ Find today date on calendar and select today date
     ${month_int}=    BuiltIn.Convert to number    ${month_index}
     IF    ${month_int} < ${month_int_ref}
         ${diff}=    BuiltIn.Evaluate    ${month_int_ref}-${month_int}
-        FOR    ${i}    IN RANGE    {diff}
+        FOR    ${i}    IN RANGE    ${diff}
             common_web.Click next one month on calendar
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
         common_web.Select today date on calendar
     ELSE IF    ${month_int} > ${month_int_ref}
         ${diff}=    BuiltIn.Evaluate    ${month_int}-${month_int_ref}
         FOR    ${i}    IN RANGE    ${diff}
             common_web.Click back one month on calendar
-            BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
+            BuiltIn.Exit for loop if    ${i} >= ${max_loop}
         END
         common_web.Select today date on calendar
     ELSE

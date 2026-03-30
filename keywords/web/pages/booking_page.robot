@@ -3,7 +3,9 @@ Check if booking page display
     [Arguments]    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
     common_web.Wait until page display    ${booking_element}[booking_section]    ${retry_times}    ${interval_for_retry}
 
-Select gender as male
+Select gender
+    [Arguments]    ${gender}
+    ${gender_locator}    String.Replace string    ${contact_information_section}[rdo_gender]    ***gender***    ${gender}
     common_web.Click element on screen    ${contact_information_section}[rdo_gender_male]
 
 Input first name in contact information
