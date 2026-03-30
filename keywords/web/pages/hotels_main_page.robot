@@ -13,7 +13,7 @@ Input your destination or accommodation name search field
 Select destination or accommodation name from suggestion list
     [Arguments]    ${search_hotels_text}
     ${้hotels_main_page.destination_locator}=        String.Replace string    ${hotels_main_page_locators.btn_search_suggestion}    {DESTINATION}    ${search_hotels_text}
-    #Browser.Wait for elements state    ${hotels_main_page_locators.btn_search_suggestion}        visible        ${global_timeout}
+    Browser.Wait for elements state    ${้hotels_main_page.destination_locator}      visible        ${global_timeout}
     Browser.Click            ${้hotels_main_page.destination_locator}
     
 Select check-in date
