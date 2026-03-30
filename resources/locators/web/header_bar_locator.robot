@@ -1,10 +1,10 @@
 *** Variables ***
-&{header_bar}
+&{header_bar_locator}
 ...            btn_gother_logo=css=#home-button
 ...            btn_login_signin=css=#signin-and-register-big-button
 ...            btn_account_icon=css=[alt="user-icon2"]
 ...            btn_hotels_tab=css=#home-menu-hotel
-&{login_popup}
+&{login_popup_locator}
 ...            btn_email_or_mobile_login=css=button:text-is("${login_popup_page_trans}[email_or_mobile_login]")
 ...            txt_email_or_mobile_field=css=[data-testid="input-email"]
 ...            btn_login_confirm_email_or_mobile=css=[data-testid="btn-check-step-login-with-email"]
