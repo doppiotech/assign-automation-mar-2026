@@ -8,6 +8,7 @@ Open web browser by url
     [Arguments]        ${url}    ${supported_browser}=${default_browser}    ${headless_mode}=${False}
     Browser.New browser     browser=${supported_browser}    headless=${headless_mode}
     Browser.New page        url=${url}
+    home_page.Check if homepage display
 
 login with email
     [Arguments]    ${email}    ${password}
