@@ -24,13 +24,12 @@ Select gender
     [Arguments]    ${gender}    ${timeout}=${globle_timeout}
     Browser.Scroll To Element    ${bookingpage.checkout.section_gender}
     IF    '${gender}' == 'Male'
-        Browser.Click    ${checkout.radio_gender_male}    force=True
+        Browser.Click With Options    ${bookingpage.checkout.radio_gender_male}    force=${True}
     ELSE IF    '${gender}' == 'Female'
-        Browser.Click    ${checkout.radio_gender_female}    force=True
+        Browser.Click With Options    ${bookingpage.checkout.radio_gender_female}    force=${True}
     END
+    
     Log To Console    Selected gender: ${gender}
-
-
 
 Click confirm booking button
     [Arguments]    ${timeout}=${globle_timeout}
