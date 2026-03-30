@@ -20,6 +20,18 @@ Verify total price on checkout page is correct
     BuiltIn.Should Contain    ${actual_price}    ${expected_price}
     BuiltIn.Log    Actual Total Price found: ${actual_price}
 
+Select gender
+    [Arguments]    ${gender}    ${timeout}=${globle_timeout}
+    Browser.Scroll To Element    ${bookingpage.checkout.section_gender}
+    IF    '${gender}' == 'Male'
+        Browser.Click    ${checkout.radio_gender_male}    force=True
+    ELSE IF    '${gender}' == 'Female'
+        Browser.Click    ${checkout.radio_gender_female}    force=True
+    END
+    Log To Console    Selected gender: ${gender}
+
+
+
 Click confirm booking button
     [Arguments]    ${timeout}=${globle_timeout}
     # 1. เลื่อนหน้าจอไปที่ปุ่ม
