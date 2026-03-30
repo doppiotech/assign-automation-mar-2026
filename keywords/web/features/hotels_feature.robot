@@ -20,8 +20,6 @@ Adjust rooms amount to
             hotels_page.Click decrease button on rooms amount
             BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
         END
-    ELSE
-        BuiltIn.No operation
     END
 
 Adjust adults amount to
@@ -39,8 +37,6 @@ Adjust adults amount to
             hotels_page.Click decrease button on adults amount
             BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
         END
-    ELSE
-        BuiltIn.No operation
     END
 
 Adjust children amount and select age
@@ -58,25 +54,23 @@ Adjust children amount and select age
             hotels_page.Click decrease button on children amount
             BuiltIn.Exit for loop if    ${i} >= ${gobal_max_loop}
         END
-    ELSE
-        BuiltIn.No operation
     END
 
 Select children age
     [Arguments]    ${children_index}    ${age}    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
     BuiltIn.Wait until keyword succeeds    ${retry_times}    ${interval_for_retry}    
     ...    hotels_feature.Click children age selection and recheck age list display    ${children_index}
-    IF    ${age} < 0
+    IF    ${age} < 1
         hotels_page.Select children age selection with less than 1 year option
     ELSE IF    ${age} == 1
         hotels_page.Select children age selection with 1 year option
-    ELSE IF    ${age} < 1
+    ELSE IF    ${age} > 1
         hotels_page.Select children age selection    ${age}
     END
 
 Click children age selection and recheck age list display
     [Arguments]    ${children_index}
-    hotels_page.check if confirm button on guests and rooms section display
+    hotels_page.Check if confirm button on guests and rooms section display
     hotels_page.Click children age selection    ${children_index}
     ${status}    BuiltIn.Run keyword and return status    hotels_page.Check if children age list display
     RETURN   ${status}

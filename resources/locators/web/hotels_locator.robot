@@ -21,5 +21,5 @@
 ...            lbl_children_age_list=css=[data-slot="content"]
 ...            btn_children_age_selection_less_1=css=li span:nth-child(1):has-text("1"):has-text("Less")
 ...            btn_children_age_selection_1=css=li span:nth-child(1):has-text("1"):not(span:has-text("Less"))
-...            btn_children_age_selection=ccs=li span:has-text("***age***")
+...            btn_children_age_selection=xpath=//li//span[contains(text(),'***age***')]
 ...            btn_confirm=css=button:text-is("${guests_and_rooms_modal_trans}[confirm]")

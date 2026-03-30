@@ -5,9 +5,10 @@ Library     String
 
 ### Setting ###
 Variables   ${CURDIR}/settings/setting_web.yaml
-# Variables   ${CURDIR}/settings/setting_mobile.yaml
-Variables   ${CURDIR}/testdata/web/testdata.yaml
 Variables   ${CURDIR}/settings/month_index.yaml
+
+### Test data ###
+Variables   ${CURDIR}/testdata/web/TC_HOTELS_001.yaml
 
 ### Translation ###
 Variables   ${CURDIR}/translation/mobile/${LANG.lower()}.yaml

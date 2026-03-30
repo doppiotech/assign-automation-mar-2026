@@ -12,7 +12,7 @@ Open web browser by url
 
 login with email
     [Arguments]    ${email}    ${password}
-    header_bar_feature.Login with email or mobile no. method    ${email}    ${password}
+    header_bar_feature.Login with email or mobile number method    ${email}    ${password}
     home_page.Check if homepage display
     header_bar.Check if login successfully
     footer.Click accept cookie on footer
@@ -21,7 +21,7 @@ Web teardown
     BuiltIn.Run keyword if test failed         Browser.Take screenshot
     Browser.Close browser
 
-Switch tab
+Switch to new tab
     Browser.Switch Page      NEW
 
 Wait until page display
@@ -35,7 +35,7 @@ Check if element display
 
 Wait until element not display
     [Arguments]    ${locator}    ${retry_times}=${global_retry_times}    ${interval_for_retry}=${global_interval_for_retry}
-    ${status}    BuiltIn.Run keyword and return status    Browser.Wait for elements state    ${locator}
+    ${status}    BuiltIn.Run keyword and return status    Browser.Wait for elements state    ${locator}    ${global_timeout}
     BuiltIn.Run keyword if    ${status} == ${True}   
     ...    BuiltIn.Wait until keyword succeeds    ${retry_times}    ${interval_for_retry}    
     ...    BuiltIn.Run keyword and ignore error

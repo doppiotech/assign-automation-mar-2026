@@ -67,7 +67,7 @@ Click children age selection
 Check if children age list display
     common_web.Check if element display     ${guests_and_rooms_modal}[lbl_children_age_list]
 
-check if confirm button on guests and rooms section display
+Check if confirm button on guests and rooms section display
     common_web.Check if element display     ${guests_and_rooms_modal}[btn_confirm]
 
 Select children age selection

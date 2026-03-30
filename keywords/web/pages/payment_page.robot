@@ -7,22 +7,22 @@ Select credit card as payment method
     common_web.Click element on screen      ${payment_method}[rdo_credit_card_method]
 
 Check if new credit card section display
-    common_web.Check if element display    ${credit_card_information}[txt_new_credit_card]
+    common_web.Check if element display    ${credit_card_information_section}[txt_new_credit_card]
 
 Input card number in credit card payment method
     [Arguments]    ${card_number}
-    common_web.Input in text field        ${credit_card_information}[txt_creadit_card_num]        ${card_number}
+    common_web.Input in text field        ${credit_card_information_section}[txt_creadit_card_num]        ${card_number}
 Input card holder name in credit card payment method
     [Arguments]    ${card_name}
-    common_web.Input in text field        ${credit_card_information}[txt_creadit_card_name]        ${card_name}
+    common_web.Input in text field        ${credit_card_information_section}[txt_creadit_card_name]        ${card_name}
     
 Input card expiry date in credit card payment method
     [Arguments]    ${card_exp}
-    common_web.Input in text field        ${credit_card_information}[txt_creadit_card_exp]        ${card_exp}
+    common_web.Input in text field        ${credit_card_information_section}[txt_creadit_card_exp]        ${card_exp}
     
 Input card cvv in credit card payment method
     [Arguments]    ${card_cvv}
-    common_web.Input in text field        ${credit_card_information}[txt_creadit_card_cvv]        ${card_cvv}
+    common_web.Input in text field        ${credit_card_information_section}[txt_creadit_card_cvv]        ${card_cvv}
     
 Click pay now button to confirm payment
     common_web.Click element on screen      ${payment_element}[btn_pay_now]
