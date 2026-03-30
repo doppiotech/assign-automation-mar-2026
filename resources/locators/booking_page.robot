@@ -7,8 +7,9 @@ ${bookingpage.checkout.txt_total_price}         css=div:has(p:text-is("Including
 ${bookingpage.checkout.section_gender}          css=div:has(> label p:text-is("Gender"))
 ${bookingpage.checkout.radio_gender_male}       css=input[value="Mr"]
 ${bookingpage.checkout.radio_gender_female}     css=input[value="Ms"]
-
-
-
+${bookingpage.checkout.input_first_name}        id=firstName
+${bookingpage.checkout.input_last_name}         id=lastName
+${bookingpage.checkout.input_email}             id=hotel-booking-user-email
+${bookingpage.checkout.input_phone}             css=input[name="phone"]
 
 ${bookingpage.checkout.btn_confirm_booking}     id=hotel-booking-button

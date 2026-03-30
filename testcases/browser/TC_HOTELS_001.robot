@@ -40,8 +40,12 @@ TC_HOTELS_001
     Verify hotel name on checkout page is correct       ${TC_001.booking_info.booking_info_hotel}
     Verify guest type on checkout page is correct       ${TC_001.booking_info.summary_guest_type}
     Verify total price on checkout page is correct      ${TC_001.booking_info.expected_total_price}
-    Select gender    ${TC_001.contact_info.gender}
-    # Click confirm booking button
+    Select gender                                       ${TC_001.contact_info.gender}
+    Fill first name                                     ${TC_001.contact_info.first_name}
+    Fill last name                                      ${TC_001.contact_info.last_name}
+    Fill email                                          ${TC_001.contact_info.email}
+    Fill phone number                                   ${TC_001.contact_info.phone_number}
+    Click confirm booking button
     
 
 

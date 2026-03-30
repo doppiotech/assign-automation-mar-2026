@@ -23,4 +23,9 @@ TC_001:
         expected_total_price: "4,214.85"
     contact_info:
         gender: "Male"
+        first_name: "Sutida"
+        last_name: "Noosen"
+        email: "sutida.n@doppiotech.com"
+        phone_number: "0988888888"
+
 
