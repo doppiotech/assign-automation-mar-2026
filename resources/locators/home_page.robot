@@ -9,25 +9,27 @@ ${homepage.btn_login_final_login}           css=[data-testid="btn-login-email-wi
 ${homepage.icon.profile}                    css=img[alt="user-icon2"]         #ตรวจ icon user หลัง login และกด icon user
 ${homepage.menu.hotel}                      id=home-menu-hotel
 ${homepage.txt_destination}                 id=hotel-search-destination
-${homepage.item_destination_result}         xpath=//div[@id='search-suggestion-container']//*[contains(text(), 'VARIABLE_TEXT')]
+${homepage.input_search_destination}        css=input#hotel-search-destination
+${homepage.container_suggestions}           css=#search-suggestion-container
 ${homepage.btn_datepicker_checkin}          id=hotel-search-checkin-date
-${homepage.datepicker.current_month_label}    xpath=(//div[contains(@class, 'rdrMonthName')])[1]
-${homepage.datepicker.btn_next_month}         xpath=//button[contains(@class, 'rdrNextButton')]
-${homepage.datepicker.calendar_day}           xpath=(//div[contains(@class, 'rdrMonth')])[1]//span[contains(@class, 'rdrDayNumber')]//span[text()='VARIABLE_DAY']
-${homepage.btn_guest_room}                    id=hotel-search-traveler
+${homepage.lbl_datepicker_month_year}       css=.rdrMonthName
+${homepage.btn_datepicker_next}             css=button.rdrNextButton
+${homepage.calendar_day}                    css=.rdrDay:not(.rdrDayPassive)
+${homepage.btn_guest_room}                  id=hotel-search-traveler
 
-${homepage.btn_add_room}         xpath=(//button[text()='+'])[1]
-${homepage.btn_minus_room}       xpath=(//button[text()='-'])[1]
+# --- Rooms ---
+${homepage.btn_add_room}            css=button:has-text("+"):right-of(:text-is("Rooms"))
+${homepage.btn_minus_room}          css=button:has-text("-"):right-of(:text-is("Rooms"))
+${homepage.txt_current_rooms}       css=div.body:right-of(:text-is("Rooms"))
+# --- Adults ---
+${homepage.btn_add_adult}           css=button:has-text("+"):right-of(:text-is("Adults"))
+${homepage.btn_minus_adult}         css=button:has-text("-"):right-of(:text-is("Adults"))
+${homepage.txt_current_adults}      css=div.body:right-of(:text-is("Adults"))
+# --- Children ---
+${homepage.btn_add_child}           css=button:has-text("+"):right-of(:text-is("Children"))
+${homepage.btn_minus_child}         css=button:has-text("-"):right-of(:text-is("Children"))
+${homepage.txt_current_children}    css=div.body:right-of(:text-is("Children"))
 
-${homepage.btn_add_adult}        xpath=(//button[text()='+'])[2]
-${homepage.btn_minus_adult}      xpath=(//button[text()='-'])[2]
-
-${homepage.btn_add_child}        xpath=(//button[text()='+'])[3]
-${homepage.btn_minus_child}      xpath=(//button[text()='-'])[3]
-
-${homepage.txt_current_rooms}      xpath=(//div[contains(@class,'w-[20px]')])[1]
-${homepage.txt_current_adults}     xpath=(//div[contains(@class,'w-[20px]')])[2]
-${homepage.txt_current_children}   xpath=(//div[contains(@class,'w-[20px]')])[3]
 
 ${homepage.btn_guest_confirm}      xpath=//button[text()='Confirm']
 ${homepage.btn_search_submit}      id=hotel-search-button
