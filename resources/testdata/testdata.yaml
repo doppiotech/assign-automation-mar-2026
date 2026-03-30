@@ -32,3 +32,9 @@ TC_001:
         holder_name: "SUTIDA NOOSEN"
         expiry_date: "11/30"
         cvv: "123"
+    expected_results:
+        success_title: "Booking Successful"
+        confirmation_text_prefix: "Your booking conformation no."
+        email_text_prefix: "The system will send your booking details to"
+
+

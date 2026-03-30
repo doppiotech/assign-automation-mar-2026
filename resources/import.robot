@@ -10,6 +10,7 @@ Resource    ${CURDIR}/../keywords/pages/search_result.robot
 Resource    ${CURDIR}/../keywords/pages/hotel_detail.robot
 Resource    ${CURDIR}/../keywords/pages/booking_page.robot
 Resource    ${CURDIR}/../keywords/pages/payment_page.robot
+Resource    ${CURDIR}/../keywords/pages/successful_page.robot
 
 
 #locators
@@ -18,6 +19,7 @@ Resource    ${CURDIR}/locators/search_result.robot
 Resource    ${CURDIR}/locators/hotel_detail.robot
 Resource    ${CURDIR}/locators/booking_page.robot
 Resource    ${CURDIR}/locators/payment_page.robot
+Resource    ${CURDIR}/locators/successful_page.robot
 
 
 #testdata

@@ -52,6 +52,10 @@ TC_HOTELS_001
     Fill credit card cvv                                ${TC_001.payment_info.cvv}
     Tick save credit card information
     Click confirm booking button
+    Verify booking success title                        ${TC_001.expected_results.success_title}
+    Verify and get booking confirmation number          ${TC_001.expected_results.confirmation_text_prefix}
+    Verify booking success email                        ${TC_001.contact_info.email}    ${TC_001.expected_results.email_text_prefix}
+    
 
 
 
