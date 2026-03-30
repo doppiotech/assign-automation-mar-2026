@@ -10,7 +10,7 @@ Open web browser by url
     Browser.New page        url=${url}
     home_page.Check if homepage display
 
-login with email
+Login with email
     [Arguments]    ${email}    ${password}
     header_bar_feature.Login with email or mobile number method    ${email}    ${password}
     home_page.Check if homepage display
