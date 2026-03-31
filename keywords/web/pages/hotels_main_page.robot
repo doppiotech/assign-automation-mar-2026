@@ -18,32 +18,31 @@ Select destination or accommodation name from suggestion list
     
 Clcik check in
     Browser.Click    ${hotels_main_page_locators.btn_check_in} 
-Select check-in date  
-    [Arguments]     ${checkin_month}    ${checkin_year}    ${checkin_day}  
-    # 1. วนลูปหาเดือน/ปี ที่ต้องการ
-    FOR    ${i}    IN RANGE    12
-        ${current_view}=    Browser.get text    ${hotels_main_page_locators.lbl_month_left}  
-        
-        # เช็กว่าหน้าจอตอนนี้มีเดือนและปีที่เราต้องการแสดงอยู่หรือไม่
-        ${month_match}=    Run keyword and return status    Should contain    ${current_view}    ${checkin_month}
-        ${year_match}=    Run Keyword And Return Status    Should Contain    ${current_view}     ${checkin_year} 
 
-        IF    ${month_match} and ${year_match}
+Select check-in and check-out date  
+    [Arguments]    ${target_day}    ${target_month}    ${target_year}
+    #วนลูปหาเดือนและปีที่ต้องการ (สูงสุด 12 เดือน)
+    FOR    ${i}    IN RANGE    12
+        ${current_label}=    Browser.Get text    ${hotels_main_page_locators.lbl_month_year_left}
+        ${parts}=            Split String    ${current_label}    ${SPACE}
+        ${month}=            Set Variable    ${parts}[0]
+        ${year}=             Set Variable    ${parts}[1]
+        Log to console        ${current_label}
+        Log to console        ${month}
+        Log to console        ${year}
+        #เช็กว่าหน้าจอแสดงเดือนและปีที่ต้องการหรือยัง
+        ${is_month_found}=    Run keyword and return status    Should contain    ${month}   ${target_month}
+        ${is_year_found}=     Run keyword and return status    Should contain    ${year}    ${target_year}
+        #ถ้าเจอแล้วให้ออกจากการหาเดือน
+        IF    not (${is_month_found} and ${is_year_found})
+        #ถ้ายังไม่เจอทั้งเดือนและปี ให้กด Next
+            Browser.Click    ${hotels_main_page_locators.btn_next_one_month}
+            Sleep    0.5s
+        ELSE
+            #ถ้าเจอครบแล้ว ให้ออกจากลูป
             BREAK
         END
-        
-        # ถ้าไม่เจอให้กด Next
-        Browser.Click    ${hotels_main_page_locators.btn_next_one_month}
-        Sleep    0.5s    # รอ Animation ปฏิทินเลื่อน
     END
-
-    # 2. คลิกวันที่ (ใช้ Exact Match เพื่อไม่ให้เลข 6 ไปโดนเลข 16 หรือ 26)
-    # เราจะใช้คำสั่ง text="${target_day}" เพื่อหาตัวเลขที่ตรงเป๊ะ
-    ${checkin_day_button}=        String.Replace string    ${hotels_main_page_locators.btn_date}   {DATE}    ${checkin_day} 
-    Browser.Click        ${checkin_day_button}
-
-Select check-out date
-    [Arguments]     ${checkout_month}    ${checkout_year}    ${checkout_day} 
 
 Click guests and room
     Browser.Wait for elements state    ${hotels_main_page_locators.btn_guests_and_room}    visible    ${global_timeout}
@@ -53,15 +52,12 @@ Adjust guest and room quantity
     [Arguments]    ${locator_current_value}    ${btn_plus}    ${btn_minus}    ${target_value}
     [Documentation]    ปรับจำนวนผู้เข้าพัก/ห้อง โดยการกดปุ่ม +/- จนกว่าจะเท่ากับค่าที่ต้องการ
     WHILE    True
-        #อ่านค่าปัจจุบันจากหน้าเว็บ (มักจะอยู่ในรูปแบบ Text)
+        #ดึงตัวเลขปัจจุบันบนหน้าเว็บมาใส่ไว้ใน current_text
         ${current_text}=    Browser.get text    ${locator_current_value}
-        #แปลงเป็นตัวเลขเพื่อให้คำนวณได้ (Convert to Integer)
-        ${current_num}=     Convert to integer    ${current_text}
-        ${target_num}=      Convert to integer    ${target_value}
         #ตรวจสอบเงื่อนไข
-        IF    ${current_num} == ${target_num}
+        IF    ${current_text} == ${target_value}
             BREAK    # ถ้าเท่ากันแล้วให้ออกจาก Loop ทันที
-        ELSE IF    ${current_num} < ${target_num}
+        ELSE IF    ${current_text} < ${target_value}
             Browser.Click    ${btn_plus}    #ถ้าน้อยกว่าเป้าหมาย ให้กดบวก
         ELSE
             Browser.Click    ${btn_minus}    #ถ้ามากกว่าเป้าหมาย ให้กดลบ

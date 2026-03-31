@@ -14,6 +14,14 @@ TC_HOTELS_001
     BuiltIn.Log to console    User is logged in successfully
     hotels_select_feature.Search hotels          
     ...    ${TC_001.booking_information.search_hotels_text} 
+    hotels_select_feature.Select check-in date
+    ...     ${TC_001.booking_information.checkin_day} 
+    ...     ${TC_001.booking_information.checkin_month} 
+    ...     ${TC_001.booking_information.checkin_year} 
+    hotels_select_feature.Select check-out date 
+    ...     ${TC_001.booking_information.checkout_day} 
+    ...     ${TC_001.booking_information.checkout_month} 
+    ...     ${TC_001.booking_information.checkout_year} 
     hotels_select_feature.Select guests and room
     ...    ${TC_001.guest_info.rooms} 
     ...    ${TC_001.guest_info.adults}

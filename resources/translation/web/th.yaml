@@ -18,3 +18,18 @@ payment_success_page:
 
 ฺbooking:
   t_ฺbooking_button:             จองเลย
+
+month_list:    
+    t_mount_1:    มกราคม    
+    t_mount_2:    กุมภาพันธ์   
+    t_mount_3:    มีนาคม    
+    t_mount_4:    เมษายน    
+    t_mount_5:    พฤษภาคม    
+    t_mount_6:    มิถุนายน    
+    t_mount_7:    กรกฎาคม    
+    t_mount_8:    สิงหาคม    
+    t_mount_9:    กันยายน    
+    t_mount_10:   ตุลาคม    
+    t_mount_11:   พฤศจิกายน    
+    t_mount_12:   ธันวาคม
+

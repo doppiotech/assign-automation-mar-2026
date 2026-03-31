@@ -16,16 +16,17 @@ TC_001:
     booking_information:       
         search_hotels_text:           Tokyo
         checkin_year:                 2026
-        checkin_month:                April  
-        checkin_day:                  10
+        checkin_month:                ${month_list.t_mount_4} 
+        checkin_day:                  13
         checkout_year:                2026
-        checkout_month:               April
+        checkout_month:               ${month_list.t_mount_4} 
         checkout_day:                 16
         gender:                       female
 
     guest_info:
-        rooms:                    1
-        adults:                   1
-        children:                 1
-
+        rooms:                    2
+        adults:                   2
+        children:                 2
+    
+ 
     

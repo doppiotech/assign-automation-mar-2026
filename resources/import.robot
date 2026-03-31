@@ -46,7 +46,6 @@ Resource        ${CURDIR}/../resources/locators/web/booking_hotels_locators.robo
 Resource        ${CURDIR}/../resources/locators/web/payment_page_locators.robot
 
 #Payment for hotels page
-#Resource        ${CURDIR}/../resources/locators/web/hotels_booking_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/hotels_payment_success_page_locators.robot
 
 

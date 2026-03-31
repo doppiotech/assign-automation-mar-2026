@@ -18,3 +18,17 @@ payment_success_page:
 
 ฺbooking:
   t_ฺbooking_button:             Book now
+
+month_list:    
+    t_mount_1:    January    
+    t_mount_2:    February   
+    t_mount_3:    March    
+    t_mount_4:    April    
+    t_mount_5:    May    
+    t_mount_6:    June    
+    t_mount_7:    July    
+    t_mount_8:    August    
+    t_mount_9:    September    
+    t_mount_10:   October    
+    t_mount_11:   November    
+    t_mount_12:   December
