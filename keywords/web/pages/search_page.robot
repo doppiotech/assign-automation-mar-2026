@@ -12,9 +12,9 @@ Verify system can redirect to search page
 
 Select Random hotel From Search Results
     [Arguments]    ${item_count}
-    ${random_index}=    Evaluate    random.randint(0, ${item_count} - 1)    modules=random
-    ${target_locator}=    Replace String    ${search.LBL_HOTEL_SEARCH_INDEX}    @#INDEX@#    ${random_index}
-    ${hotel_name_locator}=    Replace String    ${search.TXT_HOTEL_NAME}    @#INDEX@#    ${random_index}
-    ${hotel_name}=    Get text    ${hotel_name_locator}
+    ${random_index}=    BuiltIn.Evaluate    random.randint(0, ${item_count} - 1)    modules=random
+    ${target_locator}=    String.Replace string    ${search.LBL_HOTEL_SEARCH_INDEX}    @#INDEX@#    ${random_index}
+    ${hotel_name_locator}=    String.Replace string    ${search.TXT_HOTEL_NAME}    @#INDEX@#    ${random_index}
+    ${hotel_name}=    Browser.Get text    ${hotel_name_locator}
     Browser.Click    ${target_locator}
     RETURN    ${hotel_name}

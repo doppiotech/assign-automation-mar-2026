@@ -4,3 +4,4 @@ gother_web:
     en: https://www.gother.online/en-us
     th: https://www.gother.online/th-th
 default_timeout:  20  
+success_page_timeout: 45
