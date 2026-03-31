@@ -21,6 +21,7 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     hotels_feature.Adjust children amount                                 ${booking_information}[children_amount]
     hotels_feature.Select children age                                    ${booking_information}[children_1][index]    ${booking_information}[children_1][age]
     hotels_feature.Select children age                                    ${booking_information}[children_2][index]    ${booking_information}[children_2][age]
+    hotels_page.Click confirm guests and rooms
     ${checkin_date}
     ...    ${checkout_date}
     ...    ${guests_and_rooms}

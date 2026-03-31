@@ -27,5 +27,5 @@ booking_information:
   children_2:
     index:                 2
     age:                   6
-  hotel_index:             1
-  room_index:              2
+  hotel_index:             2
+  room_index:              1
