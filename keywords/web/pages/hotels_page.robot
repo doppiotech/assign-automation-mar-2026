@@ -24,9 +24,9 @@ Add rooms
 
 Add adults guests
     [Arguments]    ${number_of_adults}
-    ${target_adults}=    Convert To Integer    item=${number_of_adults}
+    ${target_adults}=    BuiltIn.Convert To Integer    item=${number_of_adults}
     ${text_number_of_adults}=    Browser.Get Text    selector=${hotels_locator.number_of_adults}
-    ${current_adults}=    Convert To Integer    item=${text_number_of_adults}
+    ${current_adults}=    BuiltIn.Convert To Integer    item=${text_number_of_adults}
 
     IF    "${number_of_adults}" < "${text_number_of_adults}"
         Browser.Click    selector=${hotels_locator.btn_-_adults}
@@ -35,7 +35,7 @@ Add adults guests
             EXIT FOR LOOP IF    ${current_adults} == ${target_adults}
             Browser.Click    selector=${hotels_locator.btn_+_adults}
             ${text_number_of_adults}=    Browser.Get Text    selector=${hotels_locator.number_of_adults}
-            ${current_adults}=    Convert To Integer    item=${text_number_of_adults}
+            ${current_adults}=    BuiltIn.Convert To Integer    item=${text_number_of_adults}
         END
     END
 
