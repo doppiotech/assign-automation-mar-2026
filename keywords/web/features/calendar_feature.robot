@@ -8,9 +8,7 @@ Convert Input Date For Calendar
     ...     4. ดึงเลขวันที่แบบมี 0 นำหน้า แล้วแปลงเป็นตัวเลขเพื่อตัด 0 ออก (เช่น 05 -> 5)
     ${target_month_num}=    DateTime.Convert date    ${target_date}    result_format=%m
     ${target_year}=         DateTime.Convert date    ${target_date}    result_format=%Y
-    
-    ${month_name}=    BuiltIn.Set variable    ${MONTH_NAME}[${target_month_num}]
-        
+            
     ${day_with_zero}=    DateTime.Convert date    ${target_date}    result_format=%d
     ${day_no_zero}=      BuiltIn.Evaluate    str(int('${day_with_zero}'))
     RETURN    ${day_no_zero}    ${target_month_num}    ${target_year}
@@ -49,7 +47,7 @@ Navigate To Target Month
 
         ${left_name}=     BuiltIn.Set variable    ${left_words}[0]
         ${left_year}=     BuiltIn.Set variable    ${left_words}[1]
-        
+
         ${right_name}=    BuiltIn.Set variable    ${right_words}[0]
         ${right_year}=    BuiltIn.Set variable    ${right_words}[1]
         

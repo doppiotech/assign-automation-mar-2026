@@ -8,8 +8,8 @@ Verify system can redirect to hotel information page
 
 Click on book now button
     [Arguments]    ${timeout}=${default_timeout}
-    Browser.Scroll to element    ${hotel_informaion.BTN_BOOKING} 
     Browser.Wait for elements state    ${hotel_informaion.BTN_BOOKING}    visible    timeout=${timeout}
+    Browser.Scroll to element    ${hotel_informaion.BTN_BOOKING} 
     Browser.Wait for elements state    ${hotel_informaion.BTN_BOOKING}    timeout=${timeout}
     Browser.Click    ${hotel_informaion.BTN_BOOKING}
 
