@@ -10,9 +10,9 @@ Click on Phone/Email button
     Browser.Click    ${landing.BTN_PHONE_OR_EMAIL}
 
 Fill Email
-    [Arguments]    ${timeout}=${default_timeout}
+    [Arguments]    ${email}    ${timeout}=${default_timeout}
     Browser.Wait for elements state    ${landing.TXT_Email}    visible    timeout=${timeout}
-    Browser.Fill text    ${landing.TXT_Email}    ${login_user.email}
+    Browser.Fill text    ${landing.TXT_Email}    ${email}
 
 Click on Login button
     [Arguments]    ${timeout}=${default_timeout}
@@ -20,9 +20,9 @@ Click on Login button
     Browser.Click    ${landing.BTN_LOGIN}
     
 Fill Password
-    [Arguments]    ${timeout}=${default_timeout}
+    [Arguments]    ${password}    ${timeout}=${default_timeout}
     Browser.Wait for elements state    ${landing.TXT_Password}     visible    timeout=${timeout}
-    Browser.Fill text    ${landing.TXT_Password}    ${login_user.password}
+    Browser.Fill text    ${landing.TXT_Password}    ${password}
 
 Click on profile icon
     [Arguments]    ${timeout}=${default_timeout}

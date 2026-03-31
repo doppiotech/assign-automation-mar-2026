@@ -6,9 +6,17 @@ Test Teardown    Browser.Close browser
 
 *** Test Cases ***
 TC_HOTELS_001 Verify Hotel Booking with Credit Card Payment
-    [Tags]      TC_WEB_POC_001
+    [Tags]      TC_HOTELS_001
     landing_page.Verify system can redirect to landing page
-    landing_page.Login to system with email and password
+    login_feature.Click on Login/Register button
+    login_feature.Click on Phone/Email button
+    login_feature.Fill Email    ${login_user.email}
+    login_feature.Click on Login button
+    login_feature.Fill Password    ${login_user.password}
+    login_feature.Click on Login button 
+    login_feature.Click on profile icon
+    login_feature.Click on My account button
+    login_feature.Verify Email    ${login_user.email}
     common_web.Go back to previous page
     landing_page.Click on Accept cookie button
     landing_page.Click on hotels button
