@@ -1,21 +1,19 @@
 *** Keywords ***
-
-Calculate Target Date For Calendar
-    [Arguments]    ${days_ahead}
-    [Documentation]    1. ดึงชื่อเดือนและปี (เช่น April 2026)
-    ...                ดึงเลขเดือน (01-12) และ ปี (YYYY) แทนการดึงชื่อเดือนตรงๆ
-    ...            2. ดึงเลขวันที่แบบมี 0 นำหน้า (เช่น 06) แล้วแปลงเป็นตัวเลขเพื่อตัด 0 ออก (จะได้ 6)
-    ${target_month_num}=    DateTime.Get current date    increment=${days_ahead} days    result_format=%m
-    ${target_year}=         DateTime.Get current date    increment=${days_ahead} days    result_format=%Y
-
+Convert Input Date For Calendar
+    [Arguments]    ${target_date}    
+    [Documentation]    # รับค่ารูปแบบ YYYY-MM-DD (เช่น 2026-04-10)
+    ...     1. ดึงเลขเดือน (01-12) และ ปี (YYYY) จากวันที่ที่ส่งมา 
+    ...     2. ดึงชื่อเดือนตามภาษาจากตัวแปร YAML ที่เราย้ายไปก่อนหน้านี้
+    ...     3. ประกอบร่าง (เช่น "April 2026" หรือ "เมษายน 2026") 
+    ...     4. ดึงเลขวันที่แบบมี 0 นำหน้า แล้วแปลงเป็นตัวเลขเพื่อตัด 0 ออก (เช่น 05 -> 5)
+    ${target_month_num}=    DateTime.Convert date    ${target_date}    result_format=%m
+    ${target_year}=         DateTime.Convert date    ${target_date}    result_format=%Y
+    
     ${month_name}=    BuiltIn.Set variable    ${MONTH_NAME}[${target_month_num}]
-
-    ${target_month_year}=    BuiltIn.Set variable    ${month_name} ${target_year}
-
-    ${day_with_zero}=    DateTime.Get current date    increment=${days_ahead} days    result_format=%d
+        
+    ${day_with_zero}=    DateTime.Convert date    ${target_date}    result_format=%d
     ${day_no_zero}=      BuiltIn.Evaluate    str(int('${day_with_zero}'))
-
-    RETURN    ${target_month_year}    ${day_no_zero}    ${target_month_num}    ${target_year}
+    RETURN    ${day_no_zero}    ${target_month_num}    ${target_year}
 
 Open Calendar Popup
     Browser.Wait for elements state    ${hotel.TXT_CHECKIN}    visible
@@ -23,8 +21,19 @@ Open Calendar Popup
     Browser.Click    ${hotel.TXT_CHECKIN}
     Browser.Wait for elements state    ${hotel.CALENDAR_POPUP}   visible    timeout=5s    message=❌ คลิกแล้วปฏิทินไม่ยอมเปิด!
 
+Select Date On Calendar
+    [Arguments]    ${target_day}    ${target_month_num}    ${target_year}
+    [Documentation]     1. เรียกใช้ Keyword เลื่อนหาเดือน ส่งค่าไปให้ครบ 3 ตัว
+    ${month_name}=           BuiltIn.Set variable    ${MONTH_NAME}[${target_month_num}]
+    ${target_month_year}=    BuiltIn.Set variable    ${month_name} ${target_year}
+    Navigate To Target Month    ${target_month_num}    ${target_year}
+    ${locator_calendar_M_Y}=    String.Replace string    ${hotel.TXT_CALENDAR_DAY}    @#MONTH_YEAR@#    ${target_month_year} 
+    ${locator_calendar_D_M_Y}=    String.Replace string    ${locator_calendar_M_Y}         @#DAY@#           ${target_day}
+    Browser.Wait for elements state     ${locator_calendar_D_M_Y}   
+    Browser.Click    ${locator_calendar_D_M_Y}
+
 Navigate To Target Month
-    [Arguments]    ${target_month_year}    ${target_month_num}    ${target_year}
+    [Arguments]    ${target_month_num}    ${target_year}
     [Documentation]     เอาปีมาต่อกับเลขเดือน เพื่อสร้างรหัสเปรียบเทียบเป้าหมาย (เช่น "2026" + "03" = 202603)
     ...             1. เช็คว่าเจอเดือนเป้าหมาย (เช่น "มีนาคม 2026") แล้วหรือยัง
     ...             อ่านค่าเดือนหน้าต่างซ้าย (nth=0) และหน้าต่างขวา (nth=1)
@@ -36,9 +45,11 @@ Navigate To Target Month
         ${right_text}=    Browser.Get text    ${hotel.BTN_RIGHT_CALENDAR}
         
         ${left_words}=    String.Split string    ${left_text}    ${SPACE}
+        ${right_words}=    String.Split string    ${right_text}    ${SPACE}
+
         ${left_name}=     BuiltIn.Set variable    ${left_words}[0]
         ${left_year}=     BuiltIn.Set variable    ${left_words}[1]
-        ${right_words}=    String.Split string    ${right_text}    ${SPACE}
+        
         ${right_name}=    BuiltIn.Set variable    ${right_words}[0]
         ${right_year}=    BuiltIn.Set variable    ${right_words}[1]
         
@@ -55,13 +66,6 @@ Navigate To Target Month
         ELSE IF    ${target_score} > ${right_score}
             Browser.Click    ${hotel.BTN_CALENDAR_NEXT}
         END
+        Browser.Get Text    ${hotel.BTN_LEFT_CALENDAR}    !=    ${left_text}
     END
 
-Select Date On Calendar
-    [Arguments]    ${target_month_year}    ${target_day}    ${target_month_num}    ${target_year}
-    [Documentation]     1. เรียกใช้ Keyword เลื่อนหาเดือน ส่งค่าไปให้ครบ 3 ตัว
-    Navigate To Target Month    ${target_month_year}    ${target_month_num}    ${target_year}
-    ${locator_calendar_M_Y}=    String.Replace string    ${hotel.TXT_CALENDAR_DAY}    @#MONTH_YEAR@#    ${target_month_year} 
-    ${locator_calendar_D_M_Y}=    String.Replace string    ${locator_calendar_M_Y}         @#DAY@#           ${target_day}
-    Browser.Wait for elements state     ${locator_calendar_D_M_Y}   
-    Browser.Click    ${locator_calendar_D_M_Y}

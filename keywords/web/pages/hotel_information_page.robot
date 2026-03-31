@@ -8,9 +8,8 @@ Verify system can redirect to hotel information page
 
 Click on book now button
     [Arguments]    ${timeout}=${default_timeout}
-    [Documentation]     รอให้ปุ่มโหลดขึ้นมาในระบบ (ใช้ state=attached เพื่อเช็คว่ามี element นี้อยู่แม้จะยังมองไม่เห็น)
-    Browser.Wait for elements state    ${hotel_informaion.BTN_BOOKING}    attached    timeout=${timeout}
-    Browser.Scroll to element    ${hotel_informaion.BTN_BOOKING}
+    Browser.Scroll to element    ${hotel_informaion.BTN_BOOKING} 
+    Browser.Wait for elements state    ${hotel_informaion.BTN_BOOKING}    visible    timeout=${timeout}
     Browser.Wait for elements state    ${hotel_informaion.BTN_BOOKING}    timeout=${timeout}
     Browser.Click    ${hotel_informaion.BTN_BOOKING}
 

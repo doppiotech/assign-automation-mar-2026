@@ -3,9 +3,9 @@ login_user:
   password: "P@ssw0rd"
 hotel_info:
   destination:  "bangkok"
-  amount_day:
-    from_day: 1
-    to_day: 2
+  booking_dates:
+    checkin: "2026-04-10"
+    checkout: "2026-04-11"
   guest_room:
     amount_room:  1
     amount_adult:  3

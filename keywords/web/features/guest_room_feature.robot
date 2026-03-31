@@ -45,3 +45,14 @@ Confirm Guests And Rooms Selection
     [Arguments]    ${timeout}=${default_timeout}
     Browser.Click    ${hotel.BTN_GUEST_CONFIRM}
     Browser.Wait for elements state    ${hotel.BTN_GUEST_CONFIRM}    hidden    timeout=${timeout}
+
+Setting Guests And Rooms
+    [Documentation]     กระบวนการตั้งค่าจำนวนผู้เข้าพักและห้องพักแบบครบวงจร
+    ...                 ถ้าไม่ส่งค่ามา จะดึงค่า Default จากไฟล์ testdata.yaml
+    [Arguments]    ${target_room}    ${target_adult}    ${target_children}
+    Open Guests And Rooms Dropdown
+    Adjust Guest Or Room Quantity    ${hotel_page.TXT_ROOM}        ${target_room}
+    Adjust Guest Or Room Quantity    ${hotel_page.TXT_ADULT}       ${target_adult}
+    Adjust Guest Or Room Quantity    ${hotel_page.TXT_CHILDREN}    ${target_children}
+
+    Confirm Guests And Rooms Selection

@@ -10,9 +10,8 @@ Verify system can redirect to search page
         Fail    ไม่พบผลการค้นหาปลายทาง
     END
 
-Select Random hotel From Search Results
-    [Arguments]    ${item_count}
-    ${random_index}=    BuiltIn.Evaluate    random.randint(0, ${item_count} - 1)    modules=random
+Select hotel From Search Results
+    [Arguments]    ${random_index}
     ${target_locator}=    String.Replace string    ${search.LBL_HOTEL_SEARCH_INDEX}    @#INDEX@#    ${random_index}
     ${hotel_name_locator}=    String.Replace string    ${search.TXT_HOTEL_NAME}    @#INDEX@#    ${random_index}
     ${hotel_name}=    Browser.Get text    ${hotel_name_locator}

@@ -20,14 +20,19 @@ TC_HOTELS_001 Verify Hotel Booking with Credit Card Payment
     common_web.Go back to previous page
     landing_page.Click on Accept cookie button
     landing_page.Click on hotels button
-    hotel_page.Search Destination
+    hotel_page.Search Destination    ${hotel_info.destination}
     ${item_count}=    hotel_page.Verify data Destination
-    hotel_page.Select Random Destination From Search Results    ${item_count}
-    hotel_page.Fill In Checkin And Checkout Dates
-    hotel_page.Setting Guests And Rooms
-    Browser.Click    ${hotel.BTN_SEARCH}
+    ${index}=    BuiltIn.Evaluate    random.randint(0, ${item_count} - 1)    modules=random
+    hotel_page.Search For Hotels    
+    ...    ${index}    
+    ...    ${hotel_info.booking_dates.checkin}  
+    ...    ${hotel_info.booking_dates.checkout}     
+    ...    ${hotel_info.guest_room.amount_room}     
+    ...    ${hotel_info.guest_room.amount_adult}       
+    ...    ${hotel_info.guest_room.amount_children}
     ${hotel_count}=    search_page.Verify system can redirect to search page
-    ${hotel_name}=    search_page.Select Random hotel From Search Results    ${hotel_count}
+    ${random_index}=    BuiltIn.Evaluate    random.randint(0, ${hotel_count} - 1)    modules=random
+    ${hotel_name}=    search_page.Select hotel From Search Results    ${random_index}
     hotel_information_page.Verify system can redirect to hotel information page    ${hotel_name}
     hotel_information_page.Click on book now button
     ${total_price}=    hotel_information_page.Get And Verify Total Price
