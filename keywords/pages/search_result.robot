@@ -1,7 +1,9 @@
 *** Keywords ***
 Verify search results summary is correct
     [Arguments]     ${expected_dest}     ${expected_checkin}    ${expected_checkout}      ${expected_guests}
+    #Get ค่ามาเก็บไว้ในตัวแปร ${actual_dest}
     ${actual_dest}=    Browser.Get Attribute    ${search_result.txt_summary_destination}    value
+    #เช็คว่าค่าที่ได้ตรงกับ expect ใน YAML มั้ย
     BuiltIn.Should Contain    ${actual_dest}    ${expected_dest}
     ${actual_checkin}=    Browser.Get Attribute    ${search_result.txt_summary_checkin}    value
     BuiltIn.Should Contain    ${actual_checkin}    ${expected_checkin}
