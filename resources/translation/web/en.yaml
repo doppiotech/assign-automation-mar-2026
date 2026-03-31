@@ -1,1 +1,13 @@
-mock
+translation:
+  accept_cookies: Accept All
+  btn_email_or_mobile: Email or Mobile No.
+  hotel_tab: Hotels
+  btn_check_in_date: Check-in
+  rooms:  Rooms
+  adults: Adults
+  children: Children
+  confirm: Confirm
+  reserve_rooms:  Reserve
+  male: Male
+  female: Female
+  booking_sucess: จองสำเร็จ

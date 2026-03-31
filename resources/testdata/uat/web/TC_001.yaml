@@ -1,0 +1,25 @@
+TC_001:
+  credit_card:
+    card_number: "4111111111111111"
+    card_name: "John Doe"
+    expire_date: "11 / 30"
+    cvv: "123"
+  account:
+    email: kongphop.s@doppiotech.com
+    password: Dop@112233
+    first_name: Kongphop
+    last_name:  Sunitnantakarn
+    phone_number: 0812345678
+    gender: Male
+  booking:
+    destination: เซี่ยงไฮ้
+    suggess: เซี่ยงไฮ้
+    check_in_day: 20
+    check_out_day: 24
+    check_in_month_year: เมษายน 2026
+    check_out_month_year: เมษายน 2026
+    rooms: 2
+    adults: 4
+    children: 0
+    hotel_name: Dijon Hotel Shanghai
+    room_category: Elegant Executive Double Room

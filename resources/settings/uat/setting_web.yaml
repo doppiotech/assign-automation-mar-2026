@@ -1,2 +1,17 @@
-default_browser: chromium
-gother_web_url: https://www.gother.online/th-th
+WEBSITE_URL: https://www.gother.online/
+ACCOUNT:
+  EMAIL: kongphop.s@doppiotech.com
+  PASSWORD: Dop@112233
+1S_TIMEOUT: 1
+2S_TIMEOUT: 2
+5S_TIMEOUT: 5
+10S_TIMEOUT: 10
+20S_TIMEOUT: 20
+GLOBAL_TIMEOUT: 30
+CALENDAR:
+  MAX_NEXT_MONTH: 12
+HOTEL:
+  MAX_ROOMS:  9
+  MAX_ADULTS: 36
+  MAX_CHILDREN: 18
+
