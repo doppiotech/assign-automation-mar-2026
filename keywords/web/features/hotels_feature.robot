@@ -39,7 +39,7 @@ Adjust adults amount to
         END
     END
 
-Adjust children amount and select age
+Adjust children amount
     [Arguments]    ${target_children_amount}    ${max_loop}=${gobal_max_loop}
     ${children_amount}=    hotels_page.Get children amount
     IF         ${children_amount} < ${target_children_amount}
@@ -72,5 +72,4 @@ Click children age selection and recheck age list display
     [Arguments]    ${children_index}
     hotels_page.Check if confirm button on guests and rooms section display
     hotels_page.Click children age selection    ${children_index}
-    ${status}    BuiltIn.Run keyword and return status    hotels_page.Check if children age list display
-    RETURN   ${status}
+    hotels_page.Check if children age list display
