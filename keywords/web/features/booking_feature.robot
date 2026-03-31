@@ -10,3 +10,10 @@ Input contact information
     booking_page.Input phone number in contact information                  ${phone}
     booking_page.Click passport option in contact information
     booking_page.Select passport in contact information                     ${country_id}
+
+Verify booking details match with selection
+    [Arguments]    ${hotel_name_ref}    ${room_type_ref}
+    ${hotel_name}    booking_page.Get hotel name
+    ${room_type}     booking_page.Get room type
+    BuiltIn.Should be equal    ${hotel_name_ref}     ${hotel_name}
+    BuiltIn.Should be equal    ${room_type_ref}        ${room_type}

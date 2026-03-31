@@ -11,7 +11,7 @@ Test Teardown        common_web.Web teardown
 TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     [Tags]    Feature:Hotels
     header_bar.Click hotels tab on header bar
-    hotels_feature.Search destination by typing                           ${booking_information}[destination]
+    ${destination}    hotels_feature.Search destination by typing                           ${booking_information}[destination]
     hotels_page.Click check in date section
     common_feature.Find today date on calendar and select today date
     common_feature.Select period from selected date to target days        ${booking_information}[days_to_book]
@@ -21,13 +21,27 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     hotels_feature.Adjust children amount                                 ${booking_information}[children_amount]
     hotels_feature.Select children age                                    ${booking_information}[children_1][index]    ${booking_information}[children_1][age]
     hotels_feature.Select children age                                    ${booking_information}[children_2][index]    ${booking_information}[children_2][age]
+    ${checkin_date}
+    ...    ${checkout_date}
+    ...    ${guests_and_rooms}
+    ...    hotels_feature.Get search information
     hotels_page.Click search button
     hotels_search_result_page.Check if search result page display
+    hotels_search_result_feature.Verify search criteria match with input
+    ...    ${destination}
+    ...    ${checkin_date}
+    ...    ${checkout_date}
+    ...    ${guests_and_rooms}
     hotels_search_result_page.Select hotel by index from search result    ${booking_information}[hotel_index]
     common_web.Switch to new tab
     hotels_item_page.Check if hotels item display
+    ${hotel_name}    hotels_item_page.Get hotel name
+    ${room_type}     hotels_item_page.Get room type                       ${booking_information}[room_index]
     hotels_item_page.Book room by index                                   ${booking_information}[room_index]
     booking_page.Check if booking page display
+    booking_feature.Verify booking details match with selection
+    ...    ${hotel_name}
+    ...    ${room_type}
     booking_page.Select gender                                            ${account}[gender]
     booking_feature.Input contact information
     ...    ${account}[first_name]

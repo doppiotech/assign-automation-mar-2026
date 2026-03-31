@@ -62,6 +62,12 @@ Get text from element
     ${text}=        Browser.Get text                ${locator}
     RETURN    ${text}
 
+Get attribute from element
+    [Arguments]    ${locator}    ${attribute}
+    common_web.Check if element display                         ${locator}
+    ${value}=        Browser.Get Attribute                ${locator}    ${attribute}
+    RETURN    ${value}
+
 Get left month on calendar
     ${left_month}=    common_web.Get text from element        ${calendar_modal_locator}[lbl_month_left]
     RETURN    ${left_month}

@@ -45,3 +45,11 @@ Click confirm booking button
 
 Wait until confirm loading is complete
     common_web.Wait until element not display        ${booking_element_locator}[lbl_loading]
+
+Get hotel name
+    ${hotel_name}    common_web.Get text from element        ${ิbooking_information_section_locator}[lbl_hotel_name]
+    RETURN    ${hotel_name}
+
+Get room type
+    ${room_type}    common_web.Get text from element        ${ิbooking_information_section_locator}[lbl_room_type]
+    RETURN    ${room_type}

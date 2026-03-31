@@ -8,7 +8,7 @@ Click destination search field
 
 Select destination from suggestion list
     [Arguments]    ${destination}
-    ${destination_locator}=        String.Replace string    ${hotels_search_section_locator}[btn_search_suggestion]    ***destination***    ${destination}
+    ${destination_locator}=        String.Replace string    ${hotels_search_section_locator}[btn_search_suggestion_typing_location]    ***destination***    ${destination}
     common_web.Click element on screen      ${destination_locator}
 
 Input destination on search field
@@ -17,7 +17,7 @@ Input destination on search field
 
 Select destination from suggestion list after search with input
     [Arguments]    ${destination}
-    ${destination_locator}=        String.Replace string    ${hotels_search_section_locator}[btn_search_suggestion_typing]    ***destination***    ${destination}
+    ${destination_locator}=        String.Replace string    ${hotels_search_section_locator}[btn_search_suggestion_typing_location]    ***destination***    ${destination}
     common_web.Click element on screen      ${destination_locator}
 
 Click check in date section
@@ -86,3 +86,25 @@ Click confirm guests and rooms
 
 Click search button
     common_web.Click element on screen      ${hotels_search_section_locator}[btn_search_button]
+
+Get destination location
+    [Arguments]    ${destination}
+    ${destination_locator}=        String.Replace string    ${hotels_search_section_locator}[btn_search_suggestion_typing_location]    ***destination***    ${destination}
+    ${destination_location}    common_web.Get text from element        ${destination_locator}
+    RETURN    ${destination_location}
+
+Get destination region
+    ${destination_region}    common_web.Get text from element        ${hotels_search_section_locator}[btn_search_suggestion_typing_region]
+    RETURN    ${destination_region}
+
+Get checkin date
+    ${checkin_date}    common_web.Get attribute from element        ${hotels_search_section_locator}[btn_checkin_date]    value
+    RETURN    ${checkin_date}
+
+Get checkout date
+    ${checkout_date}    common_web.Get attribute from element        ${hotels_search_section_locator}[btn_checkout_date]    value
+    RETURN    ${checkout_date}
+
+Get guests and rooms
+    ${guests_and_rooms}    common_web.Get attribute from element        ${hotels_search_section_locator}[btn_guests_and_rooms]    value
+    RETURN    ${guests_and_rooms}

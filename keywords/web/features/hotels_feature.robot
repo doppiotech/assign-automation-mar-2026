@@ -3,7 +3,9 @@ Search destination by typing
     [Arguments]    ${search_text}
     hotels_page.Click destination search field
     hotels_page.Input destination on search field    ${search_text}
+    ${destination}    hotels_feature.Get destination from search suggestion    ${search_text}
     hotels_page.Select destination from suggestion list after search with input    ${search_text}
+    RETURN    ${destination}
 
 Adjust rooms amount to
     [Arguments]    ${target_rooms_amount}    ${max_loop}=${gobal_max_loop}
@@ -73,3 +75,16 @@ Click children age selection and recheck age list display
     hotels_page.Check if confirm button on guests and rooms section display
     hotels_page.Click children age selection    ${children_index}
     hotels_page.Check if children age list display
+
+Get destination from search suggestion
+    [Arguments]    ${search_text}
+    ${destination_location}    Get destination location    ${search_text}
+    ${destination_region}    Get destination region
+    ${destination}    BuiltIn.Set variable    ${destination_location}, ${destination_region}
+    RETURN        ${destination}
+
+Get search information
+    ${checkin_date}        hotels_page.Get checkin date
+    ${checkout_date}       hotels_page.Get checkout date
+    ${guests_and_rooms}    hotels_page.Get guests and rooms
+    RETURN    ${checkin_date}    ${checkout_date}    ${guests_and_rooms}

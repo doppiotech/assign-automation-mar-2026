@@ -13,3 +13,6 @@
 ...            txt_phone=css=input[name="phone"]
 ...            ddl_country_id=css=label:text-is("${contact_information_section_trans}[country_id]")
 ...            lbl_country_id_selection=css=[aria-label="country-list"] p:has-text("***country_name***")
+&{ิbooking_information_section_locator}
+...            lbl_hotel_name=css=#hotel-booking-hotel-name
+...            lbl_room_type=css=#hotel-booking-room-name

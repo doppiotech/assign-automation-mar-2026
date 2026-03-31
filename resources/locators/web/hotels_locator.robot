@@ -3,9 +3,11 @@
 ...            hotels_section=css=[id="hotel-search-layout-main-page"]:not([style="display: none !important;"])
 &{hotels_search_section_locator}
 ...            txt_search_bar=css=#hotel-search-destination
-...            btn_search_suggestion_typing=css=[id^="hotel-search-typing-"] b:has-text("***destination***")
-...            btn_checkin_date=css=[for="hotel-search-checkin-date"]
-...            btn_guests_and_rooms=css=[for="hotel-search-traveler"]
+...            btn_search_suggestion_typing_location=css=[id^="hotel-search-typing-"] b:has-text("***destination***")
+...            btn_search_suggestion_typing_region=css=[id^="hotel-search-typing-"] [class^=inline] div:nth-child(2)
+...            btn_checkin_date=css=#hotel-search-checkin-date
+...            btn_checkout_date=css=#hotel-search-checkout-date
+...            btn_guests_and_rooms=css=#hotel-search-traveler
 ...            btn_search_button=css=#hotel-search-button
 &{guests_and_rooms_modal_locator}
 ...            lbl_rooms_amount=css=[role="menuitem"]:has(div:text-is("${guests_and_rooms_modal_trans}[rooms]")) button:text-is("-") + div

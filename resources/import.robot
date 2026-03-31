@@ -45,5 +45,6 @@ Resource    ${CURDIR}/../keywords/web/pages/footer.robot
 Resource    ${CURDIR}/../keywords/web/features/common_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/header_bar_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/hotels_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/hotels_search_result_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/booking_feature.robot
 Resource    ${CURDIR}/../keywords/web/features/payment_feature.robot
