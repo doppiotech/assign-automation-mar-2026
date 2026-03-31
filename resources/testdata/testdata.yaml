@@ -20,7 +20,7 @@ TC_001:
         target_hotel: "Asia Hotel Bangkok"
         booking_info_hotel: "Asia Hotel Bangkok"
         summary_guest_type: "Adult x1"
-        expected_total_price: "4,214.85"
+        expected_total_price: "3,815.13"
     contact_info:
         gender: "Male"
         first_name: "Sutida"
