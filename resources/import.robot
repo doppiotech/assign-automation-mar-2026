@@ -34,7 +34,7 @@ Resource    ${CURDIR}/../keywords/web/pages/booking_hotels.robot
 Resource        ${CURDIR}/../keywords/web/pages/payment_page.robot
 Resource        ${CURDIR}/../keywords/web/pages/hotels_payment_success_page.robot 
 
-#============ Locators ============
+#============ Locators ============ 
 Resource        ${CURDIR}/../resources/locators/web/home_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/login_popup_locators.robot
 
@@ -46,7 +46,7 @@ Resource        ${CURDIR}/../resources/locators/web/booking_hotels_locators.robo
 Resource        ${CURDIR}/../resources/locators/web/payment_page_locators.robot
 
 #Payment for hotels page
-Resource        ${CURDIR}/../resources/locators/web/hotels_booking_page_locators.robot
+#Resource        ${CURDIR}/../resources/locators/web/hotels_booking_page_locators.robot
 Resource        ${CURDIR}/../resources/locators/web/hotels_payment_success_page_locators.robot
 
 

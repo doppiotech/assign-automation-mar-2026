@@ -1,5 +1,6 @@
 home_page:
   t_signin_and_register:                     เข้าสู่ระบบ/สมัครสมาชิก 
+  t_accept_cookie:                           ยอมรับทั้งหมด
 
 login_popup:
   t_email_or_mobile_login_or_signup:      อีเมลหรือเบอร์มือถือ
@@ -11,7 +12,9 @@ guests_and_rooms:
   t_confirm:                    ยืนยัน
   
 payment_success_page:
-  t_payment_success:            ชำระเงินสำเร็จ
+  t_payment_success:                            จองสำเร็จ
+  t_text_booking_confirmation:                  ข้อมูลการจองของคุณ หมายเลข
+  t_text_system_will_send_your_booking:         ระบบจะส่งข้อมูลการจองของคุณไปยัง
 
 ฺbooking:
   t_ฺbooking_button:             จองเลย

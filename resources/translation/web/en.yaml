@@ -1,5 +1,6 @@
 home_page:
   t_signin_and_register:                     Log In/Sign Up  
+  t_accept_cookie:                           Accept All
 
 login_popup:
   t_email_or_mobile_login_or_signup:      Email or Mobile No.
@@ -11,7 +12,9 @@ guests_and_rooms:
   t_confirm:                    Confirm
 
 payment_success_page:
-  t_payment_success:            Payment Success
+  t_payment_success:                            Payment Success!
+  t_text_booking_confirmation:                  Your booking conformation no.
+  t_text_system_will_send_your_booking:         The system will send your booking details to         
 
 ฺbooking:
   t_ฺbooking_button:             Book now

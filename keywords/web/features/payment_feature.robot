@@ -10,12 +10,15 @@ Input booking for hotels
     booking_hotels.Click confirm booking button
 
 Input payment for hotels 
-    [Arguments]    ${card_number}         ${card_holder_name}         ${expiry_date}    ${cvv}                             
+    [Arguments]    ${card_number}         ${card_holder_name}         ${expiry_date}    ${cvv} 
+    #common_web.Verify payment page                            
     payment_page.Input credit card number                         ${card_number} 
     payment_page.Input credit card name                           ${card_holder_name} 
     payment_page.Input credit card expiry date                    ${expiry_date}
     payment_page.Input credit card cvv                            ${cvv}
     payment_page.Click confirm payment button
+
+    
 
 
     

@@ -40,11 +40,13 @@ Verify hotels item page
 Verify booking page
     Browser.Wait for elements state        ${booking_hotels_locators.booking_page}       visible    timeout=${global_timeout} 
 
-#Verify payment page
-    Browser.Wait for elements state        ${select_hotels_page_locators.hotels_item_page}       visible    timeout=${global_timeout} 
+Verify payment page
+    Browser.Scroll to element    ${payment_page_locators.btn_confirm_booking} 
+    Browser.Wait for elements state        ${payment_page_locators.btn_confirm_booking}      visible    timeout=${global_timeout} 
 
-#Click accept cookie
-    Browser.Click        
+Click accept cookie   
+    ${accept_cookie_button}=        String.Replace string    ${home_page_locators.btn_accept_cookie}        {ACCEP_COOKIE}    ${home_page.t_accept_cookie} 
+    Browser.Click        ${accept_cookie_button}            
 
 
                     

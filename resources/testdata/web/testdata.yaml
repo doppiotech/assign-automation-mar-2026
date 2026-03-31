@@ -7,21 +7,25 @@ TC_001:
         first_name:             Test 
         last_name:              Gother
 
-    credit_card_tnformation:
-        card_number:              4111 1111 1111 1111
-        card_holder_name:         Test Gother
-        expiry_date:              11/30
-        cvv:                      123
+    credit_card_information:
+        card_number:                4111 1111 1111 1111
+        card_holder_name:           Test Gother
+        expiry_date:                11/30
+        cvv:                        123
 
     booking_information:       
         search_hotels_text:           Tokyo
-        checkin_month:                April
         checkin_year:                 2026
+        checkin_month:                April  
         checkin_day:                  10
+        checkout_year:                2026
+        checkout_month:               April
         checkout_day:                 16
-        guest_info:
-            rooms:                    1
-            adults:                   1
-            children:                 1
         gender:                       female
+
+    guest_info:
+        rooms:                    1
+        adults:                   1
+        children:                 1
+
     

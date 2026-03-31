@@ -2,12 +2,14 @@
 Select gender
     [Arguments]    ${gender}    
     Browser.Scroll to element     ${booking_hotels_locators.rdo_male_button}   
-    IF    '${gender} ' == 'male'
-        Browser.Click with options    ${booking_hotels_locators.rdo_male_button}      
-    ELSE IF    '${gender} ' == 'female'
-        Browser.Click with options   ${booking_hotels_locators.rdo_female_button}       
+    IF    '${gender}' == 'male'
+        Browser.Click    ${booking_hotels_locators.rdo_male_button}      
+    ELSE IF    '${gender}' == 'female'
+        Browser.Click   ${booking_hotels_locators.rdo_female_button}       
     END
-
+    #เช็คว่าปุ่มถูกคลิ๊กแล้ว
+    #Browser.Get element states    ${booking_hotels_locators.rdo_male_button if '${gender}'=='male' else '${booking_hotels_locators.rdo_female_button}'}    checked    ==    True
+    
 Input first name in contact information
     [Arguments]    ${first_name}    
     Browser.Scroll to element    ${booking_hotels_locators.txt_first_name}
@@ -25,10 +27,6 @@ Input email in contact information
     Browser.Scroll to element    ${booking_hotels_locators.txt_email} 
     Browser.Wait for elements state    ${booking_hotels_locators.txt_email}     visible    ${global_timeout}
     Browser.Fill text    ${booking_hotels_locators.txt_email}     ${email_address}  
-
-Click phone country code option in contact information
-
-Select phone country code in contact information
 
 Input phone number in contact information
     [Arguments]    ${mobile_number}    
