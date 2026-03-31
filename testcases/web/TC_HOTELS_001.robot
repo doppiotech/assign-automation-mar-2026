@@ -35,7 +35,6 @@ TC_HOTELS_001 - Verify Hotel Booking with Credit Card Payment
     ...    ${guests_and_rooms}
     hotels_search_result_page.Select hotel by index from search result    ${booking_information}[hotel_index]
     common_web.Switch to new tab
-    Debug
     hotels_item_page.Check if hotels item display
     ${hotel_name}    hotels_item_page.Get hotel name
     ${room_type}     hotels_item_page.Get room type                       ${booking_information}[room_index]
