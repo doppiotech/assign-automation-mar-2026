@@ -25,6 +25,9 @@ Resource    ${CURDIR}/../keywords/web/pages/payment_page.robot
 Resource    ${CURDIR}/../keywords/web/pages/booking_success_page.robot
 
 ### Web Feature ###
+Resource    ${CURDIR}/../keywords/web/features/login_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/booking_hotels_feature.robot
+Resource    ${CURDIR}/../keywords/web/features/payment_feature.robot
 
 ### Web Locator ###
 Resource    ${CURDIR}/locators/web/nav_bar_locator.robot

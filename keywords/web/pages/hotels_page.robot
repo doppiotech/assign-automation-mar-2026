@@ -5,8 +5,8 @@ Fill destination
     Browser.Fill Text   selector=${hotels_locator.txt_search_destination}    txt=${destination}
 
 Select search suggestion
-    [Arguments]    ${suggess}
-    ${locator}=    String.Replace String    string=${hotels_locator.ddl_search_suggestion}    search_for=***suggess***    replace_with=${suggess}
+    [Arguments]    ${destination_suggess}
+    ${locator}=    String.Replace String    string=${hotels_locator.ddl_search_suggestion}    search_for=***suggess***    replace_with=${destination_suggess}
     Browser.Click    selector=${locator}
 
 Click guest and rooms
