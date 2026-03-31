@@ -15,7 +15,6 @@ Login with email
     header_bar_feature.Login with email or mobile number method    ${email}    ${password}
     home_page.Check if homepage display
     header_bar.Check if login successfully
-    footer.Click accept cookie on footer
 
 Web teardown
     BuiltIn.Run keyword if test failed         Browser.Take screenshot

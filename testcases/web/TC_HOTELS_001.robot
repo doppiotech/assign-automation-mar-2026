@@ -3,7 +3,8 @@ Resource        ${CURDIR}/../../resources/import.robot
 
 Test Setup           BuiltIn.Run keywords
 ...                  landing_page.Open gother web    AND
-...                  common_web.Login with email    ${account}[email]    ${account}[password]
+...                  common_web.Login with email    ${account}[email]    ${account}[password]    AND
+...                  footer.Click accept cookie on footer
 Test Teardown        common_web.Web teardown
 
 *** Test Cases ***
