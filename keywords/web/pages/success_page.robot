@@ -5,11 +5,11 @@ Verify Booking Success Page
     ...                2. ตรวจสอบว่ามีอีเมลที่เรากรอกไปแสดงอยู่จริง 
     ...                3. ดึงหมายเลขการจอง (Booking Number) ออกมา
     Browser.Wait for elements state    ${success.TXT_HEADER}    visible    timeout=${timeout}
-    Log    ✅ เข้าสู่หน้าชำระเงินสำเร็จเรียบร้อยแล้ว
+    BuiltIn.Log    ✅ เข้าสู่หน้าชำระเงินสำเร็จเรียบร้อยแล้ว
     
     ${email_locator}=    Replace String    ${success.TXT_EMAIL}    @#EMAIL@#    ${expected_email}
     Browser.Wait for elements state    ${email_locator}    visible
-    Log    ✅ ตรวจสอบอีเมลการจองถูกต้อง: ${expected_email}
+    BuiltIn.Log    ✅ ตรวจสอบอีเมลการจองถูกต้อง: ${expected_email}
     
     ${booking_text}=    Browser.Get text    ${success.TXT_BOOKING_NO}  
-    Log    🎉 หมายเลขการจอง (Booking Reference) คือ: ${booking_text}
+    BuiltIn.Log    🎉 หมายเลขการจอง (Booking Reference) คือ: ${booking_text}

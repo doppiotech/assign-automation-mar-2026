@@ -21,15 +21,15 @@ Adjust Guest Or Room Quantity
         FOR    ${i}    IN RANGE    ${diff}
             Browser.Click    ${plus_locator}
         END
-        Log    ✅ กดเพิ่ม (+) ${type} เป็นจำนวน ${target_number}
+        BuiltIn.Log    ✅ กดเพิ่ม (+) ${type} เป็นจำนวน ${target_number}
     ELSE IF    ${diff} < 0
         ${abs_diff}=    BuiltIn.Evaluate    abs(${diff})     
         FOR    ${i}    IN RANGE    ${abs_diff}
             Browser.Click    ${minus_locator}
         END
-        Log    ✅ กดลด (-) ${type} เป็นจำนวน ${target_number}
+        BuiltIn.Log    ✅ กดลด (-) ${type} เป็นจำนวน ${target_number}
     ELSE
-        Log    ✅ ${type} เป็น ${target_number} อยู่แล้ว ไม่ต้องกด
+        BuiltIn.Log    ✅ ${type} เป็น ${target_number} อยู่แล้ว ไม่ต้องกด
     END
     
     ${new_val}=    Browser.Get text    ${val_locator}
