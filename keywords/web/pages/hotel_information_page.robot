@@ -21,4 +21,3 @@ Get And Verify Total Price
     ${cleaned_string}=    String.Remove string    ${raw_text}    ${hotel_information_page.TXT_TOTAL_PRICE}    THB    ,    ${SPACE}
     ${final_price}=    BuiltIn.Convert to integer    ${cleaned_string}
         RETURN    ${final_price}
-        log to cosole    ${final_price}
