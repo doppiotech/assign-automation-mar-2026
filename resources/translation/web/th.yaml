@@ -1,1 +1,7 @@
-mock
+translation:
+  btn_book_hotel: จอง
+  btn_signin_email: อีเมลหรือเบอร์มือถือ 
+  tab_hotel: ที่พัก
+  btn_confirm_questeroom: ยืนยัน
+  btn_view_booking: ดูการจองของฉัน
+  btn_accept_cookie: ยอมรับทั้งหมด

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.0 on darwin)" generated="2026-03-27T10:09:50.367403" rpa="false" schemaversion="5">
+<suite id="s1" name="Poc Web" source="/Users/yanisasopa/Documents/GitHub/assign-automation-mar-2026/testcases/web/poc_web.robot">
+<test id="s1-t1" name="TC_WEB_POC_001" line="7">
+<kw name="Open gother web" owner="landing_page" type="SETUP">
+<kw name="Open web browser by url" owner="common_web">
+<msg time="2026-03-27T10:09:50.681579" level="FAIL">Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</msg>
+<arg>url=${gother_web.url.${LANG.lower()}}</arg>
+<arg>headless_mode=${headless_mode}</arg>
+<doc>ใช้สำหรับเปิด Web browser
+Arguments:
+    - ${url} (string) ลิ้งของเว็ปที่ต้องการเปิด: https://google.com
+    - ${supported_browser} (string) ระบบ Browser ที่รองรับ: chromium, firefox, webkit
+    - False (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): True or False</doc>
+<status status="FAIL" start="2026-03-27T10:09:50.681185" elapsed="0.000425">Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</status>
+</kw>
+<status status="FAIL" start="2026-03-27T10:09:50.680228" elapsed="0.001481">Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</status>
+</kw>
+<msg time="2026-03-27T10:09:50.769448" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:49296</msg>
+<tag>TC_WEB_POC_001</tag>
+<status status="FAIL" start="2026-03-27T10:09:50.679811" elapsed="0.002001">Setup failed:
+Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</status>
+</test>
+<status status="FAIL" start="2026-03-27T10:09:50.368673" elapsed="2.073979"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">TC_WEB_POC_001</stat>
+</tag>
+<suite>
+<stat name="Poc Web" id="s1" pass="0" fail="1" skip="0">Poc Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-27T10:09:50.676567" level="ERROR">Error in file '/Users/yanisasopa/Documents/GitHub/assign-automation-mar-2026/resources/import.robot' on line 11: Replacing variables from setting 'Variables' failed: Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</msg>
+<msg time="2026-03-27T10:09:50.676858" level="ERROR">Error in file '/Users/yanisasopa/Documents/GitHub/assign-automation-mar-2026/resources/import.robot' on line 12: Replacing variables from setting 'Variables' failed: Resolving variable '${LANG.lower()}' failed: Variable '${LANG}' not found.</msg>
+<msg time="2026-03-27T10:09:50.677237" level="WARN">Imported resource file '/Users/yanisasopa/Documents/GitHub/assign-automation-mar-2026/keywords/common/common.robot' is empty.</msg>
+<msg time="2026-03-27T10:09:50.678806" level="WARN">Imported resource file '/Users/yanisasopa/Documents/GitHub/assign-automation-mar-2026/keywords/common/common_mobile.robot' is empty.</msg>
+</errors>
+</robot>

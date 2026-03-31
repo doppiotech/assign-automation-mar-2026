@@ -7,4 +7,11 @@ Open web browser by url
     ...                     - ${headless_mode} (bool) เปิด Browser ในโหมดไร้หน้าต่าง (No GUI): ${True} or ${False}
     [Arguments]        ${url}    ${supported_browser}=${default_browser}    ${headless_mode}=${False}
     Browser.New browser     browser=${supported_browser}    headless=${headless_mode}
-    Browser.New page        url=${url}
+    Browser.New page        url=${url}              
+
+Switch to new tab
+    Switch page    NEW
+    Wait for load state    networkidle      timeout=60000
+
+Select accept all cookie
+    Browser.Click       ${common_locator.btn_accept_cookie}

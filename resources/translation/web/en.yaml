@@ -1,1 +1,7 @@
-mock
+translation:
+  btn_book_hotel: Reserve
+  btn_signin_email: Email or Mobile No. 
+  tab_hotel: Hotels
+  btn_confirm_questeroom: Confirm
+  btn_view_booking: View My Booking
+  btn_accept_cookie: Accept All

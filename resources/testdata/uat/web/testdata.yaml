@@ -1,1 +1,14 @@
-mock
+TC_01:
+  email: yanisa.s@doppiotech.com
+  password: Doppio123*
+  city: Shanghai
+  checkin_date: "6"
+  checkout_date: "7"
+  room_click: "1"
+  adults_click: "2"   
+  children_click: "1"
+  hotelname: Dijon Hotel Shanghai
+  cardnumber: 4111111111111111
+  cardname: Test Booking                
+  expire_date: 11/30             
+  cvv: 123               
