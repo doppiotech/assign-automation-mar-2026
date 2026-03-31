@@ -1,2 +1,4 @@
 default_browser: chromium
 gother_web_url: https://www.gother.online/th-th
+gother_hotals_url: https://www.gother.online/th-th/hotels
+GLOBAL_TIMEOUT: 20

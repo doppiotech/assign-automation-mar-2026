@@ -1,0 +1,212 @@
+{"level":30,"time":"2026-03-31T10:57:21.204Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Listening on 127.0.0.1:53104"}
+{"level":30,"time":"2026-03-31T10:57:21.594Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-31T10:57:21.841Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-31T10:57:21.841Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-31T10:57:21.841Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-31T10:57:21.847Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-31T10:57:21.847Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@61bd0533d3ca9a5b3571aea2b4c2db76\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=a3de0819-e120-49d9-b9f0-65de53823a98\"}"}
+{"level":30,"time":"2026-03-31T10:57:21.862Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Setting default timeout for context context=ca3cd135-8687-4c58-a708-894c80410984 to 10000"}
+{"level":30,"time":"2026-03-31T10:57:21.862Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Changed active context: context=ca3cd135-8687-4c58-a708-894c80410984"}
+{"level":30,"time":"2026-03-31T10:57:22.079Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-31T10:57:22.080Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Changed active page"}
+{"level":30,"time":"2026-03-31T10:57:25.771Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-31T10:57:25.780Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:25.780Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"timeout: 20000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-31T10:57:25.783Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:25.787Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:25.788Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=div[id=\"CookiesBar\"] button:has-text(\"ยอมรับทั้งหมด\") in page."}
+{"level":30,"time":"2026-03-31T10:57:31.187Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:31.194Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:31.194Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[id=\"signin-and-register-big-button\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:31.864Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:31.872Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:31.873Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[type=\"button\"]:text-is(\"อีเมลหรือเบอร์มือถือ\") in page."}
+{"level":30,"time":"2026-03-31T10:57:32.447Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:32.455Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:32.455Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[type=\"button\"]:text-is(\"อีเมลหรือเบอร์มือถือ\") in page."}
+{"level":30,"time":"2026-03-31T10:57:33.178Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:33.184Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:33.184Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[data-type=\"email\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:33.289Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:33.298Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-31T10:57:33.299Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[data-type=\"email\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:33.375Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-31T10:57:33.380Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:33.380Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:33.559Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:33.564Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:33.564Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:33.859Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:33.866Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:33.866Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[type=\"password\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:34.327Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:34.332Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-31T10:57:34.332Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[type=\"password\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:34.412Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-31T10:57:34.417Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:34.417Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:34.554Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:34.559Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:34.559Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:34.833Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:34.838Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:34.838Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=img[alt*=\"user\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:42.936Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:42.944Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:42.944Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=a[id=\"home-menu-hotel\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:43.316Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:43.322Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:43.322Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"timeout: 20000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-31T10:57:43.323Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:44.111Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:44.111Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button input[id=\"hotel-search-destination\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:44.646Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:44.651Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:44.651Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=div[class*=\"size-full\"] button[id=\"hotel-search-suggestion\"] >> nth=0 in page."}
+{"level":30,"time":"2026-03-31T10:57:45.664Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:45.670Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:45.670Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=div[class*=\"size-full\"] button[id=\"hotel-search-suggestion\"] >> nth=0 in page."}
+{"level":30,"time":"2026-03-31T10:57:45.951Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:45.956Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:45.956Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[id=\"hotel-search-checkin-date\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:46.181Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:46.187Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.188Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
+{"level":30,"time":"2026-03-31T10:57:46.204Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-destination containing กรุงเทพ"}
+{"level":30,"time":"2026-03-31T10:57:46.204Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.209Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.209Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkin-date in page."}
+{"level":30,"time":"2026-03-31T10:57:46.225Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-checkin-date containing จ. 13 เม.ย. 2026"}
+{"level":30,"time":"2026-03-31T10:57:46.225Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.229Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.229Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkout-date in page."}
+{"level":30,"time":"2026-03-31T10:57:46.245Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-checkout-date containing อ. 14 เม.ย. 2026"}
+{"level":30,"time":"2026-03-31T10:57:46.245Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.249Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.249Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-traveler in page."}
+{"level":30,"time":"2026-03-31T10:57:46.270Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-traveler containing 2 ผู้ใหญ่, 1 ห้อง"}
+{"level":30,"time":"2026-03-31T10:57:46.270Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.279Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:46.279Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[id=\"hotel-search-button\"] in page."}
+{"level":30,"time":"2026-03-31T10:57:46.496Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:46.503Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:46.503Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"timeout: 20000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-31T10:57:46.504Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:46.771Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.771Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
+{"level":30,"time":"2026-03-31T10:57:46.953Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-destination containing กรุงเทพ"}
+{"level":30,"time":"2026-03-31T10:57:46.953Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.958Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:46.959Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkin-date in page."}
+{"level":30,"time":"2026-03-31T10:57:47.090Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-checkin-date containing จ. 13 เม.ย. 2026"}
+{"level":30,"time":"2026-03-31T10:57:47.090Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.094Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.094Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkout-date in page."}
+{"level":30,"time":"2026-03-31T10:57:47.229Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-checkout-date containing อ. 14 เม.ย. 2026"}
+{"level":30,"time":"2026-03-31T10:57:47.229Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.238Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.238Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-traveler in page."}
+{"level":30,"time":"2026-03-31T10:57:47.342Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-traveler containing 2 ผู้ใหญ่, 1 ห้อง"}
+{"level":30,"time":"2026-03-31T10:57:47.342Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.360Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.360Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-destination in page."}
+{"level":30,"time":"2026-03-31T10:57:47.546Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-destination containing กรุงเทพ, ไทย"}
+{"level":30,"time":"2026-03-31T10:57:47.547Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.555Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:47.555Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkin-date in page."}
+{"level":30,"time":"2026-03-31T10:57:48.485Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-checkin-date containing จ. 13 เม.ย. 2026"}
+{"level":30,"time":"2026-03-31T10:57:48.485Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:48.494Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:48.494Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-checkout-date in page."}
+{"level":30,"time":"2026-03-31T10:57:48.984Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-checkout-date containing อ. 14 เม.ย. 2026"}
+{"level":30,"time":"2026-03-31T10:57:48.984Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:48.988Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:48.988Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: id=hotel-search-traveler in page."}
+{"level":30,"time":"2026-03-31T10:57:49.073Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Retrieved attribute for element id=hotel-search-traveler containing 2 ผู้ใหญ่, 1 ห้อง"}
+{"level":30,"time":"2026-03-31T10:57:49.073Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2026-03-31T10:57:49.093Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:49.093Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"timeout: 20000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-31T10:57:49.094Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:49.100Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:49.100Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=a[id^=\"hotel-item-card\"] >> nth=0 in page."}
+{"level":30,"time":"2026-03-31T10:57:49.681Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:49.688Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:57:49.710Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:57:50.531Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Changed active page"}
+{"level":30,"time":"2026-03-31T10:57:50.544Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:50.544Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"timeout: 20000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-31T10:57:50.728Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:50.734Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:50.734Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[id^=\"hotel-cart-button\"] >> nth=0 in page."}
+{"level":30,"time":"2026-03-31T10:57:55.986Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:57:55.993Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:55.993Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[id^=\"hotel-cart-button\"] >> nth=0 in page."}
+{"level":30,"time":"2026-03-31T10:57:56.873Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:57:56.882Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:56.882Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"timeout: 20000 state: domcontentloaded"}
+{"level":30,"time":"2026-03-31T10:57:56.884Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method WaitForPageLoadState"}
+{"level":30,"time":"2026-03-31T10:57:56.892Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:57:56.892Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[value=\"Mr\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:04.615Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:58:04.619Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getElementStates"}
+{"level":30,"time":"2026-03-31T10:58:04.620Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[value=\"Mr\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:04.642Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Element css=input[value=\"Mr\"] is editable: true"}
+{"level":30,"time":"2026-03-31T10:58:04.642Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Checking checked state"}
+{"level":30,"time":"2026-03-31T10:58:04.678Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getElementStates"}
+{"level":30,"time":"2026-03-31T10:58:04.684Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:04.684Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[id=\"firstName\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:04.855Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:04.861Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:04.861Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[id=\"lastName\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:05.030Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:05.036Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:05.036Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[data-type=\"email\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:05.175Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:05.180Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:05.180Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[data-type=\"tel\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:05.262Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method fillText"}
+{"level":30,"time":"2026-03-31T10:58:05.268Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:58:05.268Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[id=\"hotel-booking-button\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:05.588Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method click"}
+{"level":30,"time":"2026-03-31T10:58:05.594Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:58:05.594Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=button[id=\"hotel-booking-button\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:15.425Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:58:15.430Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:58:15.431Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=[class*=\"title-payment-channel\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:15.651Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-03-31T10:58:15.654Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method click"}
+{"level":30,"time":"2026-03-31T10:58:15.654Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Strict mode is disabled, return first Locator: css=input[id=\"CREDIT_RADIO\"] in page."}
+{"level":30,"time":"2026-03-31T10:58:25.690Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[id="CREDIT_RADIO"]').first()[22m
+
+    at internalClick (C:\Users\doppio\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\index.js:12386:19)
+    at async click (C:\Users\doppio\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\index.js:12367:18)
+    at async PlaywrightServer.click (C:\Users\doppio\AppData\Local\Programs\Python\Python314\Lib\site-packages\Browser\wrapper\index.js:13690:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-03-31T10:58:25.695Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-31T10:58:25.695Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","Take screenshot with options: ":{"path":"C:\\Users\\doppio\\Documents\\GitHub\\assign-automation-mar-2026\\testcases\\web\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-31T10:58:25.763Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-31T10:58:25.771Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.803Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.805Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.807Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.809Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.823Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.825Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.827Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.828Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Changed active context: context=ca3cd135-8687-4c58-a708-894c80410984"}
+{"level":30,"time":"2026-03-31T10:58:25.828Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Changing current active page: page=fcb5c03a-9a48-4bd2-a1c7-077d3a8760e6"}
+{"level":30,"time":"2026-03-31T10:58:25.828Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Changed active page"}
+{"level":30,"time":"2026-03-31T10:58:25.830Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-31T10:58:25.853Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Removed page=fcb5c03a-9a48-4bd2-a1c7-077d3a8760e6 from context=ca3cd135-8687-4c58-a708-894c80410984 page stack"}
+{"level":30,"time":"2026-03-31T10:58:25.858Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Removed page=f669e308-0123-4ad6-bb70-016f1a291c36 from context=ca3cd135-8687-4c58-a708-894c80410984 page stack"}
+{"level":30,"time":"2026-03-31T10:58:25.867Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-31T10:58:25.872Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.873Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-31T10:58:25.928Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-31T10:58:26.461Z","pid":12084,"hostname":"LAPTOP-7FI6D1I0","msg":"End of node method closeAllBrowsers"}

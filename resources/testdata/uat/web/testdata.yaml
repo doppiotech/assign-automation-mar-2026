@@ -1,1 +1,11 @@
-mock
+login_list:
+    email:    "nantachai.n@doppiotech.com"
+    password:    "Noom@658"
+
+
+contact_information:
+    sex:    "ชาย"
+    first_name:    "Nantachai"
+    last_name:    "Nakdilok"
+    email:    "nantachai.n@doppiotech.com"
+    mobile_number:    "813498347"
