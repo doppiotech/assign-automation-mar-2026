@@ -16,7 +16,7 @@ Select hotel by name
     [Arguments]    ${hotel_name}
     # สร้าง Dynamic XPath เพื่อหาการ์ดโรงแรมที่มี title ตรงกับที่ระบุ
     ${hotel_card}=    Set Variable    xpath=//a[@title='${hotel_name}']
-    BuiltIn.Log To Console    \n[ACTION] Selecting Hotel: ${hotel_name}
+    BuiltIn.Log   \n[ACTION] Selecting Hotel: ${hotel_name}
     # รอให้การ์ดโรงแรมปรากฏและเลื่อนไปหา (Scroll) ก่อนคลิก
     Browser.Wait for elements state    ${hotel_card}    visible    timeout=15s
     Browser.Click    ${hotel_card}
