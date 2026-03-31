@@ -2,6 +2,7 @@
 Resource        ${CURDIR}/../../resources/import.robot
 Variables    ${CURDIR}/../../resources/testdata/web/testdata.yaml
 Test Setup      landing_page.Open gother web
+Test Teardown    Browser.Close browser
 
 *** Test Cases ***
 TC_WEB_POC_001
