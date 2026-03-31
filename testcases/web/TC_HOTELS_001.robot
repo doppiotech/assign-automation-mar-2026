@@ -5,7 +5,7 @@ Test Setup      landing_page.Open gother web
 Test Teardown    Browser.Close browser
 
 *** Test Cases ***
-TC_WEB_POC_001
+TC_HOTELS_001 Verify Hotel Booking with Credit Card Payment
     [Tags]      TC_WEB_POC_001
     landing_page.Verify system can redirect to landing page
     landing_page.Login to system with email and password
