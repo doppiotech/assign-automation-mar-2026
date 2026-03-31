@@ -6,3 +6,4 @@ ${booking.TXT_LASTNAME}    css=input#lastName
 ${booking.TXT_EMAIL}    css=input#hotel-booking-user-email
 ${booking.TXT_PHONE}    css=input[name="phone"]
 ${booking.BTN_CONFIRM_BOOKING}    css=button#hotel-booking-button
+${booking.TXT_TOTAL_PRICE}    css=p#hotel-booking-price

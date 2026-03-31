@@ -32,3 +32,4 @@ Click on confirm payment button
     [Arguments]    ${timeout}=${default_timeout}
     Browser.Wait for elements state    ${payment.BTN_CONFIRM_PAYMENT}    timeout=${timeout}
     Browser.Click    ${payment.BTN_CONFIRM_PAYMENT}
+    

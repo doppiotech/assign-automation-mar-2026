@@ -10,6 +10,8 @@ hotel_page:
   TXT_ROOM: "จำนวนห้อง"
   TXT_ADULT: "ผู้ใหญ่ (คน)"
   TXT_CHILDREN: "เด็ก (คน)"
+hotel_information_page:
+  TXT_TOTAL_PRICE: "ราคาทั้งหมด"
 success_page:
   TXT_HEADER: "ชำระเงินสำเร็จ"
   TXT_BOOKING_NO: "ข้อมูลการจองของคุณ หมายเลข"

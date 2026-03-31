@@ -32,3 +32,11 @@ Click on confirm booking button
     [Arguments]    ${timeout}=${default_timeout}
     Browser.Wait for elements state    ${booking.BTN_CONFIRM_BOOKING}    timeout=${timeout}
     Browser.Click  ${booking.BTN_CONFIRM_BOOKING}
+
+Get And Verify Total Price
+    [Arguments]    ${expected_total_price}    ${timeout}=${default_timeout}
+    ${raw_text}=    Browser.Get text    ${booking.TXT_TOTAL_PRICE}
+    ${cleaned_string}=    String.Remove string    ${raw_text}    THB    ,    ${SPACE}
+    ${float_price}=    BuiltIn.Convert to number    ${cleaned_string}
+    ${rounded_price}=    BuiltIn.Convert to integer    ${float_price}
+    BuiltIn.Should be equal as integers    ${rounded_price}    ${expected_total_price}    

@@ -21,6 +21,8 @@ TC_WEB_POC_001
     ${hotel_name}=    search_page.Select Random hotel From Search Results    ${hotel_count}
     hotel_information_page.Verify system can redirect to hotel information page    ${hotel_name}
     hotel_information_page.Click on book now button
+    ${total_price}=    hotel_information_page.Get And Verify Total Price
+    booking_page.Get And Verify Total Price    ${total_price}
     booking_page.Verify system can redirect to booking page
     booking_page.Select gender on radio button
     booking_page.Fill firstname

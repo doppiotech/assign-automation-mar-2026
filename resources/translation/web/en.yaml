@@ -10,6 +10,8 @@ hotel_page:
   TXT_ROOM: "Rooms"
   TXT_ADULT: "Adults"
   TXT_CHILDREN: "Children"
+hotel_information_page:
+  TXT_TOTAL_PRICE: "Total Price"
 success_page:
   TXT_HEADER: "Payment Success!"
   TXT_BOOKING_NO: "Your booking conformation no."
