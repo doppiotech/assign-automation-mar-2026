@@ -1,7 +1,7 @@
 default_browser: chromium
 global_timeout:     10 sec
-global_retry_times: 10
-global_interval_for_retry: 10 sec
+global_retry_times: 5 times
+global_interval_for_retry: 5 sec
 gobal_max_loop: 50
 gother_web:
   url:
