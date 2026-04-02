@@ -26,4 +26,8 @@ Input credit card cvv
 Click confirm payment button
     Browser.Scroll to element    ${payment_page_locators.btn_confirm_booking}
     Browser.Wait for elements state    ${payment_page_locators.btn_confirm_booking}     visible        ${global_timeout}
-    Browser.Click        ${payment_page_locators.btn_confirm_booking} 
+    Browser.Click        ${payment_page_locators.btn_confirm_booking}
+
+Click accept credit card for automatic payment
+    Browser.Wait for elements state    ${payment_page_locators.chk_automatic_payment}     visible        ${global_timeout}
+    Browser.Click        ${payment_page_locators.chk_automatic_payment} 

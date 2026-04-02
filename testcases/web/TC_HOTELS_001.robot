@@ -42,6 +42,7 @@ TC_HOTELS_001
     ...    ${TC_001.account_user.mobile_number} 
     ...    ${TC_001.account_user.email_address} 
     BuiltIn.Log to console    Confirm booking now successfully
+    DEBUG 
     payment_feature.Input payment for hotels    
     ...    ${TC_001.credit_card_information.card_number} 
     ...    ${TC_001.credit_card_information.card_holder_name} 
@@ -51,6 +52,6 @@ TC_HOTELS_001
     hotels_payment_success_page.Verify payment successfully
     BuiltIn.Log to console    Payment success!
     Sleep    2s
-    #DEBUG 
+    DEBUG 
 
     

@@ -16,6 +16,7 @@ Input payment for hotels
     payment_page.Input credit card name                           ${card_holder_name} 
     payment_page.Input credit card expiry date                    ${expiry_date}
     payment_page.Input credit card cvv                            ${cvv}
+    payment_page.Click accept credit card for automatic payment
     payment_page.Click confirm payment button
 
     
